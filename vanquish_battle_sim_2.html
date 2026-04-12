@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vanquish/Convergence — Battle Simulator</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="scripts.js" defer></script>
+</head>
+<body>
+<div class="app" style="flex-direction:column;">
+<div id="card-tooltip" class="card-tooltip"></div>
+
+<!-- ─── HEADER ─── -->
+<header class="header">
+  <div class="logo">VANQUISH <span>/ CONVERGENCE — BATTLE SIM</span></div>
+
+  <div class="phase-display">
+    <div class="round-counter">Round <strong id="round-num">1</strong></div>
+    <div id="phase-badge" class="phase-badge phase-setup">Setup Phase</div>
+    <div class="loop-counter" id="loop-display" style="display:none;">Battle Loop <strong id="loop-num">1</strong></div>
+  </div>
+
+  <div class="th-bars">
+    <div class="th-block">
+      <div class="th-label">P1 TACTICAL HEALTH</div>
+      <div class="th-bar-wrap"><div class="th-bar th-bar-p1" id="th-bar-p1" style="width:100%"></div></div>
+      <div style="display:flex;align-items:center;gap:4px;margin-top:1px;">
+        <button class="mini-btn red" onclick="changeTH(1,-1)" title="P1 -1 TH">−</button>
+        <div class="th-value th-p1" id="th-p1" onclick="promptSetTH(1)" title="Click to set exact value" style="cursor:pointer;min-width:32px;text-align:center;">40</div>
+        <button class="mini-btn" onclick="changeTH(1,1)" title="P1 +1 TH">+</button>
+      </div>
+    </div>
+    <div style="color:var(--text3);font-size:18px;font-family:'Cinzel',serif;">⚔</div>
+    <div class="th-block">
+      <div class="th-label">P2 TACTICAL HEALTH</div>
+      <div class="th-bar-wrap"><div class="th-bar th-bar-p2" id="th-bar-p2" style="width:100%"></div></div>
+      <div style="display:flex;align-items:center;gap:4px;margin-top:1px;">
+        <button class="mini-btn red" onclick="changeTH(2,-1)" title="P2 -1 TH">−</button>
+        <div class="th-value th-p2" id="th-p2" onclick="promptSetTH(2)" title="Click to set exact value" style="cursor:pointer;min-width:32px;text-align:center;">40</div>
+        <button class="mini-btn" onclick="changeTH(2,1)" title="P2 +1 TH">+</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ─── BODY ─── -->
+<div class="body" style="flex:1;min-height:0;overflow:hidden;">
+
+  <!-- PHASE SIDEBAR -->
+  <div class="sidebar">
+    <div class="sidebar-section">
+      <h4 id="phase-steps-label">Setup Phase Steps</h4>
+      <div class="phase-steps" id="phase-steps"></div>
+    </div>
+    <div class="action-row" style="overflow-y:auto;flex:1;padding:8px;display:flex;flex-direction:column;gap:3px;">
+
+      <!-- Navigation -->
+      <div style="display:flex;gap:3px;">
+        <button class="btn btn-secondary btn-sm" style="flex:1;" onclick="prevStep()">‹ Step</button>
+        <button class="btn btn-primary btn-sm" style="flex:1;" onclick="nextStep()">Step ›</button>
+      </div>
+      <div style="display:flex;gap:3px;">
+        <button class="btn btn-secondary btn-sm" style="flex:1;border-color:var(--red2);color:#d08080;" onclick="prevPhase()">‹ Phase</button>
+        <button class="btn btn-battle btn-sm" style="flex:1;" onclick="advancePhase()">Phase ›</button>
+      </div>
+
+      <div class="divider"></div>
+      <div style="font-family:'Cinzel',serif;font-size:9px;color:var(--text3);letter-spacing:1px;text-transform:uppercase;">Setup</div>
+      <button class="btn btn-secondary btn-sm" onclick="openAddUnit()">+ Add Unit to Play</button>
+      <button class="btn btn-secondary btn-sm" onclick="openDeckLoader()">📂 Load Deck</button>
+      <button class="btn btn-secondary btn-sm" onclick="openAddLocation()">🗺 Add Location Card</button>
+      <button class="btn btn-secondary btn-sm" onclick="randomLocation()">🎲 Random Location</button>
+      <button class="btn btn-secondary btn-sm" onclick="spawnStartingLocations()">🏠 Spawn Starting Locs</button>
+      <button class="btn btn-secondary btn-sm" onclick="openBFInitiativeModal()">🏳 Battlefield Initiative</button>
+
+      <div class="divider"></div>
+      <div style="font-family:'Cinzel',serif;font-size:9px;color:var(--text3);letter-spacing:1px;text-transform:uppercase;">Battle</div>
+      <button class="btn btn-secondary btn-sm" onclick="openBFZoom('primary')">🔍 Zoom: Primary BF</button>
+      <button class="btn btn-secondary btn-sm" onclick="openBFZoom('secondary')">🔍 Zoom: Secondary BF</button>
+      <button class="btn btn-secondary btn-sm" onclick="openBFZoom('tertiary')">🔍 Zoom: Tertiary BF</button>
+      <button class="btn btn-secondary btn-sm" onclick="openPairingModal('primary')">⚔ Pair Units (Primary)</button>
+      <button class="btn btn-secondary btn-sm" onclick="openPairingModal('secondary')">⚔ Pair Units (Secondary)</button>
+      <button class="btn btn-secondary btn-sm" onclick="openPairingModal('tertiary')">⚔ Pair Units (Tertiary)</button>
+      <button class="btn btn-secondary btn-sm" onclick="openCombatResolver()">⚔ Resolve Combat</button>
+      <button class="btn btn-secondary btn-sm" onclick="dealTacticalDamage()">💥 Deal Tactical Damage</button>
+      <button class="btn btn-secondary btn-sm" onclick="rollDice()">🎲 Roll d6</button>
+
+      <div class="divider"></div>
+      <div style="font-family:'Cinzel',serif;font-size:9px;color:var(--text3);letter-spacing:1px;text-transform:uppercase;">Cleanup</div>
+      <button class="btn btn-secondary btn-sm" onclick="doCleanup()">▶ Run Cleanup</button>
+      <button class="btn btn-secondary btn-sm" onclick="unexhaustAll()">⟳ Unexhaust All</button>
+
+      <div class="divider"></div>
+      <div style="font-family:'Cinzel',serif;font-size:9px;color:var(--text3);letter-spacing:1px;text-transform:uppercase;">Piles</div>
+      <button class="btn btn-secondary btn-sm" onclick="openGraveyard(1)">☠ P1 Graveyard (<span id="gy1-sb">0</span>)</button>
+      <button class="btn btn-secondary btn-sm" onclick="openGraveyard(2)">☠ P2 Graveyard (<span id="gy2-sb">0</span>)</button>
+      <button class="btn btn-secondary btn-sm" onclick="openDiscardPile(1)">🗑 P1 Discard (<span id="dp1-sb">0</span>)</button>
+      <button class="btn btn-secondary btn-sm" onclick="openDiscardPile(2)">🗑 P2 Discard (<span id="dp2-sb">0</span>)</button>
+
+      <div class="divider"></div>
+      <div style="font-family:'Cinzel',serif;font-size:9px;color:var(--text3);letter-spacing:1px;text-transform:uppercase;">Initiative</div>
+      <div style="display:flex;gap:3px;">
+        <button class="btn btn-sm" id="init-p1-btn" onclick="setInitiative(1)" style="flex:1;background:var(--amber);border:1px solid var(--gold);color:var(--gold2);">P1 Init</button>
+        <button class="btn btn-secondary btn-sm" id="init-p2-btn" onclick="setInitiative(2)" style="flex:1;">P2 Init</button>
+      </div>
+
+      <div class="divider"></div>
+      <button class="btn btn-danger btn-sm" onclick="resetGame()">↺ Reset Game</button>
+    </div>
+  </div>
+
+  <!-- LOG -->
+  <div class="log-panel">
+    <div class="log-header">
+      <button class="log-toggle-btn" onclick="toggleLog()" id="log-toggle-btn" title="Hide/show log">◀</button>
+      <span id="log-header-text" style="flex:1;padding-left:8px;">GAME LOG</span>
+      <button class="log-clear" onclick="clearLog()" id="log-clear-btn">Clear</button>
+    </div>
+    <div class="log-entries" id="log-entries"></div>
+  </div>
+
+  <!-- MAIN AREA -->
+  <div class="battlefield-area">
+
+    <!-- PLAYER 2 ZONES -->
+    <div class="player-row p2">
+      <div class="player-info-col">
+        <div class="player-name-badge p2-badge">PLAYER 2</div>
+        <div id="p2-initiative" class="initiative-star" style="display:none;">⬟ Initiative Player</div>
+        <div class="resource-display">
+          <div class="resource-gem" style="background:var(--blue2);"></div>
+          <div class="resource-label" style="font-size:10px;">Resources <span style="font-size:8px;color:var(--text3);">(auto)</span></div>
+          <div class="resource-val" id="res-p2">3</div>
+          <div class="resource-controls">
+            <button class="mini-btn" onclick="changeRes(2,1)">+</button>
+            <button class="mini-btn red" onclick="changeRes(2,-1)">−</button>
+          </div>
+        </div>
+        <div style="display:flex;align-items:center;gap:4px;">
+          <div class="resource-label" style="font-size:11px;color:var(--text2);">Hand:</div>
+          <div class="resource-val" id="handsize-p2" style="font-size:14px;">7</div>
+          <div class="resource-controls">
+            <button class="mini-btn" onclick="changeHand(2,1)">+</button>
+            <button class="mini-btn red" onclick="changeHand(2,-1)">−</button>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <button class="btn btn-secondary btn-sm" onclick="openAddUnit(2,'command')">+ Unit to Command</button>
+        <button class="btn btn-secondary btn-sm" onclick="openAddUnit(2,'permanent')">+ to Permanent</button>
+      </div>
+      <div class="zones-row">
+        <div class="zone command">
+          <div class="zone-label">Command Area</div>
+          <div class="zone-units" id="zone-p2-command"></div>
+        </div>
+        <div class="zone permanent" style="flex:2;">
+          <div class="zone-label">Permanent Area (Locations + Special)</div>
+          <div class="zone-units" id="zone-p2-permanent" style="flex-wrap:nowrap;overflow-x:auto;align-items:flex-start;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BATTLEFIELDS -->
+    <div class="battlefields-strip">
+      <div class="battlefield-panel" id="bf-tertiary">
+        <div class="bf-header">
+          <div class="bf-name">Tertiary Battlefield</div>
+          <div class="bf-td td-tertiary">+3 TH</div>
+          <div class="bf-control none" id="ctrl-tertiary">Neutral</div>
+        </div>
+        <div style="display:flex;gap:3px;margin-bottom:4px;flex-wrap:wrap;">
+          <select id="loc-tertiary" style="font-size:10px;flex:1;" onchange="updateLocation('tertiary',this.value)">
+            <option value="">— No Location —</option>
+            <option>Home Stronghold</option><option>Farmland</option><option>Arable Land</option>
+            <option>River Delta</option><option>Populated Village</option><option>Iron Quarry</option>
+            <option>Gemstone Quarry</option><option>Precious Metals Quarry</option>
+            <option>Trading Town</option><option>Stronghold</option><option>Metropolis</option><option>Port Town</option>
+          </select>
+          <button class="btn btn-secondary btn-sm" style="font-size:9px;padding:2px 5px;" onclick="setBFControl('tertiary','p1')">P1</button>
+          <button class="btn btn-secondary btn-sm" style="font-size:9px;padding:2px 5px;" onclick="setBFControl('tertiary','p2')">P2</button>
+          <button class="btn btn-secondary btn-sm" style="font-size:9px;padding:2px 5px;" onclick="setBFControl('tertiary','none')">—</button>
+        </div>
+        <div class="bf-sides">
+          <div class="bf-side p1-side">
+            <div class="bf-side-label">P1 UNITS</div>
+            <div id="bf-p1-tertiary" class="zone-units" style="min-height:40px;"></div>
+            <button class="btn btn-secondary btn-sm" style="margin-top:4px;" onclick="openAddUnit(1,'battlefield','tertiary')">+ Commit</button>
+          </div>
+          <div class="bf-side p2-side">
+            <div class="bf-side-label">P2 UNITS</div>
+            <div id="bf-p2-tertiary" class="zone-units" style="min-height:40px;"></div>
+            <button class="btn btn-secondary btn-sm" style="margin-top:4px;" onclick="openAddUnit(2,'battlefield','tertiary')">+ Commit</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="battlefield-panel" id="bf-secondary">
+        <div class="bf-header">
+          <div class="bf-name">Secondary Battlefield</div>
+          <div class="bf-td td-secondary">+4 TH</div>
+          <div class="bf-control none" id="ctrl-secondary">Neutral</div>
+        </div>
+        <div style="display:flex;gap:3px;margin-bottom:4px;flex-wrap:wrap;">
+          <select id="loc-secondary" style="font-size:10px;flex:1;" onchange="updateLocation('secondary',this.value)">
+            <option value="">— No Location —</option>
+            <option>Home Stronghold</option><option>Farmland</option><option>Arable Land</option>
+            <option>River Delta</option><option>Populated Village</option><option>Iron Quarry</option>
+            <option>Gemstone Quarry</option><option>Precious Metals Quarry</option>
+            <option>Trading Town</option><option>Stronghold</option><option>Metropolis</option><option>Port Town</option>
+          </select>
+          <button class="btn btn-secondary btn-sm" style="font-size:9px;padding:2px 5px;" onclick="setBFControl('secondary','p1')">P1</button>
+          <button class="btn btn-secondary btn-sm" style="font-size:9px;padding:2px 5px;" onclick="setBFControl('secondary','p2')">P2</button>
+          <button class="btn btn-secondary btn-sm" style="font-size:9px;padding:2px 5px;" onclick="setBFControl('secondary','none')">—</button>
+        </div>
+        <div class="bf-sides">
+          <div class="bf-side p1-side">
+            <div class="bf-side-label">P1 UNITS</div>
+            <div id="bf-p1-secondary" class="zone-units" style="min-height:40px;"></div>
+            <button class="btn btn-secondary btn-sm" style="margin-top:4px;" onclick="openAddUnit(1,'battlefield','secondary')">+ Commit</button>
+          </div>
+          <div class="bf-side p2-side">
+            <div class="bf-side-label">P2 UNITS</div>
+            <div id="bf-p2-secondary" class="zone-units" style="min-height:40px;"></div>
+            <button class="btn btn-secondary btn-sm" style="margin-top:4px;" onclick="openAddUnit(2,'battlefield','secondary')">+ Commit</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="battlefield-panel" id="bf-primary">
+        <div class="bf-header">
+          <div class="bf-name">Primary Battlefield</div>
+          <div class="bf-td td-primary">+5 TH</div>
+          <div class="bf-control none" id="ctrl-primary">Neutral</div>
+        </div>
+        <div style="display:flex;gap:3px;margin-bottom:4px;flex-wrap:wrap;">
+          <select id="loc-primary" style="font-size:10px;flex:1;" onchange="updateLocation('primary',this.value)">
+            <option value="">— No Location —</option>
+            <option>Home Stronghold</option><option>Farmland</option><option>Arable Land</option>
+            <option>River Delta</option><option>Populated Village</option><option>Iron Quarry</option>
+            <option>Gemstone Quarry</option><option>Precious Metals Quarry</option>
+            <option>Trading Town</option><option>Stronghold</option><option>Metropolis</option><option>Port Town</option>
+          </select>
+          <button class="btn btn-secondary btn-sm" style="font-size:9px;padding:2px 5px;" onclick="setBFControl('primary','p1')">P1</button>
+          <button class="btn btn-secondary btn-sm" style="font-size:9px;padding:2px 5px;" onclick="setBFControl('primary','p2')">P2</button>
+          <button class="btn btn-secondary btn-sm" style="font-size:9px;padding:2px 5px;" onclick="setBFControl('primary','none')">—</button>
+        </div>
+        <div class="bf-sides">
+          <div class="bf-side p1-side">
+            <div class="bf-side-label">P1 UNITS</div>
+            <div id="bf-p1-primary" class="zone-units" style="min-height:40px;"></div>
+            <button class="btn btn-secondary btn-sm" style="margin-top:4px;" onclick="openAddUnit(1,'battlefield','primary')">+ Commit</button>
+          </div>
+          <div class="bf-side p2-side">
+            <div class="bf-side-label">P2 UNITS</div>
+            <div id="bf-p2-primary" class="zone-units" style="min-height:40px;"></div>
+            <button class="btn btn-secondary btn-sm" style="margin-top:4px;" onclick="openAddUnit(2,'battlefield','primary')">+ Commit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PLAYER 1 ZONES -->
+    <div class="player-row p1">
+      <div class="player-info-col">
+        <div class="player-name-badge p1-badge">PLAYER 1</div>
+        <div id="p1-initiative" class="initiative-star">⬟ Initiative Player</div>
+        <div class="resource-display">
+          <div class="resource-gem"></div>
+          <div class="resource-label" style="font-size:10px;">Resources <span style="font-size:8px;color:var(--text3);">(auto)</span></div>
+          <div class="resource-val" id="res-p1">3</div>
+          <div class="resource-controls">
+            <button class="mini-btn" onclick="changeRes(1,1)">+</button>
+            <button class="mini-btn red" onclick="changeRes(1,-1)">−</button>
+          </div>
+        </div>
+        <div style="display:flex;align-items:center;gap:4px;">
+          <div class="resource-label" style="font-size:11px;color:var(--text2);">Hand:</div>
+          <div class="resource-val" id="handsize-p1" style="font-size:14px;">7</div>
+          <div class="resource-controls">
+            <button class="mini-btn" onclick="changeHand(1,1)">+</button>
+            <button class="mini-btn red" onclick="changeHand(1,-1)">−</button>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <button class="btn btn-secondary btn-sm" onclick="openAddUnit(1,'command')">+ Unit to Command</button>
+        <button class="btn btn-secondary btn-sm" onclick="openAddUnit(1,'permanent')">+ to Permanent</button>
+      </div>
+      <div class="zones-row">
+        <div class="zone command">
+          <div class="zone-label">Command Area</div>
+          <div class="zone-units" id="zone-p1-command"></div>
+        </div>
+        <div class="zone permanent" style="flex:2;">
+          <div class="zone-label">Permanent Area (Locations + Special)</div>
+          <div class="zone-units" id="zone-p1-permanent" style="flex-wrap:nowrap;overflow-x:auto;align-items:flex-start;"></div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /battlefield-area -->
+
+  <!-- UNIT ACTIONS PANEL -->
+  <div class="unit-actions">
+    <div class="ua-header">SELECTED UNIT</div>
+    <div class="ua-body" id="ua-body">
+      <div class="ua-empty">Click any unit to select it and manage health, status, and abilities.</div>
+    </div>
+  </div>
+
+</div><!-- /body -->
+
+<!-- ─── HAND STRIP ─── -->
+<div id="hand-strip" style="display:flex;background:var(--bg2);border-top:2px solid var(--border2);flex-shrink:0;height:118px;overflow:hidden;">
+  <!-- P2 Hand -->
+  <div style="flex:1;border-right:1px solid var(--border);padding:5px 8px;display:flex;flex-direction:column;gap:3px;overflow:hidden;">
+    <div style="display:flex;align-items:center;gap:6px;flex-shrink:0;">
+      <span style="font-family:'Cinzel',serif;font-size:9px;font-weight:600;letter-spacing:1.5px;color:var(--blue3);">P2 HAND</span>
+      <button class="btn btn-secondary btn-sm" id="reveal-btn-2" onclick="toggleReveal(2)">👁 Hidden</button>
+      <button class="btn btn-secondary btn-sm" onclick="drawCard(2)">Draw</button>
+      <button class="btn btn-secondary btn-sm" onclick="openSearchDeck(2)" style="font-size:9px;padding:2px 6px;" title="Search deck top-down">🔎</button>
+      <button class="btn btn-secondary btn-sm" onclick="shuffleDeck(2)" style="font-size:9px;padding:2px 6px;" title="Shuffle deck">🔀</button>
+      <button class="btn btn-secondary btn-sm" onclick="openCompositionViewer(2)" style="font-size:9px;padding:2px 6px;border-color:var(--gold);color:var(--gold2);" title="View Convergence Composition">⚜</button>
+      <span style="font-size:10px;color:var(--text3);margin-left:auto;">Deck: <strong id="deck2-count" style="color:var(--text2);">0</strong></span>
+      <button class="btn btn-secondary btn-sm" style="font-size:9px;padding:2px 6px;" onclick="openGraveyard(2)">☠ <span id="gy2-count">0</span></button>
+    </div>
+    <div id="hand-p2" style="display:flex;gap:4px;overflow-x:auto;padding-bottom:2px;flex:1;align-items:flex-start;min-height:0;"></div>
+  </div>
+  <!-- P1 Hand -->
+  <div style="flex:1;padding:5px 8px;display:flex;flex-direction:column;gap:3px;overflow:hidden;">
+    <div style="display:flex;align-items:center;gap:6px;flex-shrink:0;">
+      <span style="font-family:'Cinzel',serif;font-size:9px;font-weight:600;letter-spacing:1.5px;color:var(--gold2);">P1 HAND</span>
+      <button class="btn btn-secondary btn-sm" id="reveal-btn-1" onclick="toggleReveal(1)">👁 Hidden</button>
+      <button class="btn btn-secondary btn-sm" onclick="drawCard(1)">Draw</button>
+      <button class="btn btn-secondary btn-sm" onclick="openSearchDeck(1)" style="font-size:9px;padding:2px 6px;" title="Search deck top-down">🔎</button>
+      <button class="btn btn-secondary btn-sm" onclick="shuffleDeck(1)" style="font-size:9px;padding:2px 6px;" title="Shuffle deck">🔀</button>
+      <button class="btn btn-secondary btn-sm" onclick="openCompositionViewer(1)" style="font-size:9px;padding:2px 6px;border-color:var(--gold);color:var(--gold2);" title="View Convergence Composition">⚜</button>
+      <span style="font-size:10px;color:var(--text3);margin-left:auto;">Deck: <strong id="deck1-count" style="color:var(--text2);">0</strong></span>
+      <button class="btn btn-secondary btn-sm" style="font-size:9px;padding:2px 6px;" onclick="openGraveyard(1)">☠ <span id="gy1-count">0</span></button>
+    </div>
+    <div id="hand-p1" style="display:flex;gap:4px;overflow-x:auto;padding-bottom:2px;flex:1;align-items:flex-start;min-height:0;"></div>
+  </div>
+  <!-- Toggle hand strip button -->
+  <div style="width:22px;background:var(--bg3);border-left:1px solid var(--border);display:flex;align-items:center;justify-content:center;cursor:pointer;flex-shrink:0;" onclick="toggleHandStrip()" title="Toggle hand strip">
+    <span id="hand-strip-arrow" style="font-size:12px;color:var(--text3);">▼</span>
+  </div>
+</div>
+
+</div><!-- /app -->
+
+<!-- ─── BATTLEFIELD ZOOM MODAL ─── -->
+<div class="modal-overlay" id="bf-zoom-modal">
+  <div class="modal" style="width:820px;max-width:95vw;max-height:88vh;display:flex;flex-direction:column;">
+    <div class="modal-header">
+      <h3 id="bf-zoom-title">⚔ Battlefield View</h3>
+      <div style="display:flex;gap:6px;align-items:center;">
+        <button class="btn btn-secondary btn-sm" onclick="openBFZoom('tertiary')">Tertiary</button>
+        <button class="btn btn-secondary btn-sm" onclick="openBFZoom('secondary')">Secondary</button>
+        <button class="btn btn-secondary btn-sm" onclick="openBFZoom('primary')">Primary</button>
+        <button class="modal-close" onclick="closeModal('bf-zoom-modal')">✕</button>
+      </div>
+    </div>
+    <div id="bf-zoom-body" style="padding:16px;overflow-y:auto;flex:1;"></div>
+  </div>
+</div>
+
+<!-- ─── PAIRING MODAL ─── -->
+<div class="modal-overlay" id="pairing-modal">
+  <div class="modal" style="width:560px;max-height:85vh;display:flex;flex-direction:column;">
+    <div class="modal-header">
+      <h3>⚔ Pair Units</h3>
+      <button class="modal-close" onclick="closeModal('pairing-modal')">✕</button>
+    </div>
+    <div id="pairing-body" style="padding:14px;overflow-y:auto;flex:1;"></div>
+    <div style="padding:10px 14px;border-top:1px solid var(--border);display:flex;gap:8px;">
+      <button class="btn btn-secondary" onclick="closeModal('pairing-modal')" style="flex:1;">Close</button>
+    </div>
+  </div>
+</div>
+
+<!-- ─── BATTLEFIELD INITIATIVE MODAL ─── -->
+<div class="modal-overlay" id="bf-initiative-modal">
+  <div class="modal" style="width:440px;">
+    <div class="modal-header">
+      <h3>🏳 Determine Battlefield Initiative</h3>
+      <button class="modal-close" onclick="closeModal('bf-initiative-modal')">✕</button>
+    </div>
+    <div style="padding:14px;font-size:12px;color:var(--text2);margin-bottom:8px;line-height:1.6;">
+      Starting with the Initiative Player (IP), alternately choose one Battlefield to hold Initiative in. Battlefield Initiative determines who is the IP for that battlefield's battle loop.
+    </div>
+    <div id="bf-init-body" style="padding:0 14px 14px;"></div>
+    <div style="padding:10px 14px;border-top:1px solid var(--border);">
+      <button class="btn btn-secondary" onclick="closeModal('bf-initiative-modal')" style="width:100%;">Done</button>
+    </div>
+  </div>
+</div>
+
+<!-- ─── SEARCH DECK MODAL ─── -->
+<div class="modal-overlay" id="search-deck-modal">
+  <div class="modal" style="width:480px;max-height:80vh;display:flex;flex-direction:column;">
+    <div class="modal-header">
+      <h3 id="search-deck-title">🔎 Search Deck</h3>
+      <button class="modal-close" onclick="closeModal('search-deck-modal')">✕</button>
+    </div>
+    <div style="padding:10px 14px;border-bottom:1px solid var(--border);">
+      <input id="search-deck-input" type="text" placeholder="Search by name…" oninput="renderSearchDeckList()"
+        style="width:100%;background:var(--bg3);border:1px solid var(--border2);color:var(--text);padding:6px 10px;border-radius:3px;font-family:'Crimson Pro',serif;font-size:13px;outline:none;">
+      <div style="font-size:10px;color:var(--text3);margin-top:4px;">Cards are shown top-to-bottom in deck order. Click a card to take it.</div>
+    </div>
+    <div id="search-deck-list" style="flex:1;overflow-y:auto;padding:8px 14px;"></div>
+    <div style="padding:10px 14px;border-top:1px solid var(--border);display:flex;gap:8px;">
+      <button class="btn btn-secondary" onclick="shuffleDeck(searchDeckPlayer);renderSearchDeckList();" style="flex:1;">🔀 Shuffle</button>
+      <button class="btn btn-secondary" onclick="closeModal('search-deck-modal')" style="flex:1;">Done</button>
+    </div>
+  </div>
+</div>
+
+<!-- ─── COMPOSITION VIEWER MODAL ─── -->
+<div class="modal-overlay" id="composition-modal">
+  <div class="modal" style="width:500px;max-height:80vh;display:flex;flex-direction:column;">
+    <div class="modal-header">
+      <h3 id="comp-modal-title">⚜ Convergence Composition</h3>
+      <button class="modal-close" onclick="closeModal('composition-modal')">✕</button>
+    </div>
+    <div id="comp-modal-body" style="padding:16px;overflow-y:auto;flex:1;"></div>
+    <div style="padding:10px 14px;border-top:1px solid var(--border);">
+      <button class="btn btn-secondary" onclick="closeModal('composition-modal')" style="width:100%;">Close</button>
+    </div>
+  </div>
+</div>
+
+<!-- ─── DECK LOADER MODAL ─── -->
+<div class="modal-overlay" id="deck-loader-modal">
+  <div class="modal" style="width:520px;">
+    <div class="modal-header">
+      <h3>📂 Load Deck into Simulator</h3>
+      <button class="modal-close" onclick="closeModal('deck-loader-modal')">✕</button>
+    </div>
+    <div style="padding:14px;display:flex;flex-direction:column;gap:12px;">
+      <div style="display:flex;gap:8px;">
+        <div id="dl-p1-btn" onclick="setDLPlayer(1)"
+          style="flex:1;padding:8px;border-radius:4px;font-family:'Cinzel',serif;font-size:11px;cursor:pointer;border:1px solid var(--gold);background:var(--amber);color:var(--gold2);text-align:center;">
+          Player 1
+        </div>
+        <div id="dl-p2-btn" onclick="setDLPlayer(2)"
+          style="flex:1;padding:8px;border-radius:4px;font-family:'Cinzel',serif;font-size:11px;cursor:pointer;border:1px solid var(--border2);background:transparent;color:var(--text2);text-align:center;">
+          Player 2
+        </div>
+      </div>
+      <p style="font-size:12px;color:var(--text2);line-height:1.6;">Upload a deck JSON exported from the Deck Builder (⬇ Export button), or drag and drop below. The deck will be shuffled automatically. Use <strong>Draw</strong> to draw cards into hand, or click hand cards to play them.</p>
+      <div id="dl-dropzone"
+        style="border:1px dashed var(--border2);border-radius:4px;padding:24px;text-align:center;color:var(--text3);font-size:13px;cursor:pointer;transition:all .15s;"
+        onclick="document.getElementById('dl-file-inp').click()"
+        ondragover="event.preventDefault();this.style.borderColor='var(--gold)';this.style.color='var(--text2)'"
+        ondragleave="this.style.borderColor='var(--border2)';this.style.color='var(--text3)'"
+        ondrop="handleDeckDrop(event)">
+        Drop deck .json here, or click to browse
+        <input type="file" id="dl-file-inp" accept=".json" style="display:none" onchange="handleDeckFile(event)">
+      </div>
+      <div id="dl-status" style="font-size:12px;color:var(--green3);text-align:center;display:none;"></div>
+      <button class="action-btn" onclick="closeModal('deck-loader-modal')" style="margin-top:4px;">Done</button>
+    </div>
+  </div>
+</div>
+
+<!-- ─── PAIR COMBAT CONFIRM MODAL ─── -->
+<div class="modal-overlay" id="pair-confirm-modal">
+  <div class="modal combat-modal" style="width:600px;max-height:88vh;display:flex;flex-direction:column;">
+    <div class="modal-header">
+      <h3 id="pcm-title">⚔ Confirm Attack</h3>
+      <button class="modal-close" onclick="closeModal('pair-confirm-modal')">✕</button>
+    </div>
+    <div id="pcm-body" style="padding:14px;overflow-y:auto;flex:1;"></div>
+    <div style="padding:10px 14px;border-top:1px solid var(--border);display:flex;gap:8px;">
+      <button class="btn btn-battle" id="pcm-apply-btn" onclick="applyPairCombatConfirmed()" style="flex:2;">⚔ Apply Damage</button>
+      <button class="btn btn-secondary" onclick="closeModal('pair-confirm-modal')" style="flex:1;">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<!-- ─── GRAVEYARD MODAL ─── -->
+<div class="modal-overlay" id="graveyard-modal">
+  <div class="modal" style="width:420px;">
+    <div class="modal-header">
+      <h3 id="gy-modal-title">☠ Graveyard</h3>
+      <button class="modal-close" onclick="closeModal('graveyard-modal')">✕</button>
+    </div>
+    <div style="padding:10px;max-height:60vh;overflow-y:auto;" id="gy-list"></div>
+    <div style="padding:10px 14px;border-top:1px solid var(--border);display:flex;gap:8px;">
+      <button class="btn btn-secondary" onclick="closeModal('graveyard-modal')" style="flex:1;">Close</button>
+    </div>
+  </div>
+</div>
+
+<!-- ─── ADD UNIT MODAL ─── -->
+<div class="modal-overlay" id="add-unit-modal">
+  <div class="modal">
+    <div class="modal-header">
+      <h3>Add Unit to Play</h3>
+      <button class="modal-close" onclick="closeModal('add-unit-modal')">✕</button>
+    </div>
+    <div class="modal-filters">
+      <input type="text" id="modal-search" placeholder="Search by name…" oninput="renderModalList()">
+      <select id="modal-faction" onchange="renderModalList()">
+        <option value="all">All Factions</option>
+        <option value="kingdoms">Kingdoms</option>
+        <option value="brotherhood">Brotherhood</option>
+        <option value="inquisition">Inquisition</option>
+        <option value="wanderers">Wanderers</option>
+        <option value="wizards">Wizards</option>
+        <option value="myrkeval">Myrkeval</option>
+        <option value="neutral">Neutral</option>
+      </select>
+      <select id="modal-type" onchange="renderModalList()">
+        <option value="all">All Types</option>
+        <option value="hero">Heroes</option>
+        <option value="soldier">Soldiers</option>
+        <option value="special">Special</option>
+      </select>
+    </div>
+    <div class="modal-list" id="modal-list"></div>
+    <div class="modal-footer">
+      <div style="font-size:12px;color:var(--text2);">Player:</div>
+      <div class="modal-player-select">
+        <div class="player-radio p1-sel sel" id="modal-p1-btn" onclick="setModalPlayer(1)">Player 1</div>
+        <div class="player-radio p2-sel" id="modal-p2-btn" onclick="setModalPlayer(2)">Player 2</div>
+      </div>
+      <div style="margin-left:auto;font-size:12px;color:var(--text3);" id="modal-zone-label"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ─── COMBAT RESOLVER MODAL ─── -->
+<div class="modal-overlay" id="combat-modal">
+  <div class="modal combat-modal" style="width:620px;">
+    <div class="modal-header">
+      <h3>⚔ Combat Resolver</h3>
+      <button class="modal-close" onclick="closeModal('combat-modal')">✕</button>
+    </div>
+    <!-- Mode tabs -->
+    <div style="display:flex;gap:0;border-bottom:1px solid var(--border);flex-shrink:0;">
+      <button id="tab-single" onclick="setCombatMode('single')"
+        style="flex:1;padding:8px;font-family:'Cinzel',serif;font-size:10px;font-weight:600;letter-spacing:1px;background:var(--amber);border:none;border-right:1px solid var(--border);color:var(--gold2);cursor:pointer;">
+        SINGLE COMBAT
+      </button>
+      <button id="tab-group" onclick="setCombatMode('group')"
+        style="flex:1;padding:8px;font-family:'Cinzel',serif;font-size:10px;font-weight:600;letter-spacing:1px;background:transparent;border:none;color:var(--text2);cursor:pointer;">
+        GROUP COMBAT
+      </button>
+    </div>
+
+    <!-- SINGLE COMBAT -->
+    <div id="combat-single-panel">
+      <div style="padding:10px 14px 4px;font-size:11px;color:var(--text2);">
+        Single attacker vs single defender. ATK − DFS = damage. Durable reduces by 1 (min 1).
+      </div>
+      <div class="combat-sides">
+        <div class="combat-side">
+          <div class="combat-side-label">ATTACKER</div>
+          <select id="combat-attacker" onchange="calcCombat()" style="width:100%;background:var(--bg3);border:1px solid var(--border2);color:var(--text);padding:5px;font-size:12px;border-radius:var(--r);outline:none;margin-bottom:6px;"></select>
+          <div id="combat-atk-preview" style="font-size:10px;color:var(--text2);font-family:'Cinzel',serif;"></div>
+        </div>
+        <div class="vs-badge">VS</div>
+        <div class="combat-side">
+          <div class="combat-side-label">DEFENDER</div>
+          <select id="combat-defender" onchange="calcCombat()" style="width:100%;background:var(--bg3);border:1px solid var(--border2);color:var(--text);padding:5px;font-size:12px;border-radius:var(--r);outline:none;margin-bottom:6px;"></select>
+          <div id="combat-def-preview" style="font-size:10px;color:var(--text2);font-family:'Cinzel',serif;"></div>
+        </div>
+      </div>
+      <div style="padding:0 14px 8px;display:flex;flex-wrap:wrap;gap:8px;">
+        <label style="font-size:11px;color:var(--text2);display:flex;align-items:center;gap:4px;"><input type="checkbox" id="opt-durable" onchange="calcCombat()"> Def Durable</label>
+        <label style="font-size:11px;color:var(--text2);display:flex;align-items:center;gap:4px;"><input type="checkbox" id="opt-aggressive" onchange="calcCombat()"> Atk Aggressive</label>
+        <label style="font-size:11px;color:var(--text2);display:flex;align-items:center;gap:4px;"><input type="checkbox" id="opt-resilient" onchange="calcCombat()"> Def Resilient</label>
+        <label style="font-size:11px;color:var(--text2);display:flex;align-items:center;gap:4px;"><input type="checkbox" id="opt-terror" onchange="calcCombat()"> Atk Terror</label>
+        <label style="font-size:11px;color:var(--text2);display:flex;align-items:center;gap:4px;"><input type="checkbox" id="opt-charge" onchange="calcCombat()"> Charge X: <input type="number" id="opt-charge-val" min="0" max="10" value="0" style="width:38px;background:var(--bg3);border:1px solid var(--border2);color:var(--text);padding:2px 4px;border-radius:2px;font-family:'Cinzel',serif;outline:none;" onchange="calcCombat()"></label>
+      </div>
+      <div class="combat-result" id="combat-result">Select attacker and defender to calculate.</div>
+      <div style="padding:0 14px 14px;display:flex;gap:8px;">
+        <button class="btn btn-battle" onclick="applyCombat()" style="flex:1;">Apply Damage</button>
+        <button class="btn btn-secondary" onclick="closeModal('combat-modal')" style="flex:1;">Cancel</button>
+      </div>
+    </div>
+
+    <!-- GROUP COMBAT -->
+    <div id="combat-group-panel" style="display:none;padding:14px;">
+      <div style="font-size:11px;color:var(--text2);margin-bottom:12px;line-height:1.6;">
+        <strong style="color:var(--gold2);">Group Combat (Option B):</strong> Pool all attacker ATK vs pool all defender DFS. Excess ATK = damage pool. Allocate damage to defenders one point at a time (attacker chooses order).
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px;">
+        <div>
+          <div style="font-family:'Cinzel',serif;font-size:10px;letter-spacing:1px;color:var(--text3);margin-bottom:6px;">ATTACKERS — click to add</div>
+          <div id="grp-atk-list" style="display:flex;flex-direction:column;gap:3px;min-height:40px;margin-bottom:6px;"></div>
+          <select id="grp-atk-sel" style="width:100%;background:var(--bg3);border:1px solid var(--border2);color:var(--text);padding:5px;font-size:12px;border-radius:var(--r);outline:none;margin-bottom:4px;">
+            <option value="">Add attacker…</option>
+          </select>
+          <button class="btn btn-secondary btn-sm" style="width:100%;" onclick="grpAddUnit('atk')">+ Add to Attackers</button>
+          <div style="margin-top:8px;font-family:'Cinzel',serif;font-size:10px;color:var(--text3);">Options:</div>
+          <label style="font-size:11px;color:var(--text2);display:flex;align-items:center;gap:4px;margin-top:4px;"><input type="checkbox" id="grp-aggressive" onchange="calcGroupCombat()"> Aggressive (first loop)</label>
+          <label style="font-size:11px;color:var(--text2);display:flex;align-items:center;gap:4px;margin-top:3px;"><input type="checkbox" id="grp-terror" onchange="calcGroupCombat()"> Terror</label>
+        </div>
+        <div>
+          <div style="font-family:'Cinzel',serif;font-size:10px;letter-spacing:1px;color:var(--text3);margin-bottom:6px;">DEFENDERS — click to add</div>
+          <div id="grp-def-list" style="display:flex;flex-direction:column;gap:3px;min-height:40px;margin-bottom:6px;"></div>
+          <select id="grp-def-sel" style="width:100%;background:var(--bg3);border:1px solid var(--border2);color:var(--text);padding:5px;font-size:12px;border-radius:var(--r);outline:none;margin-bottom:4px;">
+            <option value="">Add defender…</option>
+          </select>
+          <button class="btn btn-secondary btn-sm" style="width:100%;" onclick="grpAddUnit('def')">+ Add to Defenders</button>
+          <div style="margin-top:8px;font-family:'Cinzel',serif;font-size:10px;color:var(--text3);">Options:</div>
+          <label style="font-size:11px;color:var(--text2);display:flex;align-items:center;gap:4px;margin-top:4px;"><input type="checkbox" id="grp-resilient" onchange="calcGroupCombat()"> Resilient (first loop)</label>
+          <label style="font-size:11px;color:var(--text2);display:flex;align-items:center;gap:4px;margin-top:3px;"><input type="checkbox" id="grp-durable-all" onchange="calcGroupCombat()"> All Durable</label>
+        </div>
+      </div>
+      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:var(--r);padding:10px;margin-bottom:10px;font-size:12px;color:var(--text2);min-height:60px;" id="grp-result">
+        Add units to both sides to calculate group combat.
+      </div>
+      <!-- Damage allocation -->
+      <div id="grp-allocate-area" style="display:none;">
+        <div style="font-family:'Cinzel',serif;font-size:10px;letter-spacing:1px;color:var(--gold);margin-bottom:6px;">ALLOCATE DAMAGE POOL</div>
+        <div id="grp-allocate-list" style="display:flex;flex-direction:column;gap:4px;"></div>
+      </div>
+      <div style="display:flex;gap:8px;margin-top:10px;">
+        <button class="btn btn-battle" onclick="applyGroupCombat()" style="flex:1;">Apply All Damage</button>
+        <button class="btn btn-secondary" onclick="clearGroupCombat()" style="flex:1;">Clear</button>
+        <button class="btn btn-secondary" onclick="closeModal('combat-modal')" style="flex:1;">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ─── DISCARD PILE MODAL ─── -->
+<div class="modal-overlay" id="discard-modal">
+  <div class="modal" style="width:440px;">
+    <div class="modal-header">
+      <h3 id="dp-modal-title">🗑 Discard Pile</h3>
+      <button class="modal-close" onclick="closeModal('discard-modal')">✕</button>
+    </div>
+    <div style="padding:10px;max-height:55vh;overflow-y:auto;" id="dp-list"></div>
+    <div style="padding:10px 14px;border-top:1px solid var(--border);display:flex;gap:8px;">
+      <button class="btn btn-secondary" onclick="closeModal('discard-modal')" style="flex:1;">Close</button>
+    </div>
+  </div>
+</div>
+
+<!-- ─── ADD LOCATION MODAL ─── -->
+<div class="modal-overlay" id="location-modal">
+  <div class="modal" style="width:400px;">
+    <div class="modal-header">
+      <h3>🗺 Add Location Card</h3>
+      <button class="modal-close" onclick="closeModal('location-modal')">✕</button>
+    </div>
+    <div style="padding:14px;display:flex;flex-direction:column;gap:10px;">
+      <div style="display:flex;gap:8px;">
+        <div id="loc-modal-p1" onclick="setLocModalPlayer(1)"
+          style="flex:1;padding:7px;border-radius:4px;font-family:'Cinzel',serif;font-size:11px;cursor:pointer;border:1px solid var(--gold);background:var(--amber);color:var(--gold2);text-align:center;">P1</div>
+        <div id="loc-modal-p2" onclick="setLocModalPlayer(2)"
+          style="flex:1;padding:7px;border-radius:4px;font-family:'Cinzel',serif;font-size:11px;cursor:pointer;border:1px solid var(--border2);background:transparent;color:var(--text2);text-align:center;">P2</div>
+      </div>
+      <div>
+        <div style="font-size:10px;color:var(--text3);font-family:'Cinzel',serif;letter-spacing:1px;margin-bottom:4px;">LOCATION TYPE</div>
+        <select id="loc-modal-type" style="width:100%;background:var(--bg3);border:1px solid var(--border2);color:var(--text);padding:7px;font-size:13px;border-radius:4px;outline:none;">
+          <option value="Home Stronghold" data-res="2" data-rest="3">Home Stronghold (Resource 2, Rest 3)</option>
+          <option value="Farmland" data-res="1" data-rest="0">Farmland (Resource 1)</option>
+          <option value="Arable Land" data-res="1" data-rest="0">Arable Land (Resource 1)</option>
+          <option value="River Delta" data-res="1" data-rest="0">River Delta (Resource 1)</option>
+          <option value="Populated Village" data-res="1" data-rest="1">Populated Village (Resource 1, Rest 1, Location 5)</option>
+          <option value="Iron Quarry" data-res="2" data-rest="0">Iron Quarry (Resource 2, Location 5)</option>
+          <option value="Gemstone Quarry" data-res="1" data-rest="0">Gemstone Quarry (Resource 1, Location 5)</option>
+          <option value="Precious Metals Quarry" data-res="3" data-rest="0">Precious Metals Quarry (Resource 3, Location 5)</option>
+          <option value="Trading Town" data-res="1" data-rest="2">Trading Town (Resource 1, Rest 2, Location 6)</option>
+          <option value="Stronghold" data-res="0" data-rest="4">Stronghold (Rest 4, Location 10)</option>
+          <option value="Metropolis" data-res="2" data-rest="2">Metropolis (Resource 2, Rest 2, Location 10)</option>
+          <option value="Port Town" data-res="1" data-rest="1">Port Town (Resource 1, Rest 1, Location 6)</option>
+        </select>
+      </div>
+      <div style="display:flex;gap:8px;">
+        <div style="flex:1;">
+          <div style="font-size:10px;color:var(--text3);font-family:'Cinzel',serif;margin-bottom:4px;">DESTINATION</div>
+          <select id="loc-modal-dest" style="width:100%;background:var(--bg3);border:1px solid var(--border2);color:var(--text);padding:7px;font-size:12px;border-radius:4px;outline:none;">
+            <option value="permanent">Permanent Area</option>
+            <option value="bf-primary">Battlefield: Primary</option>
+            <option value="bf-secondary">Battlefield: Secondary</option>
+            <option value="bf-tertiary">Battlefield: Tertiary</option>
+          </select>
+        </div>
+      </div>
+      <button class="btn btn-gold" style="width:100%;" onclick="addLocationCard()">Add Location</button>
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+</html>
