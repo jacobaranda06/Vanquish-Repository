@@ -1,0 +1,2994 @@
+
+// ══════════════════════════════════════════════════════
+//  CARD DATA (condensed — heroes & soldiers only for sim)
+// ══════════════════════════════════════════════════════
+const CARD_DB = [
+  // Kingdoms
+  {id:'km01',name:'King of Men',faction:'kingdoms',types:['hero'],keywords:['Command 2'],hth:4,atk:5,dfs:3,sp:3,cost:5},
+  {id:'km02',name:'King on Griffin',faction:'kingdoms',types:['hero','monster'],keywords:['Command 2','Reposition','Duelist'],hth:5,atk:6,dfs:4,sp:3,cost:5},
+  {id:'km03',name:'Baron',faction:'kingdoms',types:['hero','commander'],keywords:['Command 1'],hth:3,atk:5,dfs:3,sp:3,cost:4},
+  {id:'km04',name:'Fief Lord',faction:'kingdoms',types:['hero','commander'],keywords:['Command 1'],hth:2,atk:4,dfs:3,sp:2,cost:3},
+  {id:'km05',name:'Banner Bearer',faction:'kingdoms',types:['hero'],keywords:['Rally','Disciplined'],hth:2,atk:3,dfs:3,sp:2,cost:2},
+  {id:'km06',name:'Resident Wizard',faction:'kingdoms',types:['hero','wizard'],keywords:['Magic 1'],hth:2,atk:3,dfs:2,sp:3,cost:2},
+  {id:'km07',name:'Legion Commander',faction:'kingdoms',types:['hero','commander'],keywords:['Formations','Durable','Bodyguard','Disciplined'],hth:3,atk:5,dfs:4,sp:3,cost:4},
+  {id:'km08',name:'Fief Lord on Griffin',faction:'kingdoms',types:['hero','commander','monster'],keywords:['Reposition','Charge 1'],hth:4,atk:5,dfs:4,sp:2,cost:4},
+  {id:'km09',name:'Muzzled Dragon',faction:'kingdoms',types:['hero','monster'],keywords:['Durable','Hunter','Terror','Gatebuster 6'],hth:6,atk:7,dfs:3,sp:1,cost:6},
+  {id:'km10',name:'Healer',faction:'kingdoms',types:['hero'],keywords:[],hth:2,atk:2,dfs:2,sp:1,cost:2},
+  {id:'km11',name:'Battle Bishop',faction:'kingdoms',types:['hero'],keywords:['Aggressive','Charge 1','Durable'],hth:3,atk:5,dfs:3,sp:3,cost:4},
+  {id:'km12',name:'Militiamen',faction:'kingdoms',types:['soldier'],keywords:['Numerous'],hth:1,atk:1,dfs:2,sp:1,cost:1},
+  {id:'km13',name:'Pikemen',faction:'kingdoms',types:['soldier'],keywords:['Formations'],hth:1,atk:3,dfs:3,sp:1,cost:2},
+  {id:'km14',name:'Legionnaires',faction:'kingdoms',types:['soldier'],keywords:['Formations','Durable','Bodyguard','Disciplined'],hth:2,atk:4,dfs:3,sp:2,cost:3},
+  {id:'km15',name:'Dunathi Longbow Archers',faction:'kingdoms',types:['soldier'],keywords:['Ranged 4','Disciplined'],hth:1,atk:2,dfs:2,sp:1,cost:2},
+  {id:'km16',name:'Dunathi Crossbowmen',faction:'kingdoms',types:['soldier'],keywords:['Ranged 4'],hth:1,atk:2,dfs:2,sp:1,cost:1},
+  {id:'km17',name:'Red Knights',faction:'kingdoms',types:['soldier'],keywords:['Disciplined','Durable','Aggressive'],hth:3,atk:4,dfs:3,sp:2,cost:3},
+  {id:'km18',name:'Mounted Red Knights',faction:'kingdoms',types:['soldier'],keywords:['Durable','Aggressive','Reposition','Charge 1'],hth:3,atk:4,dfs:3,sp:2,cost:4},
+  {id:'km19',name:'Light Cavalry',faction:'kingdoms',types:['soldier'],keywords:['Reposition','Slippery','Hunter'],hth:2,atk:3,dfs:3,sp:2,cost:2},
+  {id:'km20',name:'Horse Archers',faction:'kingdoms',types:['soldier'],keywords:['Ranged 4','Reposition','Slippery'],hth:2,atk:3,dfs:2,sp:1,cost:2},
+  {id:'km21',name:'Dwarf Mercenaries',faction:'kingdoms',types:['soldier'],keywords:['Durable','Resilient','Hunter'],hth:2,atk:4,dfs:4,sp:2,cost:4},
+  // Brotherhood
+  {id:'bh01',name:'Sir Edwin',faction:'brotherhood',types:['hero','monster'],keywords:['Duelist','Anti-Magic'],hth:4,atk:4,dfs:4,sp:3,cost:4},
+  {id:'bh02',name:'Atramen',faction:'brotherhood',types:['hero','wizard','commander'],keywords:['Magic 2','Terror'],hth:5,atk:7,dfs:3,sp:6,cost:7},
+  {id:'bh03',name:'Sarki the Collector',faction:'brotherhood',types:['hero'],keywords:['Slippery'],hth:2,atk:2,dfs:4,sp:3,cost:3},
+  {id:'bh04',name:'Morwin the Hunter',faction:'brotherhood',types:['hero'],keywords:['Hunter'],hth:3,atk:4,dfs:3,sp:2,cost:3},
+  {id:'bh05',name:'Brotherhood Champion',faction:'brotherhood',types:['hero'],keywords:['Duelist'],hth:2,atk:5,dfs:3,sp:2,cost:3},
+  {id:'bh06',name:'Vault Master',faction:'brotherhood',types:['hero'],keywords:[],hth:3,atk:2,dfs:4,sp:2,cost:3},
+  {id:'bh07',name:'The Keeper',faction:'brotherhood',types:['hero'],keywords:['Impenetrable','Bodyguard'],hth:5,atk:4,dfs:1,sp:3,cost:6},
+  {id:'bh08',name:'Slaker',faction:'brotherhood',types:['hero'],keywords:['Bodyguard','Duelist'],hth:4,atk:4,dfs:3,sp:2,cost:3},
+  {id:'bh09',name:'Titan',faction:'brotherhood',types:['hero'],keywords:['Gatebuster 20','Routing'],hth:8,atk:10,dfs:4,sp:4,cost:10},
+  {id:'bh10',name:'Squire',faction:'brotherhood',types:['hero'],keywords:['Aggressive','Bodyguard'],hth:2,atk:3,dfs:2,sp:2,cost:2},
+  {id:'bh11',name:'Rondor',faction:'brotherhood',types:['hero','commander'],keywords:['Aggressive','Charge 1','Duelist','Reposition'],hth:4,atk:5,dfs:3,sp:4,cost:4},
+  {id:'bh12',name:'Sensh',faction:'brotherhood',types:['hero'],keywords:['Ranged 4'],hth:2,atk:4,dfs:2,sp:2,cost:2},
+  {id:'bh13',name:'Korvan the Dragon',faction:'brotherhood',types:['hero'],keywords:['Dragon Breath 1','Durable','Charge 1','Gatebuster 6'],hth:5,atk:6,dfs:4,sp:6,cost:6},
+  {id:'bh14',name:'Lirian',faction:'brotherhood',types:['hero'],keywords:['Durable','Formation','Command 2'],hth:3,atk:5,dfs:3,sp:3,cost:2},
+  {id:'bh15',name:'Raymond',faction:'brotherhood',types:['hero'],keywords:['Aggressive','Reposition'],hth:3,atk:4,dfs:3,sp:2,cost:3},
+  {id:'bh16',name:'Brotherhood Scribe',faction:'brotherhood',types:['hero'],keywords:[],hth:2,atk:1,dfs:2,sp:3,cost:1},
+  {id:'bh17',name:'Brotherhood Armorer',faction:'brotherhood',types:['hero'],keywords:[],hth:2,atk:1,dfs:2,sp:2,cost:1},
+  {id:'bh18',name:'Brotherhood Lord',faction:'brotherhood',types:['hero','wizard'],keywords:['Command 1','Aggressive','Hunter','Magic 1'],hth:4,atk:5,dfs:4,sp:4,cost:4},
+  {id:'bh22',name:'Knights of Brotherhood',faction:'brotherhood',types:['soldier','wizard'],keywords:['Charge 1','Resilient','Magic 1','Durable'],hth:3,atk:4,dfs:3,sp:3,cost:3},
+  {id:'bh23',name:'Shriekfire Archers',faction:'brotherhood',types:['soldier'],keywords:['Slippery','Ranged 3'],hth:2,atk:3,dfs:1,sp:1,cost:1},
+  {id:'bh24',name:'Brotherhood Berserkers',faction:'brotherhood',types:['soldier'],keywords:['Aggressive'],hth:1,atk:3,dfs:1,sp:1,cost:1},
+  {id:'bh25',name:'The Black Watch',faction:'brotherhood',types:['soldier'],keywords:['Hunter','Revive 1','Formation'],hth:2,atk:4,dfs:3,sp:2,cost:4},
+  {id:'bh26',name:'Hounds of Morwin',faction:'brotherhood',types:['soldier','creature'],keywords:['Reposition'],hth:1,atk:2,dfs:1,sp:0,cost:1},
+  {id:'bh27',name:'Brotherhood Footsoldier',faction:'brotherhood',types:['soldier'],keywords:['Anti-Formations','Bodyguard'],hth:1,atk:2,dfs:2,sp:1,cost:1},
+  // Inquisition
+  {id:'iq01',name:'Grand Inquisitor',faction:'inquisition',types:['hero','commander'],keywords:['Resilient','Formation','Command 1'],hth:4,atk:5,dfs:4,sp:5,cost:6},
+  {id:'iq02',name:'Servant of Justice',faction:'inquisition',types:['hero'],keywords:['Aggressive','Duelist'],hth:2,atk:5,dfs:3,sp:2,cost:3},
+  {id:'iq03',name:'Cardinal',faction:'inquisition',types:['hero'],keywords:['Command 1','Rally'],hth:2,atk:3,dfs:2,sp:2,cost:2},
+  {id:'iq04',name:'Inquisitor',faction:'inquisition',types:['hero'],keywords:['Resilient'],hth:2,atk:4,dfs:4,sp:2,cost:3},
+  {id:'iq05',name:'Officer of the Church',faction:'inquisition',types:['hero'],keywords:['Resilient'],hth:2,atk:3,dfs:2,sp:2,cost:2},
+  // Wanderers
+  {id:'wa01',name:'Drury',faction:'wanderers',types:['hero','wizard','commander'],keywords:['Magic 3','Charge 1'],hth:5,atk:5,dfs:5,sp:6,cost:7},
+  {id:'wa02',name:'Blind Woodsman',faction:'wanderers',types:['hero','wizard','commander'],keywords:['Terror','Reposition','Charge 1'],hth:0,atk:0,dfs:0,sp:6,cost:7},
+  // Wizards
+  {id:'rw01',name:'Grand Wizard',faction:'wizards',types:['hero','wizard','commander'],keywords:['Magic 3','Terror'],hth:4,atk:6,dfs:4,sp:6,cost:6},
+  {id:'rw02',name:'Wizard Neophyte',faction:'wizards',types:['hero','wizard'],keywords:['Magic 1','Reckless'],hth:2,atk:4,dfs:2,sp:3,cost:2},
+  {id:'rw03',name:'Master Sorcerer',faction:'wizards',types:['hero','wizard','commander'],keywords:['Magic 2','Mage Council'],hth:3,atk:4,dfs:3,sp:4,cost:3},
+  {id:'rw04',name:'Ancient Librarian',faction:'wizards',types:['hero','wizard'],keywords:['Magic 1'],hth:2,atk:2,dfs:2,sp:4,cost:2},
+  {id:'rw05',name:'Battle Mage',faction:'wizards',types:['hero','wizard'],keywords:['Magic 2','Durable','Mage Council','Gatebuster 6'],hth:3,atk:5,dfs:3,sp:4,cost:3},
+  {id:'rw06',name:'Wizard of Fate',faction:'wizards',types:['hero','wizard'],keywords:['Magic 2','Mage Council'],hth:2,atk:3,dfs:3,sp:4,cost:3},
+  {id:'rw07',name:'Enchanted Armor',faction:'wizards',types:['soldier'],keywords:['Formations','Bodyguard'],hth:1,atk:2,dfs:4,sp:0,cost:1},
+  {id:'rw08',name:'Talking Tiger',faction:'wizards',types:['soldier','creature'],keywords:['Reposition','Hunter'],hth:2,atk:5,dfs:3,sp:1,cost:3},
+  {id:'rw09',name:'Talking Elephant',faction:'wizards',types:['soldier','monster'],keywords:['Anti-Formation','Durable','Gatebuster 4'],hth:4,atk:6,dfs:3,sp:2,cost:6},
+  {id:'rw10',name:'Rock Giant',faction:'wizards',types:['soldier','monster'],keywords:['Impenetrable','Routing','Gatebuster 6'],hth:5,atk:7,dfs:3,sp:3,cost:8},
+  {id:'rw11',name:'Chimpanzee',faction:'wizards',types:['soldier','creature'],keywords:['Ranged 3','Slippery'],hth:1,atk:4,dfs:2,sp:1,cost:1},
+  {id:'rw14',name:"Sorcerer's Apprentice",faction:'wizards',types:['soldier','wizard'],keywords:['Magic 1'],hth:1,atk:2,dfs:2,sp:2,cost:1},
+  {id:'rw15',name:'Wizard (Soldier)',faction:'wizards',types:['soldier','wizard'],keywords:['Magic 1'],hth:2,atk:4,dfs:2,sp:3,cost:2},
+  // Myrkeval
+  {id:'mv01',name:'Spirit of the Horde',faction:'myrkeval',types:['hero','wizard','commander'],keywords:['Magic 3','Command 2','Terror','Routing','Transcendent'],hth:5,atk:0,dfs:3,sp:6,cost:10},
+  {id:'mv02',name:'Horde Master',faction:'myrkeval',types:['hero','commander'],keywords:['Slippery','Command 2'],hth:3,atk:5,dfs:3,sp:2,cost:3},
+  {id:'mv03',name:'Cowardly Goblin',faction:'myrkeval',types:['hero'],keywords:['Slippery'],hth:1,atk:2,dfs:1,sp:3,cost:1},
+  {id:'mv04',name:'Orc Shaman',faction:'myrkeval',types:['hero','wizard'],keywords:['Magic 1','Slippery'],hth:2,atk:3,dfs:2,sp:3,cost:2},
+  {id:'mv05',name:'Big Orc',faction:'myrkeval',types:['hero'],keywords:['Aggressive','Reckless'],hth:3,atk:5,dfs:2,sp:2,cost:3},
+  {id:'mv06',name:'Horn Blower',faction:'myrkeval',types:['hero'],keywords:['Command 1'],hth:2,atk:3,dfs:2,sp:2,cost:2},
+  {id:'mv07',name:'Broodcaller',faction:'myrkeval',types:['hero'],keywords:['Command 1'],hth:3,atk:3,dfs:2,sp:2,cost:3},
+  {id:'mv08',name:'Myrkorcs',faction:'myrkeval',types:['soldier'],keywords:['Numerous'],hth:1,atk:1,dfs:2,sp:1,cost:1},
+  {id:'mv09',name:'Hobgoblins',faction:'myrkeval',types:['soldier'],keywords:['Slippery'],hth:1,atk:2,dfs:1,sp:1,cost:1},
+  {id:'mv10',name:'Myrkorc Slinkers',faction:'myrkeval',types:['soldier'],keywords:['Ranged 3','Slippery','Numerous'],hth:1,atk:1,dfs:1,sp:1,cost:1},
+  {id:'mv11',name:'Myrkorc Rockshields',faction:'myrkeval',types:['soldier'],keywords:['Formations','Bodyguard','Resilient'],hth:2,atk:3,dfs:2,sp:1,cost:2},
+  {id:'mv12',name:'Swamp Troll',faction:'myrkeval',types:['soldier','monster'],keywords:['Durable','Hunter'],hth:3,atk:5,dfs:3,sp:1,cost:3},
+  {id:'mv13',name:'Eastern Deep Dweller',faction:'myrkeval',types:['soldier','monster'],keywords:['Durable','Slippery','Resilient','Gatebuster 6'],hth:4,atk:4,dfs:3,sp:1,cost:4},
+  {id:'mv14',name:'Wild Hogriders',faction:'myrkeval',types:['soldier'],keywords:['Anti-Formations','Reposition','Reckless'],hth:3,atk:4,dfs:2,sp:2,cost:3},
+  {id:'mv15',name:'Bloodwolves',faction:'myrkeval',types:['soldier','creature'],keywords:['Reposition','Aggressive','Numerous'],hth:1,atk:2,dfs:2,sp:0,cost:1},
+  {id:'mv16',name:'Fetid Hexcaller',faction:'myrkeval',types:['soldier','wizard'],keywords:['Magic 1','Slippery','Momentum 1'],hth:1,atk:2,dfs:2,sp:2,cost:2},
+  {id:'mv17',name:'One Big Clump of Orcs',faction:'myrkeval',types:['soldier'],keywords:['Numerous'],hth:2,atk:2,dfs:2,sp:0,cost:2},
+];
+
+// ══════════════════════════════════════════════════════
+//  GAME STATE
+// ══════════════════════════════════════════════════════
+let gs = {
+  round: 1,
+  phase: 'setup', // setup | battle | cleanup
+  battleLoop: 1,
+  step: 0,
+  initiative: 1,
+  th: { 1: 40, 2: 40 },
+  resources: { 1: 3, 2: 3 },
+  hand: { 1: 7, 2: 7 },
+  bfControl: { primary: 'none', secondary: 'none', tertiary: 'none' },
+  units: [], // { uid, cardId, player, zone, bf, hp, maxHp, atk, dfs, sp, keywords, conditions, name }
+  nextUid: 1,
+  selectedUnit: null,
+  modalContext: { player: 1, zone: 'command', bf: null },
+  combatResult: null,
+};
+
+const PHASES = {
+  setup: {
+    label: 'Setup Phase',
+    steps: [
+      'Draw Step — Draw 1 card',
+      'Purge Step — Optionally purge a Location',
+      'Start of Setup Phase abilities',
+      'Seize Territory Step',
+      'Reveal Location Cards',
+      'Play Cards Step',
+      'Determine Battlefield Initiative',
+      'Commit Units Step',
+      'End of Setup Phase abilities',
+    ]
+  },
+  battle: {
+    label: 'Battle Sequence',
+    steps: [
+      'Start of Battle Sequence abilities',
+      'Before Pairing abilities (Command X)',
+      'Battle Loop: Start of loop abilities',
+      'Battle Loop: Pair Units Step',
+      'Battle Loop: Determine Attack/Defend',
+      'Battle Loop: Resolve Attack Step',
+      'Battle Loop: Retreat Step',
+      'Battle Loop: Check for remaining Pairings',
+      'Battle Loop: End of loop abilities',
+      'Resolve Battle — Control Locations',
+      'Remove all Units to Command Areas',
+      'Deal Tactical Damage',
+      'Determine Initiative (swap)',
+      'End of Battle Sequence abilities',
+    ]
+  },
+  cleanup: {
+    label: 'Cleanup Phase',
+    steps: [
+      'Heal all Units in Rest Locations',
+      'Place Command Area Units into Rest Locations',
+      'Discard all cards in Command Area',
+      'Unexhaust all cards',
+      'Discard down to hand size max (7)',
+      'End of Cleanup Phase abilities',
+    ]
+  }
+};
+
+// ══════════════════════════════════════════════════════
+//  INIT & RENDER
+// ══════════════════════════════════════════════════════
+function init() {
+  renderHeader();
+  renderPhaseSteps();
+  renderAllZones();
+  renderUnitActions();
+  renderLocationControls();
+  log('system', '⚔ New game started — Round 1, Setup Phase.');
+  log('info', 'Player 1 has Initiative.');
+}
+
+function renderHeader() {
+  document.getElementById('round-num').textContent = gs.round;
+  const badge = document.getElementById('phase-badge');
+  const phaseData = PHASES[gs.phase];
+  badge.textContent = phaseData.label;
+  badge.className = 'phase-badge phase-' + gs.phase;
+
+  const loopDisplay = document.getElementById('loop-display');
+  if (gs.phase === 'battle') {
+    loopDisplay.style.display = '';
+    document.getElementById('loop-num').textContent = gs.battleLoop;
+  } else {
+    loopDisplay.style.display = 'none';
+  }
+
+  // TH bars
+  const maxTH = 40;
+  document.getElementById('th-p1').textContent = gs.th[1];
+  document.getElementById('th-p2').textContent = gs.th[2];
+  document.getElementById('th-bar-p1').style.width = Math.max(0, gs.th[1]/maxTH*100) + '%';
+  document.getElementById('th-bar-p2').style.width = Math.max(0, gs.th[2]/maxTH*100) + '%';
+
+  // Resources & Hand
+  document.getElementById('res-p1').textContent = gs.resources[1];
+  document.getElementById('res-p2').textContent = gs.resources[2];
+  document.getElementById('handsize-p1').textContent = gs.hand[1];
+  document.getElementById('handsize-p2').textContent = gs.hand[2];
+
+  // Initiative
+  document.getElementById('p1-initiative').style.display = gs.initiative === 1 ? '' : 'none';
+  document.getElementById('p2-initiative').style.display = gs.initiative === 2 ? '' : 'none';
+
+  // Init buttons
+  document.getElementById('init-p1-btn').style.background = gs.initiative===1?'var(--amber)':'';
+  document.getElementById('init-p1-btn').style.borderColor = gs.initiative===1?'var(--gold)':'';
+  document.getElementById('init-p1-btn').style.color = gs.initiative===1?'var(--gold2)':'';
+  document.getElementById('init-p2-btn').style.background = gs.initiative===2?'var(--blue)':'';
+  document.getElementById('init-p2-btn').style.borderColor = gs.initiative===2?'var(--blue2)':'';
+  document.getElementById('init-p2-btn').style.color = gs.initiative===2?'var(--blue3)':'';
+  if(gs.initiative===2){
+    document.getElementById('init-p2-btn').classList.remove('btn-secondary');
+  } else {
+    document.getElementById('init-p2-btn').className='btn btn-secondary btn-sm';
+    document.getElementById('init-p2-btn').setAttribute('style','flex:1;');
+  }
+}
+
+function renderPhaseSteps() {
+  const steps = PHASES[gs.phase].steps;
+  document.getElementById('phase-steps-label').textContent = PHASES[gs.phase].label + ' Steps';
+  const container = document.getElementById('phase-steps');
+  container.innerHTML = steps.map((s, i) => `
+    <div class="step-item ${i === gs.step ? 'active' : i < gs.step ? 'done' : ''}">
+      <div class="step-dot"></div>
+      <span>${s}</span>
+    </div>
+  `).join('');
+}
+
+function renderAllZones() {
+  const zones = [
+    ['p1','command'],['p1','permanent'],
+    ['p2','command'],['p2','permanent'],
+  ];
+  zones.forEach(([p,z]) => renderZone(p, z));
+  renderBattlefields();
+  recalcResources();
+  // Refresh battlefield zoom if open
+  if (typeof zoomBf !== 'undefined' && zoomBf && document.getElementById('bf-zoom-modal')?.classList.contains('open')) {
+    renderBFZoom();
+  }
+}
+
+// ── AUTO-TALLY RESOURCES from unexhausted location cards in Permanent Area only ──
+function recalcResources() {
+  [1,2].forEach(p => {
+    const total = gs.units
+      .filter(u =>
+        u.isLocation &&
+        u.player === p &&
+        u.zone === 'permanent' &&   // only Permanent Area — not battlefield
+        !(u.conditions||[]).includes('exhausted')
+      )
+      .reduce((sum, loc) => sum + (loc.resource || 0), 0);
+    gs.resources[p] = total;
+  });
+  const r1 = document.getElementById('res-p1');
+  const r2 = document.getElementById('res-p2');
+  if (r1) r1.textContent = gs.resources[1];
+  if (r2) r2.textContent = gs.resources[2];
+}
+
+function renderZone(player, zone) {
+  const pNum = player === 'p1' ? 1 : 2;
+  const id = `zone-${player}-${zone}`;
+  const el = document.getElementById(id);
+  if (!el) return;
+  const units = gs.units.filter(u => u.player === pNum && u.zone === zone && !u.bf);
+  el.innerHTML = units.map(u => unitCardHTML(u)).join('');
+}
+
+function renderBattlefields() {
+  ['primary','secondary','tertiary'].forEach(bf => {
+    [1,2].forEach(p => {
+      const id = `bf-p${p}-${bf}`;
+      const el = document.getElementById(id);
+      if (!el) return;
+      const units = gs.units.filter(u => u.player === p && u.zone === 'battlefield' && u.bf === bf);
+      el.innerHTML = units.map(u => unitCardHTML(u)).join('');
+    });
+    // control badge
+    const ctrl = gs.bfControl[bf];
+    const el = document.getElementById(`ctrl-${bf}`);
+    if (el) {
+      el.className = 'bf-control ' + (ctrl==='none'?'none':ctrl==='p1'?'p1':ctrl==='p2'?'p2':'contested');
+      el.textContent = ctrl==='none'?'Neutral':ctrl==='p1'?'P1 Controls':ctrl==='p2'?'P2 Controls':'Contested';
+    }
+  });
+}
+
+function unitCardHTML(u) {
+  if (u.isLocation) {
+    const base = locationCardHTML(u);
+    const resting = u.restingUnits || [];
+    if (!resting.length) return base;
+    const strips = resting.map((name, i) => `<div style="
+      height:18px;display:flex;align-items:center;padding:0 5px;
+      background:linear-gradient(to right,#001a0a,#002a12);
+      border:1px solid var(--teal2);border-top:none;border-radius:0 0 3px 3px;
+      font-family:'Cinzel',serif;font-size:8px;color:#7ad4b4;
+      cursor:default;gap:3px;flex-shrink:0;
+      " title="Resting: ${name}">
+      💤 <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${name}</span>
+      <button onclick="event.stopPropagation();removeRestingUnit(${u.uid},${i})" style="background:none;border:none;color:var(--text3);cursor:pointer;font-size:10px;padding:0;line-height:1;" title="Remove">✕</button>
+    </div>`).join('');
+    return `<div style="display:inline-flex;flex-direction:column;flex-shrink:0;vertical-align:top;">${base}${strips}</div>`;
+  }
+  const isSelected = gs.selectedUnit === u.uid;
+  const pClass = u.player === 1 ? 'p1' : 'p2';
+  const isDamaged = u.hp < u.maxHp;
+  const isDead = u.hp <= 0;
+
+  let hpPips = '';
+  for (let i = 0; i < u.maxHp; i++) {
+    if (i < u.hp) hpPips += '<div class="hp-pip"></div>';
+    else hpPips += '<div class="hp-pip lost"></div>';
+  }
+
+  const conditions = (u.conditions||[]);
+  let badges = '';
+  if (conditions.includes('aggressive')) badges += '<span class="unit-badge ub-red">Aggr</span>';
+  if (conditions.includes('resilient')) badges += '<span class="unit-badge ub-blue">Res</span>';
+  if (conditions.includes('exhausted')) badges += '<span class="unit-badge ub-gray">Exh</span>';
+  if (conditions.includes('invincible')) badges += '<span class="unit-badge ub-gold">Invc</span>';
+  if (conditions.includes('paired')) badges += '<span class="unit-badge ub-red">Paired</span>';
+  if ((u.keywords||[]).includes('Formations')) badges += '<span class="unit-badge ub-gray">Form</span>';
+  if ((u.keywords||[]).includes('Durable')) badges += '<span class="unit-badge ub-blue">Dur</span>';
+  if ((u.keywords||[]).includes('Terror')) badges += '<span class="unit-badge ub-red">Terr</span>';
+
+  const baseATK = u.baseAtk || u.atk;
+  const atkMod = u.atk !== baseATK;
+  const faceDown = u.faceDown || false;
+  const attachCount = (u.attachments||[]).length;
+
+  if (faceDown) {
+    return `<div class="unit-card ${pClass} ${isSelected?'selected':''} face-down-card"
+      id="uc-${u.uid}"
+      draggable="true"
+      onclick="selectUnit(${u.uid})"
+      ondragstart="dragUid=${u.uid};handDragData=null;event.dataTransfer.setData('text/plain','unit');event.dataTransfer.effectAllowed='move';this.classList.add('dragging')"
+      ondragend="this.classList.remove('dragging')"
+      onmouseenter="showUnitTooltip(event,${u.uid})"
+      onmouseleave="hideTooltip()"
+      title="Face Down — P${u.player}">
+      <div style="font-size:8px;color:var(--text3);font-family:'Cinzel',serif;letter-spacing:1px;text-align:center;padding:4px;">FACE<br>DOWN</div>
+    </div>`;
+  }
+
+  const cardHTML = `<div class="unit-card ${pClass} ${isSelected?'selected':''} ${conditions.includes('exhausted')?'exhausted':''} ${isDamaged?'damaged':''}"
+    id="uc-${u.uid}"
+    draggable="true"
+    onclick="selectUnit(${u.uid})"
+    ondragstart="dragUid=${u.uid};handDragData=null;event.dataTransfer.setData('text/plain','unit');event.dataTransfer.effectAllowed='move';this.classList.add('dragging')"
+    ondragend="this.classList.remove('dragging')"
+    onmouseenter="showUnitTooltip(event,${u.uid})"
+    onmouseleave="hideTooltip()"
+    title="${u.name} — P${u.player}"
+    style="${isDead?'opacity:0.3;filter:grayscale(1);':''}"
+  >
+    <div class="unit-name">${u.name}</div>
+    <div class="unit-stats-row">
+      <span class="ustat">A:<span>${u.atk}${atkMod?'*':''}</span></span>
+      <span class="ustat" style="margin-left:2px;">D:<span>${u.dfs}</span></span>
+      <span class="ustat" style="margin-left:2px;">S:<span>${u.sp}</span></span>
+    </div>
+    <div class="health-pips">${hpPips}</div>
+    ${badges ? `<div class="unit-badges">${badges}</div>` : ''}
+    ${typeof getPairBadge === 'function' ? getPairBadge(u.uid) : ''}
+  </div>`;
+  // Wrap with attachment strips
+  const attachments = u.attachments || [];
+  if (!attachments.length) return cardHTML;
+  const strips = attachments.map((a, i) => `<div style="
+    height:18px;display:flex;align-items:center;padding:0 5px;
+    background:linear-gradient(to right,#1a1200,#2a1a00);
+    border:1px solid var(--amber2);border-top:none;border-radius:0 0 3px 3px;
+    font-family:'Cinzel',serif;font-size:8px;color:var(--gold2);
+    cursor:pointer;gap:3px;flex-shrink:0;
+    " onclick="event.stopPropagation();selectUnit(${u.uid})" title="Attachment: ${a.name}">
+    📎 <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${a.name}</span>
+    <button onclick="event.stopPropagation();detachCardByIdx(${u.uid},${i})" style="background:none;border:none;color:var(--text3);cursor:pointer;font-size:10px;padding:0;line-height:1;" title="Detach">✕</button>
+  </div>`).join('');
+  return `<div style="display:inline-flex;flex-direction:column;flex-shrink:0;vertical-align:top;">${cardHTML}${strips}</div>`;
+}
+
+function selectUnit(uid) {
+  gs.selectedUnit = gs.selectedUnit === uid ? null : uid;
+  renderAllZones();
+  renderUnitActions();
+}
+
+// Base unit actions panel content — called by the full renderUnitActions below
+function _baseRenderUnitActions() {
+  const body = document.getElementById('ua-body');
+  if (!gs.selectedUnit) { return; }
+  const u = gs.units.find(u => u.uid === gs.selectedUnit);
+  if (!u) { if(body) body.innerHTML = '<div class="ua-empty">Unit not found.</div>'; return; }
+
+  const hpPct = u.maxHp > 0 ? u.hp / u.maxHp : 1;
+  const hpClass = hpPct > 0.5 ? '' : hpPct > 0.25 ? 'low' : 'critical';
+  const pLabel = u.player === 1 ? '<span style="color:var(--gold2);">P1</span>' : '<span style="color:var(--blue3);">P2</span>';
+  const conditions = u.conditions || [];
+  const faceDown = u.faceDown || false;
+  const exhausted = conditions.includes('exhausted');
+  const attachments = (u.attachments || []);
+  const attachHtml = attachments.length
+    ? attachments.map((a, i) => `
+        <div style="display:flex;align-items:center;gap:4px;padding:3px 6px;background:var(--bg4);border:1px solid var(--amber2);border-radius:2px;margin-bottom:3px;">
+          <span style="font-size:11px;color:#d4a44a;flex:1;">${a.name}</span>
+          <span style="font-size:9px;color:var(--text3);">Cost ${a.cost||0}</span>
+          <button class="mini-btn red" onclick="removeAttachment(${u.uid},${i})">✕</button>
+        </div>`).join('')
+    : '<div style="font-size:11px;color:var(--text3);font-style:italic;">None</div>';
+  const attachTargets = gs.units.filter(t =>
+    t.uid !== u.uid && t.player === u.player && t.zone === u.zone && t.bf === u.bf
+    && !t.isLocation && (t.types||[]).some(tp => ['hero','soldier','special'].includes(tp))
+  );
+
+  body.innerHTML = `
+    <div class="ua-unit-name">${u.name} ${pLabel}</div>
+    <div style="font-size:11px;color:var(--text3);margin-bottom:4px;font-family:'Cinzel',serif;letter-spacing:0.5px;">${(u.types||[]).join(', ')||''} · ${u.faction||''}</div>
+    <div style="display:flex;gap:4px;margin-bottom:8px;flex-wrap:wrap;">
+      <button class="btn btn-sm ${faceDown?'btn-primary':'btn-secondary'}" onclick="toggleFaceDown()" style="font-size:9px;padding:3px 7px;">${faceDown?'🂠 Face Down':'🂡 Face Up'}</button>
+      <button class="btn btn-sm ${exhausted?'btn-primary':'btn-secondary'}" onclick="toggleCondition('exhausted')" style="font-size:9px;padding:3px 7px;">${exhausted?'⟳ Exhausted':'⟳ Exhaust'}</button>
+    </div>
+    <div class="ua-stats-grid">
+      <div class="ua-stat"><span class="ua-stat-label">HTH</span><span class="ua-stat-val">${u.maxHp}</span></div>
+      <div class="ua-stat"><span class="ua-stat-label">ATK</span><span class="ua-stat-val ${u.atk!==(u.baseAtk||u.atk)?'modified':''}">${u.atk}</span></div>
+      <div class="ua-stat"><span class="ua-stat-label">DFS</span><span class="ua-stat-val ${u.dfs!==(u.baseDfs||u.dfs)?'modified':''}">${u.dfs}</span></div>
+      <div class="ua-stat"><span class="ua-stat-label">SP</span><span class="ua-stat-val">${u.sp}</span></div>
+    </div>
+    <div class="ua-hp-row">
+      <div class="ua-hp-label">HP:</div>
+      <div class="ua-hp-val ${hpClass}">${u.hp}</div>
+      <div class="ua-hp-max">/ ${u.maxHp}</div>
+    </div>
+    <div class="ua-section"><h5>Damage / Heal</h5>
+      <div class="damage-input-row">
+        <input type="number" id="dmg-input" min="1" max="20" value="1" style="width:55px;">
+        <button class="btn btn-danger btn-sm" onclick="applyDamage(-1)">Damage</button>
+        <button class="btn btn-secondary btn-sm" onclick="applyDamage(1)" style="border-color:var(--green2);color:var(--green3);">Heal</button>
+      </div>
+    </div>
+    <div class="ua-section"><h5>Stats</h5>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:5px;">
+        ${['atk','dfs','sp','maxHp'].map(stat=>`
+        <div>
+          <div style="font-size:9px;color:var(--text3);margin-bottom:2px;">${stat.toUpperCase()}</div>
+          <div style="display:flex;gap:2px;align-items:center;">
+            <button class="mini-btn" onclick="modStat('${stat}',1)">+</button>
+            <span style="font-size:12px;font-family:'Cinzel',serif;color:var(--gold2);min-width:18px;text-align:center;">${u[stat]}</span>
+            <button class="mini-btn red" onclick="modStat('${stat}',-1)">−</button>
+          </div>
+        </div>`).join('')}
+      </div>
+    </div>
+    <div class="ua-section"><h5>Conditions</h5>
+      <div style="display:flex;flex-wrap:wrap;gap:3px;">
+        ${['aggressive','resilient','invincible','paired','durable','terror','hunter','formations'].map(c=>`
+          <button class="btn btn-sm ${conditions.includes(c)?'btn-primary':'btn-secondary'}" onclick="toggleCondition('${c}')" style="font-size:8px;padding:2px 5px;">${c}</button>`).join('')}
+      </div>
+    </div>
+    <div class="ua-section"><h5>Attachments (${attachments.length})</h5>
+      ${attachHtml}
+      ${attachTargets.length?`<div style="margin-top:5px;"><div style="font-size:9px;color:var(--text3);margin-bottom:3px;">Attach to:</div><div style="display:flex;gap:3px;flex-wrap:wrap;">${attachTargets.map(t=>`<button class="btn btn-secondary btn-sm" onclick="attachToUnit(${u.uid},${t.uid})" style="font-size:8px;">${t.name.slice(0,14)}</button>`).join('')}</div></div>`:''}
+      ${u.attachedTo?`<div style="margin-top:3px;font-size:10px;color:var(--text3);">Attached to: <strong style="color:var(--gold2);">${gs.units.find(t=>t.uid===u.attachedTo)?.name||'—'}</strong> <button class="mini-btn red" onclick="detachCard(${u.uid})" style="margin-left:3px;">✕</button></div>`:''}
+    </div>
+    <div class="ua-section"><h5>Move</h5>
+      <select id="move-zone-select" style="width:100%;background:var(--bg3);border:1px solid var(--border2);color:var(--text);padding:5px;font-size:11px;border-radius:var(--r);outline:none;margin-bottom:5px;">
+        <option value="command">Command Area</option>
+        <option value="permanent">Permanent Area</option>
+        <option value="battlefield-primary">Battlefield: Primary</option>
+        <option value="battlefield-secondary">Battlefield: Secondary</option>
+        <option value="battlefield-tertiary">Battlefield: Tertiary</option>
+      </select>
+      <button class="btn btn-secondary btn-sm" onclick="moveUnit()" style="width:100%;">Move</button>
+    </div>
+    <div class="divider"></div>
+    <div style="display:flex;gap:4px;margin-top:5px;flex-wrap:wrap;">
+      <button class="btn btn-secondary btn-sm" onclick="resetUnitStats()" style="flex:1;">Reset</button>
+      <button class="btn btn-secondary btn-sm" onclick="sendToGY()" style="flex:1;border-color:var(--red2);color:#d08080;">☠ GY</button>
+      <button class="btn btn-danger btn-sm" onclick="removeUnit()" style="flex:1;">Remove</button>
+    </div>
+    <div class="ua-section"><h5>Transfer Control</h5>
+      <button class="btn btn-secondary btn-sm" onclick="transferControl(${u.uid})" style="width:100%;border-color:#9060a0;color:#c090d0;">
+        ↔ Give to P${u.player===1?2:1} (capture / infiltrate)
+      </button>
+    </div>
+  `;
+
+  // ── Magic / Spell Points (Wizard units with Magic X) ──
+  const isWizard = (u.types||[]).some(t => t.toLowerCase()==='wizard');
+  const magicKw = (u.keywords||[]).find(k => k.toLowerCase().startsWith('magic'));
+  if (isWizard && magicKw) {
+    const magicX = parseInt(magicKw.split(' ')[1]) || 1;
+    // Initialize spell points if not set
+    if (u.spellPoints === undefined) u.spellPoints = u.sp;
+    if (!u.spellsCast) u.spellsCast = [];
+
+    const spPips = Array.from({length: magicX}, (_, i) => {
+      const cast = u.spellsCast.includes(i);
+      return `<label style="display:flex;align-items:center;gap:4px;cursor:pointer;font-size:10px;color:${cast?'var(--text3)':'var(--text2)'};">
+        <input type="checkbox" ${cast?'checked':''} onchange="toggleSpellCast(${u.uid},${i})" style="accent-color:var(--purple2);width:13px;height:13px;">
+        Spell ${i+1}
+      </label>`;
+    }).join('');
+
+    body.innerHTML += `
+      <div class="ua-section" style="border-top:2px solid var(--purple2);margin-top:6px;padding-top:10px;">
+        <h5 style="color:#c090d0;">✨ Magic (Magic ${magicX})</h5>
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
+          <div style="font-size:10px;color:var(--text3);">Spell Points:</div>
+          <button class="mini-btn" onclick="modSpellPoints(${u.uid},-1)">−</button>
+          <div style="font-size:18px;font-family:'Cinzel',serif;font-weight:700;color:#c090d0;min-width:28px;text-align:center;">${u.spellPoints}</div>
+          <button class="mini-btn" onclick="modSpellPoints(${u.uid},1)">+</button>
+          <div style="font-size:10px;color:var(--text3);">(base: SP ${u.sp})</div>
+        </div>
+        <div style="font-size:9px;color:var(--text3);font-family:'Cinzel',serif;letter-spacing:1px;margin-bottom:5px;">SPELLS CAST THIS TURN (${u.spellsCast.length}/${magicX}):</div>
+        <div style="display:flex;flex-direction:column;gap:4px;">${spPips}</div>
+        <button class="btn btn-secondary btn-sm" onclick="resetSpellsCast(${u.uid})" style="margin-top:6px;width:100%;border-color:var(--purple2);color:#c090d0;font-size:9px;">↺ Reset Spells Cast</button>
+      </div>`;
+  }
+}
+
+// ══════════════════════════════════════════════════════
+//  PHASE & STEP MANAGEMENT
+// ══════════════════════════════════════════════════════
+function nextStep() {
+  const steps = PHASES[gs.phase].steps;
+  gs.step++;
+  if (gs.step >= steps.length) {
+    gs.step = steps.length - 1;
+  }
+  renderPhaseSteps();
+  log('info', `Step: ${steps[gs.step]}`);
+
+  // Auto-effects for specific steps
+  if (gs.phase === 'battle' && gs.step === 11) {
+    // Deal Tactical Damage step
+    log('phase', '▶ Tactical Damage step reached — use "Deal Tactical Damage" button.');
+  }
+  if (gs.phase === 'cleanup' && gs.step === 3) {
+    // Unexhaust step
+    unexhaustAll();
+  }
+}
+
+function advancePhase() {
+  if (gs.phase === 'setup') {
+    gs.phase = 'battle';
+    gs.step = 0;
+    gs.battleLoop = 1;
+    log('phase', `━━━ BATTLE SEQUENCE — Round ${gs.round} ━━━`);
+  } else if (gs.phase === 'battle') {
+    gs.phase = 'cleanup';
+    gs.step = 0;
+    log('phase', `━━━ CLEANUP PHASE — Round ${gs.round} ━━━`);
+  } else {
+    gs.round++;
+    gs.phase = 'setup';
+    gs.step = 0;
+    gs.battleLoop = 1;
+    // Swap initiative
+    gs.initiative = gs.initiative === 1 ? 2 : 1;
+    log('phase', `━━━ ROUND ${gs.round} — SETUP PHASE ━━━`);
+    log('info', `Player ${gs.initiative} is now the Initiative Player.`);
+  }
+  renderHeader();
+  renderPhaseSteps();
+}
+
+// ══════════════════════════════════════════════════════
+//  UNIT MANAGEMENT
+// ══════════════════════════════════════════════════════
+function addUnit(card, player, zone, bf) {
+  const uid = gs.nextUid++;
+  const unit = {
+    uid,
+    cardId: card.id,
+    name: card.name,
+    faction: card.faction,
+    types: [...(card.types||[])],
+    player,
+    zone,
+    bf: bf || null,
+    hp: card.hth || 0,
+    maxHp: card.hth || 0,
+    atk: card.atk || 0,
+    baseAtk: card.atk || 0,
+    dfs: card.dfs || 0,
+    baseDfs: card.dfs || 0,
+    sp: card.sp || 0,
+    cost: card.cost || 0,
+    keywords: [...(card.keywords||[])],
+    conditions: [],
+    // preserve location-specific fields
+    isLocation: card.isLocation || false,
+    resource: card.resource || 0,
+    rest: card.rest || 0,
+    locHp: card.locHp || 0,
+    maxLocHp: card.maxLocHp || 0,
+    special: card.special || '',
+    restingUnits: card.restingUnits ? [...card.restingUnits] : [],
+    // preserve card text for display
+    active: card.active || '',
+    passive: card.passive || '',
+  };
+  gs.units.push(unit);
+  log('info', `${card.name} added to P${player} ${zone}${bf ? ' ('+bf+')' : ''}.`);
+  renderAllZones();
+  return unit;
+}
+
+function removeUnit() {
+  if (!gs.selectedUnit) return;
+  const u = gs.units.find(u => u.uid === gs.selectedUnit);
+  if (!u) return;
+  gs.units = gs.units.filter(u => u.uid !== gs.selectedUnit);
+  log('system', `${u.name} removed from play.`);
+  gs.selectedUnit = null;
+  renderAllZones();
+  renderUnitActions();
+}
+
+function applyDamage(sign) {
+  const u = gs.units.find(u => u.uid === gs.selectedUnit);
+  if (!u) return;
+  const amt = parseInt(document.getElementById('dmg-input')?.value || 1);
+  const actual = sign * amt;
+
+  if (sign === -1) {
+    // Damage
+    let dmg = amt;
+    if (u.conditions.includes('durable') || u.keywords.includes('Durable')) dmg = Math.max(1, dmg - 1);
+    if (u.conditions.includes('invincible') || u.keywords.includes('Invincible')) { u.hp = 1; renderUnitActions(); renderAllZones(); return; }
+    u.hp = Math.max(0, u.hp - dmg);
+    log('damage', `${u.name} takes ${dmg} damage (${u.hp}/${u.maxHp} HP)${u.hp===0?' — DESTROYED!':''}`);
+    if (u.hp === 0) log('damage', `💀 ${u.name} is destroyed and placed in the graveyard.`);
+  } else {
+    // Heal
+    u.hp = Math.min(u.maxHp, u.hp + amt);
+    log('heal', `${u.name} heals ${amt} (${u.hp}/${u.maxHp} HP).`);
+  }
+  renderUnitActions();
+  renderAllZones();
+}
+
+function modStat(stat, delta) {
+  const u = gs.units.find(u => u.uid === gs.selectedUnit);
+  if (!u) return;
+  u[stat] = Math.max(0, (u[stat]||0) + delta);
+  if (stat === 'maxHp' && u.hp > u.maxHp) u.hp = u.maxHp;
+  renderUnitActions();
+  renderAllZones();
+}
+
+function toggleCondition(c) {
+  const u = gs.units.find(u => u.uid === gs.selectedUnit);
+  if (!u) return;
+  u.conditions = u.conditions || [];
+  if (u.conditions.includes(c)) u.conditions = u.conditions.filter(x => x !== c);
+  else u.conditions.push(c);
+  renderUnitActions();
+  renderAllZones();
+}
+
+function resetUnitStats() {
+  const u = gs.units.find(u => u.uid === gs.selectedUnit);
+  if (!u) return;
+  const card = CARD_DB.find(c => c.id === u.cardId);
+  if (card) {
+    u.atk = card.atk || 0;
+    u.baseAtk = card.atk || 0;
+    u.dfs = card.dfs || 0;
+    u.baseDfs = card.dfs || 0;
+    u.sp = card.sp || 0;
+    u.hp = u.maxHp;
+    u.conditions = [];
+  }
+  log('info', `${u.name}'s stats reset to base values.`);
+  renderUnitActions();
+  renderAllZones();
+}
+
+function moveUnit() {
+  const u = gs.units.find(u => u.uid === gs.selectedUnit);
+  if (!u) return;
+  const val = document.getElementById('move-zone-select')?.value;
+  if (!val) return;
+  if (val.startsWith('battlefield-')) {
+    u.zone = 'battlefield';
+    u.bf = val.replace('battlefield-','');
+  } else {
+    u.zone = val;
+    u.bf = null;
+  }
+  log('info', `${u.name} moved to ${val.replace('-',' ')}.`);
+  renderAllZones();
+  renderUnitActions();
+}
+
+// ══════════════════════════════════════════════════════
+//  TACTICAL HEALTH & RESOURCES
+// ══════════════════════════════════════════════════════
+function changeTH(player, delta) {
+  gs.th[player] = Math.max(0, gs.th[player] + delta);
+  renderHeader();
+  if (gs.th[player] === 0) log('damage', `⚠ Player ${player} Tactical Health reached 0!`);
+}
+
+function changeRes(player, delta) {
+  // Manual offset — add a temporary bonus on top of location tally
+  gs.resources[player] = Math.max(0, gs.resources[player] + delta);
+  const el = document.getElementById(`res-p${player}`);
+  if (el) el.textContent = gs.resources[player];
+}
+
+function changeHand(player, delta) {
+  gs.hand[player] = Math.max(0, gs.hand[player] + delta);
+  renderHeader();
+}
+
+function dealTacticalDamage() {
+  const bfs = ['primary','secondary','tertiary'];
+  const dmgMap = { primary:5, secondary:4, tertiary:3 };
+  let total1 = 0, total2 = 0;
+  bfs.forEach(bf => {
+    const ctrl = gs.bfControl[bf];
+    if (ctrl === 'p1') {
+      total2 += dmgMap[bf];
+      log('damage', `P1 wins ${bf} (+${dmgMap[bf]} TH damage to P2).`);
+    } else if (ctrl === 'p2') {
+      total1 += dmgMap[bf];
+      log('damage', `P2 wins ${bf} (+${dmgMap[bf]} TH damage to P1).`);
+    }
+  });
+  if (total1) { gs.th[1] = Math.max(0, gs.th[1]-total1); log('damage', `P1 loses ${total1} Tactical Health → ${gs.th[1]}`); }
+  if (total2) { gs.th[2] = Math.max(0, gs.th[2]-total2); log('damage', `P2 loses ${total2} Tactical Health → ${gs.th[2]}`); }
+  if (!total1 && !total2) log('info', 'No battlefield control assigned — no Tactical Damage dealt.');
+  renderHeader();
+}
+
+function doCleanup() {
+  // Step 1: Heal ONLY units whose restingAt uid matches a real Location with Rest X > 0
+  const restingLocUids = new Set(
+    gs.units.filter(u => u.isLocation && (u.rest||0) > 0).map(u => u.uid)
+  );
+  gs.units.forEach(u => {
+    if (!u.isLocation && u.restingAt && restingLocUids.has(u.restingAt)) {
+      u.hp = u.maxHp;
+      log('heal', `${u.name} healed to full (resting at location).`);
+    }
+  });
+
+  // Step 2: Clear restingAt for units coming out of rest
+  gs.units.forEach(u => { if (!u.isLocation) u.restingAt = null; });
+
+  // Step 3: Clear restingUnits lists on all locations
+  gs.units.filter(u => u.isLocation).forEach(loc => { loc.restingUnits = []; });
+
+  // Step 4: Reset battlefield units → command
+  gs.units.filter(u => !u.isLocation && u.zone === 'battlefield').forEach(u => {
+    u.zone = 'command'; u.bf = null;
+  });
+
+  // Step 5: Move command units → permanent (unless Untiring)
+  gs.units.filter(u => !u.isLocation && u.zone === 'command' && !(u.keywords||[]).includes('Untiring')).forEach(u => {
+    u.zone = 'permanent'; u.bf = null;
+  });
+
+  // Step 6: Clear conditions
+  gs.units.filter(u => !u.isLocation).forEach(u => { u.conditions = []; });
+
+  log('phase', 'Cleanup complete: resting units healed, battlefield → command, command → permanent.');
+  renderAllZones();
+}
+
+function unexhaustAll() {
+  gs.units.forEach(u => { u.conditions = (u.conditions||[]).filter(c => c !== 'exhausted'); });
+  // Reset Wizard spell casts and restore spell points each cleanup
+  gs.units.forEach(u => {
+    if (u.spellsCast && u.spellsCast.length) u.spellsCast = [];
+    if (u.spellPoints !== undefined) u.spellPoints = u.sp;
+  });
+  log('info', 'All cards unexhausted. Wizard spell casts and Spell Points reset.');
+  renderAllZones();
+}
+
+function setInitiative(player) {
+  gs.initiative = player;
+  log('info', `Player ${player} now has Initiative.`);
+  renderHeader();
+}
+
+// ══════════════════════════════════════════════════════
+//  BATTLEFIELD CONTROL & LOCATIONS
+// ══════════════════════════════════════════════════════
+function setBFControl(bf, ctrl) {
+  gs.bfControl[bf] = ctrl;
+  renderBattlefields();
+  const label = ctrl==='none'?'Neutral':ctrl==='p1'?'Player 1':'Player 2';
+  log('info', `${bf.charAt(0).toUpperCase()+bf.slice(1)} Battlefield → ${label}.`);
+}
+
+function updateLocation(bf, val) {
+  log('info', `${bf.charAt(0).toUpperCase()+bf.slice(1)} Location set to: ${val||'(none)'}`);
+}
+
+function renderLocationControls() {
+  const el = document.getElementById('location-controls');
+  el.innerHTML = ['tertiary','secondary','primary'].map(bf => `
+    <div style="display:flex;align-items:center;gap:4px;font-size:11px;">
+      <span style="color:var(--text3);font-family:'Cinzel',serif;min-width:50px;font-size:9px;letter-spacing:0.5px;">${bf.toUpperCase()}</span>
+      <button class="mini-btn" onclick="changeTHBF('${bf}',1,'p1')" title="+TH P1">1+</button>
+      <button class="mini-btn" onclick="changeTHBF('${bf}',-1,'p1')" title="-TH P1">1−</button>
+      <button class="mini-btn" onclick="changeTHBF('${bf}',1,'p2')" title="+TH P2">2+</button>
+      <button class="mini-btn" onclick="changeTHBF('${bf}',-1,'p2')" title="-TH P2">2−</button>
+    </div>
+  `).join('');
+}
+
+function changeTHBF(bf, delta, player) {
+  const p = player==='p1'?1:2;
+  gs.th[p] = Math.max(0, gs.th[p]+delta);
+  renderHeader();
+  log(delta>0?'heal':'damage', `P${p} Tactical Health ${delta>0?'+':''}${delta} (manual) → ${gs.th[p]}`);
+}
+
+// ══════════════════════════════════════════════════════
+//  DICE
+// ══════════════════════════════════════════════════════
+function rollDice() {
+  const r = Math.floor(Math.random()*6)+1;
+  const outcomes = {
+    1:'— Miss / Worst outcome', 2:'— Poor result', 3:'— Below average',
+    4:'— Above average', 5:'— Good result', 6:'— Critical / Best outcome'
+  };
+  log('system', `🎲 d6 roll: ${r} ${outcomes[r]}`);
+}
+
+// ══════════════════════════════════════════════════════
+//  ADD UNIT MODAL
+// ══════════════════════════════════════════════════════
+function openAddUnit(player, zone, bf) {
+  gs.modalContext = { player: player||1, zone: zone||'command', bf: bf||null };
+  document.getElementById('modal-search').value = '';
+  document.getElementById('modal-faction').value = 'all';
+  document.getElementById('modal-type').value = 'all';
+  setModalPlayer(gs.modalContext.player);
+  renderModalList();
+  const zoneLabel = bf ? `→ ${bf} battlefield` : `→ ${zone}`;
+  document.getElementById('modal-zone-label').textContent = zoneLabel;
+  document.getElementById('add-unit-modal').classList.add('open');
+}
+
+function setModalPlayer(p) {
+  gs.modalContext.player = p;
+  document.getElementById('modal-p1-btn').className = 'player-radio p1-sel' + (p===1?' sel':'');
+  document.getElementById('modal-p2-btn').className = 'player-radio p2-sel' + (p===2?' sel':'');
+}
+
+function closeModal(id) { document.getElementById(id).classList.remove('open'); }
+
+function renderModalList() {
+  const search = document.getElementById('modal-search').value.toLowerCase();
+  const faction = document.getElementById('modal-faction').value;
+  const type = document.getElementById('modal-type').value;
+
+  let cards = [...CARD_DB];
+  if (search) cards = cards.filter(c => c.name.toLowerCase().includes(search));
+  if (faction !== 'all') cards = cards.filter(c => c.faction === faction);
+  if (type !== 'all') cards = cards.filter(c => c.types.includes(type));
+  cards.sort((a,b) => a.cost-b.cost || a.name.localeCompare(b.name));
+
+  const list = document.getElementById('modal-list');
+  if (!cards.length) { list.innerHTML = '<div style="padding:20px;text-align:center;color:var(--text3);font-style:italic;">No units match.</div>'; return; }
+
+  list.innerHTML = cards.map(c => {
+    const isUnit = c.types.includes('hero') || c.types.includes('soldier');
+    if (!isUnit) return '';
+    const statsStr = c.hth > 0 ? `HTH:${c.hth} ATK:${c.atk} DFS:${c.dfs} SP:${c.sp}` : '';
+    return `<div class="modal-card-item" onclick="addUnitFromModal('${c.id}')">
+      <div class="modal-card-cost">${c.cost}</div>
+      <div class="modal-card-name">${c.name}</div>
+      <div class="modal-card-faction">${c.faction}</div>
+      <div class="modal-card-stats">${statsStr}</div>
+    </div>`;
+  }).join('');
+}
+
+function addUnitFromModal(cardId) {
+  const card = CARD_DB.find(c => c.id === cardId);
+  if (!card) return;
+  const ctx = gs.modalContext;
+  addUnit(card, ctx.player, ctx.zone==='battlefield'?'battlefield':ctx.zone, ctx.bf);
+  closeModal('add-unit-modal');
+}
+
+// Close on overlay click
+document.getElementById('add-unit-modal').addEventListener('click', e => {
+  if (e.target === e.currentTarget) closeModal('add-unit-modal');
+});
+document.getElementById('combat-modal').addEventListener('click', e => {
+  if (e.target === e.currentTarget) closeModal('combat-modal');
+});
+
+// ══════════════════════════════════════════════════════
+//  COMBAT RESOLVER
+// ══════════════════════════════════════════════════════
+function _populateCombatSelects() {
+  // populate selects with all units on battlefields
+  const atk = document.getElementById('combat-attacker');
+  const def = document.getElementById('combat-defender');
+  if (!atk || !def) return;
+  atk.innerHTML = '<option value="">— Select attacker —</option>';
+  def.innerHTML = '<option value="">— Select defender —</option>';
+
+  const combatUnits = gs.units.filter(u => !u.isLocation && u.hp > 0);
+  const bfUnits = combatUnits.filter(u => u.zone === 'battlefield');
+  const otherUnits = combatUnits.filter(u => u.zone !== 'battlefield');
+
+  bfUnits.forEach(u => {
+    const opt = `<option value="${u.uid}">P${u.player}: ${u.name} (A:${u.atk} D:${u.dfs} HP:${u.hp})</option>`;
+    atk.innerHTML += opt; def.innerHTML += opt;
+  });
+  if (otherUnits.length) {
+    atk.innerHTML += '<optgroup label="Other Zones">';
+    def.innerHTML += '<optgroup label="Other Zones">';
+    otherUnits.forEach(u => {
+      const opt = `<option value="${u.uid}">P${u.player}: ${u.name} (A:${u.atk} D:${u.dfs})</option>`;
+      atk.innerHTML += opt; def.innerHTML += opt;
+    });
+    atk.innerHTML += '</optgroup>'; def.innerHTML += '</optgroup>';
+  }
+  document.getElementById('combat-result').innerHTML = 'Select attacker and defender to calculate.';
+}
+
+function calcCombat() {
+  const atkId = parseInt(document.getElementById('combat-attacker').value);
+  const defId = parseInt(document.getElementById('combat-defender').value);
+  if (!atkId || !defId) { document.getElementById('combat-result').innerHTML = 'Select attacker and defender to calculate.'; return; }
+
+  const atkUnit = gs.units.find(u => u.uid === atkId);
+  const defUnit = gs.units.find(u => u.uid === defId);
+  if (!atkUnit || !defUnit) return;
+
+  let atkVal = atkUnit.atk;
+  let defVal = defUnit.dfs;
+
+  // Option modifiers
+  if (document.getElementById('opt-aggressive').checked) atkVal += 1;
+  if (document.getElementById('opt-resilient').checked) defVal += 1;
+  if (document.getElementById('opt-terror').checked) defVal = Math.max(1, defVal - 1);
+  const chargeX = parseInt(document.getElementById('opt-charge-val').value) || 0;
+  const isDurable = document.getElementById('opt-durable').checked;
+
+  const raw = Math.max(0, atkVal - defVal);
+  let dmg = raw === 0 ? 1 : raw; // vs single attacker no minimum, but we show it
+  if (raw <= 0) dmg = 0; // standard: only excess deals damage
+
+  // Durable
+  if (isDurable && dmg > 0) dmg = Math.max(1, dmg - 1);
+
+  // Charge: direct damage first, then combat
+  let chargeStr = '';
+  if (chargeX > 0) chargeStr = `<div>+ Charge ${chargeX}: deal <span class="result-damage">${chargeX} direct damage</span> before combat.</div>`;
+
+  const willKill = dmg >= defUnit.hp;
+
+  let resultHTML = `
+    <div>${atkUnit.name} (ATK ${atkVal}) attacks ${defUnit.name} (DFS ${defVal})</div>
+    ${chargeStr}
+    <div>Combat damage: ${atkVal} − ${defVal} = <span class="result-damage">${raw}</span>${isDurable?` (Durable: −1 = <span class="result-damage">${dmg}</span>)`:''}</div>
+    ${raw <= 0 ? '<div class="result-nodmg">No combat damage dealt (ATK does not exceed DFS).</div>' :
+      `<div>${defUnit.name} takes <span class="result-damage">${dmg} damage</span> (${defUnit.hp} HP → ${Math.max(0,defUnit.hp-dmg)} HP).</div>`}
+    ${willKill && raw > 0 ? '<div class="result-kill">💀 DEFENDER DESTROYED</div>' : ''}
+  `;
+
+  document.getElementById('combat-result').innerHTML = resultHTML;
+
+  // Store for apply
+  gs.combatResult = { atkId, defId, dmg, chargeX, raw };
+}
+
+function applyCombat() {
+  const r = gs.combatResult;
+  if (!r) { alert('Calculate combat first.'); return; }
+
+  const atkUnit = gs.units.find(u => u.uid === r.atkId);
+  const defUnit = gs.units.find(u => u.uid === r.defId);
+  if (!atkUnit || !defUnit) return;
+
+  // Apply charge damage
+  if (r.chargeX > 0) {
+    defUnit.hp = Math.max(0, defUnit.hp - r.chargeX);
+    log('combat', `⚔ ${atkUnit.name} deals Charge ${r.chargeX} direct damage to ${defUnit.name} (${defUnit.hp}/${defUnit.maxHp} HP).`);
+  }
+
+  // Apply combat damage
+  if (r.raw > 0 && r.dmg > 0) {
+    defUnit.hp = Math.max(0, defUnit.hp - r.dmg);
+    log('combat', `⚔ ${atkUnit.name} (ATK ${atkUnit.atk}) vs ${defUnit.name} (DFS ${defUnit.dfs}) — ${r.dmg} damage dealt (${defUnit.hp}/${defUnit.maxHp} HP).`);
+  } else {
+    log('combat', `⚔ ${atkUnit.name} vs ${defUnit.name} — no combat damage (ATK does not exceed DFS).`);
+  }
+
+  if (defUnit.hp === 0) {
+    log('damage', `💀 ${defUnit.name} is destroyed!`);
+  }
+
+  gs.combatResult = null;
+  closeModal('combat-modal');
+  renderAllZones();
+  if (gs.selectedUnit) renderUnitActions();
+}
+
+// ══════════════════════════════════════════════════════
+//  LOG
+// ══════════════════════════════════════════════════════
+function log(type, msg) {
+  const entries = document.getElementById('log-entries');
+  const div = document.createElement('div');
+  div.className = `log-entry log-${type}`;
+  div.textContent = msg;
+  entries.appendChild(div);
+  entries.scrollTop = entries.scrollHeight;
+}
+
+function clearLog() {
+  document.getElementById('log-entries').innerHTML = '';
+}
+
+// ══════════════════════════════════════════════════════
+//  STEP BACK / PHASE BACK
+// ══════════════════════════════════════════════════════
+function prevStep() {
+  if (gs.step > 0) {
+    gs.step--;
+    renderPhaseSteps();
+    log('info', `← Back: ${PHASES[gs.phase].steps[gs.step]}`);
+  } else {
+    prevPhase();
+  }
+}
+
+function prevPhase() {
+  const phaseOrder = ['setup', 'battle', 'cleanup'];
+  const idx = phaseOrder.indexOf(gs.phase);
+  if (idx > 0) {
+    gs.phase = phaseOrder[idx - 1];
+    gs.step = PHASES[gs.phase].steps.length - 1;
+    log('info', `← Back to: ${PHASES[gs.phase].label || gs.phase}`);
+  } else if (gs.round > 1) {
+    gs.round--;
+    gs.phase = 'cleanup';
+    gs.step = PHASES.cleanup.steps.length - 1;
+    gs.initiative = gs.initiative === 1 ? 2 : 1;
+    log('info', `← Back to Round ${gs.round}, Cleanup Phase.`);
+  } else {
+    log('info', 'Already at the beginning of Round 1 Setup.');
+  }
+  renderHeader();
+  renderPhaseSteps();
+}
+
+// ══════════════════════════════════════════════════════
+//  DECK LOADING & HAND SYSTEM
+// ══════════════════════════════════════════════════════
+let simDecks = { 1: [], 2: [] };
+let simHands = { 1: [], 2: [] };
+let simGraveyards = { 1: [], 2: [] };
+let handRevealed = { 1: false, 2: false };
+let dlPlayer = 1;
+
+function shuffle(arr) {
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
+function openDeckLoader() {
+  setDLPlayer(1);
+  document.getElementById('dl-status').style.display = 'none';
+  document.getElementById('deck-loader-modal').classList.add('open');
+}
+
+function setDLPlayer(p) {
+  dlPlayer = p;
+  const p1 = document.getElementById('dl-p1-btn');
+  const p2 = document.getElementById('dl-p2-btn');
+  p1.style.background = p === 1 ? 'var(--amber)' : 'transparent';
+  p1.style.borderColor = p === 1 ? 'var(--gold)' : 'var(--border2)';
+  p1.style.color = p === 1 ? 'var(--gold2)' : 'var(--text2)';
+  p2.style.background = p === 2 ? 'var(--blue)' : 'transparent';
+  p2.style.borderColor = p === 2 ? 'var(--blue2)' : 'var(--border2)';
+  p2.style.color = p === 2 ? 'var(--blue3)' : 'var(--text2)';
+}
+
+function handleDeckDrop(e) {
+  e.preventDefault();
+  const file = e.dataTransfer.files[0];
+  if (file) parseDeckFile(file);
+  e.target.style.borderColor = 'var(--border2)';
+}
+
+function handleDeckFile(e) {
+  const file = e.target.files[0];
+  if (file) parseDeckFile(file);
+}
+
+function parseDeckFile(file) {
+  const reader = new FileReader();
+  reader.onload = (e) => {
+    try {
+      const data = JSON.parse(e.target.result);
+      // Support both {cards:[...]} format and raw array
+      const cards = Array.isArray(data) ? data : (data.cards || []);
+      if (!cards.length) { showDLStatus('No cards found in file.', false); return; }
+      // Expand by count if deck builder format
+      const expanded = [];
+      cards.forEach(c => {
+        const count = c.count || 1;
+        for (let i = 0; i < count; i++) expanded.push({...c});
+      });
+      shuffle(expanded);
+      simDecks[dlPlayer] = expanded;
+      simHands[dlPlayer] = [];
+      simGraveyards[dlPlayer] = [];
+      handRevealed[dlPlayer] = false;
+      updateDeckCounts();
+      renderHands();
+      showDLStatus(`✓ P${dlPlayer} deck loaded: ${expanded.length} cards, shuffled.`, true);
+      log('sys', `P${dlPlayer} deck loaded (${expanded.length} cards, shuffled).`);
+    } catch(err) {
+      showDLStatus('Error reading file. Make sure it\'s a valid JSON deck export.', false);
+    }
+  };
+  reader.readAsText(file);
+}
+
+function showDLStatus(msg, ok) {
+  const el = document.getElementById('dl-status');
+  el.style.display = 'block';
+  el.style.color = ok ? 'var(--green3)' : 'var(--red3)';
+  el.textContent = msg;
+}
+
+function drawCard(player) {
+  if (!simDecks[player].length) { log('info', `P${player} deck is empty!`); return; }
+  const card = simDecks[player].shift();
+  simHands[player].push({ ...card, _hid: Date.now() + Math.random() });
+  log('draw', `P${player} draws: ${card.name}`);
+  updateDeckCounts();
+  renderHands();
+}
+
+function renderHands() {
+  [1, 2].forEach(p => {
+    const el = document.getElementById(`hand-p${p}`);
+    if (!el) return;
+    const hand = simHands[p];
+    const revealed = handRevealed[p];
+    const pCls = p === 1 ? 'hc-p1' : 'hc-p2';
+    if (!hand.length) {
+      el.innerHTML = `<div style="font-size:11px;color:var(--text3);font-style:italic;padding:6px 0;">Empty</div>`;
+      return;
+    }
+    el.innerHTML = hand.map((c, idx) => {
+      const cost = c.costSpell ? `S${c.costSpell}` : (c.cost || 0);
+      const faceUp = revealed;
+      return `<div class="hand-card ${pCls} ${faceUp ? '' : 'face-down'}"
+        draggable="true"
+        ondragstart="handDragStart(event,${p},${idx})"
+        onclick="handCardClick(${p},${idx})"
+        onmouseenter="${faceUp ? `showHandTooltip(event,${p},${idx})` : ''}"
+        onmouseleave="hideTooltip()"
+        title="${faceUp ? (c.name||'') : 'Face down'}">
+        <div class="hc-back"><div class="hc-back-logo">V/C</div></div>
+        <div class="hc-front">
+          <div class="hc-cost${c.costSpell ? ' spell' : ''}">${cost}</div>
+          <div class="hc-name">${c.name || ''}</div>
+          <div class="hc-type">${(c.types || [])[0] || ''}</div>
+        </div>
+      </div>`;
+    }).join('');
+  });
+}
+
+function handCardClick(player, idx) {
+  if (!handRevealed[player]) return; // can't interact with face-down hand
+  const c = simHands[player][idx];
+  if (!c) return;
+  if (confirm(`Play "${c.name}" to P${player}'s Command Area?`)) {
+    simHands[player].splice(idx, 1);
+    addUnit(c, player, 'command', null);
+    renderHands();
+    log('info', `P${player} plays ${c.name} from hand.`);
+  }
+}
+
+// ── GRAVEYARD ──
+function openGraveyard(player) {
+  document.getElementById('gy-modal-title').textContent = `☠ Player ${player} Graveyard`;
+  const list = document.getElementById('gy-list');
+  const gy = simGraveyards[player];
+  if (!gy.length) {
+    list.innerHTML = '<div style="text-align:center;color:var(--text3);font-style:italic;padding:20px;">Empty</div>';
+  } else {
+    list.innerHTML = gy.map((c, i) => `
+      <div style="display:flex;align-items:center;gap:8px;padding:6px 8px;background:var(--bg3);border-radius:4px;border:1px solid var(--border);margin-bottom:4px;">
+        <div style="font-size:13px;color:var(--text);flex:1;">${c.name}</div>
+        <button class="btn btn-secondary btn-sm" onclick="reviveFromGraveyard(${player},${i})">Revive</button>
+      </div>
+    `).join('');
+  }
+  document.getElementById('graveyard-modal').classList.add('open');
+}
+
+function reviveFromGraveyard(player, idx) {
+  const c = simGraveyards[player][idx];
+  if (!c) return;
+  simGraveyards[player].splice(idx, 1);
+  simHands[player].push({ ...c, _hid: Date.now() });
+  renderHands();
+  updateDeckCounts();
+  log('heal', `${c.name} revived from P${player} graveyard to hand.`);
+  closeModal('graveyard-modal');
+}
+
+// ══════════════════════════════════════════════════════
+//  DRAG AND DROP
+// ══════════════════════════════════════════════════════
+let dragUid = null;
+let handDragData = null;
+
+function setupDragDrop() {
+  // ── Delegated drag-drop on the whole battlefield-area ──
+  // This survives re-renders because we listen on stable ancestor divs.
+  // We find the target zone by walking up from the drop target.
+
+  const ZONE_IDS = new Set([
+    'zone-p1-command','zone-p1-permanent',
+    'zone-p2-command','zone-p2-permanent',
+    'bf-p1-primary','bf-p1-secondary','bf-p1-tertiary',
+    'bf-p2-primary','bf-p2-secondary','bf-p2-tertiary',
+  ]);
+
+  function getDropZone(target) {
+    let el = target;
+    while (el && el !== document.body) {
+      if (el.id && ZONE_IDS.has(el.id)) return el;
+      el = el.parentElement;
+    }
+    return null;
+  }
+
+  function getLocationCard(target) {
+    let el = target;
+    while (el && el !== document.body) {
+      if (el.id && el.id.startsWith('uc-')) {
+        const uid = parseInt(el.id.replace('uc-',''));
+        const u = gs.units.find(u => u.uid === uid && u.isLocation);
+        if (u) return u;
+      }
+      el = el.parentElement;
+    }
+    return null;
+  }
+
+  function handleDragOver(e) {
+    // Allow drop if over a valid zone or any element inside a valid zone or a location card
+    const zone = getDropZone(e.target);
+    const locCard = dragUid ? getLocationCard(e.target) : null;
+    if (zone || locCard) {
+      e.preventDefault();
+      e.dataTransfer.dropEffect = 'move';
+      if (zone) zone.classList.add('drag-over');
+    }
+  }
+
+  function handleDragLeave(e) {
+    const zone = getDropZone(e.target);
+    if (zone && !zone.contains(e.relatedTarget)) {
+      zone.classList.remove('drag-over');
+    }
+  }
+
+  function handleDrop(e) {
+    // Clear all highlights
+    ZONE_IDS.forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.classList.remove('drag-over');
+    });
+
+    // ── Drop onto a Location card = rest unit there ──
+    if (dragUid) {
+      const loc = getLocationCard(e.target);
+      if (loc) {
+        e.preventDefault();
+        const dragged = gs.units.find(u => u.uid === dragUid);
+        if (dragged && !dragged.isLocation) {
+          const restCap = loc.rest || 0;
+          if (restCap === 0) { log('info', `${loc.name} has no Rest capacity.`); }
+          else if ((loc.restingUnits||[]).length >= restCap) { log('info', `${loc.name} is full (Rest ${restCap}).`); }
+          else {
+            if (!loc.restingUnits) loc.restingUnits = [];
+            loc.restingUnits.push(dragged.name);
+            dragged.zone = 'permanent'; dragged.bf = null;
+            dragged.restingAt = loc.uid;
+            log('info', `${dragged.name} resting at ${loc.name} (${loc.restingUnits.length}/${restCap}).`);
+            renderAllZones();
+          }
+        }
+        dragUid = null;
+        return;
+      }
+    }
+
+    // ── Drop onto a zone ──
+    const zone = getDropZone(e.target);
+    if (!zone) { dragUid = null; handDragData = null; return; }
+    e.preventDefault();
+
+    const { zonePlayer, zoneName, zoneBf } = parseZoneId(zone.id);
+
+    // Hand card → zone
+    if (handDragData) {
+      const { player, idx } = handDragData;
+      const c = simHands[player][idx];
+      if (c) {
+        simHands[player].splice(idx, 1);
+        addUnit(c, player, zoneName, zoneBf);
+        renderHands();
+        log('info', `P${player} plays ${c.name} from hand → ${zoneName}${zoneBf ? ' (' + zoneBf + ')' : ''}.`);
+      }
+      handDragData = null; dragUid = null;
+      return;
+    }
+
+    // Unit card → zone
+    if (dragUid !== null) {
+      const u = gs.units.find(u => u.uid === dragUid);
+      if (u) {
+        u.zone = zoneName;
+        u.bf = zoneBf;
+        // Don't change player on drop — only explicit transfer does that
+        log('info', `${u.name} → ${zoneName}${zoneBf ? ' (' + zoneBf + ')' : ''}.`);
+        renderAllZones();
+      }
+      dragUid = null;
+    }
+  }
+
+  // Attach to stable high-level containers
+  const areas = [
+    document.querySelector('.battlefield-area'),
+    document.querySelector('.battlefields-strip'),
+    document.getElementById('hand-strip'),
+  ].filter(Boolean);
+
+  // De-dupe: use document as the single listener
+  document.addEventListener('dragover', handleDragOver);
+  document.addEventListener('dragleave', handleDragLeave);
+  document.addEventListener('drop', handleDrop);
+}
+
+function parseZoneId(id) {
+  // IDs like: zone-p1-command, zone-p2-rest, bf-p1-primary, bf-p2-secondary
+  if (id.startsWith('zone-')) {
+    const parts = id.replace('zone-', '').split('-');
+    return { zonePlayer: parts[0] === 'p1' ? 1 : 2, zoneName: parts[1], zoneBf: null };
+  }
+  if (id.startsWith('bf-')) {
+    const parts = id.replace('bf-', '').split('-');
+    return { zonePlayer: parts[0] === 'p1' ? 1 : 2, zoneName: 'battlefield', zoneBf: parts[1] };
+  }
+  return { zonePlayer: 1, zoneName: 'command', zoneBf: null };
+}
+
+function handDragStart(e, player, idx) {
+  handDragData = { player, idx };
+  dragUid = null;
+  e.dataTransfer.effectAllowed = 'move';
+  e.dataTransfer.setData('text/plain', 'handcard');
+}
+
+// ══════════════════════════════════════════════════════
+//  CARD TOOLTIP
+// ══════════════════════════════════════════════════════
+let tooltipTimer = null;
+
+function showUnitTooltip(e, uid) {
+  clearTimeout(tooltipTimer);
+  tooltipTimer = setTimeout(() => {
+    const u = gs.units.find(u => u.uid === uid);
+    if (!u) return;
+    const card = CARD_DB.find(c => c.id === u.cardId);
+    showTooltipContent(e, u.name, u.maxHp, u.atk, u.dfs, u.sp, u.keywords, card?.active, card?.passive);
+  }, 350);
+}
+
+function showHandTooltip(e, player, idx) {
+  clearTimeout(tooltipTimer);
+  tooltipTimer = setTimeout(() => {
+    const c = simHands[player][idx];
+    if (!c) return;
+    showTooltipContent(e, c.name, c.hth, c.atk, c.dfs, c.sp, c.keywords, c.active, c.passive);
+  }, 300);
+}
+
+function showTooltipContent(e, name, hth, atk, dfs, sp, keywords, active, passive) {
+  const tip = document.getElementById('card-tooltip');
+  if (!tip) return;
+  tip.innerHTML = `
+    <div class="ct-name">${name || ''}</div>
+    ${hth > 0 ? `<div class="ct-stats-row">
+      <div class="ct-stat"><span class="sl">HTH</span><span class="sv">${hth}</span></div>
+      <div class="ct-stat"><span class="sl">ATK</span><span class="sv">${atk}</span></div>
+      <div class="ct-stat"><span class="sl">DFS</span><span class="sv">${dfs}</span></div>
+      <div class="ct-stat"><span class="sl">SP</span><span class="sv">${sp}</span></div>
+    </div>` : ''}
+    ${(keywords || []).length ? `<div class="ct-kw">${keywords.join(' · ')}</div>` : ''}
+    ${active && active !== '—' ? `<div class="ct-ab"><strong>Active:</strong> ${active}</div>` : ''}
+    ${passive && passive !== '—' ? `<div class="ct-ab"><strong>Passive:</strong> ${passive}</div>` : ''}
+  `;
+  const rect = e.target.getBoundingClientRect();
+  let x = rect.right + 8, y = rect.top;
+  if (x + 220 > window.innerWidth) x = rect.left - 220;
+  if (y + 220 > window.innerHeight) y = window.innerHeight - 225;
+  tip.style.left = x + 'px';
+  tip.style.top = y + 'px';
+  tip.classList.add('show');
+}
+
+function hideTooltip() {
+  clearTimeout(tooltipTimer);
+  const tip = document.getElementById('card-tooltip');
+  if (tip) tip.classList.remove('show');
+}
+
+// ══════════════════════════════════════════════════════
+//  DISCARD PILE
+// ══════════════════════════════════════════════════════
+let simDiscards = { 1: [], 2: [] };
+
+function discardCard(player, card) {
+  simDiscards[player].push({ name: card.name, cardId: card.id, ...card });
+  updatePileCounts();
+  log('info', `${card.name} → P${player} discard pile.`);
+}
+
+function openDiscardPile(player) {
+  document.getElementById('dp-modal-title').textContent = `🗑 Player ${player} Discard Pile`;
+  const list = document.getElementById('dp-list');
+  const dp = simDiscards[player];
+  if (!dp.length) {
+    list.innerHTML = '<div style="text-align:center;color:var(--text3);font-style:italic;padding:20px;">Empty</div>';
+  } else {
+    list.innerHTML = dp.map((c, i) => `
+      <div style="display:flex;align-items:center;gap:8px;padding:6px 8px;background:var(--bg3);border-radius:4px;border:1px solid var(--border);margin-bottom:4px;">
+        <div style="font-size:13px;color:var(--text);flex:1;">${c.name}</div>
+        <div style="font-size:10px;color:var(--text3);font-family:'Cinzel',serif;">Cost ${c.cost||0}</div>
+        <button class="btn btn-secondary btn-sm" onclick="returnDiscardToHand(${player},${i})">→ Hand</button>
+        <button class="btn btn-secondary btn-sm" onclick="playDiscardToCommand(${player},${i})">→ Play</button>
+        <button class="mini-btn danger" onclick="removeFromDiscard(${player},${i})" title="Remove">✕</button>
+      </div>`).join('');
+  }
+  document.getElementById('discard-modal').classList.add('open');
+}
+
+function returnDiscardToHand(player, idx) {
+  const c = simDiscards[player][idx];
+  if (!c) return;
+  simDiscards[player].splice(idx, 1);
+  simHands[player].push({ ...c, _hid: Date.now() });
+  renderHands();
+  updatePileCounts();
+  log('info', `${c.name} returned from P${player} discard to hand.`);
+  closeModal('discard-modal');
+}
+
+function playDiscardToCommand(player, idx) {
+  const c = simDiscards[player][idx];
+  if (!c) return;
+  simDiscards[player].splice(idx, 1);
+  addUnit(c, player, 'command', null);
+  updatePileCounts();
+  log('info', `${c.name} played from P${player} discard to Command Area.`);
+  closeModal('discard-modal');
+}
+
+function removeFromDiscard(player, idx) {
+  const c = simDiscards[player][idx];
+  simDiscards[player].splice(idx, 1);
+  updatePileCounts();
+  log('info', `${c?.name||'Card'} removed from P${player} discard pile.`);
+  openDiscardPile(player);
+}
+
+function updatePileCounts() {
+  [1,2].forEach(p => {
+    const gySB = document.getElementById(`gy${p}-sb`);
+    const dpSB = document.getElementById(`dp${p}-sb`);
+    const gyHand = document.getElementById(`gy${p}-count`);
+    if (gySB) gySB.textContent = simGraveyards[p].length;
+    if (dpSB) dpSB.textContent = simDiscards[p].length;
+    if (gyHand) gyHand.textContent = simGraveyards[p].length;
+  });
+}
+
+// override updateDeckCounts to also call updatePileCounts
+function updateDeckCounts() {
+  const d1 = document.getElementById('deck1-count');
+  const d2 = document.getElementById('deck2-count');
+  const g1 = document.getElementById('gy1-count');
+  const g2 = document.getElementById('gy2-count');
+  if (d1) d1.textContent = simDecks[1].length;
+  if (d2) d2.textContent = simDecks[2].length;
+  if (g1) g1.textContent = simGraveyards[1].length;
+  if (g2) g2.textContent = simGraveyards[2].length;
+  updatePileCounts();
+}
+
+// ══════════════════════════════════════════════════════
+//  RETURN TO HAND (from play)
+// ══════════════════════════════════════════════════════
+function returnToHand() {
+  const u = gs.units.find(u => u.uid === gs.selectedUnit);
+  if (!u) return;
+  const p = u.player;
+  simHands[p].push({ id: u.cardId, name: u.name, hth: u.maxHp, atk: u.baseAtk||u.atk, dfs: u.baseDfs||u.dfs, sp: u.sp, cost: u.cost, types: u.types, keywords: u.keywords, faction: u.faction, _hid: Date.now() });
+  gs.units = gs.units.filter(u => u.uid !== gs.selectedUnit);
+  renderHands();
+  log('info', `${u.name} returned to P${p} hand.`);
+  gs.selectedUnit = null;
+  renderAllZones();
+  renderUnitActions();
+}
+
+function discardFromPlay() {
+  const u = gs.units.find(u => u.uid === gs.selectedUnit);
+  if (!u) return;
+  const p = u.player;
+  discardCard(p, { id: u.cardId, name: u.name, cost: u.cost, types: u.types, keywords: u.keywords, faction: u.faction });
+  gs.units = gs.units.filter(u => u.uid !== gs.selectedUnit);
+  log('info', `${u.name} discarded from play → P${p} discard pile.`);
+  gs.selectedUnit = null;
+  renderAllZones();
+  renderUnitActions();
+}
+
+// ══════════════════════════════════════════════════════
+//  LOCATION CARD SYSTEM
+// ══════════════════════════════════════════════════════
+const LOCATION_DATA = {
+  'Home Stronghold':  { resource: 2, rest: 3, locHp: 0,  special: 'Home territory — cannot be Seized.' },
+  'Farmland':         { resource: 1, rest: 0, locHp: 0,  special: '—' },
+  'Arable Land':      { resource: 1, rest: 0, locHp: 0,  special: '—' },
+  'River Delta':      { resource: 1, rest: 0, locHp: 0,  special: 'Increase Resource X by 1 for every other River Delta you control.' },
+  'Populated Village':{ resource: 1, rest: 1, locHp: 5,  special: '"Civilians?" — at start of first battle loop, each player chooses 1 friendly Unit with Sp 1 or less; that Unit gets −1 ATK until end of loop.' },
+  'Iron Quarry':      { resource: 2, rest: 0, locHp: 5,  special: '—' },
+  'Gemstone Quarry':  { resource: 1, rest: 0, locHp: 5,  special: 'Attachments cost 1 less Resource while you control this Location.' },
+  'Precious Metals Quarry': { resource: 3, rest: 0, locHp: 5, special: 'If you lose control of this Location, lose 1 Tactical Health.' },
+  'Trading Town':     { resource: 1, rest: 2, locHp: 6,  special: 'In Setup, may "trade" with resting Units; if so they stay this turn. Increase Resource X by number of Units trading.' },
+  'Stronghold':       { resource: 0, rest: 4, locHp: 10, special: 'If reduced to 0 HP, Rest changes to Rest 1.' },
+  'Metropolis':       { resource: 2, rest: 2, locHp: 10, special: 'Must exhaust another Location with Resource X to use this card\'s Resource X.' },
+  'Port Town':        { resource: 1, rest: 1, locHp: 6,  special: 'Exhaust to draw 1 card.' },
+};
+
+let locModalPlayer = 1;
+function setLocModalPlayer(p) {
+  locModalPlayer = p;
+  document.getElementById('loc-modal-p1').style.background = p===1?'var(--amber)':'transparent';
+  document.getElementById('loc-modal-p1').style.borderColor = p===1?'var(--gold)':'var(--border2)';
+  document.getElementById('loc-modal-p1').style.color = p===1?'var(--gold2)':'var(--text2)';
+  document.getElementById('loc-modal-p2').style.background = p===2?'var(--blue)':'transparent';
+  document.getElementById('loc-modal-p2').style.borderColor = p===2?'var(--blue2)':'var(--border2)';
+  document.getElementById('loc-modal-p2').style.color = p===2?'var(--blue3)':'var(--text2)';
+}
+
+function openAddLocation() {
+  setLocModalPlayer(1);
+  document.getElementById('location-modal').classList.add('open');
+}
+
+function addLocationCard() {
+  const typeSel = document.getElementById('loc-modal-type');
+  const name = typeSel.value;
+  const data = LOCATION_DATA[name] || { resource:1, rest:0, locHp:0, special:'—' };
+  const dest = document.getElementById('loc-modal-dest').value;
+  const player = locModalPlayer;
+
+  const locCard = {
+    id: 'loc_'+Date.now(), name, faction:'neutral',
+    types:['location'], keywords:[],
+    isLocation: true, resource: data.resource, rest: data.rest,
+    locHp: data.locHp, maxLocHp: data.locHp,
+    special: data.special, restingUnits: [],
+    cost: 0, hth: data.locHp, atk: 0, dfs: 0, sp: 0
+  };
+
+  if (dest === 'permanent') {
+    addUnit(locCard, player, 'permanent', null);
+  } else {
+    // Place directly on battlefield dropdown
+    const bf = dest.replace('bf-','');
+    const sel = document.getElementById(`loc-${bf}`);
+    if (sel) { sel.value = name; updateLocation(bf, name); }
+    addUnit(locCard, player, 'battlefield', bf);
+  }
+  closeModal('location-modal');
+}
+
+function randomLocation() {
+  const locs = Object.keys(LOCATION_DATA).filter(l => l !== 'Home Stronghold' && l !== 'Farmland');
+  const pick = locs[Math.floor(Math.random() * locs.length)];
+  const data = LOCATION_DATA[pick];
+  log('info', `🎲 Random Location: ${pick} — Resource ${data.resource||0}, Rest ${data.rest||0}${data.locHp?' (HP '+data.locHp+')':''}.`);
+  // Also set it in a modal pre-selected
+  const sel = document.getElementById('loc-modal-type');
+  if (sel) { for (let o of sel.options) { if (o.value === pick) { sel.value = pick; break; } } }
+  document.getElementById('location-modal').classList.add('open');
+}
+
+function spawnStartingLocations() {
+  let uid = Date.now();
+  [1,2].forEach(p => {
+    const makeLocCard = (name, resource, rest) => ({
+      id: `loc_start_${p}_${uid++}`,
+      name, faction:'neutral', types:['location'], keywords:[],
+      isLocation:true, resource, rest,
+      locHp:0, maxLocHp:0,
+      special: name==='Home Stronghold'?'Home territory — cannot be Seized.':'—',
+      restingUnits:[], cost:0, hth:0, atk:0, dfs:0, sp:0,
+      active:'—', passive:'—'
+    });
+    addUnit(makeLocCard('Home Stronghold', 2, 3), p, 'permanent', null);
+    for (let i=0; i<4; i++) {
+      addUnit(makeLocCard('Farmland', 1, 0), p, 'permanent', null);
+    }
+    log('info', `P${p} starting locations: Home Stronghold (Res 2, Rest 3) + 4× Farmland (Res 1).`);
+  });
+}
+
+// ══════════════════════════════════════════════════════
+//  LOCATION CARD RENDERING
+// ══════════════════════════════════════════════════════
+function locationCardHTML(u) {
+  const isSelected = gs.selectedUnit === u.uid;
+  const pClass = u.player===1?'p1':'p2';
+  const data = LOCATION_DATA[u.name] || {};
+  const restCap = u.rest || data.rest || 0;
+  const resting = u.restingUnits || [];
+  const exhausted = (u.conditions||[]).includes('exhausted');
+  const inPermanent = u.zone === 'permanent';
+  const inBattlefield = u.zone === 'battlefield';
+
+  const restPips = restCap > 0 ? Array.from({length:restCap}, (_,i) =>
+    `<div style="width:6px;height:6px;border-radius:50%;background:${i<resting.length?'var(--green3)':'var(--bg4)'};border:1px solid ${i<resting.length?'var(--green2)':'var(--border)'};flex-shrink:0;"></div>`
+  ).join('') : '';
+
+  // Exhaust overlay
+  const exhaustOverlay = exhausted
+    ? `<div style="position:absolute;inset:0;background:rgba(0,0,0,0.55);border-radius:var(--r);display:flex;align-items:center;justify-content:center;pointer-events:none;">
+         <div style="font-family:'Cinzel',serif;font-size:8px;color:var(--text3);letter-spacing:1px;transform:rotate(-20deg);">EXHAUSTED</div>
+       </div>`
+    : '';
+
+  // Always select on click — exhaust is in the panel
+  const clickHandler = `selectUnit(${u.uid})`;
+
+  // Battlefield location — neutral teal, no player color stripe
+  const bfStyle = inBattlefield
+    ? 'background:var(--teal);border-color:var(--teal2);'
+    : exhausted
+      ? 'background:#0e1a18;border-color:var(--teal);opacity:0.7;'
+      : 'background:#0e201c;border-color:var(--teal2);';
+
+  return `<div class="unit-card ${inBattlefield?'':pClass} ${isSelected?'selected':''}"
+    id="uc-${u.uid}"
+    draggable="true"
+    onclick="${clickHandler}"
+    ondragstart="dragUid=${u.uid};handDragData=null;event.dataTransfer.setData('text/plain','unit');event.dataTransfer.effectAllowed='move';this.classList.add('dragging')"
+    ondragend="this.classList.remove('dragging')"
+    onmouseenter="showUnitTooltip(event,${u.uid})"
+    onmouseleave="hideTooltip()"
+    title="${exhausted?u.name+' (Exhausted)':u.name}"
+    style="min-width:70px;max-width:96px;position:relative;cursor:grab;${bfStyle}">
+    ${exhaustOverlay}
+    <div style="font-size:7px;color:${inBattlefield?'#5ab4a0':exhausted?'var(--text3)':'#5ab4a0'};font-family:'Cinzel',serif;letter-spacing:0.5px;margin-bottom:1px;">${inBattlefield?'BATTLEFIELD LOC':'LOCATION'}</div>
+    <div class="uc-name" style="color:${exhausted?'var(--text3)':'#7ad4b4'};">${u.name}</div>
+    ${(u.resource||0)>0
+      ? inPermanent
+        ? `<div style="font-size:8px;color:${exhausted?'var(--text3)':'var(--gold2)'};font-family:'Cinzel',serif;margin-top:1px;">💰 Res ${u.resource}${exhausted?' (exh)':''}</div>`
+        : inBattlefield
+          ? `<div style="font-size:8px;color:var(--text3);font-family:'Cinzel',serif;margin-top:1px;" title="Resources available after winning battle">💰 Res ${u.resource} (won)</div>`
+          : ''
+      : ''}
+    ${restCap>0?`<div style="font-size:7px;color:var(--text3);margin-top:1px;">Rest ${resting.length}/${restCap}</div><div style="display:flex;gap:2px;margin-top:1px;flex-wrap:wrap;">${restPips}</div>`:''}
+    ${(data.locHp||0)>0?`<div style="font-size:7px;color:#d4a060;margin-top:1px;">HP ${u.locHp||data.locHp}/${data.locHp}</div>`:''}
+  </div>`;
+}
+
+// ══════════════════════════════════════════════════════
+//  FULL CARD RULES IN UNIT ACTIONS PANEL
+//  (replaces the original renderUnitActions entirely)
+// ══════════════════════════════════════════════════════
+const _origRenderUnitActions = _baseRenderUnitActions;
+function renderUnitActions() {
+  const panel = document.querySelector('.unit-actions');
+  const body = document.getElementById('ua-body');
+  if (!gs.selectedUnit) {
+    if (panel) panel.style.display = 'none';
+    return;
+  }
+  if (panel) panel.style.display = 'flex';
+
+  const u = gs.units.find(u => u.uid === gs.selectedUnit);
+  if (!u) { if(body) body.innerHTML = '<div class="ua-empty">Unit not found.</div>'; return; }
+
+  if (u.isLocation) { renderLocationActions(u); return; }
+
+  _baseRenderUnitActions();
+
+  // Append card text, resource cost, move card buttons
+  if (!body) return;
+  const card = CARD_DB.find(c => c.id === u.cardId);
+  const active = (u.active && u.active !== '—') ? u.active : (card?.active && card.active !== '—' ? card.active : null);
+  const passive = (u.passive && u.passive !== '—') ? u.passive : (card?.passive && card.passive !== '—' ? card.passive : null);
+  const cost = u.cost || 0;
+
+  let extra = `<div class="ua-section"><h5>Card Text</h5>`;
+  extra += `<div style="display:flex;align-items:center;gap:6px;margin-bottom:6px;">
+    <div style="width:22px;height:22px;border-radius:50%;background:var(--gold);color:var(--bg);font-family:'Cinzel',serif;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;">${cost}</div>
+    <span style="font-size:11px;color:var(--text3);">Resource Cost</span>
+  </div>`;
+  if ((u.keywords||[]).length) {
+    extra += `<div style="font-size:10px;color:#5ab4b4;margin-bottom:6px;line-height:1.6;">${u.keywords.join(' · ')}</div>`;
+  }
+  if (active) extra += `<div style="background:var(--bg3);border-left:2px solid var(--gold);padding:6px 8px;border-radius:0 3px 3px 0;margin-bottom:5px;font-size:11px;color:var(--text2);line-height:1.5;font-style:italic;"><strong style="color:var(--text);font-style:normal;display:block;margin-bottom:2px;">Active:</strong>${active}</div>`;
+  if (passive) extra += `<div style="background:var(--bg3);border-left:2px solid var(--teal2);padding:6px 8px;border-radius:0 3px 3px 0;margin-bottom:5px;font-size:11px;color:var(--text2);line-height:1.5;font-style:italic;"><strong style="color:var(--text);font-style:normal;display:block;margin-bottom:2px;">Passive:</strong>${passive}</div>`;
+  extra += `</div>`;
+  extra += `<div class="ua-section"><h5>Move Card</h5>
+    <div style="display:flex;gap:4px;flex-wrap:wrap;">
+      <button class="btn btn-secondary btn-sm" onclick="returnToHand()" style="flex:1;">→ Hand</button>
+      <button class="btn btn-secondary btn-sm" onclick="discardFromPlay()" style="flex:1;border-color:var(--amber2);color:#d4a040;">→ Discard</button>
+    </div>
+  </div>`;
+
+  body.innerHTML += extra;
+}
+
+function exhaustLoc(uid) {
+  const u = gs.units.find(u => u.uid === uid);
+  if (!u || !u.isLocation) return;
+  u.conditions = u.conditions || [];
+  const wasExhausted = u.conditions.includes('exhausted');
+  if (wasExhausted) {
+    u.conditions = u.conditions.filter(c => c !== 'exhausted');
+    log('info', `${u.name} unexhausted — Resource ${u.resource||0} restored.`);
+  } else {
+    u.conditions.push('exhausted');
+    log('info', `${u.name} exhausted — Resource ${u.resource||0} removed from tally.`);
+  }
+  renderAllZones();
+  if (gs.selectedUnit === uid) renderUnitActions();
+}
+
+// Called when a player wins a battlefield and claims the location
+function claimLocation(uid, player) {
+  const u = gs.units.find(u => u.uid === uid);
+  if (!u || !u.isLocation) return;
+  const oldPlayer = u.player;
+  const oldZone = u.zone;
+  u.player = player;
+  u.zone = 'permanent';
+  u.bf = null;
+  // Clear exhausted so it contributes resources next turn
+  u.conditions = (u.conditions||[]).filter(c => c !== 'exhausted');
+  log('info', `P${player} claims ${u.name} → moved to P${player} Permanent Area. Resource ${u.resource||0} available next turn.`);
+  renderAllZones();
+  gs.selectedUnit = uid;
+  renderUnitActions();
+}
+
+function renderLocationActions(u) {
+  const body = document.getElementById('ua-body');
+  if (!body) return;
+  const data = LOCATION_DATA[u.name] || {};
+  const restCap = u.rest || data.rest || 0;
+  const resting = u.restingUnits || [];
+  const exhausted = (u.conditions||[]).includes('exhausted');
+  const inPermanent = u.zone === 'permanent';
+  const inBattlefield = u.zone === 'battlefield';
+
+  body.innerHTML = `
+    <div class="ua-unit-name" style="color:#7ad4b4;">${u.name}</div>
+    <div style="font-size:10px;color:var(--text3);margin-bottom:8px;font-family:'Cinzel',serif;">Location Card · ${inBattlefield?'<span style="color:#5ab4a0;">On Battlefield</span>':exhausted?'<span style="color:var(--text3);">Exhausted</span>':'<span style="color:var(--grn3);">Active</span>'}</div>
+
+    <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;">
+      ${(u.resource||0)>0?`<div style="padding:4px 8px;background:var(--amb);border:1px solid var(--amb2);border-radius:3px;font-family:'Cinzel',serif;font-size:11px;color:${exhausted||inBattlefield?'var(--text3)':'var(--gold2)'};">
+        💰 Resource ${u.resource}
+        ${inBattlefield?'<div style="font-size:8px;color:var(--text3);">available when claimed</div>':''}
+        ${inPermanent&&exhausted?'<div style="font-size:8px;color:var(--text3);">(exhausted)</div>':''}
+      </div>`:''}
+      ${restCap>0?`<div style="padding:4px 8px;background:var(--grn);border:1px solid var(--grn2);border-radius:3px;font-family:'Cinzel',serif;font-size:11px;color:#80c080;">Rest ${resting.length}/${restCap}</div>`:''}
+      ${(data.locHp||0)>0?`<div style="padding:4px 8px;background:var(--bg4);border:1px solid var(--bdr2);border-radius:3px;font-family:'Cinzel',serif;font-size:11px;color:var(--text2);">HP ${data.locHp}</div>`:''}
+    </div>
+
+    ${data.special&&data.special!=='—'?`<div style="background:var(--bg3);border-left:2px solid var(--teal2);padding:6px 8px;border-radius:0 3px 3px 0;font-size:11px;color:var(--text2);line-height:1.5;font-style:italic;margin-bottom:10px;">${data.special}</div>`:''}
+
+    ${inPermanent?`
+    <div class="ua-section"><h5>Exhaust / Unexhaust</h5>
+      <button class="btn btn-sm ${exhausted?'btn-primary':'btn-secondary'}" onclick="exhaustLoc(${u.uid})" style="width:100%;font-size:10px;padding:6px;">
+        ${exhausted?'⟳ Unexhaust (restore resource)':'⟳ Exhaust (spend resource)'}
+      </button>
+      <div style="font-size:10px;color:var(--text3);margin-top:4px;">Exhausting a Location removes its Resource from your tally. Unexhaust during Cleanup Phase.</div>
+    </div>`:''
+    }
+
+    ${inBattlefield?`
+    <div class="ua-section"><h5>Claim After Battle</h5>
+      <div style="font-size:10px;color:var(--text2);margin-bottom:6px;line-height:1.5;">Win this battlefield to claim this Location. Move it to your Permanent Area — its Resources become available next turn.</div>
+      <div style="display:flex;gap:4px;">
+        <button class="btn btn-secondary btn-sm" onclick="claimLocation(${u.uid},1)" style="flex:1;border-color:var(--gold);color:var(--gold2);">P1 Claims</button>
+        <button class="btn btn-secondary btn-sm" onclick="claimLocation(${u.uid},2)" style="flex:1;border-color:var(--blue2);color:var(--blue3);">P2 Claims</button>
+      </div>
+    </div>`:''
+    }
+
+    ${restCap>0?`
+    <div class="ua-section"><h5>Resting Units (${resting.length}/${restCap})</h5>
+      ${resting.length?resting.map((r,i)=>`
+        <div style="display:flex;align-items:center;gap:6px;padding:3px 6px;background:var(--bg3);border-radius:3px;margin-bottom:3px;">
+          <span style="font-size:11px;color:var(--text);flex:1;">${r}</span>
+          <button class="mini-btn danger" onclick="removeRestingUnit(${u.uid},${i})">✕</button>
+        </div>`).join(''):'<div style="font-size:10px;color:var(--text3);font-style:italic;">None resting</div>'}
+      <div style="margin-top:5px;">
+        <select id="rest-unit-sel" style="width:100%;background:var(--bg3);border:1px solid var(--bdr2);color:var(--text);padding:5px;font-size:11px;border-radius:3px;outline:none;margin-bottom:4px;">
+          <option value="">— Select unit to rest here —</option>
+          ${gs.units.filter(t=>!t.isLocation&&(t.zone==='permanent'||t.zone==='command'||t.zone==='battlefield')).map(t=>`<option value="${t.uid}">P${t.player}: ${t.name}</option>`).join('')}
+        </select>
+        <button class="btn btn-secondary btn-sm" style="width:100%;" onclick="addRestingUnit(${u.uid})">+ Rest Unit Here</button>
+      </div>
+    </div>`:''
+    }
+
+    <div class="ua-section"><h5>Move Location</h5>
+      <select id="move-zone-select" style="width:100%;background:var(--bg3);border:1px solid var(--bdr2);color:var(--text);padding:5px;font-size:11px;border-radius:3px;outline:none;margin-bottom:5px;">
+        <option value="permanent">Permanent Area</option>
+        <option value="battlefield-primary">Battlefield: Primary</option>
+        <option value="battlefield-secondary">Battlefield: Secondary</option>
+        <option value="battlefield-tertiary">Battlefield: Tertiary</option>
+      </select>
+      <div style="display:flex;gap:4px;">
+        <button class="btn btn-secondary btn-sm" onclick="moveUnit()" style="flex:1;">Move</button>
+        <button class="btn btn-danger btn-sm" onclick="removeUnit()" style="flex:1;">Remove</button>
+      </div>
+    </div>
+  `;
+}
+
+function addRestingUnit(locUid) {
+  const loc = gs.units.find(u => u.uid === locUid);
+  if (!loc) return;
+  const sel = document.getElementById('rest-unit-sel');
+  if (!sel || !sel.value) return;
+  const targetUid = parseInt(sel.value);
+  const target = gs.units.find(u => u.uid === targetUid);
+  if (!target) return;
+  if (!loc.restingUnits) loc.restingUnits = [];
+  const cap = (LOCATION_DATA[loc.name]?.rest) || 0;
+  if (loc.restingUnits.length >= cap) { log('info', `${loc.name} is at Rest capacity (${cap}).`); return; }
+  loc.restingUnits.push(target.name);
+  target.restingAt = loc.uid;
+  target.zone = 'permanent'; target.bf = null;
+  log('info', `${target.name} is now resting at ${loc.name}.`);
+  renderAllZones();
+  selectUnit(locUid);
+}
+
+function removeRestingUnit(locUid, idx) {
+  const loc = gs.units.find(u => u.uid === locUid);
+  if (!loc || !loc.restingUnits) return;
+  const name = loc.restingUnits[idx];
+  loc.restingUnits.splice(idx, 1);
+  // Clear restingAt on the matching unit
+  const restingUnit = gs.units.find(u => u.name === name && u.restingAt === locUid);
+  if (restingUnit) restingUnit.restingAt = null;
+  log('info', `${name} removed from rest at ${loc.name}.`);
+  renderAllZones();
+  selectUnit(locUid);
+}
+
+// ══════════════════════════════════════════════════════
+//  GROUP COMBAT
+// ══════════════════════════════════════════════════════
+let grpAttackers = [];
+let grpDefenders = [];
+let grpDamageAllocations = {};
+
+function setCombatMode(mode) {
+  document.getElementById('combat-single-panel').style.display = mode==='single'?'':'none';
+  document.getElementById('combat-group-panel').style.display = mode==='group'?'':'none';
+  document.getElementById('tab-single').style.background = mode==='single'?'var(--amber)':'transparent';
+  document.getElementById('tab-single').style.color = mode==='single'?'var(--gold2)':'var(--text2)';
+  document.getElementById('tab-group').style.background = mode==='group'?'var(--red)':'transparent';
+  document.getElementById('tab-group').style.color = mode==='group'?'#ffa0a0':'var(--text2)';
+  if (mode==='group') { grpAttackers=[]; grpDefenders=[]; grpDamageAllocations={}; renderGroupCombat(); }
+}
+
+function grpAddUnit(side) {
+  const sel = document.getElementById(side==='atk'?'grp-atk-sel':'grp-def-sel');
+  if (!sel||!sel.value) return;
+  const uid = parseInt(sel.value);
+  const u = gs.units.find(u=>u.uid===uid);
+  if (!u) return;
+  if (side==='atk') { if(!grpAttackers.includes(uid)) grpAttackers.push(uid); }
+  else { if(!grpDefenders.includes(uid)) grpDefenders.push(uid); grpDamageAllocations[uid]=0; }
+  calcGroupCombat();
+}
+
+function calcGroupCombat() {
+  const atkUnits = grpAttackers.map(id=>gs.units.find(u=>u.uid===id)).filter(Boolean);
+  const defUnits = grpDefenders.map(id=>gs.units.find(u=>u.uid===id)).filter(Boolean);
+
+  let totalAtk = atkUnits.reduce((s,u)=>s+u.atk,0);
+  let totalDfs = defUnits.reduce((s,u)=>s+u.dfs,0);
+  if (document.getElementById('grp-aggressive')?.checked) totalAtk += atkUnits.length;
+  if (document.getElementById('grp-resilient')?.checked) totalDfs += defUnits.length;
+  if (document.getElementById('grp-terror')?.checked) totalDfs = Math.max(defUnits.length, totalDfs - atkUnits.length);
+  const allDurable = document.getElementById('grp-durable-all')?.checked;
+
+  const excess = Math.max(0, totalAtk - totalDfs);
+
+  let html = '';
+  if (!atkUnits.length || !defUnits.length) {
+    html = 'Add units to both sides.';
+  } else {
+    html = `<div style="margin-bottom:4px;">Attacker pool: <strong style="color:var(--red3);">ATK ${totalAtk}</strong> (${atkUnits.map(u=>u.name).join(' + ')})</div>`;
+    html += `<div style="margin-bottom:4px;">Defender pool: <strong style="color:var(--blue3);">DFS ${totalDfs}</strong> (${defUnits.map(u=>u.name).join(' + ')})</div>`;
+    html += `<div style="margin-bottom:6px;">Damage pool: <strong style="color:var(--gold2);">${totalAtk} − ${totalDfs} = ${excess}</strong></div>`;
+    if (excess === 0) {
+      html += `<div style="color:var(--green3);">No combat damage — attackers do not exceed defense.</div>`;
+    } else {
+      html += `<div style="color:var(--text2);">Allocate <strong style="color:var(--gold2);">${excess}</strong> damage points across defenders.</div>`;
+    }
+  }
+  document.getElementById('grp-result').innerHTML = html;
+
+  // Render attacker/defender lists
+  document.getElementById('grp-atk-list').innerHTML = atkUnits.map(u=>`
+    <div style="display:flex;align-items:center;gap:5px;padding:3px 6px;background:var(--bg3);border-radius:3px;border:1px solid var(--border);">
+      <span style="font-size:11px;color:var(--text);flex:1;">${u.name}</span>
+      <span style="font-size:10px;color:var(--red3);font-family:'Cinzel',serif;">ATK ${u.atk}</span>
+      <button class="mini-btn danger" onclick="grpRemoveUnit('atk',${u.uid})">✕</button>
+    </div>`).join('');
+  document.getElementById('grp-def-list').innerHTML = defUnits.map(u=>`
+    <div style="display:flex;align-items:center;gap:5px;padding:3px 6px;background:var(--bg3);border-radius:3px;border:1px solid var(--border);">
+      <span style="font-size:11px;color:var(--text);flex:1;">${u.name} (HP ${u.hp}/${u.maxHp})</span>
+      <span style="font-size:10px;color:var(--blue3);font-family:'Cinzel',serif;">DFS ${u.dfs}</span>
+      <button class="mini-btn danger" onclick="grpRemoveUnit('def',${u.uid})">✕</button>
+    </div>`).join('');
+
+  // Allocation inputs
+  const allocArea = document.getElementById('grp-allocate-area');
+  if (excess > 0 && defUnits.length) {
+    allocArea.style.display = '';
+    document.getElementById('grp-allocate-list').innerHTML = defUnits.map(u => {
+      const curAlloc = grpDamageAllocations[u.uid]||0;
+      let dmg = curAlloc; if(allDurable) dmg = Math.max(1, dmg-1);
+      return `<div style="display:flex;align-items:center;gap:6px;padding:4px;background:var(--bg3);border-radius:3px;margin-bottom:3px;">
+        <span style="font-size:11px;color:var(--text);flex:1;">${u.name} (${u.hp}/${u.maxHp} HP)</span>
+        <button class="mini-btn" onclick="adjustAlloc(${u.uid},-1,${excess})">−</button>
+        <span style="font-family:'Cinzel',serif;font-size:13px;color:var(--gold2);min-width:20px;text-align:center;">${curAlloc}</span>
+        <button class="mini-btn" onclick="adjustAlloc(${u.uid},1,${excess})">+</button>
+        ${dmg>0?`<span style="font-size:10px;color:var(--red3);">→ ${Math.max(0,u.hp-dmg)} HP</span>`:''}
+      </div>`;
+    }).join('');
+  } else {
+    allocArea.style.display = 'none';
+  }
+
+  // Populate selects
+  const allUnits = gs.units.filter(u=>u.hp>0&&!u.isLocation);
+  const opt = u => `<option value="${u.uid}">P${u.player}: ${u.name} (A:${u.atk} D:${u.dfs} HP:${u.hp})</option>`;
+  document.getElementById('grp-atk-sel').innerHTML = '<option value="">Add attacker…</option>'+allUnits.map(opt).join('');
+  document.getElementById('grp-def-sel').innerHTML = '<option value="">Add defender…</option>'+allUnits.map(opt).join('');
+}
+
+function adjustAlloc(uid, delta, maxPool) {
+  grpDamageAllocations[uid] = Math.max(0, (grpDamageAllocations[uid]||0) + delta);
+  const total = Object.values(grpDamageAllocations).reduce((s,v)=>s+v,0);
+  if (total > maxPool) grpDamageAllocations[uid] = Math.max(0, (grpDamageAllocations[uid]||0) - delta);
+  calcGroupCombat();
+}
+
+function grpRemoveUnit(side, uid) {
+  if (side==='atk') grpAttackers = grpAttackers.filter(id=>id!==uid);
+  else { grpDefenders = grpDefenders.filter(id=>id!==uid); delete grpDamageAllocations[uid]; }
+  calcGroupCombat();
+}
+
+function applyGroupCombat() {
+  const allDurable = document.getElementById('grp-durable-all')?.checked;
+  let applied = false;
+  grpDefenders.forEach(uid => {
+    const u = gs.units.find(u=>u.uid===uid); if(!u) return;
+    let dmg = grpDamageAllocations[uid]||0;
+    if (allDurable) dmg = Math.max(1, dmg-1);
+    if (dmg > 0) {
+      u.hp = Math.max(0, u.hp-dmg);
+      log('combat', `⚔ Group combat: ${u.name} takes ${dmg} damage → ${u.hp}/${u.maxHp} HP${u.hp===0?' — DESTROYED!':''}`);
+      applied = true;
+    }
+  });
+  if (!applied) { log('info','No damage allocated in group combat.'); return; }
+  grpAttackers=[]; grpDefenders=[]; grpDamageAllocations={};
+  renderAllZones(); if(gs.selectedUnit) renderUnitActions();
+  closeModal('combat-modal');
+}
+
+function clearGroupCombat() {
+  grpAttackers=[]; grpDefenders=[]; grpDamageAllocations={};
+  calcGroupCombat();
+}
+
+function renderGroupCombat() {
+  const allUnits = gs.units.filter(u=>u.hp>0&&!u.isLocation);
+  const opt = u => `<option value="${u.uid}">P${u.player}: ${u.name} (A:${u.atk} D:${u.dfs} HP:${u.hp})</option>`;
+  const aSel = document.getElementById('grp-atk-sel'); if(aSel) aSel.innerHTML = '<option value="">Add attacker…</option>'+allUnits.map(opt).join('');
+  const dSel = document.getElementById('grp-def-sel'); if(dSel) dSel.innerHTML = '<option value="">Add defender…</option>'+allUnits.map(opt).join('');
+  document.getElementById('grp-result').innerHTML = 'Add units to both sides to calculate group combat.';
+  document.getElementById('grp-atk-list').innerHTML = '';
+  document.getElementById('grp-def-list').innerHTML = '';
+  document.getElementById('grp-allocate-area').style.display = 'none';
+}
+
+// ══════════════════════════════════════════════════════
+//  COMBAT RESOLVER ENTRY POINT
+// ══════════════════════════════════════════════════════
+function openCombatResolver() {
+  _populateCombatSelects();
+  document.getElementById('combat-modal').classList.add('open');
+  setCombatMode('single');
+  renderGroupCombat();
+}
+
+// ══════════════════════════════════════════════════════
+//  PATCH resetGame to also reset discard piles + locations
+// ══════════════════════════════════════════════════════
+function resetGame() {
+  if (!confirm('Reset the entire game? All progress will be lost.')) return;
+  gs = {
+    round:1, phase:'setup', battleLoop:1, step:0, initiative:1,
+    th:{1:40,2:40}, resources:{1:3,2:3}, hand:{1:7,2:7},
+    bfControl:{primary:'none',secondary:'none',tertiary:'none'},
+    units:[], nextUid:1, selectedUnit:null,
+    modalContext:{player:1,zone:'command',bf:null}, combatResult:null,
+    pairs:[], bfInitiative:{primary:null,secondary:null,tertiary:null}, _pairSel:{p1:[],p2:[]}
+  };
+  simDiscards = {1:[],2:[]};
+  simGraveyards = {1:[],2:[]};
+  simDecks = {1:[],2:[]};
+  simHands = {1:[],2:[]};
+  handRevealed = {1:false,2:false};
+  ['loc-tertiary','loc-secondary','loc-primary'].forEach(id => {
+    const el = document.getElementById(id); if(el) el.value = '';
+  });
+  clearLog();
+  init();
+  renderHands();
+  updateDeckCounts();
+}
+
+// ══════════════════════════════════════════════════════
+//  LOCATION DROP TARGETS on battlefield location selects
+// ══════════════════════════════════════════════════════
+function setupBFDropTargets() {
+  ['primary','secondary','tertiary'].forEach(bf => {
+    const sel = document.getElementById(`loc-${bf}`);
+    if (!sel) return;
+    sel.parentElement.addEventListener('dragover', e => { e.preventDefault(); });
+    sel.parentElement.addEventListener('drop', e => {
+      e.preventDefault();
+      if (dragUid === null) return;
+      const u = gs.units.find(u => u.uid === dragUid);
+      if (!u || !u.isLocation) return;
+      // Seize: move location to this battlefield
+      sel.value = u.name;
+      updateLocation(bf, u.name);
+      u.zone = 'battlefield'; u.bf = bf;
+      log('info', `${u.name} seized for ${bf} battlefield!`);
+      renderAllZones();
+      dragUid = null;
+    });
+  });
+}
+
+// ══════════════════════════════════════════════════════
+//  MODAL CLOSE OVERLAY PATCHES for new modals
+// ══════════════════════════════════════════════════════
+['discard-modal','location-modal','deck-loader-modal','graveyard-modal','bf-zoom-modal','pairing-modal','bf-initiative-modal','pair-confirm-modal'].forEach(id => {
+  const el = document.getElementById(id);
+  if (el) el.addEventListener('click', e => { if (e.target === el) el.classList.remove('open'); });
+});
+
+// ══════════════════════════════════════════════════════
+//  INIT (final)
+// ══════════════════════════════════════════════════════
+function toggleFaceDown() {
+  const u = gs.units.find(u => u.uid === gs.selectedUnit);
+  if (!u) return;
+  u.faceDown = !u.faceDown;
+  log('info', `${u.name} turned ${u.faceDown ? 'face down' : 'face up'}.`);
+  renderAllZones();
+  renderUnitActions();
+}
+
+function attachToUnit(fromUid, toUid) {
+  const from = gs.units.find(u => u.uid === fromUid);
+  const to   = gs.units.find(u => u.uid === toUid);
+  if (!from || !to) return;
+  if (!to.attachments) to.attachments = [];
+  // Detach from previous host first
+  if (from.attachedTo) {
+    const prev = gs.units.find(u => u.uid === from.attachedTo);
+    if (prev && prev.attachments)
+      prev.attachments = prev.attachments.filter(a => a._uid !== fromUid);
+  }
+  to.attachments.push({ name: from.name, cost: from.cost, _uid: fromUid });
+  from.attachedTo = toUid;
+  // Keep the attachment card co-located with its host
+  from.zone = to.zone;
+  from.bf   = to.bf;
+  log('info', `${from.name} attached to ${to.name}.`);
+  renderAllZones();
+  renderUnitActions();
+}
+
+function detachCardByIdx(uid, idx) {
+  const u = gs.units.find(u => u.uid === uid);
+  if (!u || !u.attachments) return;
+  const a = u.attachments[idx];
+  if (!a) return;
+  u.attachments.splice(idx, 1);
+  log('info', `${a.name} detached from ${u.name}.`);
+  renderAllZones();
+  if (gs.selectedUnit === uid) renderUnitActions();
+}
+
+function detachCard(uid) {
+  const u = gs.units.find(u => u.uid === uid);
+  if (!u || !u.attachedTo) return;
+  const host = gs.units.find(h => h.uid === u.attachedTo);
+  if (host && host.attachments)
+    host.attachments = host.attachments.filter(a => a._uid !== uid);
+  u.attachedTo = null;
+  log('info', `${u.name} detached.`);
+  renderAllZones();
+  renderUnitActions();
+}
+
+function removeAttachment(hostUid, attachIdx) {
+  const host = gs.units.find(u => u.uid === hostUid);
+  if (!host || !host.attachments) return;
+  const att = host.attachments[attachIdx];
+  if (!att) return;
+  const src = gs.units.find(u => u.uid === att._uid);
+  if (src) src.attachedTo = null;
+  host.attachments.splice(attachIdx, 1);
+  log('info', `"${att.name}" removed from ${host.name}.`);
+  renderAllZones();
+  renderUnitActions();
+}
+
+function sendToGY() {
+  const u = gs.units.find(u => u.uid === gs.selectedUnit);
+  if (!u) return;
+  const p = u.player;
+  simGraveyards[p].push({ name: u.name, cardId: u.cardId, player: p });
+  // Detach any attachments pointing to this unit
+  (u.attachments || []).forEach(a => {
+    const src = gs.units.find(s => s.uid === a._uid);
+    if (src) src.attachedTo = null;
+  });
+  gs.units = gs.units.filter(u => u.uid !== gs.selectedUnit);
+  updateDeckCounts();
+  log('damage', `☠ ${u.name} → P${p} graveyard.`);
+  gs.selectedUnit = null;
+  renderAllZones();
+  renderUnitActions();
+}
+
+// ══════════════════════════════════════════════════════
+//  HAND REVEAL (fixed — updates button label)
+// ══════════════════════════════════════════════════════
+function toggleReveal(player) {
+  handRevealed[player] = !handRevealed[player];
+  const btn = document.getElementById(`reveal-btn-${player}`);
+  if (btn) btn.textContent = handRevealed[player] ? '👁 Revealed' : '👁 Hidden';
+  renderHands();
+}
+
+// ══════════════════════════════════════════════════════
+//  UI TOGGLES: HAND STRIP + LOG
+// ══════════════════════════════════════════════════════
+let handStripVisible = true;
+function toggleHandStrip() {
+  handStripVisible = !handStripVisible;
+  const strip = document.getElementById('hand-strip');
+  const arrow = document.getElementById('hand-strip-arrow');
+  if (!strip) return;
+  strip.style.height = handStripVisible ? '118px' : '22px';
+  strip.style.overflow = 'hidden';
+  arrow.textContent = handStripVisible ? '▼' : '▲';
+}
+
+let logVisible = true;
+function toggleLog() {
+  logVisible = !logVisible;
+  const panel = document.querySelector('.log-panel');
+  const btn = document.getElementById('log-toggle-btn');
+  const entries = document.getElementById('log-entries');
+  const headerText = document.getElementById('log-header-text');
+  const clearBtn = document.getElementById('log-clear-btn');
+  if (!panel) return;
+  if (logVisible) {
+    panel.style.width = '200px';
+    entries.style.display = '';
+    if (headerText) headerText.style.display = '';
+    if (clearBtn) clearBtn.style.display = '';
+    if (btn) { btn.textContent = '◀'; btn.title = 'Collapse log'; }
+  } else {
+    panel.style.width = '32px';
+    entries.style.display = 'none';
+    if (headerText) headerText.style.display = 'none';
+    if (clearBtn) clearBtn.style.display = 'none';
+    if (btn) { btn.textContent = '▶'; btn.title = 'Expand log'; }
+  }
+}
+
+// ══════════════════════════════════════════════════════
+//  BATTLEFIELD INITIATIVE (Setup Phase Step 7)
+// ══════════════════════════════════════════════════════
+// gs.bfInitiative tracks which player has initiative on each battlefield
+// e.g. { primary: 1, secondary: 2, tertiary: null }
+if (!gs.bfInitiative) gs.bfInitiative = { primary: null, secondary: null, tertiary: null };
+
+function openBFInitiativeModal() {
+  const modal = document.getElementById('bf-initiative-modal');
+  renderBFInitiativePanel();
+  if (modal) modal.classList.add('open');
+}
+
+function renderBFInitiativePanel() {
+  const el = document.getElementById('bf-init-body');
+  if (!el) return;
+  const bfs = ['primary','secondary','tertiary'];
+  el.innerHTML = bfs.map(bf => {
+    const cur = gs.bfInitiative[bf];
+    return `<div style="background:var(--bg3);border:1px solid var(--border);border-radius:4px;padding:10px;margin-bottom:8px;">
+      <div style="font-family:'Cinzel',serif;font-size:11px;font-weight:600;color:var(--gold);letter-spacing:1px;margin-bottom:6px;">${bf.toUpperCase()} BATTLEFIELD</div>
+      <div style="font-size:11px;color:var(--text2);margin-bottom:6px;">Current initiative: <strong style="color:${cur===1?'var(--gold2)':cur===2?'var(--blue3)':'var(--text3);'};">${cur?'Player '+cur:'None'}</strong></div>
+      <div style="display:flex;gap:6px;">
+        <button class="btn btn-sm ${cur===1?'btn-primary':'btn-secondary'}" onclick="setBFInit('${bf}',1)" style="flex:1;border-color:var(--gold);">P1 Init</button>
+        <button class="btn btn-sm ${cur===2?'btn-battle':'btn-secondary'}" onclick="setBFInit('${bf}',2)" style="flex:1;border-color:var(--blue2);color:var(--blue3);">P2 Init</button>
+        <button class="btn btn-sm btn-secondary" onclick="setBFInit('${bf}',null)" style="flex:1;">Clear</button>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function setBFInit(bf, player) {
+  gs.bfInitiative[bf] = player;
+  log('info', `${bf.charAt(0).toUpperCase()+bf.slice(1)} Battlefield Initiative → ${player?'P'+player:'None'}.`);
+  renderBFInitiativePanel();
+}
+
+// ══════════════════════════════════════════════════════
+//  PAIRING SYSTEM
+// ══════════════════════════════════════════════════════
+// gs.pairs: array of {id, p1Units:[uid,...], p2Units:[uid,...], bf:'primary'|...}
+if (!gs.pairs) gs.pairs = [];
+
+function openPairingModal(bf) {
+  gs._pairingBf = bf || 'primary';
+  renderPairingModal();
+  document.getElementById('pairing-modal').classList.add('open');
+}
+
+function renderPairingModal() {
+  const bf = gs._pairingBf || 'primary';
+  const el = document.getElementById('pairing-body');
+  if (!el) return;
+
+  const p1Units = gs.units.filter(u => !u.isLocation && u.zone==='battlefield' && u.bf===bf && u.player===1);
+  const p2Units = gs.units.filter(u => !u.isLocation && u.zone==='battlefield' && u.bf===bf && u.player===2);
+  const pairedUids = new Set(gs.pairs.filter(p=>p.bf===bf).flatMap(p=>[...p.p1Units,...p.p2Units]));
+
+  const unitBtn = (u, side) => {
+    const inPair = pairedUids.has(u.uid);
+    const sel = (gs._pairSel||{})[side]?.includes(u.uid);
+    return `<button class="btn btn-sm ${sel?'btn-primary':inPair?'btn-secondary':''}" onclick="togglePairSel(${u.uid},'${side}')"
+      style="font-size:10px;padding:3px 6px;${inPair&&!sel?'opacity:0.5;':''}" title="${inPair?'Already paired':'Select to pair'}">
+      ${u.name} (A${u.atk} D${u.dfs} HP${u.hp})
+    </button>`;
+  };
+
+  const existingPairs = gs.pairs.filter(p=>p.bf===bf);
+
+  el.innerHTML = `
+    <div style="font-family:'Cinzel',serif;font-size:10px;color:var(--gold);letter-spacing:1px;margin-bottom:8px;">${bf.toUpperCase()} BATTLEFIELD</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px;">
+      <div>
+        <div style="font-size:9px;color:var(--text3);font-family:'Cinzel',serif;letter-spacing:1px;margin-bottom:6px;">P1 UNITS — select to pair</div>
+        <div style="display:flex;flex-direction:column;gap:3px;">${p1Units.map(u=>unitBtn(u,'p1')).join('') || '<div style="font-size:10px;color:var(--text3);">No P1 units</div>'}</div>
+      </div>
+      <div>
+        <div style="font-size:9px;color:var(--text3);font-family:'Cinzel',serif;letter-spacing:1px;margin-bottom:6px;">P2 UNITS — select to pair</div>
+        <div style="display:flex;flex-direction:column;gap:3px;">${p2Units.map(u=>unitBtn(u,'p2')).join('') || '<div style="font-size:10px;color:var(--text3);">No P2 units</div>'}</div>
+      </div>
+    </div>
+    <button class="btn btn-primary btn-sm" onclick="createPair('${bf}')" style="width:100%;margin-bottom:12px;">⚔ Create Pair from Selection</button>
+
+    ${existingPairs.length ? `
+    <div style="font-family:'Cinzel',serif;font-size:10px;color:var(--gold);letter-spacing:1px;margin-bottom:6px;">ACTIVE PAIRS</div>
+    ${existingPairs.map(pair => `
+      <div style="background:var(--bg3);border:1px solid var(--border2);border-radius:4px;padding:8px;margin-bottom:5px;">
+        <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
+          <div style="flex:1;">
+            <div style="font-size:10px;color:var(--gold2);margin-bottom:2px;">P1: ${pair.p1Units.map(id=>gs.units.find(u=>u.uid===id)?.name||'?').join(' + ')||'—'}</div>
+            <div style="font-size:10px;color:var(--blue3);">P2: ${pair.p2Units.map(id=>gs.units.find(u=>u.uid===id)?.name||'?').join(' + ')||'—'}</div>
+          </div>
+          <div style="display:flex;gap:4px;">
+            <button class="btn btn-sm" onclick="resolvePairCombat('${pair.id}',1)" style="flex:1;background:var(--amber);border:1px solid var(--gold);color:var(--gold2);font-size:9px;">P1 Attacks</button>
+            <button class="btn btn-sm" onclick="resolvePairCombat('${pair.id}',2)" style="flex:1;background:var(--blue);border:1px solid var(--blue2);color:var(--blue3);font-size:9px;">P2 Attacks</button>
+            <button class="btn btn-danger btn-sm" onclick="breakPair('${pair.id}')" style="font-size:9px;">✕</button>
+          </div>
+        </div>
+      </div>`).join('')}
+    <button class="btn btn-danger btn-sm" onclick="clearAllPairs('${bf}')" style="width:100%;margin-top:4px;">Clear All Pairs</button>
+    ` : '<div style="font-size:11px;color:var(--text3);font-style:italic;text-align:center;">No active pairs</div>'}
+  `;
+}
+
+function togglePairSel(uid, side) {
+  if (!gs._pairSel) gs._pairSel = { p1:[], p2:[] };
+  const arr = gs._pairSel[side];
+  const idx = arr.indexOf(uid);
+  if (idx >= 0) arr.splice(idx, 1);
+  else arr.push(uid);
+  renderPairingModal();
+}
+
+function createPair(bf) {
+  const sel = gs._pairSel || { p1:[], p2:[] };
+  if (!sel.p1.length && !sel.p2.length) { log('info','Select at least one unit per side to create a pair.'); return; }
+  const pairId = 'pair_'+(Date.now());
+  gs.pairs.push({ id:pairId, bf, p1Units:[...sel.p1], p2Units:[...sel.p2] });
+  gs._pairSel = { p1:[], p2:[] };
+  const p1names = sel.p1.map(id=>gs.units.find(u=>u.uid===id)?.name||'?').join('+');
+  const p2names = sel.p2.map(id=>gs.units.find(u=>u.uid===id)?.name||'?').join('+');
+  log('info', `⚔ Pair created on ${bf}: [${p1names}] vs [${p2names}]`);
+  renderPairingModal();
+  renderAllZones();
+}
+
+function breakPair(pairId) {
+  gs.pairs = gs.pairs.filter(p=>p.id!==pairId);
+  renderPairingModal();
+  renderAllZones();
+}
+
+function clearAllPairs(bf) {
+  gs.pairs = gs.pairs.filter(p=>p.bf!==bf);
+  gs._pairSel = {p1:[],p2:[]};
+  log('info',`All pairs on ${bf} cleared.`);
+  renderPairingModal();
+  renderAllZones();
+}
+
+// ── PAIR COMBAT CONFIRMATION FLOW ──
+let _pcm = null;
+
+function resolvePairCombat(pairId, attackingPlayer) {
+  const pair = gs.pairs.find(p => p.id === pairId);
+  if (!pair) { log('info','Pair not found.'); return; }
+  const p1Units = pair.p1Units.map(id => gs.units.find(u => u.uid===id)).filter(Boolean);
+  const p2Units = pair.p2Units.map(id => gs.units.find(u => u.uid===id)).filter(Boolean);
+  if (!p1Units.length || !p2Units.length) {
+    gs.pairs = gs.pairs.filter(p => p.id !== pairId);
+    renderPairingModal(); renderAllZones(); return;
+  }
+  _pcm = { pairId, attackingPlayer, pair, p1Units, p2Units, mods: {} };
+  renderPairConfirmModal();
+  document.getElementById('pair-confirm-modal').classList.add('open');
+}
+
+function renderPairConfirmModal() {
+  if (!_pcm) return;
+  const { attackingPlayer, pair, p1Units, p2Units } = _pcm;
+  const atkUnits = attackingPlayer === 1 ? p1Units : p2Units;
+  const defUnits = attackingPlayer === 1 ? p2Units : p1Units;
+  const defPlayer = attackingPlayer === 1 ? 2 : 1;
+  const hasKw = (u,kw) => (u.keywords||[]).some(k=>k.toLowerCase().startsWith(kw.toLowerCase()))||(u.conditions||[]).includes(kw.toLowerCase());
+
+  document.getElementById('pcm-title').textContent = `⚔ P${attackingPlayer} Attacks → P${defPlayer} Defends`;
+
+  const uCard = (u, isAtk) => `
+    <div style="background:var(--bg3);border:1px solid ${isAtk?'var(--red2)':'var(--blue2)'};border-radius:4px;padding:8px;flex:1;min-width:100px;">
+      <div style="font-family:'Cinzel',serif;font-size:11px;font-weight:600;color:${isAtk?'var(--red3)':'var(--blue3)'};">${u.name}</div>
+      <div style="font-size:9px;color:var(--text3);">HP ${u.hp}/${u.maxHp}</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:3px;margin-top:4px;">
+        <div style="text-align:center;background:var(--bg4);padding:3px;border-radius:2px;"><div style="font-size:8px;color:var(--text3);">ATK</div><div style="font-size:14px;color:var(--gold2);font-family:'Cinzel',serif;font-weight:700;">${u.atk}</div></div>
+        <div style="text-align:center;background:var(--bg4);padding:3px;border-radius:2px;"><div style="font-size:8px;color:var(--text3);">DFS</div><div style="font-size:14px;color:var(--blue3);font-family:'Cinzel',serif;font-weight:700;">${u.dfs}</div></div>
+      </div>
+      ${(u.keywords||[]).length?`<div style="font-size:8px;color:#5ab4b4;margin-top:3px;">${u.keywords.slice(0,3).join(' · ')}</div>`:''}
+    </div>`;
+
+  const chargeUnits = atkUnits.filter(u=>(u.keywords||[]).some(k=>k.toLowerCase().startsWith('charge')));
+
+  document.getElementById('pcm-body').innerHTML = `
+    <div style="display:grid;grid-template-columns:1fr 36px 1fr;gap:8px;align-items:start;margin-bottom:14px;">
+      <div><div style="font-size:9px;color:var(--red3);font-family:'Cinzel',serif;letter-spacing:1px;margin-bottom:5px;">⚔ ATK — P${attackingPlayer}</div>
+        <div style="display:flex;flex-wrap:wrap;gap:5px;">${atkUnits.map(u=>uCard(u,true)).join('')}</div></div>
+      <div style="display:flex;align-items:center;justify-content:center;font-size:16px;color:var(--text3);padding-top:22px;">VS</div>
+      <div><div style="font-size:9px;color:var(--blue3);font-family:'Cinzel',serif;letter-spacing:1px;margin-bottom:5px;">🛡 DEF — P${defPlayer}</div>
+        <div style="display:flex;flex-wrap:wrap;gap:5px;">${defUnits.map(u=>uCard(u,false)).join('')}</div></div>
+    </div>
+    <div style="background:var(--bg3);border:1px solid var(--border);border-radius:4px;padding:10px;margin-bottom:10px;">
+      <div style="font-family:'Cinzel',serif;font-size:9px;color:var(--text3);letter-spacing:1px;margin-bottom:7px;">MODIFIERS</div>
+      <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:8px;">
+        ${[
+          ['pcm-aggressive', 'Aggressive (+1 ATK)', atkUnits.some(u=>hasKw(u,'Aggressive'))],
+          ['pcm-resilient',  'Resilient (+1 DFS)',  defUnits.some(u=>hasKw(u,'Resilient'))],
+          ['pcm-terror',     'Terror (−1 DFS)',     atkUnits.some(u=>hasKw(u,'Terror'))],
+          ['pcm-durable',    'Durable (−1 dmg)',    defUnits.some(u=>hasKw(u,'Durable'))],
+          ['pcm-impenetrable','Impenetrable (cap 1)',defUnits.some(u=>hasKw(u,'Impenetrable'))],
+        ].map(([id,label,chk])=>`<label style="display:flex;align-items:center;gap:4px;font-size:11px;color:var(--text2);cursor:pointer;"><input type="checkbox" id="${id}" ${chk?'checked':''} onchange="updatePCM()"> ${label}</label>`).join('')}
+      </div>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;">
+        <label style="font-size:11px;color:var(--text2);display:flex;align-items:center;gap:4px;">ATK bonus: <input type="number" id="pcm-atk-bonus" value="0" min="-10" max="20" style="width:44px;background:var(--bg4);border:1px solid var(--border2);color:var(--text);padding:2px 4px;border-radius:2px;outline:none;" onchange="updatePCM()"></label>
+        <label style="font-size:11px;color:var(--text2);display:flex;align-items:center;gap:4px;">DFS bonus: <input type="number" id="pcm-dfs-bonus" value="0" min="-10" max="20" style="width:44px;background:var(--bg4);border:1px solid var(--border2);color:var(--text);padding:2px 4px;border-radius:2px;outline:none;" onchange="updatePCM()"></label>
+        ${chargeUnits.length?`<label style="font-size:11px;color:var(--text2);display:flex;align-items:center;gap:4px;">Charge direct dmg: <input type="number" id="pcm-charge" value="0" min="0" max="20" style="width:44px;background:var(--bg4);border:1px solid var(--border2);color:var(--text);padding:2px 4px;border-radius:2px;outline:none;" onchange="updatePCM()"></label>`:''}
+      </div>
+    </div>
+    <div id="pcm-result" style="background:var(--bg4);border:1px solid var(--border2);border-radius:4px;padding:10px;font-size:12px;"></div>
+  `;
+  updatePCM();
+}
+
+function updatePCM() {
+  if (!_pcm) return;
+  const { attackingPlayer, p1Units, p2Units } = _pcm;
+  const atkUnits = attackingPlayer === 1 ? p1Units : p2Units;
+  const defUnits = attackingPlayer === 1 ? p2Units : p1Units;
+  const hasKw = (u,kw) => (u.keywords||[]).some(k=>k.toLowerCase().startsWith(kw.toLowerCase()))||(u.conditions||[]).includes(kw.toLowerCase());
+
+  const aggressive  = document.getElementById('pcm-aggressive')?.checked;
+  const resilient   = document.getElementById('pcm-resilient')?.checked;
+  const terror      = document.getElementById('pcm-terror')?.checked;
+  const durable     = document.getElementById('pcm-durable')?.checked;
+  const impenetrable= document.getElementById('pcm-impenetrable')?.checked;
+  const atkBonus    = parseInt(document.getElementById('pcm-atk-bonus')?.value)||0;
+  const dfsBonus    = parseInt(document.getElementById('pcm-dfs-bonus')?.value)||0;
+  const chargeDmg   = parseInt(document.getElementById('pcm-charge')?.value)||0;
+  _pcm.mods = { aggressive, resilient, terror, durable, impenetrable, atkBonus, dfsBonus, chargeDmg };
+
+  let totalAtk = atkUnits.reduce((s,u)=>s+u.atk,0) + atkBonus;
+  if (aggressive) totalAtk += atkUnits.length;
+  let totalDfs = defUnits.reduce((s,u)=>s+u.dfs,0) + dfsBonus;
+  if (resilient) totalDfs += defUnits.length;
+  if (terror) totalDfs = Math.max(defUnits.length, totalDfs - atkUnits.filter(u=>hasKw(u,'Terror')).length);
+
+  const excess = Math.max(0, totalAtk - totalDfs);
+  let defLines = '';
+  if (excess > 0) {
+    if (defUnits.length === 1) {
+      const def = defUnits[0]; let dmg = excess;
+      if (durable) dmg = Math.max(1,dmg-1); if (impenetrable) dmg=1;
+      const nh = Math.max(0,def.hp-dmg);
+      defLines = `<div style="color:${nh===0?'var(--red3)':'var(--text)'};">${def.name}: ${def.hp}→<strong>${nh}</strong>${nh===0?' 💀':''}</div>`;
+    } else {
+      const perUnit=Math.floor(excess/defUnits.length), rem=excess%defUnits.length;
+      defLines = defUnits.map((def,i)=>{
+        let dmg=perUnit+(i===0?rem:0);
+        if (durable) dmg=Math.max(1,dmg-1); if(impenetrable) dmg=Math.min(dmg,1);
+        const nh=Math.max(0,def.hp-dmg);
+        return `<div style="color:${nh===0?'var(--red3)':'var(--text)'};">${def.name}: ${def.hp}→<strong>${nh}</strong>${nh===0?' 💀':''}</div>`;
+      }).join('');
+    }
+  }
+
+  document.getElementById('pcm-result').innerHTML = `
+    <div style="display:flex;gap:14px;align-items:center;margin-bottom:6px;font-family:'Cinzel',serif;">
+      <span>ATK <strong style="color:var(--red3);">${totalAtk}</strong></span>
+      <span style="color:var(--text3);">vs</span>
+      <span>DFS <strong style="color:var(--blue3);">${totalDfs}</strong></span>
+      <span style="color:var(--text3);">→</span>
+      <span>Damage <strong style="color:${excess>0?'var(--gold2)':'var(--green3)'};">${excess}</strong>${excess===0?' (none)':''}</span>
+      ${chargeDmg>0?`<span style="color:#c090d0;">+Charge <strong>${chargeDmg}</strong></span>`:''}
+    </div>
+    ${defLines||'<div style="color:var(--green3);font-size:11px;">ATK does not exceed DFS — no damage.</div>'}
+  `;
+}
+
+function applyPairCombatConfirmed() {
+  if (!_pcm) return;
+  const { pairId, attackingPlayer, pair, p1Units, p2Units, mods } = _pcm;
+  const atkUnits = attackingPlayer === 1 ? p1Units : p2Units;
+  const defUnits = attackingPlayer === 1 ? p2Units : p1Units;
+  const hasKw = (u,kw) => (u.keywords||[]).some(k=>k.toLowerCase().startsWith(kw.toLowerCase()))||(u.conditions||[]).includes(kw.toLowerCase());
+
+  let totalAtk = atkUnits.reduce((s,u)=>s+u.atk,0)+(mods.atkBonus||0);
+  if (mods.aggressive) totalAtk += atkUnits.length;
+  let totalDfs = defUnits.reduce((s,u)=>s+u.dfs,0)+(mods.dfsBonus||0);
+  if (mods.resilient) totalDfs += defUnits.length;
+  if (mods.terror) totalDfs = Math.max(defUnits.length, totalDfs-atkUnits.filter(u=>hasKw(u,'Terror')).length);
+
+  log('combat',`⚔ P${attackingPlayer} attacks: [${atkUnits.map(u=>u.name).join('+')}] ATK ${totalAtk} vs [${defUnits.map(u=>u.name).join('+')}] DFS ${totalDfs}`);
+  if (mods.chargeDmg>0) { defUnits.forEach(d=>_applyDmg(d,mods.chargeDmg,pair)); log('combat',`  Charge: ${mods.chargeDmg} direct damage.`); }
+
+  const excess = Math.max(0, totalAtk-totalDfs);
+  if (excess===0) { log('combat','  No damage — ATK does not exceed DFS.'); }
+  else if (defUnits.length===1) {
+    const def=defUnits[0]; let dmg=excess;
+    if (mods.durable) dmg=Math.max(1,dmg-1); if(mods.impenetrable) dmg=1;
+    if (hasKw(def,'Invincible')) { def.hp=Math.max(1,def.hp); log('combat',`  ${def.name} Invincible.`); }
+    else _applyDmg(def,dmg,pair);
+  } else if (atkUnits.length>1&&defUnits.length===1) {
+    const def=defUnits[0];
+    atkUnits.forEach(atk=>{ let dmg=Math.max(1,atk.atk-totalDfs); if(mods.durable)dmg=Math.max(1,dmg-1); if(mods.impenetrable)dmg=1; if(!hasKw(def,'Invincible'))_applyDmg(def,dmg,pair); });
+  } else {
+    const perUnit=Math.floor(excess/defUnits.length), rem=excess%defUnits.length;
+    defUnits.forEach((def,i)=>{ let dmg=perUnit+(i===0?rem:0); if(mods.durable)dmg=Math.max(1,dmg-1); if(mods.impenetrable)dmg=Math.min(dmg,1); if(!hasKw(def,'Invincible'))_applyDmg(def,dmg,pair); else{def.hp=Math.max(1,def.hp);log('combat',`  ${def.name} Invincible.`);} });
+  }
+  atkUnits.forEach(u=>{ if(hasKw(u,'Rally')){atkUnits.forEach(f=>{f.hp=Math.min(f.maxHp,f.hp+1);});log('info',`  Rally: ${u.name} heals friendly units +1.`);} });
+
+  _pcm=null;
+  closeModal('pair-confirm-modal');
+  renderAllZones(); renderPairingModal();
+  if (gs.selectedUnit) renderUnitActions();
+}
+
+// Apply damage to a unit and handle destruction
+function _applyDmg(u, dmg, pair) {
+  if (dmg <= 0) return;
+  u.hp = Math.max(0, u.hp - dmg);
+  log('combat', `  ${u.name} takes ${dmg} damage → ${u.hp}/${u.maxHp} HP${u.hp===0?' 💀':''}`);
+  if (u.hp === 0) {
+    const p = u.player;
+    simGraveyards[p].push({ name: u.name, cardId: u.cardId, player: p });
+    gs.units = gs.units.filter(x => x.uid !== u.uid);
+    if (pair) {
+      pair.p1Units = pair.p1Units.filter(id => id !== u.uid);
+      pair.p2Units = pair.p2Units.filter(id => id !== u.uid);
+      if (!pair.p1Units.length || !pair.p2Units.length) {
+        gs.pairs = gs.pairs.filter(p => p.id !== pair.id);
+        log('info','Pair resolved — one side eliminated.');
+      }
+    }
+    if (gs.selectedUnit === u.uid) gs.selectedUnit = null;
+    updateDeckCounts();
+  }
+}
+
+// Show pair badges on unit cards
+function getPairBadge(uid) {
+  const pair = gs.pairs.find(p=>[...p.p1Units,...p.p2Units].includes(uid));
+  if (!pair) return '';
+  return `<div style="font-size:7px;color:#f0c060;font-family:'Cinzel',serif;background:rgba(80,60,0,0.7);padding:1px 3px;border-radius:2px;margin-top:2px;">⚔ PAIRED</div>`;
+}
+
+// ══════════════════════════════════════════════════════
+//  RETREAT
+// ══════════════════════════════════════════════════════
+function retreat(player, bf) {
+  const bfUnits = gs.units.filter(u => !u.isLocation && u.player===player && u.zone==='battlefield' && u.bf===bf);
+  if (!bfUnits.length) { log('info',`P${player} has no units on ${bf} to retreat.`); return; }
+  const survivors = [];
+  bfUnits.forEach(u => {
+    const slippery = (u.keywords||[]).includes('Slippery');
+    // Check if paired with a Hunter
+    const pairedWith = gs.pairs.find(p=>[...p.p1Units,...p.p2Units].includes(u.uid));
+    const enemyUids = pairedWith ? (player===1?pairedWith.p2Units:pairedWith.p1Units) : [];
+    const hunterPaired = enemyUids.some(id=>{
+      const e=gs.units.find(e=>e.uid===id);
+      return e && ((e.keywords||[]).includes('Hunter')||(e.conditions||[]).includes('hunter'));
+    });
+    if (hunterPaired && !slippery) {
+      log('combat',`💀 ${u.name} destroyed by Hunter when retreating!`);
+      simGraveyards[player].push({name:u.name,cardId:u.cardId,player});
+      gs.units = gs.units.filter(x=>x.uid!==u.uid);
+    } else if (!slippery) {
+      u.hp = Math.max(0, u.hp-1);
+      if (u.hp === 0) {
+        log('combat',`💀 ${u.name} destroyed during retreat (0 HP).`);
+        simGraveyards[player].push({name:u.name,cardId:u.cardId,player});
+        gs.units = gs.units.filter(x=>x.uid!==u.uid);
+      } else {
+        u.zone='command'; u.bf=null;
+        survivors.push(u.name);
+        log('info',`${u.name} retreats with 1 damage (${u.hp}/${u.maxHp} HP).`);
+      }
+    } else {
+      // Slippery — no damage, just retreat
+      u.zone='command'; u.bf=null;
+      survivors.push(u.name);
+      log('info',`${u.name} retreats safely (Slippery).`);
+    }
+  });
+  // Remove broken pairs
+  gs.pairs = gs.pairs.filter(p=>p.bf!==bf||![...p.p1Units,...p.p2Units].some(id=>!gs.units.find(u=>u.uid===id)));
+  log('phase',`P${player} retreats from ${bf}. Survivors: ${survivors.join(', ')||'none'}.`);
+  updateDeckCounts();
+  renderAllZones();
+}
+
+// ══════════════════════════════════════════════════════
+//  TRANSFER CARD TO OTHER PLAYER
+// ══════════════════════════════════════════════════════
+function transferControl(uid) {
+  const u = gs.units.find(u=>u.uid===uid);
+  if (!u) return;
+  const newPlayer = u.player===1?2:1;
+  u.player = newPlayer;
+  log('info',`${u.name} control transferred to P${newPlayer} (e.g. Battle Bishop capture / Court Infiltrator).`);
+  renderAllZones();
+  renderUnitActions();
+}
+
+// ══════════════════════════════════════════════════════
+//  BATTLEFIELD ZOOM OVERLAY
+// ══════════════════════════════════════════════════════
+let zoomBf = null;
+function openBFZoom(bf) {
+  zoomBf = bf || 'primary';
+  renderBFZoom();
+  document.getElementById('bf-zoom-modal').classList.add('open');
+}
+
+function renderBFZoom() {
+  const bf = zoomBf;
+  const el = document.getElementById('bf-zoom-body');
+  if (!el) return;
+  const p1Units = gs.units.filter(u=>!u.isLocation&&u.zone==='battlefield'&&u.bf===bf&&u.player===1);
+  const p2Units = gs.units.filter(u=>!u.isLocation&&u.zone==='battlefield'&&u.bf===bf&&u.player===2);
+  const loc = gs.units.find(u=>u.isLocation&&u.zone==='battlefield'&&u.bf===bf);
+  const ctrl = gs.bfControl[bf];
+  const bfInit = gs.bfInitiative?.[bf];
+  const dmgMap = {primary:5,secondary:4,tertiary:3};
+
+  el.innerHTML = `
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;padding-bottom:10px;border-bottom:1px solid var(--border2);">
+      <div style="font-family:'Cinzel',serif;font-size:14px;font-weight:600;color:var(--gold);">${bf.toUpperCase()} BATTLEFIELD</div>
+      <div style="font-size:12px;color:var(--text2);">+${dmgMap[bf]} TH</div>
+      <div class="bf-control ${ctrl}" style="font-size:10px;">${ctrl==='none'?'Neutral':ctrl==='p1'?'P1 Controls':'P2 Controls'}</div>
+      ${bfInit?`<div style="font-size:10px;color:var(--gold2);font-family:'Cinzel',serif;">Init: P${bfInit}</div>`:''}
+      ${loc?`<div style="font-size:11px;color:#5ab4a0;font-family:'Cinzel',serif;border:1px solid var(--teal2);padding:2px 8px;border-radius:3px;">📍 ${loc.name}${(loc.resource||0)>0?' · Res '+loc.resource:''}</div>`:''}
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr 80px 1fr;gap:12px;min-height:200px;">
+      <!-- P2 side -->
+      <div>
+        <div style="font-family:'Cinzel',serif;font-size:9px;letter-spacing:1.5px;color:var(--blue3);margin-bottom:8px;">PLAYER 2 UNITS</div>
+        <div style="display:flex;flex-wrap:wrap;gap:6px;">
+          ${p2Units.length?p2Units.map(u=>`
+            <div onclick="selectUnit(${u.uid});renderBFZoom();" style="cursor:pointer;background:var(--bg3);border:1px solid ${gs.selectedUnit===u.uid?'var(--gold)':'var(--blue2)'};border-radius:4px;padding:6px 8px;min-width:90px;">
+              <div style="font-family:'Cinzel',serif;font-size:10px;font-weight:600;color:${gs.selectedUnit===u.uid?'var(--gold2)':'var(--text)'};">${u.name}</div>
+              <div style="font-size:9px;color:var(--text3);margin-top:2px;">A${u.atk} D${u.dfs} S${u.sp} · HP ${u.hp}/${u.maxHp}</div>
+              ${getPairBadge(u.uid)}
+              ${(u.keywords||[]).length?`<div style="font-size:8px;color:#5ab4b4;margin-top:2px;">${u.keywords.slice(0,2).join(' · ')}</div>`:''}
+            </div>`).join(''):'<div style="font-size:11px;color:var(--text3);font-style:italic;">No units</div>'}
+        </div>
+      </div>
+
+      <!-- Center controls -->
+      <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;border-left:1px solid var(--border);border-right:1px solid var(--border);padding:0 8px;">
+        <div style="font-size:20px;">⚔</div>
+        <button class="btn btn-secondary btn-sm" onclick="openPairingModal('${bf}')" style="font-size:9px;width:100%;">Pair</button>
+        <button class="btn btn-battle btn-sm" onclick="openCombatResolver()" style="font-size:9px;width:100%;">Resolve</button>
+        <div style="border-top:1px solid var(--border);width:100%;margin:4px 0;"></div>
+        <div style="font-size:8px;color:var(--text3);font-family:'Cinzel',serif;text-align:center;">RETREAT</div>
+        <button class="btn btn-sm" onclick="retreat(1,'${bf}')" style="font-size:8px;width:100%;background:var(--amber);border-color:var(--gold);color:var(--gold2);">P1 Retreat</button>
+        <button class="btn btn-sm" onclick="retreat(2,'${bf}')" style="font-size:8px;width:100%;background:var(--blue);border-color:var(--blue2);color:var(--blue3);">P2 Retreat</button>
+        <div style="border-top:1px solid var(--border);width:100%;margin:4px 0;"></div>
+        <button class="btn btn-secondary btn-sm" onclick="setBFControl('${bf}','p1')" style="font-size:8px;width:100%;">P1 Wins</button>
+        <button class="btn btn-secondary btn-sm" onclick="setBFControl('${bf}','p2')" style="font-size:8px;width:100%;">P2 Wins</button>
+        <button class="btn btn-secondary btn-sm" onclick="setBFControl('${bf}','none')" style="font-size:8px;width:100%;">Neutral</button>
+      </div>
+
+      <!-- P1 side -->
+      <div>
+        <div style="font-family:'Cinzel',serif;font-size:9px;letter-spacing:1.5px;color:var(--gold2);margin-bottom:8px;">PLAYER 1 UNITS</div>
+        <div style="display:flex;flex-wrap:wrap;gap:6px;">
+          ${p1Units.length?p1Units.map(u=>`
+            <div onclick="selectUnit(${u.uid});renderBFZoom();" style="cursor:pointer;background:var(--bg3);border:1px solid ${gs.selectedUnit===u.uid?'var(--gold)':'var(--amber2)'};border-radius:4px;padding:6px 8px;min-width:90px;">
+              <div style="font-family:'Cinzel',serif;font-size:10px;font-weight:600;color:${gs.selectedUnit===u.uid?'var(--gold2)':'var(--text)'};">${u.name}</div>
+              <div style="font-size:9px;color:var(--text3);margin-top:2px;">A${u.atk} D${u.dfs} S${u.sp} · HP ${u.hp}/${u.maxHp}</div>
+              ${getPairBadge(u.uid)}
+              ${(u.keywords||[]).length?`<div style="font-size:8px;color:#5ab4b4;margin-top:2px;">${u.keywords.slice(0,2).join(' · ')}</div>`:''}
+            </div>`).join(''):'<div style="font-size:11px;color:var(--text3);font-style:italic;">No units</div>'}
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+// ══════════════════════════════════════════════════════
+//  SIDEBAR: add battle sequence zoom and initiative buttons
+// ══════════════════════════════════════════════════════
+// Expose openBFZoom and openBFInitiativeModal for sidebar buttons
+// (buttons added to HTML below)
+
+// ══════════════════════════════════════════════════════
+//  MAGIC / SPELL POINTS
+// ══════════════════════════════════════════════════════
+function modSpellPoints(uid, delta) {
+  const u = gs.units.find(u => u.uid === uid);
+  if (!u) return;
+  if (u.spellPoints === undefined) u.spellPoints = u.sp;
+  u.spellPoints = Math.max(0, u.spellPoints + delta);
+  log('info', `${u.name} Spell Points: ${u.spellPoints}.`);
+  renderUnitActions();
+}
+
+function toggleSpellCast(uid, idx) {
+  const u = gs.units.find(u => u.uid === uid);
+  if (!u) return;
+  if (!u.spellsCast) u.spellsCast = [];
+  const pos = u.spellsCast.indexOf(idx);
+  if (pos >= 0) u.spellsCast.splice(pos, 1);
+  else u.spellsCast.push(idx);
+  log('info', `${u.name} spell cast ${idx+1} ${pos>=0?'un':''}marked.`);
+  renderUnitActions();
+}
+
+function resetSpellsCast(uid) {
+  const u = gs.units.find(u => u.uid === uid);
+  if (!u) return;
+  u.spellsCast = [];
+  log('info', `${u.name} spell casts reset for new turn.`);
+  renderUnitActions();
+}
+
+// Also reset spellsCast on all wizards during unexhaust step — folded directly into unexhaustAll below
+
+// ══════════════════════════════════════════════════════
+//  FIX DRAG-DROP: use event delegation on stable parent
+//  for battlefield zones that get re-rendered
+// ══════════════════════════════════════════════════════
+
+// ══════════════════════════════════════════════════════
+//  TH DIRECT SET
+// ══════════════════════════════════════════════════════
+function promptSetTH(player) {
+  const cur = gs.th[player];
+  const val = prompt(`Set P${player} Tactical Health (current: ${cur}):`, cur);
+  if (val === null) return;
+  const n = parseInt(val);
+  if (isNaN(n) || n < 0) return;
+  gs.th[player] = n;
+  log('info', `P${player} Tactical Health set to ${n}.`);
+  renderHeader();
+}
+
+// ══════════════════════════════════════════════════════
+//  SEARCH DECK
+// ══════════════════════════════════════════════════════
+let searchDeckPlayer = 1;
+
+function openSearchDeck(player) {
+  searchDeckPlayer = player;
+  document.getElementById('search-deck-title').textContent = `🔎 Search P${player} Deck (${simDecks[player].length} cards)`;
+  document.getElementById('search-deck-input').value = '';
+  renderSearchDeckList();
+  document.getElementById('search-deck-modal').classList.add('open');
+}
+
+function renderSearchDeckList() {
+  const el = document.getElementById('search-deck-list');
+  const q = (document.getElementById('search-deck-input')?.value || '').toLowerCase();
+  const deck = simDecks[searchDeckPlayer];
+  if (!deck || !deck.length) { el.innerHTML = '<div style="color:var(--text3);font-style:italic;text-align:center;padding:20px;">Deck is empty.</div>'; return; }
+  const filtered = deck.map((card, idx) => ({ card, idx })).filter(({ card }) =>
+    !q || card.name.toLowerCase().includes(q)
+  );
+  el.innerHTML = filtered.map(({ card, idx }) => `
+    <div style="display:flex;align-items:center;gap:8px;padding:5px 8px;background:var(--bg3);border:1px solid var(--border);border-radius:3px;margin-bottom:4px;cursor:pointer;"
+      onmouseenter="this.style.borderColor='var(--gold)'" onmouseleave="this.style.borderColor='var(--border)'">
+      <div style="flex:1;">
+        <div style="font-family:'Cinzel',serif;font-size:11px;font-weight:600;color:var(--text);">${card.name}</div>
+        <div style="font-size:10px;color:var(--text3);">#${idx+1} from top · ${card.faction||''} · Cost ${card.costSpell?'S'+card.costSpell:card.cost||0}</div>
+      </div>
+      <div style="display:flex;gap:4px;">
+        <button class="btn btn-secondary btn-sm" onclick="takeCardFromDeck(${searchDeckPlayer},${idx},'hand')" style="font-size:9px;">→ Hand</button>
+        <button class="btn btn-secondary btn-sm" onclick="takeCardFromDeck(${searchDeckPlayer},${idx},'command')" style="font-size:9px;">→ Play</button>
+        <button class="btn btn-secondary btn-sm" onclick="takeCardFromDeck(${searchDeckPlayer},${idx},'discard')" style="font-size:9px;">→ Discard</button>
+      </div>
+    </div>
+  `).join('') || '<div style="color:var(--text3);font-style:italic;text-align:center;padding:10px;">No cards match.</div>';
+}
+
+function takeCardFromDeck(player, deckIdx, destination) {
+  const deck = simDecks[player];
+  if (!deck || deckIdx >= deck.length) return;
+  const [card] = deck.splice(deckIdx, 1);
+  if (destination === 'hand') {
+    simHands[player].push({ ...card, _hid: Date.now() });
+    renderHands();
+    log('info', `P${player} takes ${card.name} from deck → hand.`);
+  } else if (destination === 'command') {
+    addUnit(card, player, 'command', null);
+    log('info', `P${player} plays ${card.name} from deck → command area.`);
+    renderAllZones();
+  } else if (destination === 'discard') {
+    simDiscards[player].push(card);
+    updateDeckCounts();
+    updatePileCounts();
+    log('info', `P${player} discards ${card.name} from deck.`);
+  }
+  updateDeckCounts();
+  document.getElementById('search-deck-title').textContent = `🔎 Search P${player} Deck (${simDecks[player].length} cards)`;
+  renderSearchDeckList();
+}
+
+function shuffleDeck(player) {
+  const deck = simDecks[player];
+  if (!deck || !deck.length) return;
+  for (let i = deck.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [deck[i], deck[j]] = [deck[j], deck[i]];
+  }
+  updateDeckCounts();
+  log('info', `P${player} deck shuffled (${deck.length} cards).`);
+}
+
+// ══════════════════════════════════════════════════════
+//  COMPOSITION VIEWER
+// ══════════════════════════════════════════════════════
+const COMPOSITIONS_DATA = [
+  { key:'dominion', name:'Play for Dominion',
+    restrictions:'Must include 1 and only 1 specific Faction. At least 60% of deck must be Faction-specific cards.',
+    special:'"Loyalty to the Throne" — The first time you play a Faction-Specific card every turn, that card costs 1 less Resource, to a minimum of 1.' },
+  { key:'alliance', name:'Alliance of Convenience',
+    restrictions:'No more than 4 different Factions. At least 20 cards per Faction included. No more than 40 Faction Neutral cards.',
+    special:'"Common Cause" — Once at the start of a battle sequence, if you have Units from 2+ Factions on the battlefield, draw 1 card.' },
+  { key:'blitz', name:'Blitz Doctrine',
+    restrictions:'No cards with cost 4+. At least 65% Units. 1–3 Specific Factions.',
+    special:'"Relentless Advance" — Units costing 1–2 Resources gain Aggressive; if already Aggressive, gain Hunter instead.' },
+  { key:'blood', name:'Blood Price Pact',
+    restrictions:'1–3 specific Factions. Must include at least 10 card types with Sacrifice effects.',
+    special:'"Power Demands Tribute" — Once per turn, when you destroy a friendly Unit via Sacrifice, gain Resources next turn equal to that Units cost.' },
+  { key:'patience', name:'Axiom of Patience',
+    restrictions:'1–4 specific Factions. At least 15 non-Unit card types. Max 2 copies per card (4 Common, 6 Abundant).',
+    special:'"Calculated Delay" — At start of Cleanup phase, draw 1 card per unspent Resource (max 3).' },
+  { key:'archivist', name:'Archivist Order',
+    restrictions:'1–3 specific factions. Must include at least 10 cards with the Foresee X-Y keyword.',
+    special:'"Perfect Recall" — During Setup, if you have a Wizard or Foresee unit in play, return a discard pile card and play it. Costs: 1st=0, 2nd=1, 3rd=2, 4th+=not allowed.' },
+  { key:'balanced', name:'Balanced Warhost',
+    restrictions:'1–3 specific factions. At least 25% Unit, 25% Strategy, and 25% Attachment cards.',
+    special:'"Adaptive Warfare" — Once per turn, discard a card from hand to scry deck for a different type card and take it.' },
+  { key:'duality', name:'Duality Accord',
+    restrictions:'Exactly 2 specific Factions. At least 60% faction-specific (30% each). Neutral cards cost +1 Resource.',
+    special:'"Tension of Opposites" — First time each turn you play a different-faction card than the previous one, it costs 1 less. If you play equal face-up cards from each faction in Setup, draw 1. Choose Light/Dark factions: Light gains Rally, Dark gains Terror when both are on a battlefield.' },
+  { key:'sovereign', name:"Sovereign's Gambit",
+    restrictions:'1–3 specific Factions. Only 1 copy per card. Must include at least 5 cards costing 5+.',
+    special:'"Royal Decree" — For the first 3 turns, gain 3 extra Resources per turn.' },
+];
+
+let compViewerPlayer = 1;
+const playerCompositions = { 1: null, 2: null };
+
+function openCompositionViewer(player) {
+  compViewerPlayer = player;
+  document.getElementById('comp-modal-title').textContent = `⚜ P${player} Convergence Composition`;
+  renderCompositionModal();
+  document.getElementById('composition-modal').classList.add('open');
+}
+
+function renderCompositionModal() {
+  const el = document.getElementById('comp-modal-body');
+  const cur = playerCompositions[compViewerPlayer];
+  const deck = simDecks[compViewerPlayer];
+  const deckName = deck?.deckName || `P${compViewerPlayer} Deck`;
+
+  let html = `<div style="font-size:11px;color:var(--text2);margin-bottom:12px;font-family:'Cinzel',serif;letter-spacing:1px;">PLAYER ${compViewerPlayer}: ${deckName}</div>`;
+  
+  // Composition selector
+  html += `<div style="margin-bottom:14px;">
+    <label style="font-size:10px;color:var(--text3);font-family:'Cinzel',serif;letter-spacing:1px;display:block;margin-bottom:5px;">SELECT COMPOSITION:</label>
+    <select onchange="playerCompositions[${compViewerPlayer}]=this.value;renderCompositionModal()" style="width:100%;background:var(--bg3);border:1px solid var(--border2);color:var(--text);padding:6px;border-radius:3px;font-size:12px;outline:none;">
+      <option value="">— Choose composition —</option>
+      ${COMPOSITIONS_DATA.map(comp => `<option value="${comp.key}" ${cur===comp.key?'selected':''}>${comp.name}</option>`).join('')}
+    </select>
+  </div>`;
+
+  if (cur) {
+    const comp = COMPOSITIONS_DATA.find(d => d.key === cur);
+    if (comp) {
+      html += `<div style="background:var(--bg3);border:1px solid var(--border);border-radius:4px;padding:14px;">
+        <div style="font-family:'Cinzel',serif;font-size:13px;font-weight:600;color:var(--gold2);margin-bottom:10px;">${comp.name}</div>
+        <div style="font-size:11px;color:var(--text3);font-family:'Cinzel',serif;letter-spacing:1px;margin-bottom:5px;">RESTRICTIONS</div>
+        <div style="font-size:12px;color:var(--text2);margin-bottom:12px;line-height:1.6;">${comp.restrictions}</div>
+        <div style="font-size:11px;color:var(--text3);font-family:'Cinzel',serif;letter-spacing:1px;margin-bottom:5px;">SPECIAL RULE</div>
+        <div style="font-size:12px;color:var(--gold);line-height:1.6;font-style:italic;border-left:2px solid var(--gold);padding-left:10px;">${comp.special}</div>
+      </div>`;
+    }
+  } else {
+    html += `<div style="font-size:12px;color:var(--text3);font-style:italic;text-align:center;padding:20px;">Select a composition above to view its rules.</div>`;
+  }
+
+  // Show all compositions in collapsible list
+  html += `<div style="margin-top:16px;border-top:1px solid var(--border);padding-top:12px;">
+    <div style="font-size:10px;color:var(--text3);font-family:'Cinzel',serif;letter-spacing:1px;margin-bottom:8px;">ALL COMPOSITIONS</div>
+    ${COMPOSITIONS_DATA.map(comp => `
+      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:3px;padding:8px 10px;margin-bottom:5px;cursor:pointer;"
+        onclick="playerCompositions[${compViewerPlayer}]='${comp.key}';renderCompositionModal()">
+        <div style="font-family:'Cinzel',serif;font-size:11px;font-weight:600;color:${cur===comp.key?'var(--gold2)':'var(--text)'};">${comp.name} ${cur===comp.key?'✓':''}</div>
+        <div style="font-size:10px;color:var(--text3);margin-top:2px;">${comp.special.slice(0,80)}…</div>
+      </div>`).join('')}
+  </div>`;
+
+  el.innerHTML = html;
+}
+
+// ══════════════════════════════════════════════════════
+//  ATTACHMENT VISUAL STACKING + REST VISUAL STACKING
+//  Units with attachments render as a stacked group.
+//  Resting units render on top of their location card.
+// ══════════════════════════════════════════════════════
+// Attachment strip HTML — just the top nameplate of a card
+function attachmentStripHTML(a, parentUid, idx) {
+  return `<div style="
+    height:18px;display:flex;align-items:center;padding:0 5px;
+    background:linear-gradient(to right,#1a1200,#2a1a00);
+    border:1px solid var(--amber2);border-top:none;border-radius:0 0 3px 3px;
+    font-family:'Cinzel',serif;font-size:8px;color:var(--gold2);
+    position:relative;cursor:pointer;gap:4px;
+    " onclick="event.stopPropagation();selectUnit(${parentUid})" title="Attachment: ${a.name}">
+    📎 <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${a.name}</span>
+    <button onclick="event.stopPropagation();detachCard(${parentUid},${idx})" style="background:none;border:none;color:var(--text3);cursor:pointer;font-size:10px;padding:0;line-height:1;" title="Detach">✕</button>
+  </div>`;
+}
+
+// Resting unit strip HTML — shown on top of location card
+function restingUnitStripHTML(name, locUid, idx) {
+  return `<div style="
+    height:18px;display:flex;align-items:center;padding:0 5px;
+    background:linear-gradient(to right,#001a0a,#002a12);
+    border:1px solid var(--teal2);border-top:none;border-radius:0 0 3px 3px;
+    font-family:'Cinzel',serif;font-size:8px;color:#7ad4b4;
+    position:relative;cursor:default;gap:4px;
+    " title="Resting: ${name}">
+    💤 <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${name}</span>
+    <button onclick="event.stopPropagation();removeRestingUnit(${locUid},${idx})" style="background:none;border:none;color:var(--text3);cursor:pointer;font-size:10px;padding:0;line-height:1;" title="Remove from rest">✕</button>
+  </div>`;
+}
+
+// (attachment/resting stacking now handled inline in unitCardHTML)
+
+// unitCardHTML patching moved inline above
+
+// Wire new modal close listeners
+['search-deck-modal','composition-modal'].forEach(id => {
+  const el = document.getElementById(id);
+  if (el) el.addEventListener('click', e => { if (e.target === el) el.classList.remove('open'); });
+});
+
+// ══════════════════════════════════════════════════════
+//  FIX detachCard to accept index
+// ══════════════════════════════════════════════════════
+// ══════════════════════════════════════════════════════
+//  REST UNIT TRACKING: when a unit rests at a location, 
+//  set u.restingAt = loc.uid on the resting unit
+// ══════════════════════════════════════════════════════
+
+// ══════════════════════════════════════════════════════
+//  INIT
+// ══════════════════════════════════════════════════════
+init();
+setupDragDrop();
+setupBFDropTargets();
+renderHands();
+updateDeckCounts();
+updatePileCounts();
