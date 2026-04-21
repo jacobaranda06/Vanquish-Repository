@@ -1,0 +1,1950 @@
+{
+  "composition": "dominion",
+  "totalCards": 99,
+  "factions": [
+    "brotherhood"
+  ],
+  "cards": [
+    {
+      "id": "bh34",
+      "name": "Blood Flames!",
+      "faction": "brotherhood",
+      "types": [
+        "strategy",
+        "spell"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 0,
+      "costSpell": 2,
+      "maxCopies": 2,
+      "rarity": "standard",
+      "active": "Play facedown in Command area. Deal 1 direct damage to an enemy unit in the wizard Unit's pairing who spent these spell points.",
+      "passive": "—"
+    },
+    {
+      "id": "bh34",
+      "name": "Blood Flames!",
+      "faction": "brotherhood",
+      "types": [
+        "strategy",
+        "spell"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 0,
+      "costSpell": 2,
+      "maxCopies": 2,
+      "rarity": "standard",
+      "active": "Play facedown in Command area. Deal 1 direct damage to an enemy unit in the wizard Unit's pairing who spent these spell points.",
+      "passive": "—"
+    },
+    {
+      "id": "bh27",
+      "name": "Brotherhood Footsoldier",
+      "faction": "brotherhood",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Anti-Formations",
+        "Bodyguard"
+      ],
+      "hth": 1,
+      "atk": 2,
+      "dfs": 2,
+      "sp": 1,
+      "cost": 1,
+      "maxCopies": 5,
+      "rarity": "standard",
+      "active": "—",
+      "passive": "\"Expendable\" — When this unit dies, roll die: 3-5 = increase Resource X on one controlled Location by 1; 6 = play one attachment for free from hand."
+    },
+    {
+      "id": "bh27",
+      "name": "Brotherhood Footsoldier",
+      "faction": "brotherhood",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Anti-Formations",
+        "Bodyguard"
+      ],
+      "hth": 1,
+      "atk": 2,
+      "dfs": 2,
+      "sp": 1,
+      "cost": 1,
+      "maxCopies": 5,
+      "rarity": "standard",
+      "active": "—",
+      "passive": "\"Expendable\" — When this unit dies, roll die: 3-5 = increase Resource X on one controlled Location by 1; 6 = play one attachment for free from hand."
+    },
+    {
+      "id": "bh27",
+      "name": "Brotherhood Footsoldier",
+      "faction": "brotherhood",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Anti-Formations",
+        "Bodyguard"
+      ],
+      "hth": 1,
+      "atk": 2,
+      "dfs": 2,
+      "sp": 1,
+      "cost": 1,
+      "maxCopies": 5,
+      "rarity": "standard",
+      "active": "—",
+      "passive": "\"Expendable\" — When this unit dies, roll die: 3-5 = increase Resource X on one controlled Location by 1; 6 = play one attachment for free from hand."
+    },
+    {
+      "id": "bh27",
+      "name": "Brotherhood Footsoldier",
+      "faction": "brotherhood",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Anti-Formations",
+        "Bodyguard"
+      ],
+      "hth": 1,
+      "atk": 2,
+      "dfs": 2,
+      "sp": 1,
+      "cost": 1,
+      "maxCopies": 5,
+      "rarity": "standard",
+      "active": "—",
+      "passive": "\"Expendable\" — When this unit dies, roll die: 3-5 = increase Resource X on one controlled Location by 1; 6 = play one attachment for free from hand."
+    },
+    {
+      "id": "bh27",
+      "name": "Brotherhood Footsoldier",
+      "faction": "brotherhood",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Anti-Formations",
+        "Bodyguard"
+      ],
+      "hth": 1,
+      "atk": 2,
+      "dfs": 2,
+      "sp": 1,
+      "cost": 1,
+      "maxCopies": 5,
+      "rarity": "standard",
+      "active": "—",
+      "passive": "\"Expendable\" — When this unit dies, roll die: 3-5 = increase Resource X on one controlled Location by 1; 6 = play one attachment for free from hand."
+    },
+    {
+      "id": "bh26",
+      "name": "Hounds of Morwin",
+      "faction": "brotherhood",
+      "types": [
+        "soldier",
+        "creature"
+      ],
+      "keywords": [
+        "Reposition"
+      ],
+      "hth": 1,
+      "atk": 2,
+      "dfs": 1,
+      "sp": 0,
+      "cost": 1,
+      "maxCopies": 4,
+      "rarity": "standard",
+      "active": "—",
+      "passive": "—"
+    },
+    {
+      "id": "bh26",
+      "name": "Hounds of Morwin",
+      "faction": "brotherhood",
+      "types": [
+        "soldier",
+        "creature"
+      ],
+      "keywords": [
+        "Reposition"
+      ],
+      "hth": 1,
+      "atk": 2,
+      "dfs": 1,
+      "sp": 0,
+      "cost": 1,
+      "maxCopies": 4,
+      "rarity": "standard",
+      "active": "—",
+      "passive": "—"
+    },
+    {
+      "id": "bh26",
+      "name": "Hounds of Morwin",
+      "faction": "brotherhood",
+      "types": [
+        "soldier",
+        "creature"
+      ],
+      "keywords": [
+        "Reposition"
+      ],
+      "hth": 1,
+      "atk": 2,
+      "dfs": 1,
+      "sp": 0,
+      "cost": 1,
+      "maxCopies": 4,
+      "rarity": "standard",
+      "active": "—",
+      "passive": "—"
+    },
+    {
+      "id": "bh26",
+      "name": "Hounds of Morwin",
+      "faction": "brotherhood",
+      "types": [
+        "soldier",
+        "creature"
+      ],
+      "keywords": [
+        "Reposition"
+      ],
+      "hth": 1,
+      "atk": 2,
+      "dfs": 1,
+      "sp": 0,
+      "cost": 1,
+      "maxCopies": 4,
+      "rarity": "standard",
+      "active": "—",
+      "passive": "—"
+    },
+    {
+      "id": "bh36",
+      "name": "Brotherhood Vault",
+      "faction": "brotherhood",
+      "types": [
+        "attachment"
+      ],
+      "keywords": [
+        "Location 8",
+        "Rest 2"
+      ],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 2,
+      "maxCopies": 1,
+      "rarity": "unique",
+      "active": "Any unit in this location can have attachments played on it for -2 cost.",
+      "passive": "Location attachment."
+    },
+    {
+      "id": "bh10",
+      "name": "Squire of the Brotherhood",
+      "faction": "brotherhood",
+      "types": [
+        "hero"
+      ],
+      "keywords": [
+        "Aggressive",
+        "Bodyguard"
+      ],
+      "hth": 2,
+      "atk": 3,
+      "dfs": 2,
+      "sp": 2,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "—",
+      "passive": "\"At Your Service\" — When played, may attach to one Hero. Damage that would go on that Hero may be dealt to this card instead."
+    },
+    {
+      "id": "bh10",
+      "name": "Squire of the Brotherhood",
+      "faction": "brotherhood",
+      "types": [
+        "hero"
+      ],
+      "keywords": [
+        "Aggressive",
+        "Bodyguard"
+      ],
+      "hth": 2,
+      "atk": 3,
+      "dfs": 2,
+      "sp": 2,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "—",
+      "passive": "\"At Your Service\" — When played, may attach to one Hero. Damage that would go on that Hero may be dealt to this card instead."
+    },
+    {
+      "id": "bh10",
+      "name": "Squire of the Brotherhood",
+      "faction": "brotherhood",
+      "types": [
+        "hero"
+      ],
+      "keywords": [
+        "Aggressive",
+        "Bodyguard"
+      ],
+      "hth": 2,
+      "atk": 3,
+      "dfs": 2,
+      "sp": 2,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "—",
+      "passive": "\"At Your Service\" — When played, may attach to one Hero. Damage that would go on that Hero may be dealt to this card instead."
+    },
+    {
+      "id": "bh06",
+      "name": "Brotherhood Vault Master",
+      "faction": "brotherhood",
+      "types": [
+        "hero"
+      ],
+      "keywords": [],
+      "hth": 3,
+      "atk": 2,
+      "dfs": 4,
+      "sp": 2,
+      "cost": 3,
+      "maxCopies": 4,
+      "rarity": "standard",
+      "active": "\"Forger\" — May put this unit in graveyard during Setup to search deck for any attachment and put it into your hand.",
+      "passive": "When this unit enters play, play one attachment for free."
+    },
+    {
+      "id": "bh06",
+      "name": "Brotherhood Vault Master",
+      "faction": "brotherhood",
+      "types": [
+        "hero"
+      ],
+      "keywords": [],
+      "hth": 3,
+      "atk": 2,
+      "dfs": 4,
+      "sp": 2,
+      "cost": 3,
+      "maxCopies": 4,
+      "rarity": "standard",
+      "active": "\"Forger\" — May put this unit in graveyard during Setup to search deck for any attachment and put it into your hand.",
+      "passive": "When this unit enters play, play one attachment for free."
+    },
+    {
+      "id": "bh06",
+      "name": "Brotherhood Vault Master",
+      "faction": "brotherhood",
+      "types": [
+        "hero"
+      ],
+      "keywords": [],
+      "hth": 3,
+      "atk": 2,
+      "dfs": 4,
+      "sp": 2,
+      "cost": 3,
+      "maxCopies": 4,
+      "rarity": "standard",
+      "active": "\"Forger\" — May put this unit in graveyard during Setup to search deck for any attachment and put it into your hand.",
+      "passive": "When this unit enters play, play one attachment for free."
+    },
+    {
+      "id": "bh06",
+      "name": "Brotherhood Vault Master",
+      "faction": "brotherhood",
+      "types": [
+        "hero"
+      ],
+      "keywords": [],
+      "hth": 3,
+      "atk": 2,
+      "dfs": 4,
+      "sp": 2,
+      "cost": 3,
+      "maxCopies": 4,
+      "rarity": "standard",
+      "active": "\"Forger\" — May put this unit in graveyard during Setup to search deck for any attachment and put it into your hand.",
+      "passive": "When this unit enters play, play one attachment for free."
+    },
+    {
+      "id": "bh08",
+      "name": "Slaker the Obsidian Knight",
+      "faction": "brotherhood",
+      "types": [
+        "hero"
+      ],
+      "keywords": [
+        "Bodyguard",
+        "Duelist"
+      ],
+      "hth": 4,
+      "atk": 4,
+      "dfs": 3,
+      "sp": 2,
+      "cost": 3,
+      "maxCopies": 1,
+      "rarity": "unique",
+      "active": "—",
+      "passive": "With 1 Attachment: +1 Dfs. With 2: also gains Terror. With 3+: gains Anti-All."
+    },
+    {
+      "id": "bh37",
+      "name": "Brotherhood Fortress",
+      "faction": "brotherhood",
+      "types": [
+        "attachment"
+      ],
+      "keywords": [
+        "Location 12",
+        "Rest 3"
+      ],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 4,
+      "maxCopies": 2,
+      "rarity": "standard",
+      "active": "All friendly units Committed from this Location gain Resilient.",
+      "passive": "Location attachment."
+    },
+    {
+      "id": "bh37",
+      "name": "Brotherhood Fortress",
+      "faction": "brotherhood",
+      "types": [
+        "attachment"
+      ],
+      "keywords": [
+        "Location 12",
+        "Rest 3"
+      ],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 4,
+      "maxCopies": 2,
+      "rarity": "standard",
+      "active": "All friendly units Committed from this Location gain Resilient.",
+      "passive": "Location attachment."
+    },
+    {
+      "id": "bh39",
+      "name": "Gynir",
+      "faction": "brotherhood",
+      "types": [
+        "attachment"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 5,
+      "maxCopies": 1,
+      "rarity": "unique",
+      "active": "This hero gains Gatebuster 10 and +2 Attack.",
+      "passive": "Hero unit attachment."
+    },
+    {
+      "id": "bh02",
+      "name": "Atramen, Wielder of the Black Blade",
+      "faction": "brotherhood",
+      "types": [
+        "hero",
+        "wizard",
+        "commander"
+      ],
+      "keywords": [
+        "Magic 2",
+        "Revive 2",
+        "Terror"
+      ],
+      "hth": 5,
+      "atk": 7,
+      "dfs": 3,
+      "sp": 6,
+      "cost": 7,
+      "maxCopies": 1,
+      "rarity": "unique",
+      "active": "\"Perish\" — Roll die per enemy on every battlefield; on 1 they're destroyed. Spell 6. \"Rise\" — Roll die per friendly graveyard Unit; on 6 they enter a Pairing. Spell 6.",
+      "passive": "\"Magic Drain\" — Enemy Units with Magic X in this Pairing reduce X by 1."
+    },
+    {
+      "id": "bh35",
+      "name": "Null",
+      "faction": "brotherhood",
+      "types": [
+        "strategy",
+        "spell"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 0,
+      "costSpell": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Play facedown. When another player plays a spell card, reveal and roll die. On 3-6: ignore spell's effects.",
+      "passive": "—"
+    },
+    {
+      "id": "bh35",
+      "name": "Null",
+      "faction": "brotherhood",
+      "types": [
+        "strategy",
+        "spell"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 0,
+      "costSpell": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Play facedown. When another player plays a spell card, reveal and roll die. On 3-6: ignore spell's effects.",
+      "passive": "—"
+    },
+    {
+      "id": "bh35",
+      "name": "Null",
+      "faction": "brotherhood",
+      "types": [
+        "strategy",
+        "spell"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 0,
+      "costSpell": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Play facedown. When another player plays a spell card, reveal and roll die. On 3-6: ignore spell's effects.",
+      "passive": "—"
+    },
+    {
+      "id": "bh16",
+      "name": "Brotherhood Scribe",
+      "faction": "brotherhood",
+      "types": [
+        "hero"
+      ],
+      "keywords": [],
+      "hth": 2,
+      "atk": 1,
+      "dfs": 2,
+      "sp": 3,
+      "cost": 1,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "During a battle sequence, Heal 1 on a hero in your battlefield. Cost 1.",
+      "passive": "—"
+    },
+    {
+      "id": "bh16",
+      "name": "Brotherhood Scribe",
+      "faction": "brotherhood",
+      "types": [
+        "hero"
+      ],
+      "keywords": [],
+      "hth": 2,
+      "atk": 1,
+      "dfs": 2,
+      "sp": 3,
+      "cost": 1,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "During a battle sequence, Heal 1 on a hero in your battlefield. Cost 1.",
+      "passive": "—"
+    },
+    {
+      "id": "bh16",
+      "name": "Brotherhood Scribe",
+      "faction": "brotherhood",
+      "types": [
+        "hero"
+      ],
+      "keywords": [],
+      "hth": 2,
+      "atk": 1,
+      "dfs": 2,
+      "sp": 3,
+      "cost": 1,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "During a battle sequence, Heal 1 on a hero in your battlefield. Cost 1.",
+      "passive": "—"
+    },
+    {
+      "id": "bh28",
+      "name": "Last Stand",
+      "faction": "brotherhood",
+      "types": [
+        "strategy"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 1,
+      "maxCopies": 2,
+      "rarity": "standard",
+      "active": "Reveal at start of an Attack Step; pay cost to choose one friendly Hero with 1 Hth. That Hero gains +2 Atk for the duration.",
+      "passive": "—"
+    },
+    {
+      "id": "bh28",
+      "name": "Last Stand",
+      "faction": "brotherhood",
+      "types": [
+        "strategy"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 1,
+      "maxCopies": 2,
+      "rarity": "standard",
+      "active": "Reveal at start of an Attack Step; pay cost to choose one friendly Hero with 1 Hth. That Hero gains +2 Atk for the duration.",
+      "passive": "—"
+    },
+    {
+      "id": "bh45",
+      "name": "Harathgir Lord of Horses",
+      "faction": "brotherhood",
+      "types": [
+        "attachment"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 2,
+      "maxCopies": 1,
+      "rarity": "unique",
+      "active": "Once per battle, at start of Pairing this unit may relocate to any battlefield.",
+      "passive": "Hero unit attachment."
+    },
+    {
+      "id": "bh42",
+      "name": "The Diamond Shield",
+      "faction": "brotherhood",
+      "types": [
+        "attachment"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 2,
+      "maxCopies": 1,
+      "rarity": "unique",
+      "active": "This unit gains Durable.",
+      "passive": "Hero unit attachment."
+    },
+    {
+      "id": "bh22",
+      "name": "Knights of the Brotherhood",
+      "faction": "brotherhood",
+      "types": [
+        "soldier",
+        "wizard"
+      ],
+      "keywords": [
+        "Charge 1",
+        "Resilient",
+        "Magic 1",
+        "Durable"
+      ],
+      "hth": 3,
+      "atk": 4,
+      "dfs": 3,
+      "sp": 3,
+      "cost": 3,
+      "maxCopies": 2,
+      "rarity": "standard",
+      "active": "\"Silent Advance\" — At start of Pairing, place a -1 token on one enemy soldier unit's defense.",
+      "passive": "\"Null Field\" — After the first battle loop, no magic cards may be played by the defender in this battlefield while this unit is in play."
+    },
+    {
+      "id": "bh22",
+      "name": "Knights of the Brotherhood",
+      "faction": "brotherhood",
+      "types": [
+        "soldier",
+        "wizard"
+      ],
+      "keywords": [
+        "Charge 1",
+        "Resilient",
+        "Magic 1",
+        "Durable"
+      ],
+      "hth": 3,
+      "atk": 4,
+      "dfs": 3,
+      "sp": 3,
+      "cost": 3,
+      "maxCopies": 2,
+      "rarity": "standard",
+      "active": "\"Silent Advance\" — At start of Pairing, place a -1 token on one enemy soldier unit's defense.",
+      "passive": "\"Null Field\" — After the first battle loop, no magic cards may be played by the defender in this battlefield while this unit is in play."
+    },
+    {
+      "id": "bh43",
+      "name": "The All-Father Axe",
+      "faction": "brotherhood",
+      "types": [
+        "attachment"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 3,
+      "maxCopies": 1,
+      "rarity": "unique",
+      "active": "This unit may discard this card to gain +4 attack.",
+      "passive": "Hero unit attachment."
+    },
+    {
+      "id": "bh18",
+      "name": "Brotherhood Lord",
+      "faction": "brotherhood",
+      "types": [
+        "hero",
+        "wizard"
+      ],
+      "keywords": [
+        "Command 1",
+        "Aggressive",
+        "Hunter",
+        "Magic 1"
+      ],
+      "hth": 4,
+      "atk": 5,
+      "dfs": 4,
+      "sp": 4,
+      "cost": 4,
+      "maxCopies": 2,
+      "rarity": "standard",
+      "active": "\"Crimson Charge\" — Once per battle, when attacking, may lose 1 health to deal 1 direct damage.",
+      "passive": "\"Treasure Unending\" — When this Hero enters play, play one attachment for -1 cost."
+    },
+    {
+      "id": "bh18",
+      "name": "Brotherhood Lord",
+      "faction": "brotherhood",
+      "types": [
+        "hero",
+        "wizard"
+      ],
+      "keywords": [
+        "Command 1",
+        "Aggressive",
+        "Hunter",
+        "Magic 1"
+      ],
+      "hth": 4,
+      "atk": 5,
+      "dfs": 4,
+      "sp": 4,
+      "cost": 4,
+      "maxCopies": 2,
+      "rarity": "standard",
+      "active": "\"Crimson Charge\" — Once per battle, when attacking, may lose 1 health to deal 1 direct damage.",
+      "passive": "\"Treasure Unending\" — When this Hero enters play, play one attachment for -1 cost."
+    },
+    {
+      "id": "bh40",
+      "name": "Morthar",
+      "faction": "brotherhood",
+      "types": [
+        "attachment"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 5,
+      "maxCopies": 1,
+      "rarity": "unique",
+      "active": "This hero gains +1 attack; all excess damage on units he attacks goes on opponent's tactical health (max 3).",
+      "passive": "Hero unit attachment."
+    },
+    {
+      "id": "bh09",
+      "name": "Titan",
+      "faction": "brotherhood",
+      "types": [
+        "hero"
+      ],
+      "keywords": [
+        "Gatebuster 20",
+        "Routing"
+      ],
+      "hth": 8,
+      "atk": 10,
+      "dfs": 4,
+      "sp": 4,
+      "cost": 10,
+      "maxCopies": 1,
+      "rarity": "unique",
+      "active": "—",
+      "passive": "\"Father of Disaster\" — Once per battle, all Units in his Pairing take 1 direct damage."
+    },
+    {
+      "id": "bh38",
+      "name": "Blessed Relic",
+      "faction": "brotherhood",
+      "types": [
+        "attachment"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 1,
+      "maxCopies": 2,
+      "rarity": "standard",
+      "active": "This hero may keep this attachment when put in graveyard. May discard this card to revive them.",
+      "passive": "Hero unit attachment."
+    },
+    {
+      "id": "bh38",
+      "name": "Blessed Relic",
+      "faction": "brotherhood",
+      "types": [
+        "attachment"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 1,
+      "maxCopies": 2,
+      "rarity": "standard",
+      "active": "This hero may keep this attachment when put in graveyard. May discard this card to revive them.",
+      "passive": "Hero unit attachment."
+    },
+    {
+      "id": "bh32",
+      "name": "Conquerors of Men",
+      "faction": "brotherhood",
+      "types": [
+        "strategy"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 1,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Reveal at start of Pair Units Step; choose one enemy Soldier Unit. Deal 1 direct damage to it.",
+      "passive": "—"
+    },
+    {
+      "id": "bh32",
+      "name": "Conquerors of Men",
+      "faction": "brotherhood",
+      "types": [
+        "strategy"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 1,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Reveal at start of Pair Units Step; choose one enemy Soldier Unit. Deal 1 direct damage to it.",
+      "passive": "—"
+    },
+    {
+      "id": "bh32",
+      "name": "Conquerors of Men",
+      "faction": "brotherhood",
+      "types": [
+        "strategy"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 1,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Reveal at start of Pair Units Step; choose one enemy Soldier Unit. Deal 1 direct damage to it.",
+      "passive": "—"
+    },
+    {
+      "id": "bh23",
+      "name": "Shriekfire Archers",
+      "faction": "brotherhood",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Slippery",
+        "Ranged 3"
+      ],
+      "hth": 2,
+      "atk": 3,
+      "dfs": 1,
+      "sp": 1,
+      "cost": 1,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"Covering Fire\" — After using Ranged X, selected one friendly Hero Unit. They gain +1 attack token.",
+      "passive": "—"
+    },
+    {
+      "id": "bh23",
+      "name": "Shriekfire Archers",
+      "faction": "brotherhood",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Slippery",
+        "Ranged 3"
+      ],
+      "hth": 2,
+      "atk": 3,
+      "dfs": 1,
+      "sp": 1,
+      "cost": 1,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"Covering Fire\" — After using Ranged X, selected one friendly Hero Unit. They gain +1 attack token.",
+      "passive": "—"
+    },
+    {
+      "id": "bh23",
+      "name": "Shriekfire Archers",
+      "faction": "brotherhood",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Slippery",
+        "Ranged 3"
+      ],
+      "hth": 2,
+      "atk": 3,
+      "dfs": 1,
+      "sp": 1,
+      "cost": 1,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"Covering Fire\" — After using Ranged X, selected one friendly Hero Unit. They gain +1 attack token.",
+      "passive": "—"
+    },
+    {
+      "id": "bh14",
+      "name": "Lirian the Animated Armor",
+      "faction": "brotherhood",
+      "types": [
+        "hero"
+      ],
+      "keywords": [
+        "Durable",
+        "Formation",
+        "Command 2"
+      ],
+      "hth": 3,
+      "atk": 5,
+      "dfs": 3,
+      "sp": 3,
+      "cost": 2,
+      "maxCopies": 1,
+      "rarity": "unique",
+      "active": "\"Shield of Fate\" — Once per battle, ignore all damage from one attack. \"Spear of Aid\" — Once per battle, at start of loop, attack an enemy in another Pairing as if Paired with them.",
+      "passive": "—"
+    },
+    {
+      "id": "bh44",
+      "name": "Vault Blades",
+      "faction": "brotherhood",
+      "types": [
+        "attachment"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "This unit gains Anti-Durable and +1 attack.",
+      "passive": "Unit attachment."
+    },
+    {
+      "id": "bh44",
+      "name": "Vault Blades",
+      "faction": "brotherhood",
+      "types": [
+        "attachment"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "This unit gains Anti-Durable and +1 attack.",
+      "passive": "Unit attachment."
+    },
+    {
+      "id": "bh44",
+      "name": "Vault Blades",
+      "faction": "brotherhood",
+      "types": [
+        "attachment"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "This unit gains Anti-Durable and +1 attack.",
+      "passive": "Unit attachment."
+    },
+    {
+      "id": "bh04",
+      "name": "Morwin the Hunter",
+      "faction": "brotherhood",
+      "types": [
+        "hero"
+      ],
+      "keywords": [
+        "Hunter"
+      ],
+      "hth": 3,
+      "atk": 4,
+      "dfs": 3,
+      "sp": 2,
+      "cost": 3,
+      "maxCopies": 1,
+      "rarity": "unique",
+      "active": "—",
+      "passive": "\"Hunters Hounds\" — When this Unit joins a Pair, search deck for 2 Hounds of Morwin counters and Pair them with the enemy Unit as well."
+    },
+    {
+      "id": "bh49",
+      "name": "The Champions Cloak",
+      "faction": "brotherhood",
+      "types": [
+        "attachment"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 3,
+      "maxCopies": 1,
+      "rarity": "unique",
+      "active": "This unit gains Anti-Ranged, Anti-Charge, and +1 defense.",
+      "passive": "Hero unit attachment."
+    },
+    {
+      "id": "bh11",
+      "name": "Rondor, Grandmaster",
+      "faction": "brotherhood",
+      "types": [
+        "hero",
+        "commander"
+      ],
+      "keywords": [
+        "Aggressive",
+        "Charge 1",
+        "Duelist",
+        "Reposition"
+      ],
+      "hth": 4,
+      "atk": 5,
+      "dfs": 3,
+      "sp": 4,
+      "cost": 4,
+      "maxCopies": 1,
+      "rarity": "unique",
+      "active": "\"Lord of War\" — In Rondor's Pairing, all other friendly heroes gain +1 Dfs.",
+      "passive": "\"Gynir's Chosen\" — If Gynir, Morthar, or Telperion is attached, gains Impenetrable."
+    },
+    {
+      "id": "bh41",
+      "name": "Telperion",
+      "faction": "brotherhood",
+      "types": [
+        "attachment"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 5,
+      "maxCopies": 1,
+      "rarity": "unique",
+      "active": "This unit gains +1 attack, Terror, and Routing.",
+      "passive": "Hero unit attachment."
+    },
+    {
+      "id": "bh17",
+      "name": "Brotherhood Armorer",
+      "faction": "brotherhood",
+      "types": [
+        "hero"
+      ],
+      "keywords": [],
+      "hth": 2,
+      "atk": 1,
+      "dfs": 2,
+      "sp": 2,
+      "cost": 1,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "During a battle sequence, give one hero +1 attack. Cost 1.",
+      "passive": "—"
+    },
+    {
+      "id": "bh17",
+      "name": "Brotherhood Armorer",
+      "faction": "brotherhood",
+      "types": [
+        "hero"
+      ],
+      "keywords": [],
+      "hth": 2,
+      "atk": 1,
+      "dfs": 2,
+      "sp": 2,
+      "cost": 1,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "During a battle sequence, give one hero +1 attack. Cost 1.",
+      "passive": "—"
+    },
+    {
+      "id": "bh17",
+      "name": "Brotherhood Armorer",
+      "faction": "brotherhood",
+      "types": [
+        "hero"
+      ],
+      "keywords": [],
+      "hth": 2,
+      "atk": 1,
+      "dfs": 2,
+      "sp": 2,
+      "cost": 1,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "During a battle sequence, give one hero +1 attack. Cost 1.",
+      "passive": "—"
+    },
+    {
+      "id": "bh29",
+      "name": "Foresight of the Ancients",
+      "faction": "brotherhood",
+      "types": [
+        "strategy"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 1,
+      "maxCopies": 2,
+      "rarity": "standard",
+      "active": "Reveal at end of Cleanup; pay cost to look at top 5 enemy cards. Choose 1 to discard; put rest back in any order.",
+      "passive": "—"
+    },
+    {
+      "id": "bh29",
+      "name": "Foresight of the Ancients",
+      "faction": "brotherhood",
+      "types": [
+        "strategy"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 1,
+      "maxCopies": 2,
+      "rarity": "standard",
+      "active": "Reveal at end of Cleanup; pay cost to look at top 5 enemy cards. Choose 1 to discard; put rest back in any order.",
+      "passive": "—"
+    },
+    {
+      "id": "bh30",
+      "name": "Traitors are Everywhere",
+      "faction": "brotherhood",
+      "types": [
+        "strategy"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 1,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "If played facedown during Play Cards Step, reveal at start of battle. Choose one enemy Unit with 1 Sp to permanently gain -1 Dfs.",
+      "passive": "—"
+    },
+    {
+      "id": "bh30",
+      "name": "Traitors are Everywhere",
+      "faction": "brotherhood",
+      "types": [
+        "strategy"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 1,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "If played facedown during Play Cards Step, reveal at start of battle. Choose one enemy Unit with 1 Sp to permanently gain -1 Dfs.",
+      "passive": "—"
+    },
+    {
+      "id": "bh30",
+      "name": "Traitors are Everywhere",
+      "faction": "brotherhood",
+      "types": [
+        "strategy"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 1,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "If played facedown during Play Cards Step, reveal at start of battle. Choose one enemy Unit with 1 Sp to permanently gain -1 Dfs.",
+      "passive": "—"
+    },
+    {
+      "id": "bh48",
+      "name": "Scrolls of the Hidden Paths",
+      "faction": "brotherhood",
+      "types": [
+        "attachment"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 2,
+      "maxCopies": 2,
+      "rarity": "standard",
+      "active": "May discard at ANY time to move this unit to any battlefield.",
+      "passive": "Hero unit attachment."
+    },
+    {
+      "id": "bh48",
+      "name": "Scrolls of the Hidden Paths",
+      "faction": "brotherhood",
+      "types": [
+        "attachment"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 2,
+      "maxCopies": 2,
+      "rarity": "standard",
+      "active": "May discard at ANY time to move this unit to any battlefield.",
+      "passive": "Hero unit attachment."
+    },
+    {
+      "id": "bh33",
+      "name": "Wandering Warriors",
+      "faction": "brotherhood",
+      "types": [
+        "strategy"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 2,
+      "maxCopies": 2,
+      "rarity": "standard",
+      "active": "Immediately revealed after played facedown. Choose two friendly Hero Units. For the rest of the round they gain Untiring.",
+      "passive": "—"
+    },
+    {
+      "id": "bh33",
+      "name": "Wandering Warriors",
+      "faction": "brotherhood",
+      "types": [
+        "strategy"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 2,
+      "maxCopies": 2,
+      "rarity": "standard",
+      "active": "Immediately revealed after played facedown. Choose two friendly Hero Units. For the rest of the round they gain Untiring.",
+      "passive": "—"
+    },
+    {
+      "id": "bh15",
+      "name": "Raymond, the Knight Errant",
+      "faction": "brotherhood",
+      "types": [
+        "hero"
+      ],
+      "keywords": [
+        "Aggressive",
+        "Rest 0",
+        "Reposition"
+      ],
+      "hth": 3,
+      "atk": 4,
+      "dfs": 3,
+      "sp": 2,
+      "cost": 3,
+      "maxCopies": 1,
+      "rarity": "unique",
+      "active": "\"Perfect Counter\" — When attacked, roll die. On 6: attack is negated and attacker suffers 1 direct damage.",
+      "passive": "\"Favored\" — When this unit survives a battle sequence, increase its health to full."
+    },
+    {
+      "id": "bh46",
+      "name": "The Orb of Fire",
+      "faction": "brotherhood",
+      "types": [
+        "attachment"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 3,
+      "maxCopies": 2,
+      "rarity": "standard",
+      "active": "At start of battle sequence, select any non-home land card. Sacrifice and purge it. Then discard this attachment.",
+      "passive": "Hero unit attachment."
+    },
+    {
+      "id": "bh01",
+      "name": "Sir Edwin, Golem Knight",
+      "faction": "brotherhood",
+      "types": [
+        "hero",
+        "monster"
+      ],
+      "keywords": [
+        "Duelist",
+        "Anti-Magic"
+      ],
+      "hth": 4,
+      "atk": 4,
+      "dfs": 4,
+      "sp": 3,
+      "cost": 4,
+      "maxCopies": 1,
+      "rarity": "unique",
+      "active": "\"Mighty Blow\" — Once per battle, spend 1 Resource to deal 1 direct damage to a Unit in this Pairing.",
+      "passive": "\"Solid Defense\" — All non-Hero friendly Units in this battlefield gain +1 Dfs."
+    },
+    {
+      "id": "bh13",
+      "name": "Korvan the Dragon",
+      "faction": "brotherhood",
+      "types": [
+        "hero"
+      ],
+      "keywords": [
+        "Dragon Breath 1",
+        "Durable",
+        "Revive 2",
+        "Anti-Formation",
+        "Charge 1",
+        "Gatebuster 6",
+        "Anti-Dragon Breath"
+      ],
+      "hth": 5,
+      "atk": 6,
+      "dfs": 4,
+      "sp": 6,
+      "cost": 6,
+      "maxCopies": 1,
+      "rarity": "unique",
+      "active": "\"Descent\" — After all Pairings are complete, may swap this Unit and another friendly Unit from their Pairings.",
+      "passive": "\"Forbidden Knowledge\" — All friendly Heroes in this battlefield but not in this Pairing gain +1 Sp."
+    },
+    {
+      "id": "bh24",
+      "name": "Brotherhood Berserkers",
+      "faction": "brotherhood",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Aggressive"
+      ],
+      "hth": 1,
+      "atk": 3,
+      "dfs": 1,
+      "sp": 1,
+      "cost": 1,
+      "maxCopies": 4,
+      "rarity": "standard",
+      "active": "\"Berserker Charge\" — When attacking, give +2 Atk if you place this unit in graveyard after the attack.",
+      "passive": "—"
+    },
+    {
+      "id": "bh24",
+      "name": "Brotherhood Berserkers",
+      "faction": "brotherhood",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Aggressive"
+      ],
+      "hth": 1,
+      "atk": 3,
+      "dfs": 1,
+      "sp": 1,
+      "cost": 1,
+      "maxCopies": 4,
+      "rarity": "standard",
+      "active": "\"Berserker Charge\" — When attacking, give +2 Atk if you place this unit in graveyard after the attack.",
+      "passive": "—"
+    },
+    {
+      "id": "bh24",
+      "name": "Brotherhood Berserkers",
+      "faction": "brotherhood",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Aggressive"
+      ],
+      "hth": 1,
+      "atk": 3,
+      "dfs": 1,
+      "sp": 1,
+      "cost": 1,
+      "maxCopies": 4,
+      "rarity": "standard",
+      "active": "\"Berserker Charge\" — When attacking, give +2 Atk if you place this unit in graveyard after the attack.",
+      "passive": "—"
+    },
+    {
+      "id": "bh24",
+      "name": "Brotherhood Berserkers",
+      "faction": "brotherhood",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Aggressive"
+      ],
+      "hth": 1,
+      "atk": 3,
+      "dfs": 1,
+      "sp": 1,
+      "cost": 1,
+      "maxCopies": 4,
+      "rarity": "standard",
+      "active": "\"Berserker Charge\" — When attacking, give +2 Atk if you place this unit in graveyard after the attack.",
+      "passive": "—"
+    },
+    {
+      "id": "bh31",
+      "name": "Headlong Charge",
+      "faction": "brotherhood",
+      "types": [
+        "strategy"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 1,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Reveal at start of Pair Units Step; choose one friendly Unit to gain Reckless and Anti-Formations until end of battle.",
+      "passive": "—"
+    },
+    {
+      "id": "bh31",
+      "name": "Headlong Charge",
+      "faction": "brotherhood",
+      "types": [
+        "strategy"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 1,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Reveal at start of Pair Units Step; choose one friendly Unit to gain Reckless and Anti-Formations until end of battle.",
+      "passive": "—"
+    },
+    {
+      "id": "bh31",
+      "name": "Headlong Charge",
+      "faction": "brotherhood",
+      "types": [
+        "strategy"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 1,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Reveal at start of Pair Units Step; choose one friendly Unit to gain Reckless and Anti-Formations until end of battle.",
+      "passive": "—"
+    },
+    {
+      "id": "bh19",
+      "name": "Black Watch Grandmaster",
+      "faction": "brotherhood",
+      "types": [
+        "special"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 2,
+      "maxCopies": 1,
+      "rarity": "unique",
+      "active": "\"Start the Hunt\" — Look at top 5 cards; take one, return rest in any order. Discard this, search for one Black Watch card. Play it for -2 cost.",
+      "passive": "—"
+    },
+    {
+      "id": "bh12",
+      "name": "Sensh, Grandmaster of Shriekfire Archers",
+      "faction": "brotherhood",
+      "types": [
+        "hero"
+      ],
+      "keywords": [
+        "Ranged 4"
+      ],
+      "hth": 2,
+      "atk": 4,
+      "dfs": 2,
+      "sp": 2,
+      "cost": 2,
+      "maxCopies": 1,
+      "rarity": "unique",
+      "active": "At the end of each battle loop, Sensh may use Ranged 4 again as if it were the start of the first battle loop.",
+      "passive": "—"
+    },
+    {
+      "id": "bh05",
+      "name": "Brotherhood Champion",
+      "faction": "brotherhood",
+      "types": [
+        "hero"
+      ],
+      "keywords": [
+        "Duelist"
+      ],
+      "hth": 2,
+      "atk": 5,
+      "dfs": 3,
+      "sp": 2,
+      "cost": 3,
+      "maxCopies": 5,
+      "rarity": "standard",
+      "active": "—",
+      "passive": "\"Death Blow\" — When this unit is destroyed, deal 1 direct damage to the enemy who killed it."
+    },
+    {
+      "id": "bh05",
+      "name": "Brotherhood Champion",
+      "faction": "brotherhood",
+      "types": [
+        "hero"
+      ],
+      "keywords": [
+        "Duelist"
+      ],
+      "hth": 2,
+      "atk": 5,
+      "dfs": 3,
+      "sp": 2,
+      "cost": 3,
+      "maxCopies": 5,
+      "rarity": "standard",
+      "active": "—",
+      "passive": "\"Death Blow\" — When this unit is destroyed, deal 1 direct damage to the enemy who killed it."
+    },
+    {
+      "id": "bh05",
+      "name": "Brotherhood Champion",
+      "faction": "brotherhood",
+      "types": [
+        "hero"
+      ],
+      "keywords": [
+        "Duelist"
+      ],
+      "hth": 2,
+      "atk": 5,
+      "dfs": 3,
+      "sp": 2,
+      "cost": 3,
+      "maxCopies": 5,
+      "rarity": "standard",
+      "active": "—",
+      "passive": "\"Death Blow\" — When this unit is destroyed, deal 1 direct damage to the enemy who killed it."
+    },
+    {
+      "id": "bh05",
+      "name": "Brotherhood Champion",
+      "faction": "brotherhood",
+      "types": [
+        "hero"
+      ],
+      "keywords": [
+        "Duelist"
+      ],
+      "hth": 2,
+      "atk": 5,
+      "dfs": 3,
+      "sp": 2,
+      "cost": 3,
+      "maxCopies": 5,
+      "rarity": "standard",
+      "active": "—",
+      "passive": "\"Death Blow\" — When this unit is destroyed, deal 1 direct damage to the enemy who killed it."
+    },
+    {
+      "id": "bh03",
+      "name": "Sarki the Collector",
+      "faction": "brotherhood",
+      "types": [
+        "hero"
+      ],
+      "keywords": [
+        "Slippery"
+      ],
+      "hth": 2,
+      "atk": 2,
+      "dfs": 4,
+      "sp": 3,
+      "cost": 3,
+      "maxCopies": 1,
+      "rarity": "unique",
+      "active": "\"Backstabber\" — When this unit would suffer damage, put it on another friendly Unit in this Pairing instead.",
+      "passive": "\"The Collection\" — For each Attachment on this card, Sarki gains +1 Atk."
+    },
+    {
+      "id": "bh20",
+      "name": "Brotherhood Assassin",
+      "faction": "brotherhood",
+      "types": [
+        "special"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 4,
+      "maxCopies": 2,
+      "rarity": "standard",
+      "active": "\"Elimination\" — Before Pairing Step, reveal and pay to remove one enemy Hero from one battlefield.",
+      "passive": "\"Secret Assignment\" — Played facedown."
+    },
+    {
+      "id": "bh20",
+      "name": "Brotherhood Assassin",
+      "faction": "brotherhood",
+      "types": [
+        "special"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 4,
+      "maxCopies": 2,
+      "rarity": "standard",
+      "active": "\"Elimination\" — Before Pairing Step, reveal and pay to remove one enemy Hero from one battlefield.",
+      "passive": "\"Secret Assignment\" — Played facedown."
+    },
+    {
+      "id": "bh25",
+      "name": "The Black Watch",
+      "faction": "brotherhood",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Hunter",
+        "Revive 1",
+        "Formation"
+      ],
+      "hth": 2,
+      "atk": 4,
+      "dfs": 3,
+      "sp": 2,
+      "cost": 4,
+      "maxCopies": 2,
+      "rarity": "standard",
+      "active": "\"Mark\" — After attacking, mark that enemy unit. At end of battle, each mark token = 1 direct damage.",
+      "passive": "May be played into Permanent section. If so, after first battle loop, place it into that battlefield."
+    },
+    {
+      "id": "bh25",
+      "name": "The Black Watch",
+      "faction": "brotherhood",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Hunter",
+        "Revive 1",
+        "Formation"
+      ],
+      "hth": 2,
+      "atk": 4,
+      "dfs": 3,
+      "sp": 2,
+      "cost": 4,
+      "maxCopies": 2,
+      "rarity": "standard",
+      "active": "\"Mark\" — After attacking, mark that enemy unit. At end of battle, each mark token = 1 direct damage.",
+      "passive": "May be played into Permanent section. If so, after first battle loop, place it into that battlefield."
+    },
+    {
+      "id": "bh07",
+      "name": "The Keeper",
+      "faction": "brotherhood",
+      "types": [
+        "hero"
+      ],
+      "keywords": [
+        "Impenetrable",
+        "Bodyguard"
+      ],
+      "hth": 5,
+      "atk": 4,
+      "dfs": 1,
+      "sp": 3,
+      "cost": 6,
+      "maxCopies": 1,
+      "rarity": "unique",
+      "active": "\"Incinerate\" — When this unit attacks, instead choose a Soldier Paired with it. Deal 2 direct damage to it.",
+      "passive": "\"Regenerate\" — Whenever Incinerate destroys an enemy, Heal 1."
+    },
+    {
+      "id": "bh47",
+      "name": "Mighty Steed",
+      "faction": "neutral",
+      "types": [
+        "attachment"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "This unit gains Charge 1.",
+      "passive": "Hero unit attachment."
+    },
+    {
+      "id": "bh47",
+      "name": "Mighty Steed",
+      "faction": "neutral",
+      "types": [
+        "attachment"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "This unit gains Charge 1.",
+      "passive": "Hero unit attachment."
+    },
+    {
+      "id": "bh47",
+      "name": "Mighty Steed",
+      "faction": "neutral",
+      "types": [
+        "attachment"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "This unit gains Charge 1.",
+      "passive": "Hero unit attachment."
+    },
+    {
+      "id": "bh50",
+      "name": "Ancient Bow",
+      "faction": "neutral",
+      "types": [
+        "attachment"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 2,
+      "maxCopies": 2,
+      "rarity": "standard",
+      "active": "This hero gains Ranged 4.",
+      "passive": "Hero unit attachment."
+    },
+    {
+      "id": "bh50",
+      "name": "Ancient Bow",
+      "faction": "neutral",
+      "types": [
+        "attachment"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 2,
+      "maxCopies": 2,
+      "rarity": "standard",
+      "active": "This hero gains Ranged 4.",
+      "passive": "Hero unit attachment."
+    },
+    {
+      "id": "bh21",
+      "name": "Court Infiltrator",
+      "faction": "neutral",
+      "types": [
+        "special"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 2,
+      "maxCopies": 2,
+      "rarity": "standard",
+      "active": "\"It Seems You Were Misinformed\" — When played, attach to another player's hero. That hero may not use passive abilities.",
+      "passive": "—"
+    },
+    {
+      "id": "bh21",
+      "name": "Court Infiltrator",
+      "faction": "neutral",
+      "types": [
+        "special"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 2,
+      "maxCopies": 2,
+      "rarity": "standard",
+      "active": "\"It Seems You Were Misinformed\" — When played, attach to another player's hero. That hero may not use passive abilities.",
+      "passive": "—"
+    }
+  ]
+}

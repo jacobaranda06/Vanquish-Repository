@@ -1,0 +1,2082 @@
+{
+  "composition": "dominion",
+  "totalCards": 97,
+  "factions": [
+    "wizards"
+  ],
+  "cards": [
+    {
+      "id": "rw12",
+      "name": "Enchanted Books",
+      "faction": "wizards",
+      "types": [
+        "soldier",
+        "enchanted"
+      ],
+      "keywords": [
+        "Reposition",
+        "Rest 0",
+        "Revive 0",
+        "Renew"
+      ],
+      "hth": 1,
+      "atk": 1,
+      "dfs": 1,
+      "sp": 0,
+      "cost": 0,
+      "costSpell": 1,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "While in play, in Setup, spend 3 Magic points to make an Enchanted Books counter.",
+      "passive": "—"
+    },
+    {
+      "id": "rw12",
+      "name": "Enchanted Books",
+      "faction": "wizards",
+      "types": [
+        "soldier",
+        "enchanted"
+      ],
+      "keywords": [
+        "Reposition",
+        "Rest 0",
+        "Revive 0",
+        "Renew"
+      ],
+      "hth": 1,
+      "atk": 1,
+      "dfs": 1,
+      "sp": 0,
+      "cost": 0,
+      "costSpell": 1,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "While in play, in Setup, spend 3 Magic points to make an Enchanted Books counter.",
+      "passive": "—"
+    },
+    {
+      "id": "rw12",
+      "name": "Enchanted Books",
+      "faction": "wizards",
+      "types": [
+        "soldier",
+        "enchanted"
+      ],
+      "keywords": [
+        "Reposition",
+        "Rest 0",
+        "Revive 0",
+        "Renew"
+      ],
+      "hth": 1,
+      "atk": 1,
+      "dfs": 1,
+      "sp": 0,
+      "cost": 0,
+      "costSpell": 1,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "While in play, in Setup, spend 3 Magic points to make an Enchanted Books counter.",
+      "passive": "—"
+    },
+    {
+      "id": "rw02",
+      "name": "Wizard Neophyte",
+      "faction": "wizards",
+      "types": [
+        "hero",
+        "wizard"
+      ],
+      "keywords": [
+        "Magic 1",
+        "Reckless",
+        "Revive 0"
+      ],
+      "hth": 2,
+      "atk": 4,
+      "dfs": 2,
+      "sp": 3,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"Budding Sorcerer\" — Once per battle, when playing a Spell card, this unit has Magic 2 and first spell costs 1 MP less.",
+      "passive": "—"
+    },
+    {
+      "id": "rw02",
+      "name": "Wizard Neophyte",
+      "faction": "wizards",
+      "types": [
+        "hero",
+        "wizard"
+      ],
+      "keywords": [
+        "Magic 1",
+        "Reckless",
+        "Revive 0"
+      ],
+      "hth": 2,
+      "atk": 4,
+      "dfs": 2,
+      "sp": 3,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"Budding Sorcerer\" — Once per battle, when playing a Spell card, this unit has Magic 2 and first spell costs 1 MP less.",
+      "passive": "—"
+    },
+    {
+      "id": "rw02",
+      "name": "Wizard Neophyte",
+      "faction": "wizards",
+      "types": [
+        "hero",
+        "wizard"
+      ],
+      "keywords": [
+        "Magic 1",
+        "Reckless",
+        "Revive 0"
+      ],
+      "hth": 2,
+      "atk": 4,
+      "dfs": 2,
+      "sp": 3,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"Budding Sorcerer\" — Once per battle, when playing a Spell card, this unit has Magic 2 and first spell costs 1 MP less.",
+      "passive": "—"
+    },
+    {
+      "id": "rw06",
+      "name": "Wizard of Fate",
+      "faction": "wizards",
+      "types": [
+        "hero",
+        "wizard"
+      ],
+      "keywords": [
+        "Foresee 4-2",
+        "Magic 2",
+        "Mage Council"
+      ],
+      "hth": 2,
+      "atk": 3,
+      "dfs": 3,
+      "sp": 4,
+      "cost": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "—",
+      "passive": "\"The Power to See the Unseeable\" — After Commit Units Phase, may move 1 friendly Soldier Unit to a different battlefield."
+    },
+    {
+      "id": "rw06",
+      "name": "Wizard of Fate",
+      "faction": "wizards",
+      "types": [
+        "hero",
+        "wizard"
+      ],
+      "keywords": [
+        "Foresee 4-2",
+        "Magic 2",
+        "Mage Council"
+      ],
+      "hth": 2,
+      "atk": 3,
+      "dfs": 3,
+      "sp": 4,
+      "cost": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "—",
+      "passive": "\"The Power to See the Unseeable\" — After Commit Units Phase, may move 1 friendly Soldier Unit to a different battlefield."
+    },
+    {
+      "id": "rw06",
+      "name": "Wizard of Fate",
+      "faction": "wizards",
+      "types": [
+        "hero",
+        "wizard"
+      ],
+      "keywords": [
+        "Foresee 4-2",
+        "Magic 2",
+        "Mage Council"
+      ],
+      "hth": 2,
+      "atk": 3,
+      "dfs": 3,
+      "sp": 4,
+      "cost": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "—",
+      "passive": "\"The Power to See the Unseeable\" — After Commit Units Phase, may move 1 friendly Soldier Unit to a different battlefield."
+    },
+    {
+      "id": "rw13",
+      "name": "Enchanted Vines",
+      "faction": "wizards",
+      "types": [
+        "soldier",
+        "enchanted"
+      ],
+      "keywords": [
+        "Revive 0"
+      ],
+      "hth": 2,
+      "atk": 0,
+      "dfs": 2,
+      "sp": 0,
+      "cost": 0,
+      "costSpell": 1,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "—",
+      "passive": "When Paired with an Enemy Unit, that Unit receives -1 Dfs."
+    },
+    {
+      "id": "rw13",
+      "name": "Enchanted Vines",
+      "faction": "wizards",
+      "types": [
+        "soldier",
+        "enchanted"
+      ],
+      "keywords": [
+        "Revive 0"
+      ],
+      "hth": 2,
+      "atk": 0,
+      "dfs": 2,
+      "sp": 0,
+      "cost": 0,
+      "costSpell": 1,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "—",
+      "passive": "When Paired with an Enemy Unit, that Unit receives -1 Dfs."
+    },
+    {
+      "id": "rw13",
+      "name": "Enchanted Vines",
+      "faction": "wizards",
+      "types": [
+        "soldier",
+        "enchanted"
+      ],
+      "keywords": [
+        "Revive 0"
+      ],
+      "hth": 2,
+      "atk": 0,
+      "dfs": 2,
+      "sp": 0,
+      "cost": 0,
+      "costSpell": 1,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "—",
+      "passive": "When Paired with an Enemy Unit, that Unit receives -1 Dfs."
+    },
+    {
+      "id": "rw07",
+      "name": "Enchanted Armor",
+      "faction": "wizards",
+      "types": [
+        "soldier",
+        "enchantment"
+      ],
+      "keywords": [
+        "Formations",
+        "Revive 1",
+        "Bodyguard"
+      ],
+      "hth": 1,
+      "atk": 2,
+      "dfs": 4,
+      "sp": 0,
+      "cost": 1,
+      "costSpell": 1,
+      "maxCopies": 6,
+      "rarity": "common",
+      "active": "—",
+      "passive": "\"Perfect Servants\" — If on the same battlefield as a friendly Wizard, gains +1 Atk. If in the same Pair, gains +2 Atk instead."
+    },
+    {
+      "id": "rw07",
+      "name": "Enchanted Armor",
+      "faction": "wizards",
+      "types": [
+        "soldier",
+        "enchantment"
+      ],
+      "keywords": [
+        "Formations",
+        "Revive 1",
+        "Bodyguard"
+      ],
+      "hth": 1,
+      "atk": 2,
+      "dfs": 4,
+      "sp": 0,
+      "cost": 1,
+      "costSpell": 1,
+      "maxCopies": 6,
+      "rarity": "common",
+      "active": "—",
+      "passive": "\"Perfect Servants\" — If on the same battlefield as a friendly Wizard, gains +1 Atk. If in the same Pair, gains +2 Atk instead."
+    },
+    {
+      "id": "rw07",
+      "name": "Enchanted Armor",
+      "faction": "wizards",
+      "types": [
+        "soldier",
+        "enchantment"
+      ],
+      "keywords": [
+        "Formations",
+        "Revive 1",
+        "Bodyguard"
+      ],
+      "hth": 1,
+      "atk": 2,
+      "dfs": 4,
+      "sp": 0,
+      "cost": 1,
+      "costSpell": 1,
+      "maxCopies": 6,
+      "rarity": "common",
+      "active": "—",
+      "passive": "\"Perfect Servants\" — If on the same battlefield as a friendly Wizard, gains +1 Atk. If in the same Pair, gains +2 Atk instead."
+    },
+    {
+      "id": "rw07",
+      "name": "Enchanted Armor",
+      "faction": "wizards",
+      "types": [
+        "soldier",
+        "enchantment"
+      ],
+      "keywords": [
+        "Formations",
+        "Revive 1",
+        "Bodyguard"
+      ],
+      "hth": 1,
+      "atk": 2,
+      "dfs": 4,
+      "sp": 0,
+      "cost": 1,
+      "costSpell": 1,
+      "maxCopies": 6,
+      "rarity": "common",
+      "active": "—",
+      "passive": "\"Perfect Servants\" — If on the same battlefield as a friendly Wizard, gains +1 Atk. If in the same Pair, gains +2 Atk instead."
+    },
+    {
+      "id": "rw07",
+      "name": "Enchanted Armor",
+      "faction": "wizards",
+      "types": [
+        "soldier",
+        "enchantment"
+      ],
+      "keywords": [
+        "Formations",
+        "Revive 1",
+        "Bodyguard"
+      ],
+      "hth": 1,
+      "atk": 2,
+      "dfs": 4,
+      "sp": 0,
+      "cost": 1,
+      "costSpell": 1,
+      "maxCopies": 6,
+      "rarity": "common",
+      "active": "—",
+      "passive": "\"Perfect Servants\" — If on the same battlefield as a friendly Wizard, gains +1 Atk. If in the same Pair, gains +2 Atk instead."
+    },
+    {
+      "id": "rw07",
+      "name": "Enchanted Armor",
+      "faction": "wizards",
+      "types": [
+        "soldier",
+        "enchantment"
+      ],
+      "keywords": [
+        "Formations",
+        "Revive 1",
+        "Bodyguard"
+      ],
+      "hth": 1,
+      "atk": 2,
+      "dfs": 4,
+      "sp": 0,
+      "cost": 1,
+      "costSpell": 1,
+      "maxCopies": 6,
+      "rarity": "common",
+      "active": "—",
+      "passive": "\"Perfect Servants\" — If on the same battlefield as a friendly Wizard, gains +1 Atk. If in the same Pair, gains +2 Atk instead."
+    },
+    {
+      "id": "rw05",
+      "name": "Battle Mage",
+      "faction": "wizards",
+      "types": [
+        "hero",
+        "wizard"
+      ],
+      "keywords": [
+        "Revive 1",
+        "Gatebuster 6",
+        "Magic 2",
+        "Durable",
+        "Mage Council"
+      ],
+      "hth": 3,
+      "atk": 5,
+      "dfs": 3,
+      "sp": 4,
+      "cost": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"A Ball of Pure Light\" — When attacking, search deck for a Fireball. Play the Fireball without this unit receiving 1 damage.",
+      "passive": "—"
+    },
+    {
+      "id": "rw05",
+      "name": "Battle Mage",
+      "faction": "wizards",
+      "types": [
+        "hero",
+        "wizard"
+      ],
+      "keywords": [
+        "Revive 1",
+        "Gatebuster 6",
+        "Magic 2",
+        "Durable",
+        "Mage Council"
+      ],
+      "hth": 3,
+      "atk": 5,
+      "dfs": 3,
+      "sp": 4,
+      "cost": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"A Ball of Pure Light\" — When attacking, search deck for a Fireball. Play the Fireball without this unit receiving 1 damage.",
+      "passive": "—"
+    },
+    {
+      "id": "rw05",
+      "name": "Battle Mage",
+      "faction": "wizards",
+      "types": [
+        "hero",
+        "wizard"
+      ],
+      "keywords": [
+        "Revive 1",
+        "Gatebuster 6",
+        "Magic 2",
+        "Durable",
+        "Mage Council"
+      ],
+      "hth": 3,
+      "atk": 5,
+      "dfs": 3,
+      "sp": 4,
+      "cost": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"A Ball of Pure Light\" — When attacking, search deck for a Fireball. Play the Fireball without this unit receiving 1 damage.",
+      "passive": "—"
+    },
+    {
+      "id": "rw25",
+      "name": "Wizard Tower",
+      "faction": "wizards",
+      "types": [
+        "attachment"
+      ],
+      "keywords": [
+        "Location 6"
+      ],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "This unit has Sp 4. Friendly wizard units may use these points when in same battlefield.",
+      "passive": "Enchanted Location attachment to battlefield."
+    },
+    {
+      "id": "rw25",
+      "name": "Wizard Tower",
+      "faction": "wizards",
+      "types": [
+        "attachment"
+      ],
+      "keywords": [
+        "Location 6"
+      ],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "This unit has Sp 4. Friendly wizard units may use these points when in same battlefield.",
+      "passive": "Enchanted Location attachment to battlefield."
+    },
+    {
+      "id": "rw25",
+      "name": "Wizard Tower",
+      "faction": "wizards",
+      "types": [
+        "attachment"
+      ],
+      "keywords": [
+        "Location 6"
+      ],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "This unit has Sp 4. Friendly wizard units may use these points when in same battlefield.",
+      "passive": "Enchanted Location attachment to battlefield."
+    },
+    {
+      "id": "rw21",
+      "name": "Foresight",
+      "faction": "wizards",
+      "types": [
+        "strategy",
+        "spell"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 0,
+      "costSpell": 10,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "During Commit Units step, reveal and pay. Opponent commits all forces first, then you commit.",
+      "passive": "—"
+    },
+    {
+      "id": "rw21",
+      "name": "Foresight",
+      "faction": "wizards",
+      "types": [
+        "strategy",
+        "spell"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 0,
+      "costSpell": 10,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "During Commit Units step, reveal and pay. Opponent commits all forces first, then you commit.",
+      "passive": "—"
+    },
+    {
+      "id": "rw21",
+      "name": "Foresight",
+      "faction": "wizards",
+      "types": [
+        "strategy",
+        "spell"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 0,
+      "costSpell": 10,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "During Commit Units step, reveal and pay. Opponent commits all forces first, then you commit.",
+      "passive": "—"
+    },
+    {
+      "id": "rw14",
+      "name": "Sorcerer's Apprentice",
+      "faction": "wizards",
+      "types": [
+        "soldier",
+        "wizard"
+      ],
+      "keywords": [
+        "Magic 1"
+      ],
+      "hth": 1,
+      "atk": 2,
+      "dfs": 2,
+      "sp": 2,
+      "cost": 1,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "At start of Play Cards Step, if in play, once per turn return 1 Spell card from discard to hand.",
+      "passive": "—"
+    },
+    {
+      "id": "rw14",
+      "name": "Sorcerer's Apprentice",
+      "faction": "wizards",
+      "types": [
+        "soldier",
+        "wizard"
+      ],
+      "keywords": [
+        "Magic 1"
+      ],
+      "hth": 1,
+      "atk": 2,
+      "dfs": 2,
+      "sp": 2,
+      "cost": 1,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "At start of Play Cards Step, if in play, once per turn return 1 Spell card from discard to hand.",
+      "passive": "—"
+    },
+    {
+      "id": "rw14",
+      "name": "Sorcerer's Apprentice",
+      "faction": "wizards",
+      "types": [
+        "soldier",
+        "wizard"
+      ],
+      "keywords": [
+        "Magic 1"
+      ],
+      "hth": 1,
+      "atk": 2,
+      "dfs": 2,
+      "sp": 2,
+      "cost": 1,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "At start of Play Cards Step, if in play, once per turn return 1 Spell card from discard to hand.",
+      "passive": "—"
+    },
+    {
+      "id": "rw16",
+      "name": "Black Panther",
+      "faction": "wizards",
+      "types": [
+        "special"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Play facedown in Permanent. At start of battle, reveal and pay cost (placed in graveyard) to deal 3 direct damage to one enemy Unit.",
+      "passive": "Has Revive 0 keyword."
+    },
+    {
+      "id": "rw16",
+      "name": "Black Panther",
+      "faction": "wizards",
+      "types": [
+        "special"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Play facedown in Permanent. At start of battle, reveal and pay cost (placed in graveyard) to deal 3 direct damage to one enemy Unit.",
+      "passive": "Has Revive 0 keyword."
+    },
+    {
+      "id": "rw16",
+      "name": "Black Panther",
+      "faction": "wizards",
+      "types": [
+        "special"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Play facedown in Permanent. At start of battle, reveal and pay cost (placed in graveyard) to deal 3 direct damage to one enemy Unit.",
+      "passive": "Has Revive 0 keyword."
+    },
+    {
+      "id": "rw01",
+      "name": "Grand Wizard",
+      "faction": "wizards",
+      "types": [
+        "hero",
+        "wizard",
+        "commander"
+      ],
+      "keywords": [
+        "Magic 3",
+        "Foresee 3-2",
+        "Revive 1",
+        "Terror"
+      ],
+      "hth": 4,
+      "atk": 6,
+      "dfs": 4,
+      "sp": 6,
+      "cost": 6,
+      "maxCopies": 1,
+      "rarity": "unique",
+      "active": "\"Master of Armaments\" — Once per battle loop, spend 3 Magic Points to return an Enchanted Unit from graveyard to battlefield.",
+      "passive": "This Unit may spend friendly Units' Special Characteristics in the same battlefield as if they were its own Magic Points."
+    },
+    {
+      "id": "rw29",
+      "name": "Runes",
+      "faction": "wizards",
+      "types": [
+        "attachment"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 0,
+      "costSpell": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "When attached, roll d4: 1=+1 Hth, 2=+1 Atk, 3=+1 Dfs, 4=+1 Sp.",
+      "passive": "Spell Attachment."
+    },
+    {
+      "id": "rw29",
+      "name": "Runes",
+      "faction": "wizards",
+      "types": [
+        "attachment"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 0,
+      "costSpell": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "When attached, roll d4: 1=+1 Hth, 2=+1 Atk, 3=+1 Dfs, 4=+1 Sp.",
+      "passive": "Spell Attachment."
+    },
+    {
+      "id": "rw29",
+      "name": "Runes",
+      "faction": "wizards",
+      "types": [
+        "attachment"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 0,
+      "costSpell": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "When attached, roll d4: 1=+1 Hth, 2=+1 Atk, 3=+1 Dfs, 4=+1 Sp.",
+      "passive": "Spell Attachment."
+    },
+    {
+      "id": "rw04",
+      "name": "Ancient Librarian",
+      "faction": "wizards",
+      "types": [
+        "hero",
+        "wizard"
+      ],
+      "keywords": [
+        "Foresee 6-2",
+        "Magic 1"
+      ],
+      "hth": 2,
+      "atk": 2,
+      "dfs": 2,
+      "sp": 4,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "In Setup, spend 1 Magic Point to trigger all of your Enchanted Book's Active abilities for free.",
+      "passive": "During Setup, one attachment is Cost 0 Spell 0 to attach to a friendly Unit."
+    },
+    {
+      "id": "rw04",
+      "name": "Ancient Librarian",
+      "faction": "wizards",
+      "types": [
+        "hero",
+        "wizard"
+      ],
+      "keywords": [
+        "Foresee 6-2",
+        "Magic 1"
+      ],
+      "hth": 2,
+      "atk": 2,
+      "dfs": 2,
+      "sp": 4,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "In Setup, spend 1 Magic Point to trigger all of your Enchanted Book's Active abilities for free.",
+      "passive": "During Setup, one attachment is Cost 0 Spell 0 to attach to a friendly Unit."
+    },
+    {
+      "id": "rw04",
+      "name": "Ancient Librarian",
+      "faction": "wizards",
+      "types": [
+        "hero",
+        "wizard"
+      ],
+      "keywords": [
+        "Foresee 6-2",
+        "Magic 1"
+      ],
+      "hth": 2,
+      "atk": 2,
+      "dfs": 2,
+      "sp": 4,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "In Setup, spend 1 Magic Point to trigger all of your Enchanted Book's Active abilities for free.",
+      "passive": "During Setup, one attachment is Cost 0 Spell 0 to attach to a friendly Unit."
+    },
+    {
+      "id": "rw03",
+      "name": "Master Sorcerer",
+      "faction": "wizards",
+      "types": [
+        "hero",
+        "wizard",
+        "commander"
+      ],
+      "keywords": [
+        "Foresee 3-1",
+        "Magic 2",
+        "Revive 0",
+        "Mage Council"
+      ],
+      "hth": 3,
+      "atk": 4,
+      "dfs": 3,
+      "sp": 4,
+      "cost": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"Experience is the Best Teacher\" — Once per battle loop, spend 1 Magic point to give one Unit in this battlefield +1 Atk.",
+      "passive": "\"Revenge\" — Whenever a friendly Wizard in same battlefield is placed in graveyard, increase this Unit's Atk, Dfs, and Sp by 1."
+    },
+    {
+      "id": "rw03",
+      "name": "Master Sorcerer",
+      "faction": "wizards",
+      "types": [
+        "hero",
+        "wizard",
+        "commander"
+      ],
+      "keywords": [
+        "Foresee 3-1",
+        "Magic 2",
+        "Revive 0",
+        "Mage Council"
+      ],
+      "hth": 3,
+      "atk": 4,
+      "dfs": 3,
+      "sp": 4,
+      "cost": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"Experience is the Best Teacher\" — Once per battle loop, spend 1 Magic point to give one Unit in this battlefield +1 Atk.",
+      "passive": "\"Revenge\" — Whenever a friendly Wizard in same battlefield is placed in graveyard, increase this Unit's Atk, Dfs, and Sp by 1."
+    },
+    {
+      "id": "rw03",
+      "name": "Master Sorcerer",
+      "faction": "wizards",
+      "types": [
+        "hero",
+        "wizard",
+        "commander"
+      ],
+      "keywords": [
+        "Foresee 3-1",
+        "Magic 2",
+        "Revive 0",
+        "Mage Council"
+      ],
+      "hth": 3,
+      "atk": 4,
+      "dfs": 3,
+      "sp": 4,
+      "cost": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"Experience is the Best Teacher\" — Once per battle loop, spend 1 Magic point to give one Unit in this battlefield +1 Atk.",
+      "passive": "\"Revenge\" — Whenever a friendly Wizard in same battlefield is placed in graveyard, increase this Unit's Atk, Dfs, and Sp by 1."
+    },
+    {
+      "id": "rw09",
+      "name": "Talking Elephant",
+      "faction": "wizards",
+      "types": [
+        "soldier",
+        "creature",
+        "monster"
+      ],
+      "keywords": [
+        "Anti-Formation",
+        "Durable",
+        "Gatebuster 4",
+        "Ranged Armor 1"
+      ],
+      "hth": 4,
+      "atk": 6,
+      "dfs": 3,
+      "sp": 2,
+      "cost": 6,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "If no Paired Allies and Outnumbered, increase Dfs and Atk by 1 until end of loop (once per battle).",
+      "passive": "Costs 1 less Resource for every other friendly Creature Unit in play (min 1)."
+    },
+    {
+      "id": "rw09",
+      "name": "Talking Elephant",
+      "faction": "wizards",
+      "types": [
+        "soldier",
+        "creature",
+        "monster"
+      ],
+      "keywords": [
+        "Anti-Formation",
+        "Durable",
+        "Gatebuster 4",
+        "Ranged Armor 1"
+      ],
+      "hth": 4,
+      "atk": 6,
+      "dfs": 3,
+      "sp": 2,
+      "cost": 6,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "If no Paired Allies and Outnumbered, increase Dfs and Atk by 1 until end of loop (once per battle).",
+      "passive": "Costs 1 less Resource for every other friendly Creature Unit in play (min 1)."
+    },
+    {
+      "id": "rw09",
+      "name": "Talking Elephant",
+      "faction": "wizards",
+      "types": [
+        "soldier",
+        "creature",
+        "monster"
+      ],
+      "keywords": [
+        "Anti-Formation",
+        "Durable",
+        "Gatebuster 4",
+        "Ranged Armor 1"
+      ],
+      "hth": 4,
+      "atk": 6,
+      "dfs": 3,
+      "sp": 2,
+      "cost": 6,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "If no Paired Allies and Outnumbered, increase Dfs and Atk by 1 until end of loop (once per battle).",
+      "passive": "Costs 1 less Resource for every other friendly Creature Unit in play (min 1)."
+    },
+    {
+      "id": "rw11",
+      "name": "Chimpanzee",
+      "faction": "wizards",
+      "types": [
+        "soldier",
+        "creature"
+      ],
+      "keywords": [
+        "Ranged 3",
+        "Slippery"
+      ],
+      "hth": 1,
+      "atk": 4,
+      "dfs": 2,
+      "sp": 1,
+      "cost": 1,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "—",
+      "passive": "Spend 1 Magic point to enter a rage: lose Ranged 3 but gain Charge 1."
+    },
+    {
+      "id": "rw11",
+      "name": "Chimpanzee",
+      "faction": "wizards",
+      "types": [
+        "soldier",
+        "creature"
+      ],
+      "keywords": [
+        "Ranged 3",
+        "Slippery"
+      ],
+      "hth": 1,
+      "atk": 4,
+      "dfs": 2,
+      "sp": 1,
+      "cost": 1,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "—",
+      "passive": "Spend 1 Magic point to enter a rage: lose Ranged 3 but gain Charge 1."
+    },
+    {
+      "id": "rw11",
+      "name": "Chimpanzee",
+      "faction": "wizards",
+      "types": [
+        "soldier",
+        "creature"
+      ],
+      "keywords": [
+        "Ranged 3",
+        "Slippery"
+      ],
+      "hth": 1,
+      "atk": 4,
+      "dfs": 2,
+      "sp": 1,
+      "cost": 1,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "—",
+      "passive": "Spend 1 Magic point to enter a rage: lose Ranged 3 but gain Charge 1."
+    },
+    {
+      "id": "rw27",
+      "name": "Ancient Staff",
+      "faction": "wizards",
+      "types": [
+        "attachment"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 2,
+      "costSpell": 4,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Attached Hero (non-Wizard Neophyte) gains Durable and Terror.",
+      "passive": "Spell Attachment."
+    },
+    {
+      "id": "rw27",
+      "name": "Ancient Staff",
+      "faction": "wizards",
+      "types": [
+        "attachment"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 2,
+      "costSpell": 4,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Attached Hero (non-Wizard Neophyte) gains Durable and Terror.",
+      "passive": "Spell Attachment."
+    },
+    {
+      "id": "rw27",
+      "name": "Ancient Staff",
+      "faction": "wizards",
+      "types": [
+        "attachment"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 2,
+      "costSpell": 4,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Attached Hero (non-Wizard Neophyte) gains Durable and Terror.",
+      "passive": "Spell Attachment."
+    },
+    {
+      "id": "rw08",
+      "name": "Talking Tiger",
+      "faction": "wizards",
+      "types": [
+        "soldier",
+        "creature"
+      ],
+      "keywords": [
+        "Reposition",
+        "Hunter"
+      ],
+      "hth": 2,
+      "atk": 5,
+      "dfs": 3,
+      "sp": 1,
+      "cost": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "—",
+      "passive": "\"Claws Outstretched\" — When attacking an enemy for the first time, deal 2 Direct damage to a 1-2 Health enemy Paired with this Unit."
+    },
+    {
+      "id": "rw08",
+      "name": "Talking Tiger",
+      "faction": "wizards",
+      "types": [
+        "soldier",
+        "creature"
+      ],
+      "keywords": [
+        "Reposition",
+        "Hunter"
+      ],
+      "hth": 2,
+      "atk": 5,
+      "dfs": 3,
+      "sp": 1,
+      "cost": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "—",
+      "passive": "\"Claws Outstretched\" — When attacking an enemy for the first time, deal 2 Direct damage to a 1-2 Health enemy Paired with this Unit."
+    },
+    {
+      "id": "rw08",
+      "name": "Talking Tiger",
+      "faction": "wizards",
+      "types": [
+        "soldier",
+        "creature"
+      ],
+      "keywords": [
+        "Reposition",
+        "Hunter"
+      ],
+      "hth": 2,
+      "atk": 5,
+      "dfs": 3,
+      "sp": 1,
+      "cost": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "—",
+      "passive": "\"Claws Outstretched\" — When attacking an enemy for the first time, deal 2 Direct damage to a 1-2 Health enemy Paired with this Unit."
+    },
+    {
+      "id": "rw28",
+      "name": "Crystal Ball",
+      "faction": "wizards",
+      "types": [
+        "attachment"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 1,
+      "costSpell": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Attached Wizard Unit gains Foresee 5-2.",
+      "passive": "Spell Attachment."
+    },
+    {
+      "id": "rw28",
+      "name": "Crystal Ball",
+      "faction": "wizards",
+      "types": [
+        "attachment"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 1,
+      "costSpell": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Attached Wizard Unit gains Foresee 5-2.",
+      "passive": "Spell Attachment."
+    },
+    {
+      "id": "rw28",
+      "name": "Crystal Ball",
+      "faction": "wizards",
+      "types": [
+        "attachment"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 1,
+      "costSpell": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Attached Wizard Unit gains Foresee 5-2.",
+      "passive": "Spell Attachment."
+    },
+    {
+      "id": "rw22",
+      "name": "Magic Burst",
+      "faction": "neutral",
+      "types": [
+        "strategy",
+        "spell"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 0,
+      "costSpell": 10,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "After Commit Units step, all Units in one selected battlefield are destroyed. No one wins that battle. Discard the location.",
+      "passive": "Exhaust every Wizard that participates in paying the cost."
+    },
+    {
+      "id": "rw22",
+      "name": "Magic Burst",
+      "faction": "neutral",
+      "types": [
+        "strategy",
+        "spell"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 0,
+      "costSpell": 10,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "After Commit Units step, all Units in one selected battlefield are destroyed. No one wins that battle. Discard the location.",
+      "passive": "Exhaust every Wizard that participates in paying the cost."
+    },
+    {
+      "id": "rw22",
+      "name": "Magic Burst",
+      "faction": "neutral",
+      "types": [
+        "strategy",
+        "spell"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 0,
+      "costSpell": 10,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "After Commit Units step, all Units in one selected battlefield are destroyed. No one wins that battle. Discard the location.",
+      "passive": "Exhaust every Wizard that participates in paying the cost."
+    },
+    {
+      "id": "rw18",
+      "name": "Olympian Bolt",
+      "faction": "neutral",
+      "types": [
+        "strategy",
+        "spell"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 0,
+      "costSpell": 4,
+      "maxCopies": 6,
+      "rarity": "common",
+      "active": "After Commit Units Step, reveal and pay (deal 1 damage to 1 friendly Wizard) to deal 2 direct damage to one enemy Unit on same battlefield.",
+      "passive": "—"
+    },
+    {
+      "id": "rw18",
+      "name": "Olympian Bolt",
+      "faction": "neutral",
+      "types": [
+        "strategy",
+        "spell"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 0,
+      "costSpell": 4,
+      "maxCopies": 6,
+      "rarity": "common",
+      "active": "After Commit Units Step, reveal and pay (deal 1 damage to 1 friendly Wizard) to deal 2 direct damage to one enemy Unit on same battlefield.",
+      "passive": "—"
+    },
+    {
+      "id": "rw18",
+      "name": "Olympian Bolt",
+      "faction": "neutral",
+      "types": [
+        "strategy",
+        "spell"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 0,
+      "costSpell": 4,
+      "maxCopies": 6,
+      "rarity": "common",
+      "active": "After Commit Units Step, reveal and pay (deal 1 damage to 1 friendly Wizard) to deal 2 direct damage to one enemy Unit on same battlefield.",
+      "passive": "—"
+    },
+    {
+      "id": "rw18",
+      "name": "Olympian Bolt",
+      "faction": "neutral",
+      "types": [
+        "strategy",
+        "spell"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 0,
+      "costSpell": 4,
+      "maxCopies": 6,
+      "rarity": "common",
+      "active": "After Commit Units Step, reveal and pay (deal 1 damage to 1 friendly Wizard) to deal 2 direct damage to one enemy Unit on same battlefield.",
+      "passive": "—"
+    },
+    {
+      "id": "rw18",
+      "name": "Olympian Bolt",
+      "faction": "neutral",
+      "types": [
+        "strategy",
+        "spell"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 0,
+      "costSpell": 4,
+      "maxCopies": 6,
+      "rarity": "common",
+      "active": "After Commit Units Step, reveal and pay (deal 1 damage to 1 friendly Wizard) to deal 2 direct damage to one enemy Unit on same battlefield.",
+      "passive": "—"
+    },
+    {
+      "id": "rw23",
+      "name": "Overcharge",
+      "faction": "neutral",
+      "types": [
+        "strategy",
+        "spell"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 0,
+      "costSpell": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "When a friendly Unit attacks, reveal and pay from a friendly Wizard in that battlefield. +1 Attack for rest of battle sequence; deal 1 direct damage to targeted Unit.",
+      "passive": "—"
+    },
+    {
+      "id": "rw23",
+      "name": "Overcharge",
+      "faction": "neutral",
+      "types": [
+        "strategy",
+        "spell"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 0,
+      "costSpell": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "When a friendly Unit attacks, reveal and pay from a friendly Wizard in that battlefield. +1 Attack for rest of battle sequence; deal 1 direct damage to targeted Unit.",
+      "passive": "—"
+    },
+    {
+      "id": "rw23",
+      "name": "Overcharge",
+      "faction": "neutral",
+      "types": [
+        "strategy",
+        "spell"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 0,
+      "costSpell": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "When a friendly Unit attacks, reveal and pay from a friendly Wizard in that battlefield. +1 Attack for rest of battle sequence; deal 1 direct damage to targeted Unit.",
+      "passive": "—"
+    },
+    {
+      "id": "rw17",
+      "name": "Fire Ball",
+      "faction": "neutral",
+      "types": [
+        "strategy",
+        "spell"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 0,
+      "costSpell": 4,
+      "maxCopies": 6,
+      "rarity": "common",
+      "active": "After Commit Units Step, reveal and pay cost (deal 1 damage to 1 friendly Wizard) to deal 1 direct damage to up to 3 enemy Units on same battlefield.",
+      "passive": "—"
+    },
+    {
+      "id": "rw17",
+      "name": "Fire Ball",
+      "faction": "neutral",
+      "types": [
+        "strategy",
+        "spell"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 0,
+      "costSpell": 4,
+      "maxCopies": 6,
+      "rarity": "common",
+      "active": "After Commit Units Step, reveal and pay cost (deal 1 damage to 1 friendly Wizard) to deal 1 direct damage to up to 3 enemy Units on same battlefield.",
+      "passive": "—"
+    },
+    {
+      "id": "rw17",
+      "name": "Fire Ball",
+      "faction": "neutral",
+      "types": [
+        "strategy",
+        "spell"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 0,
+      "costSpell": 4,
+      "maxCopies": 6,
+      "rarity": "common",
+      "active": "After Commit Units Step, reveal and pay cost (deal 1 damage to 1 friendly Wizard) to deal 1 direct damage to up to 3 enemy Units on same battlefield.",
+      "passive": "—"
+    },
+    {
+      "id": "rw17",
+      "name": "Fire Ball",
+      "faction": "neutral",
+      "types": [
+        "strategy",
+        "spell"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 0,
+      "costSpell": 4,
+      "maxCopies": 6,
+      "rarity": "common",
+      "active": "After Commit Units Step, reveal and pay cost (deal 1 damage to 1 friendly Wizard) to deal 1 direct damage to up to 3 enemy Units on same battlefield.",
+      "passive": "—"
+    },
+    {
+      "id": "rw17",
+      "name": "Fire Ball",
+      "faction": "neutral",
+      "types": [
+        "strategy",
+        "spell"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 0,
+      "costSpell": 4,
+      "maxCopies": 6,
+      "rarity": "common",
+      "active": "After Commit Units Step, reveal and pay cost (deal 1 damage to 1 friendly Wizard) to deal 1 direct damage to up to 3 enemy Units on same battlefield.",
+      "passive": "—"
+    },
+    {
+      "id": "rw24",
+      "name": "Curse",
+      "faction": "neutral",
+      "types": [
+        "strategy",
+        "spell"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 0,
+      "costSpell": 5,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "After Commit Units, reveal and pay from a friendly Wizard to attach to an enemy Unit in that Wizard's battlefield. Enemy Unit cannot use its Passive Ability.",
+      "passive": "Becomes a Spell Attachment Card."
+    },
+    {
+      "id": "rw24",
+      "name": "Curse",
+      "faction": "neutral",
+      "types": [
+        "strategy",
+        "spell"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 0,
+      "costSpell": 5,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "After Commit Units, reveal and pay from a friendly Wizard to attach to an enemy Unit in that Wizard's battlefield. Enemy Unit cannot use its Passive Ability.",
+      "passive": "Becomes a Spell Attachment Card."
+    },
+    {
+      "id": "rw24",
+      "name": "Curse",
+      "faction": "neutral",
+      "types": [
+        "strategy",
+        "spell"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 0,
+      "costSpell": 5,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "After Commit Units, reveal and pay from a friendly Wizard to attach to an enemy Unit in that Wizard's battlefield. Enemy Unit cannot use its Passive Ability.",
+      "passive": "Becomes a Spell Attachment Card."
+    },
+    {
+      "id": "rw19",
+      "name": "Spell of Strengthening",
+      "faction": "neutral",
+      "types": [
+        "strategy",
+        "spell"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 0,
+      "costSpell": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "When a friendly Unit would be attacked, reveal and pay from a friendly Wizard in same battlefield. +1 Defense for targeted Unit.",
+      "passive": "—"
+    },
+    {
+      "id": "rw19",
+      "name": "Spell of Strengthening",
+      "faction": "neutral",
+      "types": [
+        "strategy",
+        "spell"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 0,
+      "costSpell": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "When a friendly Unit would be attacked, reveal and pay from a friendly Wizard in same battlefield. +1 Defense for targeted Unit.",
+      "passive": "—"
+    },
+    {
+      "id": "rw19",
+      "name": "Spell of Strengthening",
+      "faction": "neutral",
+      "types": [
+        "strategy",
+        "spell"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 0,
+      "costSpell": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "When a friendly Unit would be attacked, reveal and pay from a friendly Wizard in same battlefield. +1 Defense for targeted Unit.",
+      "passive": "—"
+    },
+    {
+      "id": "rw10",
+      "name": "Rock Giant",
+      "faction": "neutral",
+      "types": [
+        "soldier",
+        "monster",
+        "enchanted"
+      ],
+      "keywords": [
+        "Impenetrable",
+        "Routing",
+        "Gatebuster 6"
+      ],
+      "hth": 5,
+      "atk": 7,
+      "dfs": 3,
+      "sp": 3,
+      "cost": 8,
+      "costSpell": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"Crushing Blow\" — Once per battle, deal 1 direct damage to 2 different enemy units.",
+      "passive": "Can use 2 Spell Points per Resource when paying cost."
+    },
+    {
+      "id": "rw10",
+      "name": "Rock Giant",
+      "faction": "neutral",
+      "types": [
+        "soldier",
+        "monster",
+        "enchanted"
+      ],
+      "keywords": [
+        "Impenetrable",
+        "Routing",
+        "Gatebuster 6"
+      ],
+      "hth": 5,
+      "atk": 7,
+      "dfs": 3,
+      "sp": 3,
+      "cost": 8,
+      "costSpell": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"Crushing Blow\" — Once per battle, deal 1 direct damage to 2 different enemy units.",
+      "passive": "Can use 2 Spell Points per Resource when paying cost."
+    },
+    {
+      "id": "rw10",
+      "name": "Rock Giant",
+      "faction": "neutral",
+      "types": [
+        "soldier",
+        "monster",
+        "enchanted"
+      ],
+      "keywords": [
+        "Impenetrable",
+        "Routing",
+        "Gatebuster 6"
+      ],
+      "hth": 5,
+      "atk": 7,
+      "dfs": 3,
+      "sp": 3,
+      "cost": 8,
+      "costSpell": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"Crushing Blow\" — Once per battle, deal 1 direct damage to 2 different enemy units.",
+      "passive": "Can use 2 Spell Points per Resource when paying cost."
+    },
+    {
+      "id": "rw26",
+      "name": "Staff",
+      "faction": "neutral",
+      "types": [
+        "attachment"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 1,
+      "costSpell": 1,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Attached Wizard Unit gains Slippery and +1 Sp.",
+      "passive": "Spell Attachment."
+    },
+    {
+      "id": "rw26",
+      "name": "Staff",
+      "faction": "neutral",
+      "types": [
+        "attachment"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 1,
+      "costSpell": 1,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Attached Wizard Unit gains Slippery and +1 Sp.",
+      "passive": "Spell Attachment."
+    },
+    {
+      "id": "rw26",
+      "name": "Staff",
+      "faction": "neutral",
+      "types": [
+        "attachment"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 1,
+      "costSpell": 1,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Attached Wizard Unit gains Slippery and +1 Sp.",
+      "passive": "Spell Attachment."
+    },
+    {
+      "id": "rw20",
+      "name": "Spell of Weakening",
+      "faction": "neutral",
+      "types": [
+        "strategy",
+        "spell"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 0,
+      "costSpell": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "When an enemy Unit would defend, reveal and pay from a friendly Wizard in same battlefield. -1 Defense for targeted Unit.",
+      "passive": "—"
+    },
+    {
+      "id": "rw20",
+      "name": "Spell of Weakening",
+      "faction": "neutral",
+      "types": [
+        "strategy",
+        "spell"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 0,
+      "costSpell": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "When an enemy Unit would defend, reveal and pay from a friendly Wizard in same battlefield. -1 Defense for targeted Unit.",
+      "passive": "—"
+    },
+    {
+      "id": "rw20",
+      "name": "Spell of Weakening",
+      "faction": "neutral",
+      "types": [
+        "strategy",
+        "spell"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 0,
+      "costSpell": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "When an enemy Unit would defend, reveal and pay from a friendly Wizard in same battlefield. -1 Defense for targeted Unit.",
+      "passive": "—"
+    },
+    {
+      "id": "custom_1775940396763",
+      "name": "Fortress",
+      "faction": "neutral",
+      "types": [
+        "attachment"
+      ],
+      "keywords": [
+        "Location 10"
+      ],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "—",
+      "passive": "Location Attachment. Give Rest 4 to the attached location or increase its Rest X by 4."
+    },
+    {
+      "id": "custom_1775940396763",
+      "name": "Fortress",
+      "faction": "neutral",
+      "types": [
+        "attachment"
+      ],
+      "keywords": [
+        "Location 10"
+      ],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "—",
+      "passive": "Location Attachment. Give Rest 4 to the attached location or increase its Rest X by 4."
+    },
+    {
+      "id": "custom_1775940396763",
+      "name": "Fortress",
+      "faction": "neutral",
+      "types": [
+        "attachment"
+      ],
+      "keywords": [
+        "Location 10"
+      ],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "—",
+      "passive": "Location Attachment. Give Rest 4 to the attached location or increase its Rest X by 4."
+    },
+    {
+      "id": "km10",
+      "name": "Healer",
+      "faction": "neutral",
+      "types": [
+        "hero"
+      ],
+      "keywords": [],
+      "hth": 2,
+      "atk": 2,
+      "dfs": 2,
+      "sp": 1,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"From the Brink of Death\" — Once per battle, when a friendly Unit would go to graveyard, discard this to keep it at 1 Health.",
+      "passive": "Once per battle loop, after a friendly Unit in this battlefield receives Damage, Heal 1 that Unit."
+    },
+    {
+      "id": "km10",
+      "name": "Healer",
+      "faction": "neutral",
+      "types": [
+        "hero"
+      ],
+      "keywords": [],
+      "hth": 2,
+      "atk": 2,
+      "dfs": 2,
+      "sp": 1,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"From the Brink of Death\" — Once per battle, when a friendly Unit would go to graveyard, discard this to keep it at 1 Health.",
+      "passive": "Once per battle loop, after a friendly Unit in this battlefield receives Damage, Heal 1 that Unit."
+    },
+    {
+      "id": "rw15",
+      "name": "Wizard",
+      "faction": "neutral",
+      "types": [
+        "soldier",
+        "wizard"
+      ],
+      "keywords": [
+        "Magic 1",
+        "Revive 0"
+      ],
+      "hth": 2,
+      "atk": 4,
+      "dfs": 2,
+      "sp": 3,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "During Setup, spend 3 Magic points to search deck top-down for first Spell card; put it in hand and shuffle.",
+      "passive": "+1 Sp for every other friendly Wizard Unit on the battlefield (max +3)."
+    },
+    {
+      "id": "rw15",
+      "name": "Wizard",
+      "faction": "neutral",
+      "types": [
+        "soldier",
+        "wizard"
+      ],
+      "keywords": [
+        "Magic 1",
+        "Revive 0"
+      ],
+      "hth": 2,
+      "atk": 4,
+      "dfs": 2,
+      "sp": 3,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "During Setup, spend 3 Magic points to search deck top-down for first Spell card; put it in hand and shuffle.",
+      "passive": "+1 Sp for every other friendly Wizard Unit on the battlefield (max +3)."
+    },
+    {
+      "id": "rw15",
+      "name": "Wizard",
+      "faction": "neutral",
+      "types": [
+        "soldier",
+        "wizard"
+      ],
+      "keywords": [
+        "Magic 1",
+        "Revive 0"
+      ],
+      "hth": 2,
+      "atk": 4,
+      "dfs": 2,
+      "sp": 3,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "During Setup, spend 3 Magic points to search deck top-down for first Spell card; put it in hand and shuffle.",
+      "passive": "+1 Sp for every other friendly Wizard Unit on the battlefield (max +3)."
+    }
+  ]
+}

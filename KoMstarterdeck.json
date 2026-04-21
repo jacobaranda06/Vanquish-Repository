@@ -1,0 +1,2057 @@
+{
+  "composition": "dominion",
+  "totalCards": 100,
+  "factions": [
+    "kingdoms"
+  ],
+  "cards": [
+    {
+      "id": "km15",
+      "name": "Dunathi Longbow Archers",
+      "faction": "kingdoms",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Ranged 4",
+        "Disciplined"
+      ],
+      "hth": 1,
+      "atk": 2,
+      "dfs": 2,
+      "sp": 1,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"Volley\" — Once per battle, before Pairings, if this Unit is targeted by the Command X keyword, resolve Ranged X against an eligible enemy unit",
+      "passive": ""
+    },
+    {
+      "id": "km15",
+      "name": "Dunathi Longbow Archers",
+      "faction": "kingdoms",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Ranged 4",
+        "Disciplined"
+      ],
+      "hth": 1,
+      "atk": 2,
+      "dfs": 2,
+      "sp": 1,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"Volley\" — Once per battle, before Pairings, if this Unit is targeted by the Command X keyword, resolve Ranged X against an eligible enemy unit",
+      "passive": ""
+    },
+    {
+      "id": "km15",
+      "name": "Dunathi Longbow Archers",
+      "faction": "kingdoms",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Ranged 4",
+        "Disciplined"
+      ],
+      "hth": 1,
+      "atk": 2,
+      "dfs": 2,
+      "sp": 1,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"Volley\" — Once per battle, before Pairings, if this Unit is targeted by the Command X keyword, resolve Ranged X against an eligible enemy unit",
+      "passive": ""
+    },
+    {
+      "id": "km14",
+      "name": "Legionnaires",
+      "faction": "kingdoms",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Formations",
+        "Durable",
+        "Bodyguard",
+        "Disciplined"
+      ],
+      "hth": 2,
+      "atk": 4,
+      "dfs": 3,
+      "sp": 2,
+      "cost": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"Clear the Line\" — Once per battle, +1 Atk until end of loop; excess damage may be allocated to another enemy Unit as direct damage.",
+      "passive": "\"Imperial Force\" — Gains Hunter if enemy Paired Units have Sp less than this Unit's; those enemies also get -1 Atk."
+    },
+    {
+      "id": "km14",
+      "name": "Legionnaires",
+      "faction": "kingdoms",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Formations",
+        "Durable",
+        "Bodyguard",
+        "Disciplined"
+      ],
+      "hth": 2,
+      "atk": 4,
+      "dfs": 3,
+      "sp": 2,
+      "cost": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"Clear the Line\" — Once per battle, +1 Atk until end of loop; excess damage may be allocated to another enemy Unit as direct damage.",
+      "passive": "\"Imperial Force\" — Gains Hunter if enemy Paired Units have Sp less than this Unit's; those enemies also get -1 Atk."
+    },
+    {
+      "id": "km14",
+      "name": "Legionnaires",
+      "faction": "kingdoms",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Formations",
+        "Durable",
+        "Bodyguard",
+        "Disciplined"
+      ],
+      "hth": 2,
+      "atk": 4,
+      "dfs": 3,
+      "sp": 2,
+      "cost": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"Clear the Line\" — Once per battle, +1 Atk until end of loop; excess damage may be allocated to another enemy Unit as direct damage.",
+      "passive": "\"Imperial Force\" — Gains Hunter if enemy Paired Units have Sp less than this Unit's; those enemies also get -1 Atk."
+    },
+    {
+      "id": "km22",
+      "name": "Royal Assassin",
+      "faction": "kingdoms",
+      "types": [
+        "special"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 4,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"Elimination\" — Before Pairing Step, reveal and pay cost to remove one enemy Hero from one battlefield.",
+      "passive": "\"Secret Assignment\" — Played facedown in Permanent or Command Area."
+    },
+    {
+      "id": "km22",
+      "name": "Royal Assassin",
+      "faction": "kingdoms",
+      "types": [
+        "special"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 4,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"Elimination\" — Before Pairing Step, reveal and pay cost to remove one enemy Hero from one battlefield.",
+      "passive": "\"Secret Assignment\" — Played facedown in Permanent or Command Area."
+    },
+    {
+      "id": "km35",
+      "name": "Cyningdom Castle",
+      "faction": "kingdoms",
+      "types": [
+        "attachment"
+      ],
+      "keywords": [
+        "Location 10",
+        "Rest 4"
+      ],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 4,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Units Committed from attached Location gain Aggressive. If the attached Location is the Battlefield, all friendly units gain +1 Dfs and Location gains Ranged 4.",
+      "passive": "Location attachment."
+    },
+    {
+      "id": "km35",
+      "name": "Cyningdom Castle",
+      "faction": "kingdoms",
+      "types": [
+        "attachment"
+      ],
+      "keywords": [
+        "Location 10",
+        "Rest 4"
+      ],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 4,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Units Committed from attached Location gain Aggressive. If the attached Location is the Battlefield, all friendly units gain +1 Dfs and Location gains Ranged 4.",
+      "passive": "Location attachment."
+    },
+    {
+      "id": "km25",
+      "name": "Dunathi Diplomat",
+      "faction": "kingdoms",
+      "types": [
+        "special"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Exhaust any number of Locations to place 1 counter per location on this card. Remove 4 counters to auto-win one Battlefield.",
+      "passive": "Played faceup in Permanent area."
+    },
+    {
+      "id": "km25",
+      "name": "Dunathi Diplomat",
+      "faction": "kingdoms",
+      "types": [
+        "special"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Exhaust any number of Locations to place 1 counter per location on this card. Remove 4 counters to auto-win one Battlefield.",
+      "passive": "Played faceup in Permanent area."
+    },
+    {
+      "id": "km04",
+      "name": "Fief Lord",
+      "faction": "kingdoms",
+      "types": [
+        "hero",
+        "commander"
+      ],
+      "keywords": [
+        "Command 1"
+      ],
+      "hth": 2,
+      "atk": 4,
+      "dfs": 3,
+      "sp": 2,
+      "cost": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Once during Setup, spend 1 Resource to make 1 Militiamen counter in your Command area.",
+      "passive": "\"Train the Peasants\" — \"Militiamen\" in this Unit's battlefield gain Formations."
+    },
+    {
+      "id": "km04",
+      "name": "Fief Lord",
+      "faction": "kingdoms",
+      "types": [
+        "hero",
+        "commander"
+      ],
+      "keywords": [
+        "Command 1"
+      ],
+      "hth": 2,
+      "atk": 4,
+      "dfs": 3,
+      "sp": 2,
+      "cost": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Once during Setup, spend 1 Resource to make 1 Militiamen counter in your Command area.",
+      "passive": "\"Train the Peasants\" — \"Militiamen\" in this Unit's battlefield gain Formations."
+    },
+    {
+      "id": "km04",
+      "name": "Fief Lord",
+      "faction": "kingdoms",
+      "types": [
+        "hero",
+        "commander"
+      ],
+      "keywords": [
+        "Command 1"
+      ],
+      "hth": 2,
+      "atk": 4,
+      "dfs": 3,
+      "sp": 2,
+      "cost": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Once during Setup, spend 1 Resource to make 1 Militiamen counter in your Command area.",
+      "passive": "\"Train the Peasants\" — \"Militiamen\" in this Unit's battlefield gain Formations."
+    },
+    {
+      "id": "km11",
+      "name": "Battle Bishop",
+      "faction": "kingdoms",
+      "types": [
+        "hero"
+      ],
+      "keywords": [
+        "Aggressive",
+        "Resilient",
+        "Charge 1",
+        "Durable",
+        "Command 1",
+        "Revive 1",
+        "Reposition"
+      ],
+      "hth": 3,
+      "atk": 5,
+      "dfs": 3,
+      "sp": 3,
+      "cost": 4,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"Love your Enemies\" — Once per battle, when this Unit would destroy an enemy, place it in your Command Area with 1 Health. You control it.",
+      "passive": "\"Man of God\" — While in play, play 1 card from your discard pile during Setup as if it had Renew."
+    },
+    {
+      "id": "km11",
+      "name": "Battle Bishop",
+      "faction": "kingdoms",
+      "types": [
+        "hero"
+      ],
+      "keywords": [
+        "Aggressive",
+        "Resilient",
+        "Charge 1",
+        "Durable",
+        "Command 1",
+        "Revive 1",
+        "Reposition"
+      ],
+      "hth": 3,
+      "atk": 5,
+      "dfs": 3,
+      "sp": 3,
+      "cost": 4,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"Love your Enemies\" — Once per battle, when this Unit would destroy an enemy, place it in your Command Area with 1 Health. You control it.",
+      "passive": "\"Man of God\" — While in play, play 1 card from your discard pile during Setup as if it had Renew."
+    },
+    {
+      "id": "km18",
+      "name": "Mounted Red Knights",
+      "faction": "kingdoms",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Disciplined",
+        "Durable",
+        "Aggressive",
+        "Reposition",
+        "Anti-Formation",
+        "Charge 1"
+      ],
+      "hth": 3,
+      "atk": 4,
+      "dfs": 3,
+      "sp": 2,
+      "cost": 4,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "—",
+      "passive": "\"Terror Charge\" — When attacking, if defender's Sp < this Unit's, roll d6: 1-2 = -1 Dfs; 3-5 = auto-Retreat; 6 = auto-Retreat + re-pair + repeat."
+    },
+    {
+      "id": "km18",
+      "name": "Mounted Red Knights",
+      "faction": "kingdoms",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Disciplined",
+        "Durable",
+        "Aggressive",
+        "Reposition",
+        "Anti-Formation",
+        "Charge 1"
+      ],
+      "hth": 3,
+      "atk": 4,
+      "dfs": 3,
+      "sp": 2,
+      "cost": 4,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "—",
+      "passive": "\"Terror Charge\" — When attacking, if defender's Sp < this Unit's, roll d6: 1-2 = -1 Dfs; 3-5 = auto-Retreat; 6 = auto-Retreat + re-pair + repeat."
+    },
+    {
+      "id": "km18",
+      "name": "Mounted Red Knights",
+      "faction": "kingdoms",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Disciplined",
+        "Durable",
+        "Aggressive",
+        "Reposition",
+        "Anti-Formation",
+        "Charge 1"
+      ],
+      "hth": 3,
+      "atk": 4,
+      "dfs": 3,
+      "sp": 2,
+      "cost": 4,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "—",
+      "passive": "\"Terror Charge\" — When attacking, if defender's Sp < this Unit's, roll d6: 1-2 = -1 Dfs; 3-5 = auto-Retreat; 6 = auto-Retreat + re-pair + repeat."
+    },
+    {
+      "id": "km01",
+      "name": "King of Men",
+      "faction": "kingdoms",
+      "types": [
+        "hero",
+        "commander"
+      ],
+      "keywords": [
+        "Command 2"
+      ],
+      "hth": 4,
+      "atk": 5,
+      "dfs": 3,
+      "sp": 3,
+      "cost": 5,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"For Glory!\" — Once per battle sequence, this Unit gains +1 Atk and Dfs until Paired Combat is resolved.",
+      "passive": "\"Lead by Example\" — While in play, all Soldier and Hero cards cost 1 less to play."
+    },
+    {
+      "id": "km01",
+      "name": "King of Men",
+      "faction": "kingdoms",
+      "types": [
+        "hero",
+        "commander"
+      ],
+      "keywords": [
+        "Command 2"
+      ],
+      "hth": 4,
+      "atk": 5,
+      "dfs": 3,
+      "sp": 3,
+      "cost": 5,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"For Glory!\" — Once per battle sequence, this Unit gains +1 Atk and Dfs until Paired Combat is resolved.",
+      "passive": "\"Lead by Example\" — While in play, all Soldier and Hero cards cost 1 less to play."
+    },
+    {
+      "id": "km17",
+      "name": "Red Knights",
+      "faction": "kingdoms",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Disciplined",
+        "Durable",
+        "Aggressive"
+      ],
+      "hth": 3,
+      "atk": 4,
+      "dfs": 3,
+      "sp": 2,
+      "cost": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"Walking Tanks\" — Spend 1 Resource for +1 Atk or Dfs until end of Attack Step; or spend 3 Resources to gain Impenetrable until end of Battle Sequence.",
+      "passive": "\"For the King!\" — Gains Bodyguard if on battlefield with a friendly Commander Unit."
+    },
+    {
+      "id": "km17",
+      "name": "Red Knights",
+      "faction": "kingdoms",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Disciplined",
+        "Durable",
+        "Aggressive"
+      ],
+      "hth": 3,
+      "atk": 4,
+      "dfs": 3,
+      "sp": 2,
+      "cost": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"Walking Tanks\" — Spend 1 Resource for +1 Atk or Dfs until end of Attack Step; or spend 3 Resources to gain Impenetrable until end of Battle Sequence.",
+      "passive": "\"For the King!\" — Gains Bodyguard if on battlefield with a friendly Commander Unit."
+    },
+    {
+      "id": "km17",
+      "name": "Red Knights",
+      "faction": "kingdoms",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Disciplined",
+        "Durable",
+        "Aggressive"
+      ],
+      "hth": 3,
+      "atk": 4,
+      "dfs": 3,
+      "sp": 2,
+      "cost": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"Walking Tanks\" — Spend 1 Resource for +1 Atk or Dfs until end of Attack Step; or spend 3 Resources to gain Impenetrable until end of Battle Sequence.",
+      "passive": "\"For the King!\" — Gains Bodyguard if on battlefield with a friendly Commander Unit."
+    },
+    {
+      "id": "km21",
+      "name": "Dwarf Mercenaries",
+      "faction": "kingdoms",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Durable",
+        "Resilient",
+        "Hunter"
+      ],
+      "hth": 2,
+      "atk": 4,
+      "dfs": 4,
+      "sp": 2,
+      "cost": 4,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"In for the Shinies\" — When attacking or defending, exhaust 1 Location to give +1 Atk or Dfs until end of battle sequence.",
+      "passive": "\"Ard as Rock\" — First time receiving Damage in a battle sequence, reduce to 1. Cannot take direct damage."
+    },
+    {
+      "id": "km21",
+      "name": "Dwarf Mercenaries",
+      "faction": "kingdoms",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Durable",
+        "Resilient",
+        "Hunter"
+      ],
+      "hth": 2,
+      "atk": 4,
+      "dfs": 4,
+      "sp": 2,
+      "cost": 4,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"In for the Shinies\" — When attacking or defending, exhaust 1 Location to give +1 Atk or Dfs until end of battle sequence.",
+      "passive": "\"Ard as Rock\" — First time receiving Damage in a battle sequence, reduce to 1. Cannot take direct damage."
+    },
+    {
+      "id": "km23",
+      "name": "Cyningdom Grand Vizier",
+      "faction": "kingdoms",
+      "types": [
+        "special"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 1,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Exhaust to use 1 Resource, or discard to use 3 Resources.",
+      "passive": "\"I'll keep things in order\" — Played faceup in Permanent area."
+    },
+    {
+      "id": "km23",
+      "name": "Cyningdom Grand Vizier",
+      "faction": "kingdoms",
+      "types": [
+        "special"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 1,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Exhaust to use 1 Resource, or discard to use 3 Resources.",
+      "passive": "\"I'll keep things in order\" — Played faceup in Permanent area."
+    },
+    {
+      "id": "km06",
+      "name": "Resident Wizard",
+      "faction": "kingdoms",
+      "types": [
+        "hero",
+        "wizard"
+      ],
+      "keywords": [
+        "Magic 1"
+      ],
+      "hth": 2,
+      "atk": 3,
+      "dfs": 2,
+      "sp": 3,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"Consult the Scrolls\" — Once per battle, spend 3 Magic pts + 1 damage to self to cast Smite: deal 2 direct damage to one enemy Unit.",
+      "passive": "\"Magical Wardings\" — Other friendly Units in this battlefield gain +1 Dfs."
+    },
+    {
+      "id": "km06",
+      "name": "Resident Wizard",
+      "faction": "kingdoms",
+      "types": [
+        "hero",
+        "wizard"
+      ],
+      "keywords": [
+        "Magic 1"
+      ],
+      "hth": 2,
+      "atk": 3,
+      "dfs": 2,
+      "sp": 3,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"Consult the Scrolls\" — Once per battle, spend 3 Magic pts + 1 damage to self to cast Smite: deal 2 direct damage to one enemy Unit.",
+      "passive": "\"Magical Wardings\" — Other friendly Units in this battlefield gain +1 Dfs."
+    },
+    {
+      "id": "km16",
+      "name": "Dunathi Crossbowmen",
+      "faction": "kingdoms",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Ranged 4"
+      ],
+      "hth": 1,
+      "atk": 2,
+      "dfs": 1,
+      "sp": 1,
+      "cost": 1,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "—",
+      "passive": "Are eligible to use Ranged X against Hero Units."
+    },
+    {
+      "id": "km16",
+      "name": "Dunathi Crossbowmen",
+      "faction": "kingdoms",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Ranged 4"
+      ],
+      "hth": 1,
+      "atk": 2,
+      "dfs": 1,
+      "sp": 1,
+      "cost": 1,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "—",
+      "passive": "Are eligible to use Ranged X against Hero Units."
+    },
+    {
+      "id": "km16",
+      "name": "Dunathi Crossbowmen",
+      "faction": "kingdoms",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Ranged 4"
+      ],
+      "hth": 1,
+      "atk": 2,
+      "dfs": 1,
+      "sp": 1,
+      "cost": 1,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "—",
+      "passive": "Are eligible to use Ranged X against Hero Units."
+    },
+    {
+      "id": "km29",
+      "name": "Charge of the Light Brigade",
+      "faction": "kingdoms",
+      "types": [
+        "strategy"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Reveal during Reveal Strategy Cards Step. Destroy 1 friendly Unit with Reposition  to destroy 1 enemy Unit in same battlefield.",
+      "passive": "—"
+    },
+    {
+      "id": "custom_1775938847523",
+      "name": "Adrenos, King of the Western Marches",
+      "faction": "kingdoms",
+      "types": [
+        "hero",
+        "commander"
+      ],
+      "keywords": [
+        "Command 2 Resilient",
+        "Command 2",
+        "Resilient"
+      ],
+      "hth": 4,
+      "atk": 5,
+      "dfs": 3,
+      "sp": 3,
+      "cost": 4,
+      "maxCopies": 1,
+      "rarity": "unique",
+      "active": "“Wingfooted Messengers” During the Setup phase, you may exhaust 1 Unit you control to choose one card from your discard pile and return it to your hand.",
+      "passive": "“Tactical Genius” Strategy cards you play cost 1 less Resource."
+    },
+    {
+      "id": "km08",
+      "name": "Fief Lord on Griffin",
+      "faction": "kingdoms",
+      "types": [
+        "hero",
+        "commander",
+        "monster"
+      ],
+      "keywords": [
+        "Command 1",
+        "Reposition",
+        "Anti-Formation",
+        "Charge 1"
+      ],
+      "hth": 4,
+      "atk": 5,
+      "dfs": 3,
+      "sp": 2,
+      "cost": 4,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"Attack from Above\" — When attacking a Unit with Sp ≤ this Unit's, decrease that enemy's Dfs by 1.",
+      "passive": "—"
+    },
+    {
+      "id": "km08",
+      "name": "Fief Lord on Griffin",
+      "faction": "kingdoms",
+      "types": [
+        "hero",
+        "commander",
+        "monster"
+      ],
+      "keywords": [
+        "Command 1",
+        "Reposition",
+        "Anti-Formation",
+        "Charge 1"
+      ],
+      "hth": 4,
+      "atk": 5,
+      "dfs": 3,
+      "sp": 2,
+      "cost": 4,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"Attack from Above\" — When attacking a Unit with Sp ≤ this Unit's, decrease that enemy's Dfs by 1.",
+      "passive": "—"
+    },
+    {
+      "id": "km02",
+      "name": "King of Men on Griffin",
+      "faction": "kingdoms",
+      "types": [
+        "hero",
+        "commander",
+        "monster"
+      ],
+      "keywords": [
+        "Command 2",
+        "Anti-Formations",
+        "Reposition",
+        "Duelist"
+      ],
+      "hth": 5,
+      "atk": 6,
+      "dfs": 4,
+      "sp": 3,
+      "cost": 5,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"Headhunter\" — Before the Pairing Step, may choose to Pair this Unit with one Hero or Monster.",
+      "passive": "\"Regal\" — Friendly Units on this Unit's Battlefield gain the Aggressive keyword."
+    },
+    {
+      "id": "km05",
+      "name": "Banner Bearer",
+      "faction": "kingdoms",
+      "types": [
+        "hero"
+      ],
+      "keywords": [
+        "Rally",
+        "Revive 1",
+        "Disciplined"
+      ],
+      "hth": 2,
+      "atk": 3,
+      "dfs": 3,
+      "sp": 2,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"An Honorable Death\" — When a friendly Hero in this battlefield would be destroyed, you may destroy this Unit instead.",
+      "passive": "\"Fight on, Comrades!\" — Friendly Soldier Units in this battlefield gain Aggressive and Resilient."
+    },
+    {
+      "id": "km05",
+      "name": "Banner Bearer",
+      "faction": "kingdoms",
+      "types": [
+        "hero"
+      ],
+      "keywords": [
+        "Rally",
+        "Revive 1",
+        "Disciplined"
+      ],
+      "hth": 2,
+      "atk": 3,
+      "dfs": 3,
+      "sp": 2,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"An Honorable Death\" — When a friendly Hero in this battlefield would be destroyed, you may destroy this Unit instead.",
+      "passive": "\"Fight on, Comrades!\" — Friendly Soldier Units in this battlefield gain Aggressive and Resilient."
+    },
+    {
+      "id": "km05",
+      "name": "Banner Bearer",
+      "faction": "kingdoms",
+      "types": [
+        "hero"
+      ],
+      "keywords": [
+        "Rally",
+        "Revive 1",
+        "Disciplined"
+      ],
+      "hth": 2,
+      "atk": 3,
+      "dfs": 3,
+      "sp": 2,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"An Honorable Death\" — When a friendly Hero in this battlefield would be destroyed, you may destroy this Unit instead.",
+      "passive": "\"Fight on, Comrades!\" — Friendly Soldier Units in this battlefield gain Aggressive and Resilient."
+    },
+    {
+      "id": "custom_1775939118778",
+      "name": "Dunathi Champion",
+      "faction": "kingdoms",
+      "types": [
+        "hero"
+      ],
+      "keywords": [
+        "Duelist",
+        "Perfect Defense"
+      ],
+      "hth": 2,
+      "atk": 5,
+      "dfs": 3,
+      "sp": 2,
+      "cost": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "“Challenge me!” At the start of Pairing, this Unit may issue a Challenge to one enemy Hero Unit on the same battlefield. If that enemy Unit declines, decrease its Attack and Special characteristics by 1. If it accepts, immediately Pair these Units. Neither Units may Retreat or be forced to Retreat from the battlefield until the end of the battle. Both Units are Invincible to all damage that is dealt to them other than the enemy Unit participating in the Challenge. If this Unit dies in a Challenge, you lose 1 Tactical Health. If this Unit destroys an enemy Hero Unit in a Challenge, deal 1 Tactical Damage to its controlling player.",
+      "passive": "“Martial Prowess” While this Unit is Paired with an enemy Hero Unit, increase this Unit’s Defense characteristic by 1. If that Hero is a Unique Unit, instead increase its Defense by 2."
+    },
+    {
+      "id": "custom_1775939118778",
+      "name": "Dunathi Champion",
+      "faction": "kingdoms",
+      "types": [
+        "hero"
+      ],
+      "keywords": [
+        "Duelist",
+        "Perfect Defense"
+      ],
+      "hth": 2,
+      "atk": 5,
+      "dfs": 3,
+      "sp": 2,
+      "cost": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "“Challenge me!” At the start of Pairing, this Unit may issue a Challenge to one enemy Hero Unit on the same battlefield. If that enemy Unit declines, decrease its Attack and Special characteristics by 1. If it accepts, immediately Pair these Units. Neither Units may Retreat or be forced to Retreat from the battlefield until the end of the battle. Both Units are Invincible to all damage that is dealt to them other than the enemy Unit participating in the Challenge. If this Unit dies in a Challenge, you lose 1 Tactical Health. If this Unit destroys an enemy Hero Unit in a Challenge, deal 1 Tactical Damage to its controlling player.",
+      "passive": "“Martial Prowess” While this Unit is Paired with an enemy Hero Unit, increase this Unit’s Defense characteristic by 1. If that Hero is a Unique Unit, instead increase its Defense by 2."
+    },
+    {
+      "id": "custom_1775939118778",
+      "name": "Dunathi Champion",
+      "faction": "kingdoms",
+      "types": [
+        "hero"
+      ],
+      "keywords": [
+        "Duelist",
+        "Perfect Defense"
+      ],
+      "hth": 2,
+      "atk": 5,
+      "dfs": 3,
+      "sp": 2,
+      "cost": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "“Challenge me!” At the start of Pairing, this Unit may issue a Challenge to one enemy Hero Unit on the same battlefield. If that enemy Unit declines, decrease its Attack and Special characteristics by 1. If it accepts, immediately Pair these Units. Neither Units may Retreat or be forced to Retreat from the battlefield until the end of the battle. Both Units are Invincible to all damage that is dealt to them other than the enemy Unit participating in the Challenge. If this Unit dies in a Challenge, you lose 1 Tactical Health. If this Unit destroys an enemy Hero Unit in a Challenge, deal 1 Tactical Damage to its controlling player.",
+      "passive": "“Martial Prowess” While this Unit is Paired with an enemy Hero Unit, increase this Unit’s Defense characteristic by 1. If that Hero is a Unique Unit, instead increase its Defense by 2."
+    },
+    {
+      "id": "km03",
+      "name": "Baron",
+      "faction": "kingdoms",
+      "types": [
+        "hero",
+        "commander"
+      ],
+      "keywords": [
+        "Command 1"
+      ],
+      "hth": 3,
+      "atk": 5,
+      "dfs": 3,
+      "sp": 3,
+      "cost": 4,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"Tactical Mastery\" — Once per battle sequence, when this Unit attacks an enemy Unit, Tactical Heal 1.",
+      "passive": "\"Experienced Leader\" — Friendly Units targeted by this Unit's Command X receive all three options."
+    },
+    {
+      "id": "km03",
+      "name": "Baron",
+      "faction": "kingdoms",
+      "types": [
+        "hero",
+        "commander"
+      ],
+      "keywords": [
+        "Command 1"
+      ],
+      "hth": 3,
+      "atk": 5,
+      "dfs": 3,
+      "sp": 3,
+      "cost": 4,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"Tactical Mastery\" — Once per battle sequence, when this Unit attacks an enemy Unit, Tactical Heal 1.",
+      "passive": "\"Experienced Leader\" — Friendly Units targeted by this Unit's Command X receive all three options."
+    },
+    {
+      "id": "km07",
+      "name": "Legion Commander",
+      "faction": "kingdoms",
+      "types": [
+        "hero",
+        "commander"
+      ],
+      "keywords": [
+        "Formations",
+        "Durable",
+        "Bodyguard",
+        "Disciplined",
+        "Command 1"
+      ],
+      "hth": 3,
+      "atk": 5,
+      "dfs": 4,
+      "sp": 3,
+      "cost": 4,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"Sword of the Empire\" — Once per battle, reduce Dfs to 3 to increase Atk to 6 and gain Duelist.",
+      "passive": "\"Are you men or are you worms?\" — Once per battle loop, when a friendly Unit in this battlefield would receive damage, cancel 1 Damage."
+    },
+    {
+      "id": "km07",
+      "name": "Legion Commander",
+      "faction": "kingdoms",
+      "types": [
+        "hero",
+        "commander"
+      ],
+      "keywords": [
+        "Formations",
+        "Durable",
+        "Bodyguard",
+        "Disciplined",
+        "Command 1"
+      ],
+      "hth": 3,
+      "atk": 5,
+      "dfs": 4,
+      "sp": 3,
+      "cost": 4,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"Sword of the Empire\" — Once per battle, reduce Dfs to 3 to increase Atk to 6 and gain Duelist.",
+      "passive": "\"Are you men or are you worms?\" — Once per battle loop, when a friendly Unit in this battlefield would receive damage, cancel 1 Damage."
+    },
+    {
+      "id": "km09",
+      "name": "Muzzled Dragon",
+      "faction": "kingdoms",
+      "types": [
+        "hero",
+        "monster"
+      ],
+      "keywords": [
+        "Reposition",
+        "Anti-Formation",
+        "Charge 1",
+        "Durable",
+        "Hunter",
+        "Terror",
+        "Ranged Armor 1",
+        "Gatebuster 6",
+        "Anti-Dragon Breath"
+      ],
+      "hth": 6,
+      "atk": 7,
+      "dfs": 3,
+      "sp": 1,
+      "cost": 6,
+      "maxCopies": 1,
+      "rarity": "unique",
+      "active": "\"Enraged Prisoner\" — At 2 or less Health, gains Dragon Breath 1, +1 Atk, -1 Dfs. If enraged at end of battle, discard.",
+      "passive": "\"Weak Spot\" — Attacks with Atk 6+ ignore Durable."
+    },
+    {
+      "id": "km12",
+      "name": "Militiamen",
+      "faction": "neutral",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Numerous"
+      ],
+      "hth": 1,
+      "atk": 1,
+      "dfs": 2,
+      "sp": 1,
+      "cost": 1,
+      "maxCopies": 9,
+      "rarity": "abundant",
+      "active": "—",
+      "passive": "If the target of the Command keyword, gains +1 Atk."
+    },
+    {
+      "id": "km12",
+      "name": "Militiamen",
+      "faction": "neutral",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Numerous"
+      ],
+      "hth": 1,
+      "atk": 1,
+      "dfs": 2,
+      "sp": 1,
+      "cost": 1,
+      "maxCopies": 9,
+      "rarity": "abundant",
+      "active": "—",
+      "passive": "If the target of the Command keyword, gains +1 Atk."
+    },
+    {
+      "id": "km12",
+      "name": "Militiamen",
+      "faction": "neutral",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Numerous"
+      ],
+      "hth": 1,
+      "atk": 1,
+      "dfs": 2,
+      "sp": 1,
+      "cost": 1,
+      "maxCopies": 9,
+      "rarity": "abundant",
+      "active": "—",
+      "passive": "If the target of the Command keyword, gains +1 Atk."
+    },
+    {
+      "id": "km12",
+      "name": "Militiamen",
+      "faction": "neutral",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Numerous"
+      ],
+      "hth": 1,
+      "atk": 1,
+      "dfs": 2,
+      "sp": 1,
+      "cost": 1,
+      "maxCopies": 9,
+      "rarity": "abundant",
+      "active": "—",
+      "passive": "If the target of the Command keyword, gains +1 Atk."
+    },
+    {
+      "id": "km28",
+      "name": "Reinforcements",
+      "faction": "neutral",
+      "types": [
+        "strategy"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 1,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Pay cost to play a card from graveyard as if it had Revive 0.",
+      "passive": "—"
+    },
+    {
+      "id": "km28",
+      "name": "Reinforcements",
+      "faction": "neutral",
+      "types": [
+        "strategy"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 1,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Pay cost to play a card from graveyard as if it had Revive 0.",
+      "passive": "—"
+    },
+    {
+      "id": "km28",
+      "name": "Reinforcements",
+      "faction": "neutral",
+      "types": [
+        "strategy"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 1,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Pay cost to play a card from graveyard as if it had Revive 0.",
+      "passive": "—"
+    },
+    {
+      "id": "km30",
+      "name": "Vanguard",
+      "faction": "neutral",
+      "types": [
+        "strategy"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 1,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Reveal and pay during Reveal Strategy Cards Step. Create one Militiamen counter on the battlefield.",
+      "passive": "—"
+    },
+    {
+      "id": "km30",
+      "name": "Vanguard",
+      "faction": "neutral",
+      "types": [
+        "strategy"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 1,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Reveal and pay during Reveal Strategy Cards Step. Create one Militiamen counter on the battlefield.",
+      "passive": "—"
+    },
+    {
+      "id": "km30",
+      "name": "Vanguard",
+      "faction": "neutral",
+      "types": [
+        "strategy"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 1,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Reveal and pay during Reveal Strategy Cards Step. Create one Militiamen counter on the battlefield.",
+      "passive": "—"
+    },
+    {
+      "id": "km20",
+      "name": "Horse Archers",
+      "faction": "neutral",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Ranged 4",
+        "Reposition",
+        "Slippery"
+      ],
+      "hth": 2,
+      "atk": 3,
+      "dfs": 2,
+      "sp": 1,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "—",
+      "passive": "If this Unit destroys a Unit using Ranged, it may resolve Ranged 4 again against an eligible target."
+    },
+    {
+      "id": "km20",
+      "name": "Horse Archers",
+      "faction": "neutral",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Ranged 4",
+        "Reposition",
+        "Slippery"
+      ],
+      "hth": 2,
+      "atk": 3,
+      "dfs": 2,
+      "sp": 1,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "—",
+      "passive": "If this Unit destroys a Unit using Ranged, it may resolve Ranged 4 again against an eligible target."
+    },
+    {
+      "id": "km20",
+      "name": "Horse Archers",
+      "faction": "neutral",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Ranged 4",
+        "Reposition",
+        "Slippery"
+      ],
+      "hth": 2,
+      "atk": 3,
+      "dfs": 2,
+      "sp": 1,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "—",
+      "passive": "If this Unit destroys a Unit using Ranged, it may resolve Ranged 4 again against an eligible target."
+    },
+    {
+      "id": "km13",
+      "name": "Pikemen",
+      "faction": "neutral",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Formations"
+      ],
+      "hth": 1,
+      "atk": 3,
+      "dfs": 3,
+      "sp": 1,
+      "cost": 2,
+      "maxCopies": 6,
+      "rarity": "common",
+      "active": "When attacked and targeted by Command, deal 1 Direct Damage to attacker.",
+      "passive": "\"Wall of Spears\" — Anti-Formations has no effect on this Unit."
+    },
+    {
+      "id": "km13",
+      "name": "Pikemen",
+      "faction": "neutral",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Formations"
+      ],
+      "hth": 1,
+      "atk": 3,
+      "dfs": 3,
+      "sp": 1,
+      "cost": 2,
+      "maxCopies": 6,
+      "rarity": "common",
+      "active": "When attacked and targeted by Command, deal 1 Direct Damage to attacker.",
+      "passive": "\"Wall of Spears\" — Anti-Formations has no effect on this Unit."
+    },
+    {
+      "id": "km13",
+      "name": "Pikemen",
+      "faction": "neutral",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Formations"
+      ],
+      "hth": 1,
+      "atk": 3,
+      "dfs": 3,
+      "sp": 1,
+      "cost": 2,
+      "maxCopies": 6,
+      "rarity": "common",
+      "active": "When attacked and targeted by Command, deal 1 Direct Damage to attacker.",
+      "passive": "\"Wall of Spears\" — Anti-Formations has no effect on this Unit."
+    },
+    {
+      "id": "km13",
+      "name": "Pikemen",
+      "faction": "neutral",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Formations"
+      ],
+      "hth": 1,
+      "atk": 3,
+      "dfs": 3,
+      "sp": 1,
+      "cost": 2,
+      "maxCopies": 6,
+      "rarity": "common",
+      "active": "When attacked and targeted by Command, deal 1 Direct Damage to attacker.",
+      "passive": "\"Wall of Spears\" — Anti-Formations has no effect on this Unit."
+    },
+    {
+      "id": "km13",
+      "name": "Pikemen",
+      "faction": "neutral",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Formations"
+      ],
+      "hth": 1,
+      "atk": 3,
+      "dfs": 3,
+      "sp": 1,
+      "cost": 2,
+      "maxCopies": 6,
+      "rarity": "common",
+      "active": "When attacked and targeted by Command, deal 1 Direct Damage to attacker.",
+      "passive": "\"Wall of Spears\" — Anti-Formations has no effect on this Unit."
+    },
+    {
+      "id": "km13",
+      "name": "Pikemen",
+      "faction": "neutral",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Formations"
+      ],
+      "hth": 1,
+      "atk": 3,
+      "dfs": 3,
+      "sp": 1,
+      "cost": 2,
+      "maxCopies": 6,
+      "rarity": "common",
+      "active": "When attacked and targeted by Command, deal 1 Direct Damage to attacker.",
+      "passive": "\"Wall of Spears\" — Anti-Formations has no effect on this Unit."
+    },
+    {
+      "id": "km33",
+      "name": "Feigned Retreat",
+      "faction": "neutral",
+      "types": [
+        "strategy"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Play facedown in Command area. When you Retreat, instead follow Battle Sequence as if you had Initiative. All friendly Units gain Aggressive and Resilient for first battle loop.",
+      "passive": "—"
+    },
+    {
+      "id": "km33",
+      "name": "Feigned Retreat",
+      "faction": "neutral",
+      "types": [
+        "strategy"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Play facedown in Command area. When you Retreat, instead follow Battle Sequence as if you had Initiative. All friendly Units gain Aggressive and Resilient for first battle loop.",
+      "passive": "—"
+    },
+    {
+      "id": "km33",
+      "name": "Feigned Retreat",
+      "faction": "neutral",
+      "types": [
+        "strategy"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Play facedown in Command area. When you Retreat, instead follow Battle Sequence as if you had Initiative. All friendly Units gain Aggressive and Resilient for first battle loop.",
+      "passive": "—"
+    },
+    {
+      "id": "km36",
+      "name": "Outpost",
+      "faction": "neutral",
+      "types": [
+        "attachment"
+      ],
+      "keywords": [
+        "Location 5",
+        "Rest 1",
+        "Resource 2"
+      ],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Once per battle, when a friendly Soldier with Sp 2 or less would be destroyed, place it on attached location with 1 Health instead.",
+      "passive": "Location attachment."
+    },
+    {
+      "id": "km36",
+      "name": "Outpost",
+      "faction": "neutral",
+      "types": [
+        "attachment"
+      ],
+      "keywords": [
+        "Location 5",
+        "Rest 1",
+        "Resource 2"
+      ],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Once per battle, when a friendly Soldier with Sp 2 or less would be destroyed, place it on attached location with 1 Health instead.",
+      "passive": "Location attachment."
+    },
+    {
+      "id": "km36",
+      "name": "Outpost",
+      "faction": "neutral",
+      "types": [
+        "attachment"
+      ],
+      "keywords": [
+        "Location 5",
+        "Rest 1",
+        "Resource 2"
+      ],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Once per battle, when a friendly Soldier with Sp 2 or less would be destroyed, place it on attached location with 1 Health instead.",
+      "passive": "Location attachment."
+    },
+    {
+      "id": "km10",
+      "name": "Healer",
+      "faction": "neutral",
+      "types": [
+        "hero"
+      ],
+      "keywords": [],
+      "hth": 2,
+      "atk": 2,
+      "dfs": 2,
+      "sp": 1,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"From the Brink of Death\" — Once per battle, when a friendly Unit would go to graveyard, discard this to keep it at 1 Health.",
+      "passive": "Once per battle loop, after a friendly Unit in this battlefield receives Damage, Heal 1 that Unit."
+    },
+    {
+      "id": "km10",
+      "name": "Healer",
+      "faction": "neutral",
+      "types": [
+        "hero"
+      ],
+      "keywords": [],
+      "hth": 2,
+      "atk": 2,
+      "dfs": 2,
+      "sp": 1,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"From the Brink of Death\" — Once per battle, when a friendly Unit would go to graveyard, discard this to keep it at 1 Health.",
+      "passive": "Once per battle loop, after a friendly Unit in this battlefield receives Damage, Heal 1 that Unit."
+    },
+    {
+      "id": "km10",
+      "name": "Healer",
+      "faction": "neutral",
+      "types": [
+        "hero"
+      ],
+      "keywords": [],
+      "hth": 2,
+      "atk": 2,
+      "dfs": 2,
+      "sp": 1,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"From the Brink of Death\" — Once per battle, when a friendly Unit would go to graveyard, discard this to keep it at 1 Health.",
+      "passive": "Once per battle loop, after a friendly Unit in this battlefield receives Damage, Heal 1 that Unit."
+    },
+    {
+      "id": "km34",
+      "name": "Supply Lines",
+      "faction": "neutral",
+      "types": [
+        "strategy"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 1,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Play exhausted into Permanent area. Exhaust to spend X Resources, where X = number of Supply Lines cards in play.",
+      "passive": "—"
+    },
+    {
+      "id": "km34",
+      "name": "Supply Lines",
+      "faction": "neutral",
+      "types": [
+        "strategy"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 1,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Play exhausted into Permanent area. Exhaust to spend X Resources, where X = number of Supply Lines cards in play.",
+      "passive": "—"
+    },
+    {
+      "id": "km34",
+      "name": "Supply Lines",
+      "faction": "neutral",
+      "types": [
+        "strategy"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 1,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Play exhausted into Permanent area. Exhaust to spend X Resources, where X = number of Supply Lines cards in play.",
+      "passive": "—"
+    },
+    {
+      "id": "km24",
+      "name": "Council of Lords",
+      "faction": "neutral",
+      "types": [
+        "special"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 1,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "After Draw Step, discard up to 3 cards to draw 3. In Cleanup, place up to 3 cards that would be discarded into your hand.",
+      "passive": "Played faceup in Permanent area."
+    },
+    {
+      "id": "km31",
+      "name": "Gritty Resolve",
+      "faction": "neutral",
+      "types": [
+        "strategy"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Play facedown in Permanent area. When a friendly Hero would be destroyed, reduce to 1 Health; gains +1 Atk and +1 Dfs until end of battle sequence.",
+      "passive": "—"
+    },
+    {
+      "id": "km31",
+      "name": "Gritty Resolve",
+      "faction": "neutral",
+      "types": [
+        "strategy"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Play facedown in Permanent area. When a friendly Hero would be destroyed, reduce to 1 Health; gains +1 Atk and +1 Dfs until end of battle sequence.",
+      "passive": "—"
+    },
+    {
+      "id": "km26",
+      "name": "Redeploy",
+      "faction": "neutral",
+      "types": [
+        "strategy"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "After all Pairings are made, reveal and pay cost to switch Pairings of 2 friendly Units.",
+      "passive": "—"
+    },
+    {
+      "id": "km26",
+      "name": "Redeploy",
+      "faction": "neutral",
+      "types": [
+        "strategy"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "After all Pairings are made, reveal and pay cost to switch Pairings of 2 friendly Units.",
+      "passive": "—"
+    },
+    {
+      "id": "km26",
+      "name": "Redeploy",
+      "faction": "neutral",
+      "types": [
+        "strategy"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "After all Pairings are made, reveal and pay cost to switch Pairings of 2 friendly Units.",
+      "passive": "—"
+    },
+    {
+      "id": "km38",
+      "name": "Master-worked Arms",
+      "faction": "neutral",
+      "types": [
+        "attachment"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Attached Unit gains +1 Atk and +1 Dfs.",
+      "passive": "Unit attachment."
+    },
+    {
+      "id": "km38",
+      "name": "Master-worked Arms",
+      "faction": "neutral",
+      "types": [
+        "attachment"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Attached Unit gains +1 Atk and +1 Dfs.",
+      "passive": "Unit attachment."
+    },
+    {
+      "id": "km38",
+      "name": "Master-worked Arms",
+      "faction": "neutral",
+      "types": [
+        "attachment"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Attached Unit gains +1 Atk and +1 Dfs.",
+      "passive": "Unit attachment."
+    },
+    {
+      "id": "km27",
+      "name": "Shieldwall",
+      "faction": "neutral",
+      "types": [
+        "strategy"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 1,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Reveal and pay during Reveal Strategy Cards Step. All friendly Formation Units gain +1 Dfs.",
+      "passive": "—"
+    },
+    {
+      "id": "km27",
+      "name": "Shieldwall",
+      "faction": "neutral",
+      "types": [
+        "strategy"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 1,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Reveal and pay during Reveal Strategy Cards Step. All friendly Formation Units gain +1 Dfs.",
+      "passive": "—"
+    },
+    {
+      "id": "km27",
+      "name": "Shieldwall",
+      "faction": "neutral",
+      "types": [
+        "strategy"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 1,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Reveal and pay during Reveal Strategy Cards Step. All friendly Formation Units gain +1 Dfs.",
+      "passive": "—"
+    },
+    {
+      "id": "km19",
+      "name": "Light Cavalry",
+      "faction": "neutral",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Reposition",
+        "Slippery",
+        "Hunter"
+      ],
+      "hth": 2,
+      "atk": 3,
+      "dfs": 3,
+      "sp": 2,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "—",
+      "passive": "+1 Atk when attacking Soldier Units."
+    },
+    {
+      "id": "km19",
+      "name": "Light Cavalry",
+      "faction": "neutral",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Reposition",
+        "Slippery",
+        "Hunter"
+      ],
+      "hth": 2,
+      "atk": 3,
+      "dfs": 3,
+      "sp": 2,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "—",
+      "passive": "+1 Atk when attacking Soldier Units."
+    },
+    {
+      "id": "km19",
+      "name": "Light Cavalry",
+      "faction": "neutral",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Reposition",
+        "Slippery",
+        "Hunter"
+      ],
+      "hth": 2,
+      "atk": 3,
+      "dfs": 3,
+      "sp": 2,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "—",
+      "passive": "+1 Atk when attacking Soldier Units."
+    },
+    {
+      "id": "km32",
+      "name": "Reassess",
+      "faction": "neutral",
+      "types": [
+        "strategy"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "During Setup, discard and pay cost to Tactical Heal 5.",
+      "passive": "—"
+    },
+    {
+      "id": "km32",
+      "name": "Reassess",
+      "faction": "neutral",
+      "types": [
+        "strategy"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "During Setup, discard and pay cost to Tactical Heal 5.",
+      "passive": "—"
+    },
+    {
+      "id": "km37",
+      "name": "Scepter of Command",
+      "faction": "neutral",
+      "types": [
+        "attachment"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 1,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Attached Hero gains the Commander type and Command 1, or increases Command X by 1.",
+      "passive": "Hero Unit attachment."
+    },
+    {
+      "id": "km37",
+      "name": "Scepter of Command",
+      "faction": "neutral",
+      "types": [
+        "attachment"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 1,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Attached Hero gains the Commander type and Command 1, or increases Command X by 1.",
+      "passive": "Hero Unit attachment."
+    }
+  ]
+}

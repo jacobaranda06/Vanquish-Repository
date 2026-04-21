@@ -1,0 +1,1871 @@
+{
+  "composition": "dominion",
+  "totalCards": 90,
+  "factions": [
+    "myrkeval"
+  ],
+  "cards": [
+    {
+      "id": "mv19",
+      "name": "Sneak Attack",
+      "faction": "myrkeval",
+      "types": [
+        "strategy"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 0,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "In Before Pairing Step of first battle loop, reveal and pay cost to search discard for Hero or Soldier costing 1-3 Resources and play it to that Battlefield. Cost X = cost of selected card.",
+      "passive": "—"
+    },
+    {
+      "id": "mv19",
+      "name": "Sneak Attack",
+      "faction": "myrkeval",
+      "types": [
+        "strategy"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 0,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "In Before Pairing Step of first battle loop, reveal and pay cost to search discard for Hero or Soldier costing 1-3 Resources and play it to that Battlefield. Cost X = cost of selected card.",
+      "passive": "—"
+    },
+    {
+      "id": "mv19",
+      "name": "Sneak Attack",
+      "faction": "myrkeval",
+      "types": [
+        "strategy"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 0,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "In Before Pairing Step of first battle loop, reveal and pay cost to search discard for Hero or Soldier costing 1-3 Resources and play it to that Battlefield. Cost X = cost of selected card.",
+      "passive": "—"
+    },
+    {
+      "id": "mv08",
+      "name": "Myrkorcs",
+      "faction": "myrkeval",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Numerous"
+      ],
+      "hth": 1,
+      "atk": 1,
+      "dfs": 2,
+      "sp": 1,
+      "cost": 1,
+      "maxCopies": 9,
+      "rarity": "abundant",
+      "active": "—",
+      "passive": "\"Sneak Attack\" — On the turn this Unit enters play, increase its Atk by 1."
+    },
+    {
+      "id": "mv08",
+      "name": "Myrkorcs",
+      "faction": "myrkeval",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Numerous"
+      ],
+      "hth": 1,
+      "atk": 1,
+      "dfs": 2,
+      "sp": 1,
+      "cost": 1,
+      "maxCopies": 9,
+      "rarity": "abundant",
+      "active": "—",
+      "passive": "\"Sneak Attack\" — On the turn this Unit enters play, increase its Atk by 1."
+    },
+    {
+      "id": "mv08",
+      "name": "Myrkorcs",
+      "faction": "myrkeval",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Numerous"
+      ],
+      "hth": 1,
+      "atk": 1,
+      "dfs": 2,
+      "sp": 1,
+      "cost": 1,
+      "maxCopies": 9,
+      "rarity": "abundant",
+      "active": "—",
+      "passive": "\"Sneak Attack\" — On the turn this Unit enters play, increase its Atk by 1."
+    },
+    {
+      "id": "mv08",
+      "name": "Myrkorcs",
+      "faction": "myrkeval",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Numerous"
+      ],
+      "hth": 1,
+      "atk": 1,
+      "dfs": 2,
+      "sp": 1,
+      "cost": 1,
+      "maxCopies": 9,
+      "rarity": "abundant",
+      "active": "—",
+      "passive": "\"Sneak Attack\" — On the turn this Unit enters play, increase its Atk by 1."
+    },
+    {
+      "id": "mv08",
+      "name": "Myrkorcs",
+      "faction": "myrkeval",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Numerous"
+      ],
+      "hth": 1,
+      "atk": 1,
+      "dfs": 2,
+      "sp": 1,
+      "cost": 1,
+      "maxCopies": 9,
+      "rarity": "abundant",
+      "active": "—",
+      "passive": "\"Sneak Attack\" — On the turn this Unit enters play, increase its Atk by 1."
+    },
+    {
+      "id": "mv08",
+      "name": "Myrkorcs",
+      "faction": "myrkeval",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Numerous"
+      ],
+      "hth": 1,
+      "atk": 1,
+      "dfs": 2,
+      "sp": 1,
+      "cost": 1,
+      "maxCopies": 9,
+      "rarity": "abundant",
+      "active": "—",
+      "passive": "\"Sneak Attack\" — On the turn this Unit enters play, increase its Atk by 1."
+    },
+    {
+      "id": "mv08",
+      "name": "Myrkorcs",
+      "faction": "myrkeval",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Numerous"
+      ],
+      "hth": 1,
+      "atk": 1,
+      "dfs": 2,
+      "sp": 1,
+      "cost": 1,
+      "maxCopies": 9,
+      "rarity": "abundant",
+      "active": "—",
+      "passive": "\"Sneak Attack\" — On the turn this Unit enters play, increase its Atk by 1."
+    },
+    {
+      "id": "mv08",
+      "name": "Myrkorcs",
+      "faction": "myrkeval",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Numerous"
+      ],
+      "hth": 1,
+      "atk": 1,
+      "dfs": 2,
+      "sp": 1,
+      "cost": 1,
+      "maxCopies": 9,
+      "rarity": "abundant",
+      "active": "—",
+      "passive": "\"Sneak Attack\" — On the turn this Unit enters play, increase its Atk by 1."
+    },
+    {
+      "id": "mv08",
+      "name": "Myrkorcs",
+      "faction": "myrkeval",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Numerous"
+      ],
+      "hth": 1,
+      "atk": 1,
+      "dfs": 2,
+      "sp": 1,
+      "cost": 1,
+      "maxCopies": 9,
+      "rarity": "abundant",
+      "active": "—",
+      "passive": "\"Sneak Attack\" — On the turn this Unit enters play, increase its Atk by 1."
+    },
+    {
+      "id": "mv09",
+      "name": "Hobgoblins",
+      "faction": "myrkeval",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Slippery"
+      ],
+      "hth": 1,
+      "atk": 2,
+      "dfs": 1,
+      "sp": 1,
+      "cost": 1,
+      "maxCopies": 9,
+      "rarity": "abundant",
+      "active": "—",
+      "passive": "\"Strength in Numbers\" — If in a Group with a friendly Unit, gains +1 Atk."
+    },
+    {
+      "id": "mv09",
+      "name": "Hobgoblins",
+      "faction": "myrkeval",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Slippery"
+      ],
+      "hth": 1,
+      "atk": 2,
+      "dfs": 1,
+      "sp": 1,
+      "cost": 1,
+      "maxCopies": 9,
+      "rarity": "abundant",
+      "active": "—",
+      "passive": "\"Strength in Numbers\" — If in a Group with a friendly Unit, gains +1 Atk."
+    },
+    {
+      "id": "mv09",
+      "name": "Hobgoblins",
+      "faction": "myrkeval",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Slippery"
+      ],
+      "hth": 1,
+      "atk": 2,
+      "dfs": 1,
+      "sp": 1,
+      "cost": 1,
+      "maxCopies": 9,
+      "rarity": "abundant",
+      "active": "—",
+      "passive": "\"Strength in Numbers\" — If in a Group with a friendly Unit, gains +1 Atk."
+    },
+    {
+      "id": "mv09",
+      "name": "Hobgoblins",
+      "faction": "myrkeval",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Slippery"
+      ],
+      "hth": 1,
+      "atk": 2,
+      "dfs": 1,
+      "sp": 1,
+      "cost": 1,
+      "maxCopies": 9,
+      "rarity": "abundant",
+      "active": "—",
+      "passive": "\"Strength in Numbers\" — If in a Group with a friendly Unit, gains +1 Atk."
+    },
+    {
+      "id": "mv09",
+      "name": "Hobgoblins",
+      "faction": "myrkeval",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Slippery"
+      ],
+      "hth": 1,
+      "atk": 2,
+      "dfs": 1,
+      "sp": 1,
+      "cost": 1,
+      "maxCopies": 9,
+      "rarity": "abundant",
+      "active": "—",
+      "passive": "\"Strength in Numbers\" — If in a Group with a friendly Unit, gains +1 Atk."
+    },
+    {
+      "id": "mv09",
+      "name": "Hobgoblins",
+      "faction": "myrkeval",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Slippery"
+      ],
+      "hth": 1,
+      "atk": 2,
+      "dfs": 1,
+      "sp": 1,
+      "cost": 1,
+      "maxCopies": 9,
+      "rarity": "abundant",
+      "active": "—",
+      "passive": "\"Strength in Numbers\" — If in a Group with a friendly Unit, gains +1 Atk."
+    },
+    {
+      "id": "mv09",
+      "name": "Hobgoblins",
+      "faction": "myrkeval",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Slippery"
+      ],
+      "hth": 1,
+      "atk": 2,
+      "dfs": 1,
+      "sp": 1,
+      "cost": 1,
+      "maxCopies": 9,
+      "rarity": "abundant",
+      "active": "—",
+      "passive": "\"Strength in Numbers\" — If in a Group with a friendly Unit, gains +1 Atk."
+    },
+    {
+      "id": "mv09",
+      "name": "Hobgoblins",
+      "faction": "myrkeval",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Slippery"
+      ],
+      "hth": 1,
+      "atk": 2,
+      "dfs": 1,
+      "sp": 1,
+      "cost": 1,
+      "maxCopies": 9,
+      "rarity": "abundant",
+      "active": "—",
+      "passive": "\"Strength in Numbers\" — If in a Group with a friendly Unit, gains +1 Atk."
+    },
+    {
+      "id": "mv09",
+      "name": "Hobgoblins",
+      "faction": "myrkeval",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Slippery"
+      ],
+      "hth": 1,
+      "atk": 2,
+      "dfs": 1,
+      "sp": 1,
+      "cost": 1,
+      "maxCopies": 9,
+      "rarity": "abundant",
+      "active": "—",
+      "passive": "\"Strength in Numbers\" — If in a Group with a friendly Unit, gains +1 Atk."
+    },
+    {
+      "id": "mv10",
+      "name": "Myrkorc Slinkers",
+      "faction": "myrkeval",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Ranged 3",
+        "Slippery",
+        "Numerous"
+      ],
+      "hth": 1,
+      "atk": 1,
+      "dfs": 1,
+      "sp": 1,
+      "cost": 1,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "—",
+      "passive": "\"Poisoned Barbs\" — If target of Ranged X is non-Enchanted, non-Spirit, increase Ranged X by 1."
+    },
+    {
+      "id": "mv10",
+      "name": "Myrkorc Slinkers",
+      "faction": "myrkeval",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Ranged 3",
+        "Slippery",
+        "Numerous"
+      ],
+      "hth": 1,
+      "atk": 1,
+      "dfs": 1,
+      "sp": 1,
+      "cost": 1,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "—",
+      "passive": "\"Poisoned Barbs\" — If target of Ranged X is non-Enchanted, non-Spirit, increase Ranged X by 1."
+    },
+    {
+      "id": "mv10",
+      "name": "Myrkorc Slinkers",
+      "faction": "myrkeval",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Ranged 3",
+        "Slippery",
+        "Numerous"
+      ],
+      "hth": 1,
+      "atk": 1,
+      "dfs": 1,
+      "sp": 1,
+      "cost": 1,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "—",
+      "passive": "\"Poisoned Barbs\" — If target of Ranged X is non-Enchanted, non-Spirit, increase Ranged X by 1."
+    },
+    {
+      "id": "mv02",
+      "name": "Myrkeval Horde Master",
+      "faction": "myrkeval",
+      "types": [
+        "hero",
+        "commander"
+      ],
+      "keywords": [
+        "Slippery",
+        "Command 2",
+        "Summon (Myrkorcs/Hobgoblins) 1"
+      ],
+      "hth": 3,
+      "atk": 5,
+      "dfs": 3,
+      "sp": 2,
+      "cost": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"Chop some 'Eads\" — At start of battle, destroy one friendly Unit in same battlefield. All other friendly Numerous Units gain +1 Atk until end of battle.",
+      "passive": "\"Bigger and Meaner\" — While Paired with at least one enemy Unit of Health 2 or less, +1 Atk."
+    },
+    {
+      "id": "mv02",
+      "name": "Myrkeval Horde Master",
+      "faction": "myrkeval",
+      "types": [
+        "hero",
+        "commander"
+      ],
+      "keywords": [
+        "Slippery",
+        "Command 2",
+        "Summon (Myrkorcs/Hobgoblins) 1"
+      ],
+      "hth": 3,
+      "atk": 5,
+      "dfs": 3,
+      "sp": 2,
+      "cost": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"Chop some 'Eads\" — At start of battle, destroy one friendly Unit in same battlefield. All other friendly Numerous Units gain +1 Atk until end of battle.",
+      "passive": "\"Bigger and Meaner\" — While Paired with at least one enemy Unit of Health 2 or less, +1 Atk."
+    },
+    {
+      "id": "mv02",
+      "name": "Myrkeval Horde Master",
+      "faction": "myrkeval",
+      "types": [
+        "hero",
+        "commander"
+      ],
+      "keywords": [
+        "Slippery",
+        "Command 2",
+        "Summon (Myrkorcs/Hobgoblins) 1"
+      ],
+      "hth": 3,
+      "atk": 5,
+      "dfs": 3,
+      "sp": 2,
+      "cost": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"Chop some 'Eads\" — At start of battle, destroy one friendly Unit in same battlefield. All other friendly Numerous Units gain +1 Atk until end of battle.",
+      "passive": "\"Bigger and Meaner\" — While Paired with at least one enemy Unit of Health 2 or less, +1 Atk."
+    },
+    {
+      "id": "mv13",
+      "name": "Eastern Deep Dweller",
+      "faction": "myrkeval",
+      "types": [
+        "soldier",
+        "monster"
+      ],
+      "keywords": [
+        "Durable",
+        "Slippery",
+        "Resilient",
+        "Ranged Armor 1",
+        "Gatebuster 6"
+      ],
+      "hth": 4,
+      "atk": 4,
+      "dfs": 3,
+      "sp": 1,
+      "cost": 4,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"Back to the Deep\" — Once per battle, after attacking and dealing damage, may remove this Unit to discard to destroy the Defending Unit.",
+      "passive": "\"Feed on their Best\" — If \"Back to the Deep\" would destroy an enemy Hero, deal 1 Tactical damage to opponent."
+    },
+    {
+      "id": "mv13",
+      "name": "Eastern Deep Dweller",
+      "faction": "myrkeval",
+      "types": [
+        "soldier",
+        "monster"
+      ],
+      "keywords": [
+        "Durable",
+        "Slippery",
+        "Resilient",
+        "Ranged Armor 1",
+        "Gatebuster 6"
+      ],
+      "hth": 4,
+      "atk": 4,
+      "dfs": 3,
+      "sp": 1,
+      "cost": 4,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"Back to the Deep\" — Once per battle, after attacking and dealing damage, may remove this Unit to discard to destroy the Defending Unit.",
+      "passive": "\"Feed on their Best\" — If \"Back to the Deep\" would destroy an enemy Hero, deal 1 Tactical damage to opponent."
+    },
+    {
+      "id": "mv13",
+      "name": "Eastern Deep Dweller",
+      "faction": "myrkeval",
+      "types": [
+        "soldier",
+        "monster"
+      ],
+      "keywords": [
+        "Durable",
+        "Slippery",
+        "Resilient",
+        "Ranged Armor 1",
+        "Gatebuster 6"
+      ],
+      "hth": 4,
+      "atk": 4,
+      "dfs": 3,
+      "sp": 1,
+      "cost": 4,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"Back to the Deep\" — Once per battle, after attacking and dealing damage, may remove this Unit to discard to destroy the Defending Unit.",
+      "passive": "\"Feed on their Best\" — If \"Back to the Deep\" would destroy an enemy Hero, deal 1 Tactical damage to opponent."
+    },
+    {
+      "id": "mv14",
+      "name": "Wild Hogriders",
+      "faction": "myrkeval",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Anti-Formations",
+        "Reposition",
+        "Reckless",
+        "Ranged Armor 1"
+      ],
+      "hth": 3,
+      "atk": 4,
+      "dfs": 2,
+      "sp": 2,
+      "cost": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "First time played in Setup, may spend 1 additional Resource to give Numerous keyword until end of Setup.",
+      "passive": "\"Hooves of a Feather\" — If multiple friendly Reposition Units are on same battlefield, +1 Atk."
+    },
+    {
+      "id": "mv14",
+      "name": "Wild Hogriders",
+      "faction": "myrkeval",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Anti-Formations",
+        "Reposition",
+        "Reckless",
+        "Ranged Armor 1"
+      ],
+      "hth": 3,
+      "atk": 4,
+      "dfs": 2,
+      "sp": 2,
+      "cost": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "First time played in Setup, may spend 1 additional Resource to give Numerous keyword until end of Setup.",
+      "passive": "\"Hooves of a Feather\" — If multiple friendly Reposition Units are on same battlefield, +1 Atk."
+    },
+    {
+      "id": "mv14",
+      "name": "Wild Hogriders",
+      "faction": "myrkeval",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Anti-Formations",
+        "Reposition",
+        "Reckless",
+        "Ranged Armor 1"
+      ],
+      "hth": 3,
+      "atk": 4,
+      "dfs": 2,
+      "sp": 2,
+      "cost": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "First time played in Setup, may spend 1 additional Resource to give Numerous keyword until end of Setup.",
+      "passive": "\"Hooves of a Feather\" — If multiple friendly Reposition Units are on same battlefield, +1 Atk."
+    },
+    {
+      "id": "mv07",
+      "name": "Myrkeval Broodcaller",
+      "faction": "myrkeval",
+      "types": [
+        "hero"
+      ],
+      "keywords": [
+        "Summon (Myrkorc) 1",
+        "Command 1"
+      ],
+      "hth": 3,
+      "atk": 3,
+      "dfs": 2,
+      "sp": 2,
+      "cost": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"Call the Swarm\" — At end of Setup, spend up to 2 Resources to summon that many Myrkorcs.",
+      "passive": "\"Holes in the Ground\" — First time each turn a friendly Numerous Unit in this battlefield is destroyed, summon 1 Myrkorcs Unit here."
+    },
+    {
+      "id": "mv07",
+      "name": "Myrkeval Broodcaller",
+      "faction": "myrkeval",
+      "types": [
+        "hero"
+      ],
+      "keywords": [
+        "Summon (Myrkorc) 1",
+        "Command 1"
+      ],
+      "hth": 3,
+      "atk": 3,
+      "dfs": 2,
+      "sp": 2,
+      "cost": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"Call the Swarm\" — At end of Setup, spend up to 2 Resources to summon that many Myrkorcs.",
+      "passive": "\"Holes in the Ground\" — First time each turn a friendly Numerous Unit in this battlefield is destroyed, summon 1 Myrkorcs Unit here."
+    },
+    {
+      "id": "mv07",
+      "name": "Myrkeval Broodcaller",
+      "faction": "myrkeval",
+      "types": [
+        "hero"
+      ],
+      "keywords": [
+        "Summon (Myrkorc) 1",
+        "Command 1"
+      ],
+      "hth": 3,
+      "atk": 3,
+      "dfs": 2,
+      "sp": 2,
+      "cost": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"Call the Swarm\" — At end of Setup, spend up to 2 Resources to summon that many Myrkorcs.",
+      "passive": "\"Holes in the Ground\" — First time each turn a friendly Numerous Unit in this battlefield is destroyed, summon 1 Myrkorcs Unit here."
+    },
+    {
+      "id": "mv06",
+      "name": "Myrkeval Horn Blower",
+      "faction": "myrkeval",
+      "types": [
+        "hero"
+      ],
+      "keywords": [
+        "Command 1",
+        "Revive 1",
+        "Summon (Myrkorcs/Hobgoblins) 1"
+      ],
+      "hth": 2,
+      "atk": 3,
+      "dfs": 2,
+      "sp": 2,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "—",
+      "passive": "While in play, may play \"Myrkorcs\" and \"Hobgoblins\" from graveyard as if they had Revive 0."
+    },
+    {
+      "id": "mv06",
+      "name": "Myrkeval Horn Blower",
+      "faction": "myrkeval",
+      "types": [
+        "hero"
+      ],
+      "keywords": [
+        "Command 1",
+        "Revive 1",
+        "Summon (Myrkorcs/Hobgoblins) 1"
+      ],
+      "hth": 2,
+      "atk": 3,
+      "dfs": 2,
+      "sp": 2,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "—",
+      "passive": "While in play, may play \"Myrkorcs\" and \"Hobgoblins\" from graveyard as if they had Revive 0."
+    },
+    {
+      "id": "mv06",
+      "name": "Myrkeval Horn Blower",
+      "faction": "myrkeval",
+      "types": [
+        "hero"
+      ],
+      "keywords": [
+        "Command 1",
+        "Revive 1",
+        "Summon (Myrkorcs/Hobgoblins) 1"
+      ],
+      "hth": 2,
+      "atk": 3,
+      "dfs": 2,
+      "sp": 2,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "—",
+      "passive": "While in play, may play \"Myrkorcs\" and \"Hobgoblins\" from graveyard as if they had Revive 0."
+    },
+    {
+      "id": "mv16",
+      "name": "Fetid Hexcaller",
+      "faction": "myrkeval",
+      "types": [
+        "soldier",
+        "wizard"
+      ],
+      "keywords": [
+        "Magic 1",
+        "Slippery",
+        "Momentum 1"
+      ],
+      "hth": 1,
+      "atk": 2,
+      "dfs": 2,
+      "sp": 2,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"Spoil the Weave\" — Before a Spell resolves in this battlefield: Spell 2 — increase that Spell's cost by 2, or discard this card to negate it.",
+      "passive": "\"Big Bonk Stick\" — Momentum [Attack; Trigger: each time a Spell is cast in this battlefield]."
+    },
+    {
+      "id": "mv16",
+      "name": "Fetid Hexcaller",
+      "faction": "myrkeval",
+      "types": [
+        "soldier",
+        "wizard"
+      ],
+      "keywords": [
+        "Magic 1",
+        "Slippery",
+        "Momentum 1"
+      ],
+      "hth": 1,
+      "atk": 2,
+      "dfs": 2,
+      "sp": 2,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"Spoil the Weave\" — Before a Spell resolves in this battlefield: Spell 2 — increase that Spell's cost by 2, or discard this card to negate it.",
+      "passive": "\"Big Bonk Stick\" — Momentum [Attack; Trigger: each time a Spell is cast in this battlefield]."
+    },
+    {
+      "id": "mv16",
+      "name": "Fetid Hexcaller",
+      "faction": "myrkeval",
+      "types": [
+        "soldier",
+        "wizard"
+      ],
+      "keywords": [
+        "Magic 1",
+        "Slippery",
+        "Momentum 1"
+      ],
+      "hth": 1,
+      "atk": 2,
+      "dfs": 2,
+      "sp": 2,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"Spoil the Weave\" — Before a Spell resolves in this battlefield: Spell 2 — increase that Spell's cost by 2, or discard this card to negate it.",
+      "passive": "\"Big Bonk Stick\" — Momentum [Attack; Trigger: each time a Spell is cast in this battlefield]."
+    },
+    {
+      "id": "mv05",
+      "name": "Big Orc",
+      "faction": "myrkeval",
+      "types": [
+        "hero"
+      ],
+      "keywords": [
+        "Aggressive",
+        "Reckless"
+      ],
+      "hth": 3,
+      "atk": 5,
+      "dfs": 2,
+      "sp": 2,
+      "cost": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"Smash and Crash\" — Once per battle, at start of loop, gains +1 Atk and Invincible until end of battle loop.",
+      "passive": "If you have 4+ Units with Numerous, this Unit costs 1 less Resource."
+    },
+    {
+      "id": "mv05",
+      "name": "Big Orc",
+      "faction": "myrkeval",
+      "types": [
+        "hero"
+      ],
+      "keywords": [
+        "Aggressive",
+        "Reckless"
+      ],
+      "hth": 3,
+      "atk": 5,
+      "dfs": 2,
+      "sp": 2,
+      "cost": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"Smash and Crash\" — Once per battle, at start of loop, gains +1 Atk and Invincible until end of battle loop.",
+      "passive": "If you have 4+ Units with Numerous, this Unit costs 1 less Resource."
+    },
+    {
+      "id": "mv05",
+      "name": "Big Orc",
+      "faction": "myrkeval",
+      "types": [
+        "hero"
+      ],
+      "keywords": [
+        "Aggressive",
+        "Reckless"
+      ],
+      "hth": 3,
+      "atk": 5,
+      "dfs": 2,
+      "sp": 2,
+      "cost": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"Smash and Crash\" — Once per battle, at start of loop, gains +1 Atk and Invincible until end of battle loop.",
+      "passive": "If you have 4+ Units with Numerous, this Unit costs 1 less Resource."
+    },
+    {
+      "id": "mv03",
+      "name": "Cowardly Goblin",
+      "faction": "myrkeval",
+      "types": [
+        "hero"
+      ],
+      "keywords": [
+        "Slippery"
+      ],
+      "hth": 1,
+      "atk": 2,
+      "dfs": 1,
+      "sp": 3,
+      "cost": 1,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"Lead by Cowardice\" — Before Pairing Step, choose 2 friendly Units with Sp 1 or less to gain +1 Atk or +1 Dfs.",
+      "passive": "\"Kill Him, He'll Taste Better!\" — When this unit would receive damage, may allocate it to a friendly Unit in same battlefield instead."
+    },
+    {
+      "id": "mv03",
+      "name": "Cowardly Goblin",
+      "faction": "myrkeval",
+      "types": [
+        "hero"
+      ],
+      "keywords": [
+        "Slippery"
+      ],
+      "hth": 1,
+      "atk": 2,
+      "dfs": 1,
+      "sp": 3,
+      "cost": 1,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"Lead by Cowardice\" — Before Pairing Step, choose 2 friendly Units with Sp 1 or less to gain +1 Atk or +1 Dfs.",
+      "passive": "\"Kill Him, He'll Taste Better!\" — When this unit would receive damage, may allocate it to a friendly Unit in same battlefield instead."
+    },
+    {
+      "id": "mv03",
+      "name": "Cowardly Goblin",
+      "faction": "myrkeval",
+      "types": [
+        "hero"
+      ],
+      "keywords": [
+        "Slippery"
+      ],
+      "hth": 1,
+      "atk": 2,
+      "dfs": 1,
+      "sp": 3,
+      "cost": 1,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"Lead by Cowardice\" — Before Pairing Step, choose 2 friendly Units with Sp 1 or less to gain +1 Atk or +1 Dfs.",
+      "passive": "\"Kill Him, He'll Taste Better!\" — When this unit would receive damage, may allocate it to a friendly Unit in same battlefield instead."
+    },
+    {
+      "id": "mv01",
+      "name": "The Spirit of the Horde",
+      "faction": "myrkeval",
+      "types": [
+        "hero",
+        "commander",
+        "spirit",
+        "wizard"
+      ],
+      "keywords": [
+        "Magic 3",
+        "Command 2",
+        "Summon (Myrkorcs/Hobgoblins) 2",
+        "Terror",
+        "Routing",
+        "Reposition",
+        "Transcendent"
+      ],
+      "hth": 5,
+      "atk": 0,
+      "dfs": 3,
+      "sp": 6,
+      "cost": 10,
+      "maxCopies": 1,
+      "rarity": "unique",
+      "active": "\"Strengthened by Numbers\" — At end of Setup, count friendly+enemy units. Add friendly count to Atk, then add half enemy count (round down). Excess damage from attacking may be distributed as Direct damage to enemies in same Pairing.",
+      "passive": "\"I Need a Worthy Army\" — May only be played if you control 8+ Units."
+    },
+    {
+      "id": "mv17",
+      "name": "One Big Clump of Orcs",
+      "faction": "myrkeval",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Numerous"
+      ],
+      "hth": 2,
+      "atk": 2,
+      "dfs": 2,
+      "sp": 0,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "—",
+      "passive": "\"Amass\" — Before Pairing Step, count every friendly Numerous Unit on battlefield. For every 2 Numerous (other than self), gain +1 Hth and +1 Atk."
+    },
+    {
+      "id": "mv17",
+      "name": "One Big Clump of Orcs",
+      "faction": "myrkeval",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Numerous"
+      ],
+      "hth": 2,
+      "atk": 2,
+      "dfs": 2,
+      "sp": 0,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "—",
+      "passive": "\"Amass\" — Before Pairing Step, count every friendly Numerous Unit on battlefield. For every 2 Numerous (other than self), gain +1 Hth and +1 Atk."
+    },
+    {
+      "id": "mv17",
+      "name": "One Big Clump of Orcs",
+      "faction": "myrkeval",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Numerous"
+      ],
+      "hth": 2,
+      "atk": 2,
+      "dfs": 2,
+      "sp": 0,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "—",
+      "passive": "\"Amass\" — Before Pairing Step, count every friendly Numerous Unit on battlefield. For every 2 Numerous (other than self), gain +1 Hth and +1 Atk."
+    },
+    {
+      "id": "mv18",
+      "name": "Endless Tide",
+      "faction": "myrkeval",
+      "types": [
+        "special"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 4,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "At end of each Setup phase, summon 1 Myrkorcs Unit to each battlefield that contains a Myrkeval Unit you control.",
+      "passive": "Played faceup in Permanent Area."
+    },
+    {
+      "id": "mv18",
+      "name": "Endless Tide",
+      "faction": "myrkeval",
+      "types": [
+        "special"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 4,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "At end of each Setup phase, summon 1 Myrkorcs Unit to each battlefield that contains a Myrkeval Unit you control.",
+      "passive": "Played faceup in Permanent Area."
+    },
+    {
+      "id": "mv18",
+      "name": "Endless Tide",
+      "faction": "myrkeval",
+      "types": [
+        "special"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 4,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "At end of each Setup phase, summon 1 Myrkorcs Unit to each battlefield that contains a Myrkeval Unit you control.",
+      "passive": "Played faceup in Permanent Area."
+    },
+    {
+      "id": "mv15",
+      "name": "Bloodwolves",
+      "faction": "myrkeval",
+      "types": [
+        "soldier",
+        "creature"
+      ],
+      "keywords": [
+        "Reposition",
+        "Aggressive",
+        "Numerous"
+      ],
+      "hth": 1,
+      "atk": 2,
+      "dfs": 2,
+      "sp": 0,
+      "cost": 1,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "—",
+      "passive": "\"Will of the Pack\" — If a friendly Hero Unit is on battlefield, gains Duelist. When Paired with enemy Hero, +1 Atk. If 1+ friendly Bloodwolves are Grouped, +1 Atk."
+    },
+    {
+      "id": "mv15",
+      "name": "Bloodwolves",
+      "faction": "myrkeval",
+      "types": [
+        "soldier",
+        "creature"
+      ],
+      "keywords": [
+        "Reposition",
+        "Aggressive",
+        "Numerous"
+      ],
+      "hth": 1,
+      "atk": 2,
+      "dfs": 2,
+      "sp": 0,
+      "cost": 1,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "—",
+      "passive": "\"Will of the Pack\" — If a friendly Hero Unit is on battlefield, gains Duelist. When Paired with enemy Hero, +1 Atk. If 1+ friendly Bloodwolves are Grouped, +1 Atk."
+    },
+    {
+      "id": "mv15",
+      "name": "Bloodwolves",
+      "faction": "myrkeval",
+      "types": [
+        "soldier",
+        "creature"
+      ],
+      "keywords": [
+        "Reposition",
+        "Aggressive",
+        "Numerous"
+      ],
+      "hth": 1,
+      "atk": 2,
+      "dfs": 2,
+      "sp": 0,
+      "cost": 1,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "—",
+      "passive": "\"Will of the Pack\" — If a friendly Hero Unit is on battlefield, gains Duelist. When Paired with enemy Hero, +1 Atk. If 1+ friendly Bloodwolves are Grouped, +1 Atk."
+    },
+    {
+      "id": "mv11",
+      "name": "Myrkorc Rockshields",
+      "faction": "myrkeval",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Formations",
+        "Bodyguard",
+        "Resilient"
+      ],
+      "hth": 2,
+      "atk": 3,
+      "dfs": 2,
+      "sp": 1,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"We Ain't Movin', Boys!\" — Once per battle when defending, increase Dfs by 1 and gain Perfect Defense until end of battle loop.",
+      "passive": "—"
+    },
+    {
+      "id": "mv11",
+      "name": "Myrkorc Rockshields",
+      "faction": "myrkeval",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Formations",
+        "Bodyguard",
+        "Resilient"
+      ],
+      "hth": 2,
+      "atk": 3,
+      "dfs": 2,
+      "sp": 1,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"We Ain't Movin', Boys!\" — Once per battle when defending, increase Dfs by 1 and gain Perfect Defense until end of battle loop.",
+      "passive": "—"
+    },
+    {
+      "id": "mv11",
+      "name": "Myrkorc Rockshields",
+      "faction": "myrkeval",
+      "types": [
+        "soldier"
+      ],
+      "keywords": [
+        "Formations",
+        "Bodyguard",
+        "Resilient"
+      ],
+      "hth": 2,
+      "atk": 3,
+      "dfs": 2,
+      "sp": 1,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "\"We Ain't Movin', Boys!\" — Once per battle when defending, increase Dfs by 1 and gain Perfect Defense until end of battle loop.",
+      "passive": "—"
+    },
+    {
+      "id": "mv12",
+      "name": "Myrkeval Swamp Troll",
+      "faction": "myrkeval",
+      "types": [
+        "soldier",
+        "monster",
+        "creature"
+      ],
+      "keywords": [
+        "Durable",
+        "Hunter"
+      ],
+      "hth": 3,
+      "atk": 5,
+      "dfs": 3,
+      "sp": 1,
+      "cost": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "—",
+      "passive": "While committed to a Battlefield whose Location does not have Rest X, gains +1 Atk."
+    },
+    {
+      "id": "mv12",
+      "name": "Myrkeval Swamp Troll",
+      "faction": "myrkeval",
+      "types": [
+        "soldier",
+        "monster",
+        "creature"
+      ],
+      "keywords": [
+        "Durable",
+        "Hunter"
+      ],
+      "hth": 3,
+      "atk": 5,
+      "dfs": 3,
+      "sp": 1,
+      "cost": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "—",
+      "passive": "While committed to a Battlefield whose Location does not have Rest X, gains +1 Atk."
+    },
+    {
+      "id": "mv12",
+      "name": "Myrkeval Swamp Troll",
+      "faction": "myrkeval",
+      "types": [
+        "soldier",
+        "monster",
+        "creature"
+      ],
+      "keywords": [
+        "Durable",
+        "Hunter"
+      ],
+      "hth": 3,
+      "atk": 5,
+      "dfs": 3,
+      "sp": 1,
+      "cost": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "—",
+      "passive": "While committed to a Battlefield whose Location does not have Rest X, gains +1 Atk."
+    },
+    {
+      "id": "mv21",
+      "name": "Overrun",
+      "faction": "myrkeval",
+      "types": [
+        "strategy"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "After Pairing, reveal and pay. If you have more Units than opponent on battlefield, all friendly Numerous Units gain +1 Atk for first battle loop.",
+      "passive": "—"
+    },
+    {
+      "id": "mv21",
+      "name": "Overrun",
+      "faction": "myrkeval",
+      "types": [
+        "strategy"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "After Pairing, reveal and pay. If you have more Units than opponent on battlefield, all friendly Numerous Units gain +1 Atk for first battle loop.",
+      "passive": "—"
+    },
+    {
+      "id": "mv21",
+      "name": "Overrun",
+      "faction": "myrkeval",
+      "types": [
+        "strategy"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "After Pairing, reveal and pay. If you have more Units than opponent on battlefield, all friendly Numerous Units gain +1 Atk for first battle loop.",
+      "passive": "—"
+    },
+    {
+      "id": "mv22",
+      "name": "Secret Tunnel",
+      "faction": "myrkeval",
+      "types": [
+        "attachment"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Attached location gains Location 4 (or +2 if it had it) and Rest 2. Units Committed to Battle from this Location gain Void 1.",
+      "passive": "Location attachment."
+    },
+    {
+      "id": "mv22",
+      "name": "Secret Tunnel",
+      "faction": "myrkeval",
+      "types": [
+        "attachment"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Attached location gains Location 4 (or +2 if it had it) and Rest 2. Units Committed to Battle from this Location gain Void 1.",
+      "passive": "Location attachment."
+    },
+    {
+      "id": "mv22",
+      "name": "Secret Tunnel",
+      "faction": "myrkeval",
+      "types": [
+        "attachment"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Attached location gains Location 4 (or +2 if it had it) and Rest 2. Units Committed to Battle from this Location gain Void 1.",
+      "passive": "Location attachment."
+    },
+    {
+      "id": "mv04",
+      "name": "Myrkeval Orc Shaman",
+      "faction": "myrkeval",
+      "types": [
+        "hero",
+        "wizard"
+      ],
+      "keywords": [
+        "Magic 1",
+        "Slippery",
+        "Revive 1"
+      ],
+      "hth": 2,
+      "atk": 3,
+      "dfs": 2,
+      "sp": 3,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "In Before Pairing Step: Spell 3 — search graveyard for 1 Unit with Health 1; add it under your control to this Unit's battlefield.",
+      "passive": "\"Mob Control\" — While on battlefield with 2+ other friendly Units, all friendly Units gain Formations and Bodyguard."
+    },
+    {
+      "id": "mv04",
+      "name": "Myrkeval Orc Shaman",
+      "faction": "myrkeval",
+      "types": [
+        "hero",
+        "wizard"
+      ],
+      "keywords": [
+        "Magic 1",
+        "Slippery",
+        "Revive 1"
+      ],
+      "hth": 2,
+      "atk": 3,
+      "dfs": 2,
+      "sp": 3,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "In Before Pairing Step: Spell 3 — search graveyard for 1 Unit with Health 1; add it under your control to this Unit's battlefield.",
+      "passive": "\"Mob Control\" — While on battlefield with 2+ other friendly Units, all friendly Units gain Formations and Bodyguard."
+    },
+    {
+      "id": "mv04",
+      "name": "Myrkeval Orc Shaman",
+      "faction": "myrkeval",
+      "types": [
+        "hero",
+        "wizard"
+      ],
+      "keywords": [
+        "Magic 1",
+        "Slippery",
+        "Revive 1"
+      ],
+      "hth": 2,
+      "atk": 3,
+      "dfs": 2,
+      "sp": 3,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "In Before Pairing Step: Spell 3 — search graveyard for 1 Unit with Health 1; add it under your control to this Unit's battlefield.",
+      "passive": "\"Mob Control\" — While on battlefield with 2+ other friendly Units, all friendly Units gain Formations and Bodyguard."
+    },
+    {
+      "id": "mv20",
+      "name": "Always More Stinkers",
+      "faction": "myrkeval",
+      "types": [
+        "strategy"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "During Setup, scry for 2 Unit cards each costing 1 Resource; immediately play those cards. Then shuffle.",
+      "passive": "—"
+    },
+    {
+      "id": "mv20",
+      "name": "Always More Stinkers",
+      "faction": "myrkeval",
+      "types": [
+        "strategy"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "During Setup, scry for 2 Unit cards each costing 1 Resource; immediately play those cards. Then shuffle.",
+      "passive": "—"
+    },
+    {
+      "id": "mv20",
+      "name": "Always More Stinkers",
+      "faction": "myrkeval",
+      "types": [
+        "strategy"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "During Setup, scry for 2 Unit cards each costing 1 Resource; immediately play those cards. Then shuffle.",
+      "passive": "—"
+    },
+    {
+      "id": "km33",
+      "name": "Feigned Retreat",
+      "faction": "neutral",
+      "types": [
+        "strategy"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Play facedown in Command area. When you Retreat, instead follow Battle Sequence as if you had Initiative. All friendly Units gain Aggressive and Resilient for first battle loop.",
+      "passive": "—"
+    },
+    {
+      "id": "km33",
+      "name": "Feigned Retreat",
+      "faction": "neutral",
+      "types": [
+        "strategy"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Play facedown in Command area. When you Retreat, instead follow Battle Sequence as if you had Initiative. All friendly Units gain Aggressive and Resilient for first battle loop.",
+      "passive": "—"
+    },
+    {
+      "id": "km33",
+      "name": "Feigned Retreat",
+      "faction": "neutral",
+      "types": [
+        "strategy"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Play facedown in Command area. When you Retreat, instead follow Battle Sequence as if you had Initiative. All friendly Units gain Aggressive and Resilient for first battle loop.",
+      "passive": "—"
+    },
+    {
+      "id": "km36",
+      "name": "Outpost",
+      "faction": "neutral",
+      "types": [
+        "attachment"
+      ],
+      "keywords": [
+        "Location 5",
+        "Rest 1",
+        "Resource 2"
+      ],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Once per battle, when a friendly Soldier with Sp 2 or less would be destroyed, place it on attached location with 1 Health instead.",
+      "passive": "Location attachment."
+    },
+    {
+      "id": "km36",
+      "name": "Outpost",
+      "faction": "neutral",
+      "types": [
+        "attachment"
+      ],
+      "keywords": [
+        "Location 5",
+        "Rest 1",
+        "Resource 2"
+      ],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Once per battle, when a friendly Soldier with Sp 2 or less would be destroyed, place it on attached location with 1 Health instead.",
+      "passive": "Location attachment."
+    },
+    {
+      "id": "km36",
+      "name": "Outpost",
+      "faction": "neutral",
+      "types": [
+        "attachment"
+      ],
+      "keywords": [
+        "Location 5",
+        "Rest 1",
+        "Resource 2"
+      ],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Once per battle, when a friendly Soldier with Sp 2 or less would be destroyed, place it on attached location with 1 Health instead.",
+      "passive": "Location attachment."
+    },
+    {
+      "id": "km28",
+      "name": "Reinforcements",
+      "faction": "neutral",
+      "types": [
+        "strategy"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 1,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Pay cost to play a card from graveyard as if it had Revive 0.",
+      "passive": "—"
+    },
+    {
+      "id": "km28",
+      "name": "Reinforcements",
+      "faction": "neutral",
+      "types": [
+        "strategy"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 1,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Pay cost to play a card from graveyard as if it had Revive 0.",
+      "passive": "—"
+    },
+    {
+      "id": "km28",
+      "name": "Reinforcements",
+      "faction": "neutral",
+      "types": [
+        "strategy"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 1,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Pay cost to play a card from graveyard as if it had Revive 0.",
+      "passive": "—"
+    },
+    {
+      "id": "custom_1775940396763",
+      "name": "Fortress",
+      "faction": "neutral",
+      "types": [
+        "attachment"
+      ],
+      "keywords": [
+        "Location 10"
+      ],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "—",
+      "passive": "Location Attachment. Give Rest 4 to the attached location or increase its Rest X by 4."
+    },
+    {
+      "id": "custom_1775940396763",
+      "name": "Fortress",
+      "faction": "neutral",
+      "types": [
+        "attachment"
+      ],
+      "keywords": [
+        "Location 10"
+      ],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "—",
+      "passive": "Location Attachment. Give Rest 4 to the attached location or increase its Rest X by 4."
+    },
+    {
+      "id": "custom_1775940396763",
+      "name": "Fortress",
+      "faction": "neutral",
+      "types": [
+        "attachment"
+      ],
+      "keywords": [
+        "Location 10"
+      ],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 3,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "—",
+      "passive": "Location Attachment. Give Rest 4 to the attached location or increase its Rest X by 4."
+    },
+    {
+      "id": "km31",
+      "name": "Gritty Resolve",
+      "faction": "neutral",
+      "types": [
+        "strategy"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Play facedown in Permanent area. When a friendly Hero would be destroyed, reduce to 1 Health; gains +1 Atk and +1 Dfs until end of battle sequence.",
+      "passive": "—"
+    },
+    {
+      "id": "km31",
+      "name": "Gritty Resolve",
+      "faction": "neutral",
+      "types": [
+        "strategy"
+      ],
+      "keywords": [],
+      "hth": 0,
+      "atk": 0,
+      "dfs": 0,
+      "sp": 0,
+      "cost": 2,
+      "maxCopies": 3,
+      "rarity": "standard",
+      "active": "Play facedown in Permanent area. When a friendly Hero would be destroyed, reduce to 1 Health; gains +1 Atk and +1 Dfs until end of battle sequence.",
+      "passive": "—"
+    }
+  ]
+}
