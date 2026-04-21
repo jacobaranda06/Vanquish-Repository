@@ -1751,6 +1751,89 @@ const CARDS = [
 
 {id:'mv22',name:'Secret Tunnel',faction:'myrkeval',types:['attachment'],keywords:[],hth:0,atk:0,dfs:0,sp:0,cost:3,maxCopies:3,rarity:'standard',
  active:'Attached location gains Location 4 (or +2 if it had it) and Rest 2. Units Committed to Battle from this Location gain Void 1.',passive:'Location attachment.'},
+// ── GUARDIANS OF MITHROS ──────────────────
+{id:'gom01',name:'Avatar of Mithros',faction:'guardians',types:['hero','monster','enchanted'],keywords:['Durable','Terror','Routing','Aggressive','Untiring','Awaken','Momentum 2','Gatebuster 15','Scarred','Hunter'],hth:6,atk:6,dfs:3,sp:4,cost:8,maxCopies:1,rarity:'unique',
+ active:'"Mithros Reincarnate" — If this Unit is damaged, then once per battle sequence, when this Unit would Attack, it may attack every enemy Unit Paired with it as if resolving separate Attacks.',
+ passive:'"Eternal Rage" — Momentum 2 [Attack; Trigger: whenever a point of Damage is allocated to this Unit].'},
+
+{id:'gom02',name:'Ancient Sentinel',faction:'guardians',types:['hero','enchanted','commander'],keywords:['Command 1','Durable','Disciplined','Ranged Armor 1','Awaken','Rally'],hth:4,atk:5,dfs:3,sp:3,cost:5,maxCopies:1,rarity:'unique',
+ active:'"Martial Mastery" — Once per battle sequence, when this Unit would Attack or Defend, increase its Atk or Dfs (respectively) by 2 until that Attack or Defence is resolved.',
+ passive:'"Age-old Wisdom" — Each time this Unit Commits to a battlefield, draw 1 card.'},
+
+{id:'gom03',name:'Apex Wyrmform',faction:'guardians',types:['hero','monster','enchanted','wizard'],keywords:['Reposition','Charge 1','Terror','Magic 1','Awaken','Ranged Armor 1'],hth:5,atk:6,dfs:3,sp:4,cost:6,maxCopies:1,rarity:'unique',
+ active:'"Gaze of Mithros" — Spell cost 4: before Pairing, select one enemy Unit in same battlefield. That Unit suffers -1 Atk, -1 Dfs, and -1 Sp.',
+ passive:'"Highest Form" — During the Draw step of the Setup phase, draw 1 additional card.'},
+
+{id:'gom04',name:'Awakened Sentinels',faction:'guardians',types:['soldier','enchanted'],keywords:['Durable','Momentum 1','Awaken','Ranged Armor 1'],hth:2,atk:3,dfs:2,sp:1,cost:2,maxCopies:6,rarity:'common',
+ active:'"Unswerving Purpose" — Momentum 1 [Attack; Trigger: each time a friendly Awaken ability is used to awaken a Unit].',
+ passive:'"Our Awakening Has Been Foretold" — While you control 1+ Awakened Sentinels, the first Guardians of Mithros Unit you play each turn costs 1 less Resource (min 1).'},
+
+{id:'gom05',name:'Adamantine Reapers',faction:'guardians',types:['soldier','enchanted'],keywords:['Disciplined','Formations','Durable','Momentum 1','Awaken','Ranged Armor 1'],hth:3,atk:4,dfs:3,sp:2,cost:3,maxCopies:3,rarity:'standard',
+ active:'—',
+ passive:'"Whirring Blades" — If Outnumbered, gains Double Blow. Additionally: Momentum 1 [Attack; Trigger: each time this Unit destroys an enemy Unit].'},
+
+{id:'gom06',name:'Perpetual Bulwark',faction:'guardians',types:['soldier','enchanted'],keywords:['Disciplined','Bodyguard','Durable','Momentum 1','Awaken','Perfect Defense','Ranged Armor 1'],hth:3,atk:3,dfs:3,sp:2,cost:3,maxCopies:3,rarity:'standard',
+ active:'—',
+ passive:'Momentum 1 [Defense; Trigger: each time this Unit is Paired before all friendly enemy Heroes in same battlefield are Paired].'},
+
+{id:'gom07',name:'Light Sleeper',faction:'guardians',types:['soldier','enchanted'],keywords:['Durable','Awaken','Ranged Armor 1'],hth:2,atk:3,dfs:2,sp:2,cost:2,maxCopies:3,rarity:'standard',
+ active:'Once per turn, when this Unit awakens via Awaken, all friendly Units in its Pairing gain +1 Atk until end of battle sequence (including itself).',
+ passive:'Whenever this card is played to Permanent Area via Awaken, draw 1 card.'},
+
+{id:'gom08',name:'Iron Wyrmform',faction:'guardians',types:['soldier','monster','enchanted'],keywords:['Reposition','Charge 1','Aggressive','Awaken','Anti-Bodyguard','Hunter','Gatebuster 6','Ranged Armor 1'],hth:5,atk:6,dfs:3,sp:3,cost:5,maxCopies:3,rarity:'standard',
+ active:'"Spiked Hide" — First time per battle this Unit is Paired, deal 1 direct damage to an enemy Unit Paired with it.',
+ passive:'"Go for the Throat" — If this Unit destroys an enemy Hero Unit, deal 2 Tactical damage to your opponent.'},
+
+{id:'gom09',name:'Jade Wyrmform',faction:'guardians',types:['soldier','monster','enchanted'],keywords:['Reposition','Charge 1','Resilient','Durable','Awaken','Ranged Armor 1'],hth:5,atk:5,dfs:3,sp:3,cost:5,maxCopies:3,rarity:'standard',
+ active:'"Flashing Coils" — Once per battle, when this Unit would Defend, it gains the Perfect Defense keyword.',
+ passive:'"Older than the Mountains" — If this Unit suffers 1+ damage, increase its Dfs by 1. If this Unit Attacks, reset its Dfs characteristic to 3.'},
+
+{id:'gom10',name:'Molten Wyrmform',faction:'guardians',types:['soldier','monster','enchanted'],keywords:['Charge 1','Dragon Fire 1','Awaken','Gatebuster 10','Ranged Armor 1'],hth:5,atk:6,dfs:3,sp:3,cost:5,maxCopies:3,rarity:'standard',
+ active:'"Furious Spirit" — At start of a battle loop, make this Unit "white-hot": after each Attack or Defence it takes 1 direct damage to itself; it gains Anti-Durable, Anti-Impenetrable, Anti-Resilient, and Routing.',
+ passive:'This Unit does not need to meet the Erupt prerequisite of the Awaken keyword.'},
+
+{id:'gom11',name:'Enraged Elemental',faction:'guardians',types:['soldier','monster','spirit'],keywords:['Anti-Formations','Terror','Aggressive','Hunter','Momentum 1'],hth:6,atk:5,dfs:2,sp:2,cost:5,maxCopies:3,rarity:'standard',
+ active:'—',
+ passive:'Momentum 1 [Health; Trigger: each time this Unit deals damage to an enemy Unit].'},
+
+{id:'gom12',name:"Earth's Womb",faction:'guardians',types:['special'],keywords:[],hth:0,atk:0,dfs:0,sp:0,cost:2,maxCopies:1,rarity:'unique',
+ active:'Store any number of sleeping Units here. Units awakened from this card gain Slippery until end of turn. During Cleanup, choose up to 2 friendly Units with Awaken — they become "sleeping" and may be placed here.',
+ passive:'Played faceup in Permanent Area. Sleeping Units played via Awaken may be placed here instead of the normal Permanent Area.'},
+
+{id:'gom13',name:'Guardian of the Gate',faction:'guardians',types:['special'],keywords:[],hth:0,atk:0,dfs:0,sp:0,cost:5,maxCopies:1,rarity:'unique',
+ active:'"Spear of Mithros" — Once per battle before Pairing: select one enemy Hero or Monster; deal 2 direct damage to it. This Unit must then Pair with it if possible. "King Slayer" — +1 Atk vs Hero Units; +1 Atk vs Monster Units (stackable).',
+ passive:'Played facedown in Command Area. After Commit Units step, if opponent committed to a Seized Location or you are Seizing, reveal and pay to place this card in that battlefield as: Hero, Unique, Enchanted (Hth4/Atk5/Dfs3/Sp4) with Durable, Summon(Awakened Sentinels)1, Duelist, Anti-Bodyguard, Anti-Formations, Reposition.'},
+
+{id:'gom14',name:'Slumbering Council',faction:'guardians',types:['special'],keywords:[],hth:0,atk:0,dfs:0,sp:0,cost:3,maxCopies:1,rarity:'unique',
+ active:'During Play Cards Step, may purge this card and discard a card from hand to search deck for the first Guardians of Mithros Soldier Unit found; play it to Command Area (counts as a played card).',
+ passive:'Played faceup in Permanent Area. During Setup phase, draw 1 card.'},
+
+{id:'gom15',name:'Rage of Mithros',faction:'guardians',types:['strategy'],keywords:[],hth:0,atk:0,dfs:0,sp:0,cost:1,maxCopies:3,rarity:'standard',
+ active:'Reveal and pay when a friendly Guardians of Mithros Unit is Attacking; increase that Unit\'s Atk by 1.',passive:'—'},
+
+{id:'gom16',name:'Swift Awakening',faction:'guardians',types:['strategy'],keywords:[],hth:0,atk:0,dfs:0,sp:0,cost:1,maxCopies:3,rarity:'standard',
+ active:'Reveal and pay at start of battle sequence to target a friendly sleeping Unit. That Unit ignores the Erupt prerequisite of the Awaken keyword.',passive:'—'},
+
+{id:'gom17',name:'Solid as Stone',faction:'guardians',types:['strategy'],keywords:[],hth:0,atk:0,dfs:0,sp:0,cost:2,maxCopies:3,rarity:'standard',
+ active:'Reveal and pay when a friendly Unit would receive damage; that Unit gains Impenetrable.',passive:'—'},
+
+{id:'gom18',name:'Samsonian Feat',faction:'guardians',types:['strategy'],keywords:[],hth:0,atk:0,dfs:0,sp:0,cost:3,maxCopies:3,rarity:'standard',
+ active:'Reveal and pay after Commit Units step. Target one friendly Unit committed alone to a battlefield; it gains +1 Hth, +1 Atk, +1 Dfs, Impenetrable, Quick Strike, and Double Blow.',passive:'—'},
+
+{id:'gom19',name:'Unexpected Speed',faction:'neutral',types:['strategy'],keywords:[],hth:0,atk:0,dfs:0,sp:0,cost:1,maxCopies:3,rarity:'standard',
+ active:'Reveal and pay before Pairing; select one friendly Unit. That Unit gains Reposition and Slippery.',passive:'—'},
+
+{id:'gom20',name:'Eons of Wisdom',faction:'guardians',types:['attachment'],keywords:[],hth:0,atk:0,dfs:0,sp:0,cost:2,maxCopies:3,rarity:'standard',
+ active:'Attached Hero gains Foresee 3-1.',passive:'Hero unit attachment.'},
+
+{id:'gom21',name:'Relic of Bygone Ages',faction:'guardians',types:['attachment'],keywords:[],hth:0,atk:0,dfs:0,sp:0,cost:2,maxCopies:3,rarity:'standard',
+ active:'Purge this card to give attached Unit Quick Strike for one battle loop.',passive:'Unit attachment.'},
+
+{id:'gom22',name:'Molten Wyrmform Forge',faction:'guardians',types:['attachment'],keywords:[],hth:0,atk:0,dfs:0,sp:0,cost:1,maxCopies:3,rarity:'standard',
+ active:'Attached Unit gains Dragon Fire 1.',passive:'Unit attachment.'},
+
+{id:'gom23',name:'Hand of Mithros',faction:'guardians',types:['attachment'],keywords:[],hth:0,atk:0,dfs:0,sp:0,cost:2,maxCopies:1,rarity:'unique',
+ active:'Momentum 1 [Attack; Trigger: after this Unit Attacks].',passive:'Unit attachment, Unique.'},
 ];
 
 // ═══════════════════════════════════════════
