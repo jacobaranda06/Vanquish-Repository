@@ -2212,12 +2212,29 @@ function persistCards() {
 function loadPersistedCards() {
   try {
     const saved = localStorage.getItem('vanquish_cards_v2');
-    if (saved) {
-      const parsed = JSON.parse(saved);
-      CARDS.length = 0;
-      parsed.forEach(c => CARDS.push(c));
+    if (!saved) return;
+    const parsed = JSON.parse(saved);
+
+    // Migration: if localStorage is missing GoM cards, wipe it and use fresh source data
+    const hasGoM = parsed.some(c => c.faction === 'guardians');
+    if (!hasGoM) {
+      localStorage.removeItem('vanquish_cards_v2');
+      return;
     }
-  } catch(e) {}
+
+    // Merge: apply saved edits to existing base cards; add any user-created custom cards
+    parsed.forEach(savedCard => {
+      const idx = CARDS.findIndex(c => c.id === savedCard.id);
+      if (idx !== -1) {
+        CARDS[idx] = savedCard; // preserve edits made via Edit Mode
+      } else if (savedCard.id.startsWith('custom_')) {
+        CARDS.push(savedCard); // add user-created cards
+      }
+      // New base cards not in localStorage load from source automatically
+    });
+  } catch(e) {
+    localStorage.removeItem('vanquish_cards_v2'); // clear corrupt data
+  }
 }
 
 function exportCardData() {
