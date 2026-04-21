@@ -207,6 +207,7 @@
   .faction-wanderers { --card-accent: #1a5a2a; }
   .faction-wizards { --card-accent: #1a3a6a; }
   .faction-myrkeval { --card-accent: #4a1a6a; }
+  .faction-guardians { --card-accent: #1a4a2a; }
   .faction-neutral { --card-accent: #3a4460; }
 
   .card-name {
@@ -712,6 +713,7 @@
   .tag-wanderers { background: #1a3a1a; border: 1px solid #2a7a2a; color: #6ab46a; }
   .tag-wizards { background: #1a2a4a; border: 1px solid #2a4a9a; color: #6a9ad4; }
   .tag-myrkeval { background: #2a0a3a; border: 1px solid #5a1a8a; color: #9a5ad4; }
+  .tag-guardians { background: #0a2a1a; border: 1px solid #1a7a3a; color: #5ad47a; }
   .tag-neutral { background: var(--bg4); border: 1px solid var(--border2); color: var(--text2); }
 
   /* ─── Edit Mode ─── */
@@ -996,6 +998,7 @@
             <span class="chip" data-val="wanderers">Wanderers</span>
             <span class="chip" data-val="wizards">Wizards</span>
             <span class="chip" data-val="myrkeval">Myrkeval</span>
+            <span class="chip" data-val="guardians">Guardians</span>
             <span class="chip" data-val="neutral">Neutral</span>
           </div>
         </div>
@@ -1086,6 +1089,7 @@
             <option value="wanderers">Wanderers</option>
             <option value="wizards">Wizards</option>
             <option value="myrkeval">Myrkeval</option>
+            <option value="guardians">Guardians of Mithros</option>
             <option value="neutral">Neutral</option>
           </select>
           <select id="deck-type-filter" style="flex:1; min-width:110px; font-size:13px;">
@@ -1944,7 +1948,7 @@ function renderEditPane(c) {
   editKeywords = [...(c.keywords || [])];
   const pane = document.getElementById('detail-pane');
   const allTypes = ['hero','soldier','special','strategy','attachment','commander','wizard','monster','creature','enchantment','enchanted','spirit','spell'];
-  const factions = ['kingdoms','brotherhood','inquisition','wanderers','wizards','myrkeval','neutral'];
+  const factions = ['kingdoms','brotherhood','inquisition','wanderers','wizards','myrkeval','guardians', 'neutral'];
   const rarities = ['standard','common','abundant','unique'];
 
   pane.innerHTML = `
@@ -2477,6 +2481,10 @@ const DEFAULT_KEYWORDS = [
   {name:'Momentum X', desc:'This Unit will specify on its card a Trigger and a target characteristic. Each time the Trigger condition is fulfilled, increase the target characteristic by X.'},
   {name:'Mage Council', desc:'Units with this keyword may spend friendly Wizard Units\' Magic points in the same battlefield as if they were its own.'},
   {name:'Ranged Armor X', desc:'Reduce Ranged X attacks against this Unit by X (minimum 0).'},
+  {name:'Awaken', desc:'A Unit with this ability may be played faceup into your Permanent Area. This Unit is then “sleeping.” A “sleeping” Unit cannot be Committed to a Battlefield nor occupy a Rest Location. A “sleeping” Unit may be “awakened” in one of the following ways: \n “Rise” At the end of the Commit Units step, you may “awake” this Unit and Commit it to a battlefield of your choice. \n “Rumble” During the Battle Sequence, after the first Battle Loop for a battlefield has been resolved, you may “awake” this Unit to Commit this Unit to that battlefield. Then, if there are one or more Unpaired enemy Units, you may Pair this Unit with one of those Units. \n “Erupt” Prerequisite: this Unit must have been “sleeping” during a previous Cleanup phase. Before resolving an Attack/Defend Pair, you may “awake” this Unit to immediately Join this Unit with that Pair.'},
+  {name:'Scarred', desc:'A Unit with this ability cannot be Healed.'},
+  {name:'Quick Strike', desc:'This Unit may resolve an Attack before it resolves a Defence. If a Unit with this rule destroys an enemy Unit with this ability, then it loses the effects of this ability for the rest of the turn.'},
+  {name:'Double Blow', desc:'A Unit with this ability may resolve a second Attack against a different enemy Unit it is Paired with whenever it Attacks.'},
   {name:'Ranged X', desc:'At the start of the first battle loop, deal X attack to one enemy Unit. Soldiers must be targeted before Heroes, unless the Hero is also a Monster.'},
   {name:'Resource X', desc:'(Location keyword) This Location card provides X Resources when unexhausted and in the Permanent Area.'},
   {name:'Rest X', desc:'(Location keyword) This Location card can have up to X Units resting on it. Units resting here are healed at the start of Cleanup.'},
